@@ -15,7 +15,7 @@ D:/GitHub/GameLab/GameLab
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53993
+57116
 Successfully changed project path to: D:/GitHub/GameLab/GameLab
 D:/GitHub/GameLab/GameLab
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/GitHub/GameLab/GameLab
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 75.74 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 187.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.11f1 (e50cafbb4399)
 [Subsystems] Discovering subsystems at path D:/Unity/2021.2.11f1/Editor/Data/Resources/UnitySubsystems
@@ -64,88 +64,88 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2021.2.11f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2021.2.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2021.2.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56856
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56008
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2021.2.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002157 seconds.
+Registered in 0.005709 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.30 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 202.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.817 seconds
+- Completed reload, in  1.736 seconds
 Domain Reload Profiling:
-	ReloadAssembly (818ms)
-		BeginReloadAssembly (85ms)
+	ReloadAssembly (1737ms)
+		BeginReloadAssembly (195ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (645ms)
-			LoadAssemblies (84ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1345ms)
+			LoadAssemblies (194ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (147ms)
+			SetupTypeCache (312ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (396ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (802ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
+				InitializePlatformSupportModulesInManaged (43ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (223ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
+				RefreshPlugins (203ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (390ms)
+				ProcessInitializeOnLoadMethodAttributes (163ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005905 seconds.
+Registered in 0.008541 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 71.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 230.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.140 seconds
+- Completed reload, in  4.831 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2141ms)
-		BeginReloadAssembly (143ms)
+	ReloadAssembly (4832ms)
+		BeginReloadAssembly (228ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (13ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (1882ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (4381ms)
+			LoadAssemblies (149ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (309ms)
+			SetupTypeCache (1151ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (83ms)
-			SetupLoadedEditorAssemblies (1339ms)
+			RebuildScriptCaches (281ms)
+			SetupLoadedEditorAssemblies (2630ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (72ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (1060ms)
-				ProcessInitializeOnLoadMethodAttributes (99ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (231ms)
+				BeforeProcessingInitializeOnLoad (313ms)
+				ProcessInitializeOnLoadAttributes (1872ms)
+				ProcessInitializeOnLoadMethodAttributes (175ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 2.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3595 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 47 unused Assets / (0.9 MB). Loaded Objects now: 4053.
-Memory consumption went from 177.0 MB to 176.1 MB.
-Total: 8.630700 ms (FindLiveObjects: 0.693200 ms CreateObjectMapping: 0.620900 ms MarkObjects: 6.889600 ms  DeleteObjects: 0.424900 ms)
+Unloading 4259 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (0.9 MB). Loaded Objects now: 4718.
+Memory consumption went from 231.5 MB to 230.6 MB.
+Total: 23.705500 ms (FindLiveObjects: 0.839700 ms CreateObjectMapping: 1.246300 ms MarkObjects: 20.208400 ms  DeleteObjects: 1.407700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,86 +160,496 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 76106.107834 seconds.
-  path: Assets/REDACTED/Antonio/Trees/NewRedWood2
-  artifactKey: Guid(828643222337a2d4c8fe627ff13157db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Antonio/Trees/NewRedWood2 using Guid(828643222337a2d4c8fe627ff13157db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3033ea51ec3f767f555df6f94c03317') in 0.018836 seconds 
+  Time since last request: 1577.914959 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51a4236c6a09eda65219d8600f407c56') in 4.204838 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/REDACTED/Antonio/Terrain/Terrain_0_0_3e603869-05e9-4b05-bbb1-2d801ce6ccb7.asset
-  artifactKey: Guid(489fd130e92977a40aebc1f0d7a9e08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Antonio/Terrain/Terrain_0_0_3e603869-05e9-4b05-bbb1-2d801ce6ccb7.asset using Guid(489fd130e92977a40aebc1f0d7a9e08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) 
-
- -> (artifact id: '6de41da8b40a8abca7d73528e9db973f') in 0.447591 seconds 
+  Time since last request: 6.468601 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7fb24535b5e69d5e2c664d360f72e6f') in 0.132667 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/REDACTED/Antonio/Trees/NewRedWood5.prefab
-  artifactKey: Guid(cc84ff673c963874a8168459ed516910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Antonio/Trees/NewRedWood5.prefab using Guid(cc84ff673c963874a8168459ed516910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5884987dbc28ffc97ae85f76160375e8') in 8.318922 seconds 
+  Time since last request: 87.341961 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36044e964d0740e626d069d9e19dbe77') in 0.082661 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 47.924035 seconds.
-  path: Assets/REDACTED/Igor
-  artifactKey: Guid(b832d365314dcbe42be476f180dd3222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor using Guid(b832d365314dcbe42be476f180dd3222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd390d16bd3c41aa0aa83ce82fbe8116b') in 0.006383 seconds 
+  Time since last request: 10.621421 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fccc46024a4a1bdbeb1fbb2265e0d646') in 0.095975 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.230621 seconds.
-  path: Assets/REDACTED/Igor/Terrain.unity
-  artifactKey: Guid(4b6c7cbca67e68841af43f420e1e4e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/Terrain.unity using Guid(4b6c7cbca67e68841af43f420e1e4e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a4cbce6c6c8ee3ab1d636a8736ade3') in 0.006975 seconds 
+  Time since last request: 14.994748 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2552c8afb950027e8195025f672c3c77') in 0.077625 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.068894 seconds.
-  path: Assets/REDACTED/Igor/TerrainIgor.unity
-  artifactKey: Guid(4b6c7cbca67e68841af43f420e1e4e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/TerrainIgor.unity using Guid(4b6c7cbca67e68841af43f420e1e4e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcf327199f6c94acd82c1f214c69a5b') in 0.005961 seconds 
+  Time since last request: 7.579068 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbeae4e8170118f0a2970d33bc64583e') in 0.101205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.236921 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3ce3da45351f80519757c6c5090adc') in 0.044395 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004438 seconds.
+Registered in 0.004933 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.97 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.998 seconds
+- Completed reload, in  2.461 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1999ms)
-		BeginReloadAssembly (178ms)
+	ReloadAssembly (2462ms)
+		BeginReloadAssembly (252ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (13ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (60ms)
-		EndReloadAssembly (1699ms)
-			LoadAssemblies (100ms)
+			CreateAndSetChildDomain (82ms)
+		EndReloadAssembly (2037ms)
+			LoadAssemblies (150ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (386ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (1027ms)
+			SetupTypeCache (452ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (147ms)
+			SetupLoadedEditorAssemblies (1170ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (869ms)
+				ProcessInitializeOnLoadMethodAttributes (161ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 2.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3871 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4812.
+Memory consumption went from 206.7 MB to 205.9 MB.
+Total: 10.274200 ms (FindLiveObjects: 0.754500 ms CreateObjectMapping: 0.638800 ms MarkObjects: 8.314000 ms  DeleteObjects: 0.564400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 88.038723 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '662d0d334eff85ef31975dff0a1592a2') in 6.186740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.821009 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b05ab3526c0d0be8e7a71300f0c0571') in 0.034440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.946706 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '269058171c9bddbdb66c6a07c129dd19') in 0.044932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.040942 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d8f0a2ca573b180b49fa9c57d0c520') in 0.045605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.893556 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a093835700f7ea218760e31db67a587d') in 0.067912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.919953 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '400a996f0c5207ad6e5596f5d08db090') in 0.049121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.288394 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef73b6e6790509cc64494c1166658b8d') in 0.050919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.467013 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ce56033e52ea4ea778b185e7995e38') in 0.057808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.008296 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e886b2d1ac3e244c36f843604ff9dde7') in 0.105802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.367072 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b235b06c92262fb5f2d2c0693951eecc') in 0.116893 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005016 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.355 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2356ms)
+		BeginReloadAssembly (224ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (1970ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (402ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (131ms)
+			SetupLoadedEditorAssemblies (1167ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (816ms)
+				ProcessInitializeOnLoadMethodAttributes (225ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (37ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4854.
+Memory consumption went from 206.1 MB to 205.3 MB.
+Total: 6.850400 ms (FindLiveObjects: 0.686700 ms CreateObjectMapping: 0.654200 ms MarkObjects: 5.308200 ms  DeleteObjects: 0.199200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 180.561890 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c034de8f360fc6dd922e0aa8ce7bd4') in 5.032864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.807492 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd28dd677841fb94623b4c09ce0244645') in 0.057315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.640918 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2a2f44459e4c232f518e4fe34368e6') in 0.055839 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005159 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.660 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2666ms)
+		BeginReloadAssembly (218ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (77ms)
+		EndReloadAssembly (2250ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (460ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (142ms)
+			SetupLoadedEditorAssemblies (1325ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (778ms)
-				ProcessInitializeOnLoadMethodAttributes (141ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (1004ms)
+				ProcessInitializeOnLoadMethodAttributes (181ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (42ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 2.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4896.
+Memory consumption went from 206.2 MB to 205.3 MB.
+Total: 9.914400 ms (FindLiveObjects: 0.727100 ms CreateObjectMapping: 1.477400 ms MarkObjects: 7.464200 ms  DeleteObjects: 0.242600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 66.383003 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5654a5301ec294fcbc910f1cb1a51244') in 3.850031 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005165 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.18 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.307 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2309ms)
+		BeginReloadAssembly (223ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (73ms)
+		EndReloadAssembly (1907ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (417ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (147ms)
+			SetupLoadedEditorAssemblies (1045ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (729ms)
+				ProcessInitializeOnLoadMethodAttributes (181ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4938.
+Memory consumption went from 206.2 MB to 205.4 MB.
+Total: 9.861300 ms (FindLiveObjects: 0.892100 ms CreateObjectMapping: 0.825300 ms MarkObjects: 7.928100 ms  DeleteObjects: 0.213900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 324.344068 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4030b4390494401329b1f362f173ee3') in 0.744114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.456049 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e0b8caed8c40d12b2be3db3bb6ee2f') in 0.052864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 84.366584 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8685d40e740d06cd16af89378b75b5da') in 0.067297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.649817 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88dc398dbf002eee2d3b3a59a504ccc8') in 0.072618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.678870 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '720453e6c34cfc5ed48d2d58c4e96136') in 0.073422 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007636 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.837 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2838ms)
+		BeginReloadAssembly (276ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (19ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (102ms)
+		EndReloadAssembly (2355ms)
+			LoadAssemblies (149ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (471ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (161ms)
+			SetupLoadedEditorAssemblies (1381ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (151ms)
+				ProcessInitializeOnLoadAttributes (1012ms)
+				ProcessInitializeOnLoadMethodAttributes (181ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (45ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 2.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4980.
+Memory consumption went from 206.3 MB to 205.4 MB.
+Total: 13.275500 ms (FindLiveObjects: 1.304900 ms CreateObjectMapping: 1.008200 ms MarkObjects: 10.708200 ms  DeleteObjects: 0.250700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1676.720505 seconds.
+  path: Assets/Settings/UniversalRP-HighQuality.asset
+  artifactKey: Guid(19ba41d7c0026c3459d37c2fe90c55a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/UniversalRP-HighQuality.asset using Guid(19ba41d7c0026c3459d37c2fe90c55a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '786233a628d22927c31635a02f1ccc45') in 0.032749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Settings/UniversalRP-MediumQuality.asset
+  artifactKey: Guid(d847b876476d3d6468f5dfcd34266f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/UniversalRP-MediumQuality.asset using Guid(d847b876476d3d6468f5dfcd34266f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b85077f5f3a5d1d38eb3b1bf1ee6b7') in 0.007292 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005713 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.704 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2705ms)
+		BeginReloadAssembly (222ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (73ms)
+		EndReloadAssembly (2266ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (458ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (130ms)
+			SetupLoadedEditorAssemblies (1392ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (1052ms)
+				ProcessInitializeOnLoadMethodAttributes (187ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (36ms)
 Platform modules already initialized, skipping
 Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
-Refreshing native plugins compatible for Editor in 1.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 4.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3415 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4146.
-Memory consumption went from 176.1 MB to 175.3 MB.
-Total: 9.968600 ms (FindLiveObjects: 1.630500 ms CreateObjectMapping: 1.333100 ms MarkObjects: 6.646300 ms  DeleteObjects: 0.356200 ms)
+Unloading 3864 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (0.8 MB). Loaded Objects now: 4982.
+Memory consumption went from 206.2 MB to 205.4 MB.
+Total: 10.833700 ms (FindLiveObjects: 0.953700 ms CreateObjectMapping: 0.895900 ms MarkObjects: 8.216400 ms  DeleteObjects: 0.765900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -255,47 +665,47 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003904 seconds.
+Registered in 0.005613 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.07 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.169 seconds
+- Completed reload, in  2.780 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2170ms)
-		BeginReloadAssembly (171ms)
+	ReloadAssembly (2782ms)
+		BeginReloadAssembly (208ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (1876ms)
-			LoadAssemblies (97ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (2377ms)
+			LoadAssemblies (135ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (331ms)
+			SetupTypeCache (457ms)
 			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (100ms)
-			SetupLoadedEditorAssemblies (1232ms)
+			RebuildScriptCaches (125ms)
+			SetupLoadedEditorAssemblies (1490ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (26ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (137ms)
-				ProcessInitializeOnLoadAttributes (928ms)
-				ProcessInitializeOnLoadMethodAttributes (134ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (1142ms)
+				ProcessInitializeOnLoadMethodAttributes (187ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (34ms)
+			AwakeInstancesAfterBackupRestoration (40ms)
 Platform modules already initialized, skipping
 Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
-Refreshing native plugins compatible for Editor in 3.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.02 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3406 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4148.
-Memory consumption went from 175.4 MB to 174.6 MB.
-Total: 10.260000 ms (FindLiveObjects: 0.753200 ms CreateObjectMapping: 0.638200 ms MarkObjects: 8.592800 ms  DeleteObjects: 0.273400 ms)
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4984.
+Memory consumption went from 206.2 MB to 205.4 MB.
+Total: 14.045200 ms (FindLiveObjects: 0.721900 ms CreateObjectMapping: 0.949100 ms MarkObjects: 11.818900 ms  DeleteObjects: 0.551600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -309,143 +719,273 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 193.887095 seconds.
-  path: Assets/REDACTED/Igor/Candle.fbx
-  artifactKey: Guid(6ad7f2c475713bd4aad29000f304327f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/Candle.fbx using Guid(6ad7f2c475713bd4aad29000f304327f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b74d642cd3667498c58de6e242bcfb6e') in 2.576321 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 312.166518 seconds.
-  path: Assets/REDACTED/Igor/flame_test_shading_1.1.png
-  artifactKey: Guid(b7855362921db0d48913d09caa4ff75a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/flame_test_shading_1.1.png using Guid(b7855362921db0d48913d09caa4ff75a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d41546e2c7b08f0640275339ae2589f') in 0.111283 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.785246 seconds.
-  path: Assets/REDACTED/Igor/flame_test_shading_1.1.png
-  artifactKey: Guid(b7855362921db0d48913d09caa4ff75a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/flame_test_shading_1.1.png using Guid(b7855362921db0d48913d09caa4ff75a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2338f0c9aa00931471dac87cccfba08') in 0.384370 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.760861 seconds.
-  path: Assets/REDACTED/Igor/chrome_2022-02-19_13-27-02.png
-  artifactKey: Guid(6063af22183c63548b4e516d9b56c683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/chrome_2022-02-19_13-27-02.png using Guid(6063af22183c63548b4e516d9b56c683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc3a9965174a401fb790bd8152bc5cdf') in 0.019846 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.264302 seconds.
-  path: Assets/REDACTED/Igor/chrome_2022-02-19_13-27-02.png
-  artifactKey: Guid(6063af22183c63548b4e516d9b56c683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/chrome_2022-02-19_13-27-02.png using Guid(6063af22183c63548b4e516d9b56c683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52382a76d9d727e90fa600bac2a16704') in 0.020222 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 41.969277 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee4c14c45589ba9c396db91c521d673') in 0.025910 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006177 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.429 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2430ms)
+		BeginReloadAssembly (223ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (2037ms)
+			LoadAssemblies (136ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (452ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (135ms)
+			SetupLoadedEditorAssemblies (1151ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (827ms)
+				ProcessInitializeOnLoadMethodAttributes (181ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (38ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 2.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4986.
+Memory consumption went from 206.2 MB to 205.4 MB.
+Total: 13.751900 ms (FindLiveObjects: 0.651300 ms CreateObjectMapping: 3.629700 ms MarkObjects: 8.536100 ms  DeleteObjects: 0.929900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005656 seconds.
+Registered in 0.006676 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.600 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2602ms)
+		BeginReloadAssembly (205ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (2217ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (423ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (139ms)
+			SetupLoadedEditorAssemblies (1380ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (1047ms)
+				ProcessInitializeOnLoadMethodAttributes (190ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (39ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4988.
+Memory consumption went from 206.2 MB to 205.4 MB.
+Total: 10.995800 ms (FindLiveObjects: 0.966100 ms CreateObjectMapping: 0.806300 ms MarkObjects: 8.933300 ms  DeleteObjects: 0.287100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005128 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.620 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2621ms)
+		BeginReloadAssembly (232ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (87ms)
+		EndReloadAssembly (2216ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (454ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (132ms)
+			SetupLoadedEditorAssemblies (1368ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (140ms)
+				ProcessInitializeOnLoadAttributes (1025ms)
+				ProcessInitializeOnLoadMethodAttributes (173ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 2.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4990.
+Memory consumption went from 206.2 MB to 205.4 MB.
+Total: 11.713800 ms (FindLiveObjects: 1.049400 ms CreateObjectMapping: 1.968100 ms MarkObjects: 8.373500 ms  DeleteObjects: 0.319900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007592 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.492 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2494ms)
+		BeginReloadAssembly (207ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (69ms)
+		EndReloadAssembly (2116ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (446ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (139ms)
+			SetupLoadedEditorAssemblies (1166ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (876ms)
+				ProcessInitializeOnLoadMethodAttributes (159ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (111ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 2.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4992.
+Memory consumption went from 206.2 MB to 205.4 MB.
+Total: 15.031200 ms (FindLiveObjects: 0.952200 ms CreateObjectMapping: 0.777200 ms MarkObjects: 12.717300 ms  DeleteObjects: 0.582900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005483 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
 Mono: successfully reloaded assembly
-- Completed reload, in  3.777 seconds
+- Completed reload, in  2.773 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3779ms)
-		BeginReloadAssembly (315ms)
+	ReloadAssembly (2775ms)
+		BeginReloadAssembly (213ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (44ms)
+			DisableScriptedObjects (15ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (83ms)
-		EndReloadAssembly (3254ms)
-			LoadAssemblies (167ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (2354ms)
+			LoadAssemblies (130ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (584ms)
+			SetupTypeCache (472ms)
 			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (234ms)
-			SetupLoadedEditorAssemblies (1238ms)
+			RebuildScriptCaches (142ms)
+			SetupLoadedEditorAssemblies (1430ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
+				InitializePlatformSupportModulesInManaged (22ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (121ms)
-				ProcessInitializeOnLoadAttributes (870ms)
-				ProcessInitializeOnLoadMethodAttributes (214ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (1081ms)
+				ProcessInitializeOnLoadMethodAttributes (173ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (69ms)
+			AwakeInstancesAfterBackupRestoration (37ms)
 Platform modules already initialized, skipping
 Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
-Refreshing native plugins compatible for Editor in 1.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4065 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 232 unused Assets / (11.4 MB). Loaded Objects now: 4746.
-Memory consumption went from 241.3 MB to 229.8 MB.
-Total: 19.290600 ms (FindLiveObjects: 0.804200 ms CreateObjectMapping: 0.712900 ms MarkObjects: 8.293600 ms  DeleteObjects: 9.477300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004496 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
-Mono: successfully reloaded assembly
-- Completed reload, in  1.965 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1966ms)
-		BeginReloadAssembly (186ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (54ms)
-		EndReloadAssembly (1592ms)
-			LoadAssemblies (113ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (436ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (133ms)
-			SetupLoadedEditorAssemblies (760ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (91ms)
-				ProcessInitializeOnLoadAttributes (521ms)
-				ProcessInitializeOnLoadMethodAttributes (127ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
-Platform modules already initialized, skipping
-Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
-Refreshing native plugins compatible for Editor in 1.84 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4063 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 232 unused Assets / (11.4 MB). Loaded Objects now: 4748.
-Memory consumption went from 241.1 MB to 229.6 MB.
-Total: 17.107200 ms (FindLiveObjects: 0.821500 ms CreateObjectMapping: 0.727900 ms MarkObjects: 6.856200 ms  DeleteObjects: 8.699500 ms)
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 4994.
+Memory consumption went from 206.3 MB to 205.4 MB.
+Total: 10.208700 ms (FindLiveObjects: 0.951400 ms CreateObjectMapping: 0.845900 ms MarkObjects: 8.172700 ms  DeleteObjects: 0.236000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -460,206 +1000,459 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 135.571510 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.shader
-  artifactKey: Guid(e998ee6886dfbd54bb0ce412a71f68fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.shader using Guid(e998ee6886dfbd54bb0ce412a71f68fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8670aa63074fdcccaa30b34991b7e374') in 0.043507 seconds 
+  Time since last request: 911.205705 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Attempting to get Camera relative temporary RenderTexture (width || height <= 0) via a CommandBuffer  in a Sriptable Render Pipeline.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:ExecuteCommandBuffer_Internal (UnityEngine.Rendering.CommandBuffer)
+UnityEngine.Rendering.ScriptableRenderContext:ExecuteCommandBuffer (UnityEngine.Rendering.CommandBuffer)
+UnityEngine.Rendering.Universal.Internal.CopyColorPass:Execute (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.RenderingData&) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/Passes/CopyColorPass.cs:111)
+UnityEngine.Rendering.Universal.ScriptableRenderer:ExecuteRenderPass (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.ScriptableRenderPass,UnityEngine.Rendering.Universal.RenderingData&) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/ScriptableRenderer.cs:966)
+UnityEngine.Rendering.Universal.ScriptableRenderer:ExecuteBlock (int,UnityEngine.Rendering.Universal.ScriptableRenderer/RenderBlocks&,UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.RenderingData&,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/ScriptableRenderer.cs:925)
+UnityEngine.Rendering.Universal.ScriptableRenderer:Execute (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.RenderingData&) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/ScriptableRenderer.cs:729)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:414)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:323)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:278)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,System.Collections.Generic.List`1<UnityEngine.Camera/RenderRequest>,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[ line 0]
+
+Trying to get RenderBuffer with invalid antiAliasing (must be at least 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit_Internal ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:430)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:323)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:278)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,System.Collections.Generic.List`1<UnityEngine.Camera/RenderRequest>,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime\Graphics\RenderBufferManager.cpp line 180]
+
+Trying to get RenderBuffer with invalid antiAliasing (must be at least 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit_Internal ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:430)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:323)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:278)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,System.Collections.Generic.List`1<UnityEngine.Camera/RenderRequest>,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime\Graphics\RenderBufferManager.cpp line 180]
+
+ -> (artifact id: '636c8085972c7e16fcdf6957ece18aaa') in 5.996443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 269.527654 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce23676df1d5952275da33ee097b8b7') in 0.076815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.072902 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c14cd6ff34dc96d6391a98d331dd9a8') in 0.042045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.180182 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58fc79c14af2da3166eea039375b39c7') in 0.095342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.730135 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0c2eaca968c2d5c5f494faa2a00b51') in 0.069166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 182.497683 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c92b7c368074150c19a0ce74f9394d47') in 0.043120 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006213 seconds.
+Registered in 0.005168 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.970 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2972ms)
+		BeginReloadAssembly (262ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (101ms)
+		EndReloadAssembly (2540ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (509ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (143ms)
+			SetupLoadedEditorAssemblies (1541ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (142ms)
+				ProcessInitializeOnLoadAttributes (1130ms)
+				ProcessInitializeOnLoadMethodAttributes (229ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (56ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 5037.
+Memory consumption went from 206.5 MB to 205.7 MB.
+Total: 19.614000 ms (FindLiveObjects: 1.205400 ms CreateObjectMapping: 1.718800 ms MarkObjects: 16.241100 ms  DeleteObjects: 0.446300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005760 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.754 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2756ms)
+		BeginReloadAssembly (239ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (2318ms)
+			LoadAssemblies (143ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (455ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (141ms)
+			SetupLoadedEditorAssemblies (1430ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (1067ms)
+				ProcessInitializeOnLoadMethodAttributes (200ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (36ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 1.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 5039.
+Memory consumption went from 206.4 MB to 205.6 MB.
+Total: 10.353600 ms (FindLiveObjects: 1.007100 ms CreateObjectMapping: 0.835600 ms MarkObjects: 8.300700 ms  DeleteObjects: 0.207600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 111.600499 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Trying to get RenderBuffer with invalid antiAliasing (must be at least 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit_Internal ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:430)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:323)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:278)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,System.Collections.Generic.List`1<UnityEngine.Camera/RenderRequest>,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime\Graphics\RenderBufferManager.cpp line 180]
+
+Trying to get RenderBuffer with invalid antiAliasing (must be at least 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit_Internal ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:430)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:323)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:278)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,System.Collections.Generic.List`1<UnityEngine.Camera/RenderRequest>,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime\Graphics\RenderBufferManager.cpp line 180]
+
+ -> (artifact id: 'f5809e7ccf0294ee12b6bda10a47871f') in 5.662201 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007873 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.048 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3050ms)
+		BeginReloadAssembly (261ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (23ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (80ms)
+		EndReloadAssembly (2600ms)
+			LoadAssemblies (134ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (520ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (165ms)
+			SetupLoadedEditorAssemblies (1560ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (1142ms)
+				ProcessInitializeOnLoadMethodAttributes (236ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (38ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 5081.
+Memory consumption went from 206.6 MB to 205.8 MB.
+Total: 12.699000 ms (FindLiveObjects: 2.324000 ms CreateObjectMapping: 1.937100 ms MarkObjects: 8.069400 ms  DeleteObjects: 0.366700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005247 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.055 seconds
+- Completed reload, in  2.677 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2056ms)
-		BeginReloadAssembly (221ms)
+	ReloadAssembly (2679ms)
+		BeginReloadAssembly (203ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (2302ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (468ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (146ms)
+			SetupLoadedEditorAssemblies (1350ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (1026ms)
+				ProcessInitializeOnLoadMethodAttributes (182ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (40ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 5083.
+Memory consumption went from 206.5 MB to 205.7 MB.
+Total: 9.044600 ms (FindLiveObjects: 0.745700 ms CreateObjectMapping: 0.666100 ms MarkObjects: 7.407300 ms  DeleteObjects: 0.223700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005404 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.753 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2754ms)
+		BeginReloadAssembly (215ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (14ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (65ms)
-		EndReloadAssembly (1669ms)
-			LoadAssemblies (140ms)
+		EndReloadAssembly (2350ms)
+			LoadAssemblies (129ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (467ms)
+			SetupTypeCache (486ms)
 			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (150ms)
-			SetupLoadedEditorAssemblies (815ms)
+			RebuildScriptCaches (154ms)
+			SetupLoadedEditorAssemblies (1416ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (590ms)
-				ProcessInitializeOnLoadMethodAttributes (126ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (35ms)
-Platform modules already initialized, skipping
-Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
-Refreshing native plugins compatible for Editor in 1.89 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4070 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 239 unused Assets / (13.0 MB). Loaded Objects now: 4750.
-Memory consumption went from 243.5 MB to 230.5 MB.
-Total: 19.012500 ms (FindLiveObjects: 0.811000 ms CreateObjectMapping: 0.739500 ms MarkObjects: 7.849900 ms  DeleteObjects: 9.609400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 45.984987 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/About.png
-  artifactKey: Guid(8aba6bb20faf8824d9d81946542f1ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/About.png using Guid(8aba6bb20faf8824d9d81946542f1ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61f17755523db811128f36031adc4664') in 0.081598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.png
-  artifactKey: Guid(c8f21f62fdb3e43c5b32917c84683698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.png using Guid(c8f21f62fdb3e43c5b32917c84683698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24741d7c65941d19799ef391e67c1341') in 0.858459 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 108.148817 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.shader
-  artifactKey: Guid(e998ee6886dfbd54bb0ce412a71f68fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.shader using Guid(e998ee6886dfbd54bb0ce412a71f68fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1443fc4d5d476150bad482b6ada4f6b1') in 0.006363 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 51.224586 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f75748af78df635087c1fb66ec639af8') in 3.165088 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 32.098096 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a713dfa9e48e6462e5aeac547872921') in 0.055619 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 75.077917 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1dac3c7ea2e8461e3c0108dc561ee88') in 4.095506 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 76.062667 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67e237c916904ccbe4a68d2a2dc8fd2') in 2.333026 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.724969 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6353aa3f917ed590276545bd14c792d4') in 6.354047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.906773 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1480e40f5f330d54fddbdec5177ac5') in 3.707157 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 35.879300 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '514f6b4a7a1c14316b96263aecad8874') in 2.498101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.836621 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70cb5aacf8d1b01680931f2ba7f26ee6') in 3.910808 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1014.664063 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5fa112636b34fb6988aaacb9cd9f58') in 0.051744 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.644946 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699aa4e09be2d6a01ec1ba2b346d1554') in 0.044077 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.302150 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec26670fca6a4eef8eabe8c65a4ffd7') in 0.052739 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.211858 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.shader
-  artifactKey: Guid(e998ee6886dfbd54bb0ce412a71f68fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.shader using Guid(e998ee6886dfbd54bb0ce412a71f68fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84fd4c411cc5c9b0486af3d2ff9de830') in 0.004263 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 47.362380 seconds.
-  path: Assets/REDACTED/Igor/CandleWick.mat
-  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09d2767268b1b477193fe573c577746') in 3.551745 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006945 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.23 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.619 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2621ms)
-		BeginReloadAssembly (218ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (19ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (66ms)
-		EndReloadAssembly (2239ms)
-			LoadAssemblies (130ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (440ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (147ms)
-			SetupLoadedEditorAssemblies (1295ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (2ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (133ms)
-				ProcessInitializeOnLoadAttributes (961ms)
-				ProcessInitializeOnLoadMethodAttributes (169ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (1055ms)
+				ProcessInitializeOnLoadMethodAttributes (192ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (3ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (51ms)
+			AwakeInstancesAfterBackupRestoration (40ms)
 Platform modules already initialized, skipping
 Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
 Refreshing native plugins compatible for Editor in 2.88 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4072 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 238 unused Assets / (12.6 MB). Loaded Objects now: 4826.
-Memory consumption went from 268.8 MB to 256.2 MB.
-Total: 35.597600 ms (FindLiveObjects: 1.340200 ms CreateObjectMapping: 0.885300 ms MarkObjects: 11.263700 ms  DeleteObjects: 22.105700 ms)
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 5085.
+Memory consumption went from 206.5 MB to 205.7 MB.
+Total: 13.742300 ms (FindLiveObjects: 0.885100 ms CreateObjectMapping: 5.254600 ms MarkObjects: 7.382100 ms  DeleteObjects: 0.218400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006282 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.067 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3068ms)
+		BeginReloadAssembly (277ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (91ms)
+		EndReloadAssembly (2570ms)
+			LoadAssemblies (156ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (487ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (174ms)
+			SetupLoadedEditorAssemblies (1552ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (167ms)
+				ProcessInitializeOnLoadAttributes (1128ms)
+				ProcessInitializeOnLoadMethodAttributes (217ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (44ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 2.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 5087.
+Memory consumption went from 206.5 MB to 205.7 MB.
+Total: 11.681000 ms (FindLiveObjects: 1.116700 ms CreateObjectMapping: 0.850400 ms MarkObjects: 9.507900 ms  DeleteObjects: 0.203700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -674,19 +1467,301 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 116.632291 seconds.
-  path: Assets/REDACTED/Igor/Materials
-  artifactKey: Guid(456d241cf3ab154428c419ced839f24d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/Materials using Guid(456d241cf3ab154428c419ced839f24d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e70dcbb6f065676c6d34cc74ba0650') in 0.030086 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.243360 seconds.
-  path: Assets/REDACTED/Igor/Materials/flame_test_shading_1.1.mat
-  artifactKey: Guid(25b8334e048a2364983c67c93f191aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/Materials/flame_test_shading_1.1.mat using Guid(25b8334e048a2364983c67c93f191aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9293c5afa2e43d96a8cacc009e96f7f') in 0.367221 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1241.008542 seconds.
+  Time since last request: 304.928038 seconds.
   path: Assets/REDACTED/Igor/CandleWick.mat
   artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130b6f13c16b2edd99674a7d1daddbef') in 0.056943 seconds 
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Trying to get RenderBuffer with invalid antiAliasing (must be at least 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit_Internal ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:430)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:323)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:278)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,System.Collections.Generic.List`1<UnityEngine.Camera/RenderRequest>,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime\Graphics\RenderBufferManager.cpp line 180]
+
+Trying to get RenderBuffer with invalid antiAliasing (must be at least 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit_Internal ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:430)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:323)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:278)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,System.Collections.Generic.List`1<UnityEngine.Camera/RenderRequest>,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime\Graphics\RenderBufferManager.cpp line 180]
+
+ -> (artifact id: '2834f34a52450ee583a59023ad81035e') in 3.735782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.948532 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a1d2153c4b2ce5958ef13f5839baecd') in 0.047657 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008262 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.586 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2587ms)
+		BeginReloadAssembly (206ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (2208ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (426ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (134ms)
+			SetupLoadedEditorAssemblies (1370ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (175ms)
+				ProcessInitializeOnLoadAttributes (985ms)
+				ProcessInitializeOnLoadMethodAttributes (175ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (38ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 1.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 5129.
+Memory consumption went from 206.7 MB to 205.9 MB.
+Total: 10.942700 ms (FindLiveObjects: 1.270600 ms CreateObjectMapping: 1.024600 ms MarkObjects: 8.402300 ms  DeleteObjects: 0.241900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 67.088619 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Trying to get RenderBuffer with invalid antiAliasing (must be at least 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit_Internal ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:430)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:323)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:278)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,System.Collections.Generic.List`1<UnityEngine.Camera/RenderRequest>,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime\Graphics\RenderBufferManager.cpp line 180]
+
+Trying to get RenderBuffer with invalid antiAliasing (must be at least 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit_Internal ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:430)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:323)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:278)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,System.Collections.Generic.List`1<UnityEngine.Camera/RenderRequest>,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime\Graphics\RenderBufferManager.cpp line 180]
+
+ -> (artifact id: 'e931c27a98e54841bdec42c34d027781') in 0.334267 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004968 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.583 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2584ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (2181ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (453ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (128ms)
+			SetupLoadedEditorAssemblies (1337ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (139ms)
+				ProcessInitializeOnLoadAttributes (1002ms)
+				ProcessInitializeOnLoadMethodAttributes (167ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (33ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 5171.
+Memory consumption went from 206.7 MB to 205.9 MB.
+Total: 6.364300 ms (FindLiveObjects: 0.603600 ms CreateObjectMapping: 0.614400 ms MarkObjects: 4.938400 ms  DeleteObjects: 0.205600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 72.324421 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Trying to get RenderBuffer with invalid antiAliasing (must be at least 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit_Internal ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:430)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:323)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:278)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,System.Collections.Generic.List`1<UnityEngine.Camera/RenderRequest>,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime\Graphics\RenderBufferManager.cpp line 180]
+
+Trying to get RenderBuffer with invalid antiAliasing (must be at least 1)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit_Internal ()
+UnityEngine.Rendering.ScriptableRenderContext:Submit ()
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.CameraData,bool) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:430)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:323)
+UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at Library/PackageCache/com.unity.render-pipelines.universal@12.1.4/Runtime/UniversalRenderPipeline.cs:278)
+UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>)
+UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,System.Collections.Generic.List`1<UnityEngine.Camera/RenderRequest>,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle)
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime\Graphics\RenderBufferManager.cpp line 180]
+
+ -> (artifact id: '501f6566e9ddaa8d203a42ea7c9b1fb1') in 4.866748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.190158 seconds.
+  path: Assets/REDACTED/Igor/CandleWick.mat
+  artifactKey: Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/REDACTED/Igor/CandleWick.mat using Guid(57d2c1c6d9f148c428633412759048a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6ff98fdd15d677e2fb23b760f23903') in 0.039635 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004960 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.742 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2743ms)
+		BeginReloadAssembly (199ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (2358ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (437ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (140ms)
+			SetupLoadedEditorAssemblies (1414ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (30ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (146ms)
+				ProcessInitializeOnLoadAttributes (1039ms)
+				ProcessInitializeOnLoadMethodAttributes (188ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (43ms)
+Platform modules already initialized, skipping
+Shader 'Hidden/BOXOPHOBIC/The Vegetation Engine/Helpers/Debug': dependency 'LightMode' shader 'ForwardBase' not found
+Refreshing native plugins compatible for Editor in 2.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (0.8 MB). Loaded Objects now: 5213.
+Memory consumption went from 206.7 MB to 205.9 MB.
+Total: 9.491700 ms (FindLiveObjects: 1.253800 ms CreateObjectMapping: 0.715300 ms MarkObjects: 7.177400 ms  DeleteObjects: 0.338900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
