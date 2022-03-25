@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using static DialogueObject;
+using static DialogueQueries;
 using UnityEngine.Events;
 using System;
 
@@ -30,13 +31,13 @@ public class DialogueViewer : MonoBehaviour
 
     private void OnNodeSelected(int indexChosen)
     {
-        Debug.Log("Chose: " + indexChosen);
+        //Debug.Log("Chose: " + indexChosen);
         dialogueController.ChooseResponse(indexChosen);
     }
 
     private void OnNodeEntered(Node newNode)
     {
-        Debug.Log("Entering node: " + newNode.title);
+       //Debug.Log("Entering node: " + newNode.title);
         nodeText.text = newNode.text;
 
         KillAllChildren(responseParent);
@@ -51,7 +52,7 @@ public class DialogueViewer : MonoBehaviour
 
         if (newNode.tags.Contains("END"))
         {
-            Debug.Log("End!");
+            //Debug.Log("End!");
         }
     }
 }

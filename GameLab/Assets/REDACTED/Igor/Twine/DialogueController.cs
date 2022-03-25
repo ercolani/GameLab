@@ -25,12 +25,11 @@ public class DialogueController : MonoBehaviour
         allStartNodes = dialogueObject.FindAllStartNodes();
     }
 
-    public void SetCurrentNodeTitleAndInitializeDialogue(string title)
+    public void SetCurrentNodeTitle(string title)
     {
         if (allStartNodes.Contains(title))
         {
             currentNodeTitle = title;
-            InitializeDialogue();
         }
     }
 
