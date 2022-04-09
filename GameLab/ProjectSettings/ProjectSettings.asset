@@ -603,7 +603,10 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Standalone: THE_VEGETATION_ENGINE;AMPLIFY_SHADER_EDITOR
+    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    Standalone: THE_VEGETATION_ENGINE;AMPLIFY_SHADER_EDITOR;GAIA_2_PRESENT;GAIA_MESH_PRESENT;CROSS_PLATFORM_INPUT
+    Windows Store Apps: MOBILE_INPUT
+    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
