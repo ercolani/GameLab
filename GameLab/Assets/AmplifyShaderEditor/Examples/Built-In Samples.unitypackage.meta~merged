@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:GameLab/Assets/AmplifyShaderEditor/Examples/Built-In Samples.unitypackage.meta
+guid: e00e6f90ab8233e46a41c5e33917c642
+timeCreated: 1585839223
+licenseType: Store
+=======
+guid: dff05fea7446d7b4e9029bfab77455d2
+>>>>>>> Stashed changes:GameLab/Assets/AmplifyShaderEditor/Examples/HDRP Samples (Legacy).unitypackage.meta
+DefaultImporter:
+=======
+guid: e00e6f90ab8233e46a41c5e33917c642
+DefaultImporter:
+  externalObjects: {}
+>>>>>>> Stashed changes
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
