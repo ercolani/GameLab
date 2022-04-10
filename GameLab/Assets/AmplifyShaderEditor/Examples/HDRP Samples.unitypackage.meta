@@ -1,7 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: d1c0b77896049554fa4b635531caf741
 timeCreated: 1533059192
 licenseType: Store
+=======
+<<<<<<< Updated upstream:GameLab/Assets/AmplifyShaderEditor/Examples/HDRP Samples 7xx - 9xx (Legacy).unitypackage.meta
+guid: 3b3215ff0faf7774bbd57fd5b4eccaa2
+timeCreated: 1631877638
+licenseType: Store
+=======
+guid: d1c0b77896049554fa4b635531caf741
+>>>>>>> Stashed changes:GameLab/Assets/AmplifyShaderEditor/Examples/HDRP Samples.unitypackage.meta
+>>>>>>> Stashed changes
 DefaultImporter:
   userData: 
   assetBundleName: 

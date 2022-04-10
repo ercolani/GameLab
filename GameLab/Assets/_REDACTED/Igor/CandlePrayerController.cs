@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class CandlePrayerController : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class CandlePrayerController : MonoBehaviour
 {
-
     AudioClip recording;
     AudioSource audioSource;
     float startRecordingTime;
@@ -17,38 +16,46 @@ public class CandlePrayerController : MonoBehaviour, IPointerDownHandler, IPoint
         audioSource = GetComponent<AudioSource>();
     }
 
-    public void OnPointerUp(PointerEventData eventData)
+    private void Update()
     {
-        //End the recording when the mouse comes back up, then play it
-        Microphone.End("");
-
-        //Trim the audioclip by the length of the recording
-        AudioClip recordingNew = AudioClip.Create(recording.name, (int)((Time.time - startRecordingTime) * recording.frequency), recording.channels, recording.frequency, false);
-        float[] data = new float[(int)((Time.time - startRecordingTime) * recording.frequency)];
-        recording.GetData(data, 0);
-        recordingNew.SetData(data, 0);
-        this.recording = recordingNew;
-
-        //Play recording
-        audioSource.clip = recording;
-        audioSource.Play();
-        Debug.Log("Recording Ended");
-
+        Pray();
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void Pray()
     {
-        //Get the max frequency of a microphone, if it's less than 44100 record at the max frequency, else record at 44100
-        int minFreq;
-        int maxFreq;
-        int freq = 44100;
-        Microphone.GetDeviceCaps("", out minFreq, out maxFreq);
-        if (maxFreq < 44100)
-            freq = maxFreq;
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            //End the recording when the mouse comes back up, then play it
+            Microphone.End("");
 
-        //Start the recording, the length of 300 gives it a cap of 5 minutes
-        recording = Microphone.Start("", false, 300, 44100);
-        startRecordingTime = Time.time;
-        Debug.Log("Recording Started");
+            //Trim the audioclip by the length of the recording
+            AudioClip recordingNew = AudioClip.Create(recording.name, (int)((Time.time - startRecordingTime) * recording.frequency), recording.channels, recording.frequency, false);
+            float[] data = new float[(int)((Time.time - startRecordingTime) * recording.frequency)];
+            recording.GetData(data, 0);
+            recordingNew.SetData(data, 0);
+            this.recording = recordingNew;
+
+            //Play recording
+            audioSource.clip = recording;
+            audioSource.Play();
+            Debug.Log("Recording Ended");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            //Get the max frequency of a microphone, if it's less than 44100 record at the max frequency, else record at 44100
+            int minFreq;
+            int maxFreq;
+            int freq = 44100;
+            Microphone.GetDeviceCaps("", out minFreq, out maxFreq);
+            if (maxFreq < 44100)
+                freq = maxFreq;
+
+            //Start the recording, the length of 300 gives it a cap of 5 minutes
+            recording = Microphone.Start("", false, 300, 44100);
+            startRecordingTime = Time.time;
+            Debug.Log("Recording Started");
+        }
     }
 }
+

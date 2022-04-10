@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:GameLab/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 5xx (Legacy).unitypackage.meta
 guid: 2d7fe4f7c19e90f41b893bc01fc17230
+=======
+guid: e00e6f90ab8233e46a41c5e33917c642
+>>>>>>> Stashed changes:GameLab/Assets/AmplifyShaderEditor/Examples/Built-In Samples.unitypackage.meta
+=======
+guid: 2d7fe4f7c19e90f41b893bc01fc17230
+>>>>>>> Stashed changes
 DefaultImporter:
   externalObjects: {}
   userData: 
