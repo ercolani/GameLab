@@ -71,7 +71,7 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 1.2
+    m_Value: 1
   contrast:
     m_OverrideState: 1
     m_Value: 20
@@ -105,10 +105,10 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.275
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 0.638
   rounded:
     m_OverrideState: 0
     m_Value: 0

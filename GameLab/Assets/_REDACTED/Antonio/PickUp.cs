@@ -30,7 +30,7 @@ public class PickUp : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E) && !beingHeld && Vector3.Distance(this.transform.position, target.position) < pickRange)
         {
-            GetComponent<Collider>().enabled = false;
+            //GetComponent<Collider>().enabled = false;
             GetComponent<Rigidbody>().useGravity = false;
             beingHeld = true;
             this.transform.parent = target;
@@ -40,7 +40,7 @@ public class PickUp : MonoBehaviour
         }
         else if(Input.GetKeyDown(KeyCode.E) && beingHeld)
         {
-            GetComponent<Collider>().enabled = true;
+            //GetComponent<Collider>().enabled = true;
             GetComponent<Rigidbody>().useGravity = true;
             this.transform.parent = null;
             beingHeld = false;
