@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_REDACTED/Antonio/Terrain 1.unity
+    path: Assets/_REDACTED/Scenes/Prototype Demo.unity
     guid: 361b18931c61be04b97a4d483b5c0c18
   - enabled: 0
     path: Assets/_REDACTED/Igor/TerrainIgor.unity
