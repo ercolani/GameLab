@@ -17,23 +17,30 @@ public class LightUp : MonoBehaviour
     public float _timer = 7f;
 
     /// <summary>
-    /// Invoked when the flame is activated.
-    /// </summary>
-    public event Action Activated;
-
-    /// <summary>
-    /// Wether the flame is active or not.
+    /// Whether the flame is active or not.
     /// </summary>
     [SerializeField]
     public bool Active => _active;
 
     /// <summary>
-    /// Wether the flame is active or not.
+    /// Invoked when the flame is activated.
+    /// </summary>
+    public event Action Activated;
+
+    /// <summary>
+    /// Whether the flame is active or not.
     /// </summary>
     private bool _active;
 
+    /// <summary>
+    /// Whether or not the flame should stay on.
+    /// </summary>
     public bool KeepActive;
 
+    /// <summary>
+    /// Checks
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Candle")
@@ -48,6 +55,9 @@ public class LightUp : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Countdowns the time required to light off the flame.
+    /// </summary>
     private IEnumerator CountDown()
     {
         yield return new WaitForSeconds(_timer);

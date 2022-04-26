@@ -26,7 +26,6 @@ public class PuzzleCandlesManager : MonoBehaviour
     {
         foreach (LightUp candle in _candles)
         {
-            Debug.LogError(candle.Active);
             if (!candle.Active)
             {
                 return;
