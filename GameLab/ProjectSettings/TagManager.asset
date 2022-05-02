@@ -10,6 +10,11 @@ TagManager:
   - PW - Building
   - PW - Nature
   - Synty Tree
+<<<<<<< Updated upstream
+=======
+  - Candle
+  - Reset Switch
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -26,7 +31,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Flammable
   - 
   - 
   - 
