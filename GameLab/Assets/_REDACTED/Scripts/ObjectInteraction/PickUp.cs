@@ -17,6 +17,9 @@ public class PickUp : MonoBehaviour
     [SerializeField]
     private float pickRange = 2;
 
+    [SerializeField]
+    private KeyCode _key;
+
     /// <summary>
     /// Whether the object is being held or not.
     /// </summary>
