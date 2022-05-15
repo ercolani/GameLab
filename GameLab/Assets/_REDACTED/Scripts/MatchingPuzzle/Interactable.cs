@@ -16,25 +16,31 @@ public class Interactable : MonoBehaviour
     /// <summary>
     /// The object that is being held.
     /// </summary>
-    private GameObject heldObj;
+    private GameObject _heldObj;
 
     /// <summary>
     /// The object that is being held.
     /// </summary>
     public Action Interacted;
 
+    /// <summary>
+    /// Whether the object can be interacted with.
+    /// </summary>
+    private bool _interactive;
+
+    public bool Interactive => _interactive;
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Interactive && Input.GetKeyDown(KeyCode.E))
         {
-            if(heldObj == null)
+            if(_heldObj == null)
             {
                 RaycastHit hit;
                 if(Physics.Raycast(transform.position, transform.InverseTransformDirection(Vector3.forward), out hit, pickUpRange))
                 {
                     PickupObject(hit.transform.gameObject);
-                    Debug.Log("tets");
                 }
             }
             //    else
@@ -46,9 +52,9 @@ public class Interactable : MonoBehaviour
 
     private void MoveObject()
     {
-        if(Vector3.Distance (heldObj.transform.position, holdParent.position) > 0.1f)
+        if(Vector3.Distance (_heldObj.transform.position, holdParent.position) > 0.1f)
         {
-            Vector3 moveDirection = (holdParent.position - heldObj.transform.position);
+            Vector3 moveDirection = (holdParent.position - _heldObj.transform.position);
         }
     }
 
@@ -61,16 +67,16 @@ public class Interactable : MonoBehaviour
             //objRig.drag = 10;
 
             objRig.transform.parent = holdParent;
-            heldObj = pickObj;
+            _heldObj = pickObj;
         }
     }
 
     private void DropObject()
     {
-        Rigidbody heldRig = heldObj.GetComponent<Rigidbody>();
-        heldObj.GetComponent<Rigidbody>().useGravity = true;
+        Rigidbody heldRig = _heldObj.GetComponent<Rigidbody>();
+        _heldObj.GetComponent<Rigidbody>().useGravity = true;
         heldRig.drag = 1;
-        heldObj.transform.parent = null;
-        heldObj = null;
+        _heldObj.transform.parent = null;
+        _heldObj = null;
     }
 }

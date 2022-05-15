@@ -13,10 +13,8 @@ public abstract class PuzzleManager : MonoBehaviour
     protected abstract void OnEnable();
 
     protected abstract void OnDisable();
-
-    protected abstract void StartPuzzle();
     
-    protected abstract void ResetPuzzle();
-    
+    public abstract void ResetPuzzle();
 
+    public abstract void PuzzleCompleted();
 }

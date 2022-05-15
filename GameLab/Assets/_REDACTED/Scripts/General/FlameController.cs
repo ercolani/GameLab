@@ -31,7 +31,7 @@ public class FlameController : MonoBehaviour
     /// <summary>
     /// Keeps track if the flame is burning or not.
     /// </summary>
-    public bool FlameToggleState => _flameActive;
+    public bool FlameActive => _flameActive;
 
     private void OnEnable()
     {

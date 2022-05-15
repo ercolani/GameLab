@@ -5,11 +5,6 @@ using UnityEngine;
 public class PuzzleTorch : FlameController
 {
     /// <summary>
-    /// Whether the torch has been blown out or not.
-    /// </summary>
-    public bool BlownOut;
-
-    /// <summary>
     /// The unique ID index of the torch.
     /// </summary>
     public int Index;
