@@ -6,7 +6,7 @@ public class Interactable : MonoBehaviour
     /// <summary>
     /// The range at which the player can pick up objects.
     /// </summary>
-    public float  = 5;
+    public float pickUpRange = 5;
     
     /// <summary>
     /// The parent holding the object.
