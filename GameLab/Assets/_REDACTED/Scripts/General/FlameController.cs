@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[RequireComponent(typeof(Interactable))]
+[RequireComponent(typeof(InteractiveObject))]
 public class FlameController : MonoBehaviour
 {
     /// <summary>
@@ -26,7 +26,7 @@ public class FlameController : MonoBehaviour
     /// <summary>
     /// The interactable component of this script.
     /// </summary>
-    private Interactable _interactable;
+    private InteractiveObject _interactable;
 
     /// <summary>
     /// Keeps track if the flame is burning or not.

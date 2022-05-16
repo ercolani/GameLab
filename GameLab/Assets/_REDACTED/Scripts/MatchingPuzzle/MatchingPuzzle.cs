@@ -20,6 +20,18 @@ public class MatchingPuzzle : PuzzleManager
     private List<FlameController> _blownOutTorches = new List<FlameController>();
 
     /// <summary>
+    /// The stools for the puzzle where the torches have to be placed.
+    /// </summary>
+    [SerializeField]
+    private List<ObjectHolder> _puzzleStools = new List<ObjectHolder>();
+
+    /// <summary>
+    /// The initial holders for the torches.
+    /// </summary>
+    [SerializeField]
+    private List<ObjectHolder> _torchHolders = new List<ObjectHolder>();
+
+    /// <summary>
     /// The initial position for each torch.
     /// </summary>
     private List<Vector3> _initialPosition = new List<Vector3>();
@@ -29,6 +41,9 @@ public class MatchingPuzzle : PuzzleManager
     /// </summary>
     private int phase = 0;
 
+    /// <summary>
+    /// Sets the index for each puzzle torch and saves their initial position.
+    /// </summary>
     private void Start()
     {
         int index = 0;
@@ -42,6 +57,9 @@ public class MatchingPuzzle : PuzzleManager
         ResetPuzzle();
     }
 
+    /// <summary>
+    /// Subscribes to the reset switch and torches events.
+    /// </summary>
     protected override void OnEnable()
     {
         resetSwitch.Reset += ResetPuzzle; 
@@ -51,6 +69,10 @@ public class MatchingPuzzle : PuzzleManager
         }
     }
 
+
+    /// <summary>
+    /// Subscribes to switch.
+    /// </summary>
     protected override void OnDisable()
     {
         resetSwitch.Reset -= ResetPuzzle; 
@@ -63,9 +85,17 @@ public class MatchingPuzzle : PuzzleManager
     {
         if (phase == 0)
         {
+            // RESET TO THE STARTING POS OR HOLDER
             for (int i = 0; i < _puzzleTorches.Count; i++)
             {
                 _puzzleTorches[i].transform.position = _initialPosition[i];
+            }
+        }
+        else if(phase == 1)
+        {
+            for (int i = 0; i < _puzzleTorches.Count; i++)
+            {
+                _puzzleTorches[i].ToggleFlame(true);
             }
         }
     }
@@ -87,6 +117,26 @@ public class MatchingPuzzle : PuzzleManager
     }
 
     /// <summary>
+    /// Checks whether or not the torch has been places in the correct position.
+    /// </summary>
+    private void CheckTorchPlacements()
+    {
+        for (int i = 0; i < _puzzleStools.Count; i++)
+        {
+            if (_puzzleStools[i].HeldObject == null)
+            {
+                return;
+            }
+            if (_puzzleStools[i].HeldObject.GetComponent<PuzzleTorch>().Index != i)
+            {
+                return;
+            }
+            phase++;
+            Debug.Log("placing puzzle succesfully completed");
+        }
+    }
+
+    /// <summary>
     /// Checks the order of the blown candles.
     /// </summary>
     private void CheckBlownOrder()
@@ -102,17 +152,8 @@ public class MatchingPuzzle : PuzzleManager
                 return;
             }
         }
-
-        PuzzleCompleted();
         // If reaches end of for loop without returning it means it was completed successfully.
-    }
-
-    /// <summary>
-    /// Checks whether or not the torch has been places in the correct position.
-    /// </summary>
-    private void CheckTorchPosition()
-    {
-
+        PuzzleCompleted();
     }
 
     /// <summary>
@@ -120,6 +161,6 @@ public class MatchingPuzzle : PuzzleManager
     /// </summary>
     public override void PuzzleCompleted()
     {
-        Debug.LogError("Puzzle has been completed succesfully");
+        Debug.Log("Anansi's puzzle has been completed");
     }
 }

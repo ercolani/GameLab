@@ -10,7 +10,7 @@ public class PuzzleTorch : FlameController
     public int Index;
 
     /// <summary>
-    /// 
+    /// Sets the index of the torch.
     /// </summary>
     /// <param name="index"></param>
     public void SetIndex(int index)
