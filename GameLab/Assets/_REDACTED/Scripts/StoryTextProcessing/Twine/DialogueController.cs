@@ -23,6 +23,7 @@ public class DialogueController : MonoBehaviour
     private void Start()
     {
         allStartNodes = dialogueObject.FindAllStartNodes();
+        InitializeDialogue();
     }
 
     public void SetCurrentNodeTitle(string title)
