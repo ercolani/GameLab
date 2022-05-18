@@ -26,16 +26,25 @@ public class FlameController : MonoBehaviour
     /// <summary>
     /// The interactable component of this script.
     /// </summary>
-    private InteractiveObject _interactable;
+    private InteractiveObject _interactiveObject;
 
     /// <summary>
     /// Keeps track if the flame is burning or not.
     /// </summary>
     public bool FlameActive => _flameActive;
 
+    /// <summary>
+    /// Sets reference to the interactive object component.
+    /// </summary>
+    private void Awake()
+    {
+        _interactiveObject = this.GetComponent<InteractiveObject>();
+    }
+
     private void OnEnable()
     {
-        _interactable.Interacted += ()=> ToggleFlame(!_flameActive);
+        _flame.SetActive(_flameActive);
+        _interactiveObject.Interacted += ()=> ToggleFlame(!_flameActive);
     }
 
     /// <summary>

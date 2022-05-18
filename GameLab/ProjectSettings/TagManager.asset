@@ -11,6 +11,9 @@ TagManager:
   - PW - Nature
   - Synty Tree
   - Candle
+  - Reset Switch
+  - Holder
+  - PickUp
   layers:
   - Default
   - TransparentFX
