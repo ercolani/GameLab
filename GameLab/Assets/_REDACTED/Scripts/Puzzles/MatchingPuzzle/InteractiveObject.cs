@@ -26,5 +26,10 @@ public class InteractiveObject : MonoBehaviour
     /// <summary>
     /// Whether the object can be interacted with.
     /// </summary>
-    private bool _IsInteractive;
+    private bool _IsInteractive = true;
+
+    public void Interact()
+    {
+        Interacted?.Invoke();
+    }
 }

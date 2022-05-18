@@ -44,7 +44,6 @@ public class FlameController : MonoBehaviour
     private void OnEnable()
     {
         _flame.SetActive(_flameActive);
-        _interactiveObject.Interacted += ()=> ToggleFlame(!_flameActive);
     }
 
     /// <summary>

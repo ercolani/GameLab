@@ -66,6 +66,11 @@ public class MatchingPuzzle : PuzzleManager
         {
             torch.FlameToggled += OnTorchToggled;
         }
+
+        foreach (ObjectHolder stool in _puzzleStools)
+        {
+            stool.ObjectPlaced += CheckTorchPlacements;
+        }
     }
 
 
@@ -120,19 +125,22 @@ public class MatchingPuzzle : PuzzleManager
     /// </summary>
     private void CheckTorchPlacements()
     {
-        for (int i = 0; i < _puzzleStools.Count; i++)
-        {
-            if (_puzzleStools[i].HeldObject == null)
-            {
-                return;
-            }
-            if (_puzzleStools[i].HeldObject.GetComponent<PuzzleTorch>().Index != i)
-            {
-                return;
-            }
-            phase++;
-            Debug.Log("placing puzzle succesfully completed");
-        }
+        //Debug.LogError("checking object placement");
+        //for (int i = 0; i < _puzzleStools.Count; i++)
+        //{
+        //    Debug.LogError(_puzzleStools[i].HeldObject.GetComponent<PuzzleTorch>().Index);
+        //    if (_puzzleStools[i].HeldObject == null)
+        //    {
+        //        return;
+        //    }
+        //    if (_puzzleStools[i].HeldObject.GetComponent<PuzzleTorch>().Index != i)
+        //    {
+        //        Debug.LogError("hey");
+        //        return;
+        //    }
+        //    phase++;
+        //    Debug.Log("placing puzzle succesfully completed");
+        //}
     }
 
     /// <summary>

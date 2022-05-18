@@ -10,7 +10,14 @@ public class ObjectHolder : MonoBehaviour
     /// <summary>
     /// The transform for where the held object should be placed.
     /// </summary>
+    [SerializeField]
     private Transform _handle;
+
+    /// <summary>
+    /// Reference to the object being held by the holder.
+    /// </summary>
+    [SerializeField]
+    private GameObject _heldObject;
 
     /// <summary>
     /// Event for when an object is places inside the stool.
@@ -20,12 +27,27 @@ public class ObjectHolder : MonoBehaviour
     /// <summary>
     /// Reference to the object being held by the holder.
     /// </summary>
-    public GameObject HeldObject;
+    public GameObject HeldObject => _heldObject;
 
-    /// <summary>
-    /// Reference to the object being held by the holder.
-    /// </summary>
-    private GameObject _heldObject;
+    private void Awake()
+    {
+        if(_heldObject != null)
+        {
+            _heldObject.transform.SetParent(_handle);
+            _heldObject.transform.position = _handle.transform.position;
+
+            if (_heldObject.TryGetComponent(out Rigidbody body))
+            {
+                body.useGravity = false;
+                body.constraints = RigidbodyConstraints.FreezeAll;
+            }
+
+            if (_heldObject.TryGetComponent(out InteractiveObject interactiveObject))
+            {
+                interactiveObject.Interacted += RemoveHeldObject;
+            }
+        }
+    }
 
     /// <summary>
     /// Sets the object that the puzzle stool 
@@ -37,10 +59,19 @@ public class ObjectHolder : MonoBehaviour
             _heldObject = heldObj;
             _heldObject.transform.SetParent(_handle);
             _heldObject.transform.position = _handle.transform.position;
+
+            if (heldObj.TryGetComponent(out Rigidbody body))
+            {
+                body.useGravity = false;
+                body.constraints = RigidbodyConstraints.FreezeAll;
+            }
+
             if (_heldObject.TryGetComponent(out InteractiveObject interactiveObject))
             {
                 interactiveObject.Interacted += RemoveHeldObject;
             }
+
+            ObjectPlaced?.Invoke();
         }
     }
 
@@ -54,5 +85,14 @@ public class ObjectHolder : MonoBehaviour
             interactiveObject.Interacted -= RemoveHeldObject;
             _heldObject = null;
         }
+    }
+
+    /// <summary>
+    /// Whether the holder is holding an object.
+    /// </summary>
+    /// <returns></returns>
+    public bool HasObject()
+    {
+        return (_heldObject != null);
     }
 }
