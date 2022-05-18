@@ -11,6 +11,7 @@ public class DialogueController : MonoBehaviour
     private Node currentNode;
     private string currentNodeTitle;
     private List<string> allStartNodes;
+    public int currentStartNode;
 
     public delegate void NodeEnteredHandler(Node node);
     public event NodeEnteredHandler onEnteredNode;
@@ -36,8 +37,10 @@ public class DialogueController : MonoBehaviour
 
     public void InitializeDialogue()
     {
+        currentNodeTitle = allStartNodes[currentStartNode]; //currentStartNode must be incremented to start a new dialogue passage
         currentNode = dialogueObject.GetNode(currentNodeTitle);
-        onEnteredNode(currentNode);
+        onEnteredNode?.Invoke(currentNode);
+
     }
 
     public void ChooseResponse(int responseIndex)
@@ -45,6 +48,6 @@ public class DialogueController : MonoBehaviour
         string nextNodeID = currentNode.responses[responseIndex].destinationNode;
         Node nextNode = dialogueObject.GetNode(nextNodeID);
         currentNode = nextNode;
-        onEnteredNode(nextNode);
+        onEnteredNode?.Invoke(nextNode);
     }
 }
