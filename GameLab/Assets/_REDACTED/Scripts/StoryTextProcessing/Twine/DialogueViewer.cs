@@ -15,13 +15,9 @@ public class DialogueViewer : MonoBehaviour
     [SerializeField] private TMP_Text nodeText;
     [SerializeField] private DialogueController dialogueController;
 
-    private void OnEnable()
+    private void Start()
     {
         dialogueController.onEnteredNode += OnNodeEntered;
-    }
-    private void OnDisable()
-    {
-        dialogueController.onEnteredNode -= OnNodeEntered;
     }
 
     public static void KillAllChildren(UnityEngine.Transform parent)
@@ -41,6 +37,7 @@ public class DialogueViewer : MonoBehaviour
 
     private void OnNodeEntered(Node newNode)
     {
+       //Debug.Log("Entering node: " + newNode.title);
         nodeText.text = newNode.text;
 
         KillAllChildren(responseParent);
