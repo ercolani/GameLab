@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -61,7 +60,8 @@ public class DialogueObject : MonoBehaviour
         }
 
         public Node GetNode(string nodeTitle)
-        { 
+        {
+            Debug.Log(nodeTitle);
             return nodes[nodeTitle]; 
         }
 
@@ -142,7 +142,6 @@ public class DialogueObject : MonoBehaviour
 
                 if (currentNode.tags.Contains(kStart))
                 {
-              //      UnityEngine.Assertions.Assert.IsTrue(titleOfStartNode == null);
                     titleOfStartNode = currentNode.title;
                 }
 
