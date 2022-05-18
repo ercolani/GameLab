@@ -14,12 +14,6 @@ public class MatchingPuzzle : PuzzleManager
     private List<FlameController> _puzzleTorches = new List<FlameController>();
 
     /// <summary>
-    /// The order in which the torches should be lit off.
-    /// </summary>
-    [SerializeField]
-    private List<FlameController> _blownOutTorches = new List<FlameController>();
-
-    /// <summary>
     /// The stools for the puzzle where the torches have to be placed.
     /// </summary>
     [SerializeField]
@@ -30,6 +24,11 @@ public class MatchingPuzzle : PuzzleManager
     /// </summary>
     [SerializeField]
     private List<ObjectHolder> _torchHolders = new List<ObjectHolder>();
+
+    /// <summary>
+    /// The order in which the torches should be lit off.
+    /// </summary>
+    private List<FlameController> _blownOutTorches = new List<FlameController>();
 
     /// <summary>
     /// The initial position for each torch.
@@ -49,7 +48,7 @@ public class MatchingPuzzle : PuzzleManager
         int index = 0;
         foreach (FlameController torch in _puzzleTorches)
         {
-            torch.GetComponent<PuzzleTorch>().Index = index;
+            torch.GetComponent<PuzzleTorch>().SetIndex(index);
             torch.ToggleFlame(true);
             _initialPosition.Add(torch.transform.position);
             index++;

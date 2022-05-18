@@ -84,7 +84,7 @@ public class PlayerHand : MonoBehaviour
             }
             else
             {
-                if (obj.gameObject.CompareTag("Yoinkable"))
+                if (obj.gameObject.CompareTag("PickUp"))
                 {
                     PickUpObject(obj.gameObject);
                 }

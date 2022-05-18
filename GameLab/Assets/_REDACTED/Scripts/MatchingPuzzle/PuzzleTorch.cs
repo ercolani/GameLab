@@ -7,15 +7,20 @@ public class PuzzleTorch : FlameController
     /// <summary>
     /// The unique ID index of the torch.
     /// </summary>
-    public int Index;
+    private int index;
+
+    /// <summary>
+    /// The unique ID index of the torch.
+    /// </summary>
+    public int Index => index;
 
     /// <summary>
     /// Sets the index of the torch.
     /// </summary>
     /// <param name="index"></param>
-    public void SetIndex(int index)
+    public void SetIndex(int n)
     {
-        Index = index;
+        index = n;
     }
 }
 
