@@ -17,7 +17,7 @@ public class ObjectHolder : MonoBehaviour
     /// Reference to the object being held by the holder.
     /// </summary>
     [SerializeField]
-    private GameObject _heldObject;
+    private GameObject _heldObject = null;
 
     /// <summary>
     /// Event for when an object is places inside the stool.

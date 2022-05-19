@@ -1,6 +1,9 @@
 using UnityEngine;
 using System.Linq;
 
+/// <summary>
+/// Class that handle the hand of the player, it is responsible for picking up stuff and holding items.
+/// </summary>
 public class PlayerHand : MonoBehaviour
 {
     /// <summary>
@@ -22,7 +25,7 @@ public class PlayerHand : MonoBehaviour
     /// <summary>
     /// The object that is being held.
     /// </summary>
-    private GameObject _heldObj = null;
+    private GameObject _objectInHand = null;
 
     // Update is called once per frame
     void Update()
@@ -39,7 +42,7 @@ public class PlayerHand : MonoBehaviour
     /// <param name="pickObj"></param>
     private void PickUpObject(GameObject pickObj)
     {
-        _heldObj = pickObj;
+        _objectInHand = pickObj;
         pickObj.transform.rotation = Quaternion.identity;
         pickObj.transform.position = holdParent.transform.position;
         if (pickObj.TryGetComponent(out Rigidbody body))
@@ -55,13 +58,13 @@ public class PlayerHand : MonoBehaviour
     /// </summary>
     private void DropObject()
     {
-        if (_heldObj.TryGetComponent(out Rigidbody body))
+        if (_objectInHand.TryGetComponent(out Rigidbody body))
         {
             body.useGravity = true;
             body.constraints = RigidbodyConstraints.None;
         }
-        _heldObj.transform.parent = null;
-        _heldObj = null;
+        _objectInHand.transform.parent = null;
+        _objectInHand = null;
     }
 
     /// <summary>
@@ -75,7 +78,7 @@ public class PlayerHand : MonoBehaviour
         foreach (Collider obj in objects)
         {
             //if the player is holding an object
-            if (_heldObj == null)
+            if (_objectInHand == null)
             {
                 if (obj.gameObject.CompareTag("PickUp"))
                 {
@@ -92,22 +95,20 @@ public class PlayerHand : MonoBehaviour
             {
                 if (obj.gameObject.CompareTag("Holder"))
                 {
-                    Debug.LogError(_heldObj == null);
-                    ObjectHolder objHolder = obj.GetComponent<ObjectHolder>();
-                    if (!objHolder.HasObject())
+                    if (obj.TryGetComponent(out ObjectHolder objectHolder))
                     {
-                        Debug.LogError(_heldObj == null);
-                        objHolder.SetHeldObject(_heldObj);
-                        Debug.LogError(_heldObj == null);
-                        _heldObj = null;
-                        return;
+                        if (!objectHolder.HasObject())
+                        {
+                            objectHolder.SetHeldObject(_objectInHand);
+                            _objectInHand = null;
+                            return;
+                        }
                     }
                 }
             }
         }
-        if(_heldObj != null)
+        if(_objectInHand != null)
         {
-            Debug.LogError("drop");
             DropObject();
         }
     }

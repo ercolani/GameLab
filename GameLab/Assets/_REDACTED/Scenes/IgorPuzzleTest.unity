@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
   m_FogMode: 2
   m_FogDensity: 0.022
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 921728041}
-  m_IndirectSpecularColor: {r: 0.016587535, g: 0.016220016, b: 0.016436161, a: 1}
+  m_IndirectSpecularColor: {r: 0.016587507, g: 0.016219988, b: 0.016436128, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5103,7 +5103,7 @@ Material:
     - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}
     - _EdgeWaterColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _PW_MainLightColor: {r: 0.42169428, g: 0.57919383, b: 1, a: 1}
+    - _PW_MainLightColor: {r: 0.37878248, g: 0.4899477, b: 0.6037736, a: 1}
     - _PW_MainLightDir: {r: 0.037007116, g: 0.7071068, b: -0.70613766, a: 0}
     - _PW_MainLightSpecular: {r: 0.3137255, g: 0.27189302, b: 0.22345544, a: 1}
     - _PW_SSSTint: {r: 1, g: 1, b: 1, a: 1}
@@ -5997,6 +5997,260 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &173842772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b113ae1283ed08b4ba3f2be14bcb5163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_drawPreview: 1
+  m_alwaysFullPreview: 0
+  m_baseTerrainInputType: 0
+  m_heightScale: 7
+  m_baseLevel: 0
+  m_heightVariance: 0.5
+  m_borderStyle: 2
+  m_inputImageMask:
+    m_active: 1
+    m_invert: 0
+    m_hasErrors: 0
+    m_influence: 0
+    m_operation: 0
+    m_blendMode: 0
+    m_imageMaskLocation: 0
+    m_strength: 1
+    m_seaLevel: 0
+    m_maxWorldHeight: 0
+    m_minWorldHeight: 0
+    m_xOffSet: 0
+    m_zOffSet: 0
+    m_xOffSetScalar: 0
+    m_zOffSetScalar: 0
+    m_xScale: 1
+    m_zScale: 1
+    m_rotationDegrees: 0
+    m_tiling: 0
+    m_imageMaskSpace: 0
+    m_imageMaskTextureGUID: 
+    m_imageMaskFilterMode: 0
+    m_imageMaskColorSelectionColor: {r: 1, g: 1, b: 1, a: 1}
+    m_imageMaskColorSelectionAccuracy: 0.5
+    m_distanceMaskCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_strengthTransformCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_heightMaskCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_heightMaskType: 1
+    m_heightMaskUnit: 1
+    m_relativeHeightMin: 25
+    m_relativeHeightMax: 75
+    m_absoluteHeightMin: 50
+    m_absoluteHeightMax: 150
+    m_seaLevelRelativeHeightMin: -109876.55
+    m_seaLevelRelativeHeightMax: 109876.55
+    tree1active: 0
+    tree2active: 0
+    m_slopeMaskCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_slopeMin: 0
+    m_slopeMax: 0.1
+    m_distanceMaskAxes: 3
+    m_gaiaNoiseSettings:
+      m_translation: {x: 0, y: 0, z: 0}
+      m_rotation: {x: 0, y: 0, z: 0}
+      m_scale: {x: 10, y: 1, z: 10}
+      m_noiseTypeName: Perlin
+      m_noiseTypeParams: 
+      m_fractalTypeName: Fbm
+      m_fractalTypeParams: 
+      m_warpEnabled: 0
+      m_warpIterations: 0
+      m_warpStrength: 0
+      m_warpOffset: {x: 0, y: 0, z: 0, w: 0}
+    m_noiseSettings: {fileID: 0}
+    m_noiseToolSettings:
+      worldHeightRemap: {x: 0, y: 0}
+      coordSpace: 0
+      noiseAssetGUID: 
+    m_ShowNoiseTransformSettings: 0
+    m_ShowNoisePreviewTexture: 1
+    m_noisePreviewTextureLocked: 0
+    m_ShowNoiseTypeSettings: 0
+    m_scaleNoiseToTerrainSize: 0
+    m_distanceMaskSquareRoundness: 0.25
+    m_collisionMaskExpanded: 1
+    m_collisionMasks: []
+    m_erosionMaskOutput: 0
+    m_erosionSimScale: 9
+    m_erosionHydroTimeDelta: 0.05
+    m_erosionHydroIterations: 15
+    m_erosionThermalTimeDelta: 0.01
+    m_erosionThermalIterations: 80
+    m_erosionThermalReposeAngle: 80
+    m_erosionPrecipRate: 0.5
+    m_erosionEvaporationRate: 0.5
+    m_erosionFlowRate: 0.5
+    m_erosionSedimentCapacity: 0.5
+    m_erosionSedimentDepositRate: 0.8
+    m_erosionSedimentDissolveRate: 0.5
+    m_erosionRiverBankDepositRate: 7
+    m_erosionRiverBankDissolveRate: 5
+    m_erosionRiverBedDepositRate: 5
+    m_erosionRiverBedDissolveRate: 5
+    m_erosionShowAdvancedUI: 0
+    m_erosionShowThermalUI: 0
+    m_erosionShowWaterUI: 0
+    m_erosionShowSedimentUI: 0
+    m_erosionShowRiverBankUI: 0
+    m_smoothVerticality: 0
+    m_smoothBlurRadius: 1
+    m_textureMaskSpawnRuleGUID: 
+    m_concavity: 1
+    m_concavityFeatureSize: 10
+    m_foldedOut: 1
+    m_selectedWorldBiomeMaskGUID: 
+    m_growAndShrinkValue: 0
+    m_globalSpawnerMaskStackRT: {fileID: 0}
+  m_baseNoiseSettings:
+  - m_shapeNoiseStyle: 1
+    m_shapeSize: 8
+    m_shapeStrength: 0.3
+    m_shapeSteepness: 0.2
+    m_shapeGranularity: 1.5
+    m_shapeOffset: {x: 0, y: 0, z: 0}
+    m_noiseStrengthTransform:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.5
+        value: 0.5
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_warpIterations: 0
+    m_warpStrength: 1
+    m_warpOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_inputTerrain: {fileID: 0}
+  m_advancedInputSettingsUnfolded: 0
 --- !u!1 &193200870
 GameObject:
   m_ObjectHideFlags: 0
@@ -7389,6 +7643,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407435886}
   m_Mesh: {fileID: 4547076007685439697, guid: 6ad7f2c475713bd4aad29000f304327f, type: 3}
+--- !u!84 &458079684
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 512
+  m_Height: 512
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 48
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!114 &485381363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14337,7 +14628,7 @@ Material:
     - _Exposure: 1.67
     - _Rotation: -343
     m_Colors:
-    - _Tint: {r: 0.18867895, g: 0.18867895, b: 0.18867895, a: 1}
+    - _Tint: {r: 0.18867886, g: 0.18867886, b: 0.18867886, a: 1}
   m_BuildTextureStacks: []
 --- !u!1 &847703513
 GameObject:
@@ -14385,7 +14676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 1312658874}
   worldCreationSettings: {fileID: 0}
-  baseTerrainsettings: {fileID: 0}
+  baseTerrainsettings: {fileID: 173842772}
   m_worldMapStamperSettings: []
   m_connectedCTSProfileGUID: 
   m_spawnerID: 94b07772-6637-4491-8b4f-a3fed127d00a
@@ -14474,7 +14765,7 @@ MonoBehaviour:
   m_createdFromGaiaManager: 0
   m_showSeaLevelPlane: 0
   m_showBoundingBox: 1
-  m_seaLevel: 38.5
+  m_seaLevel: 45
   m_worldDesignerPreviewTileX: -99
   m_worldDesignerPreviewTileZ: -99
   m_worldDesignerClearStampsWarningShown: 0
@@ -15085,7 +15376,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.42169428, g: 0.57919383, b: 1, a: 1}
+  m_Color: {r: 0.37878248, g: 0.4899477, b: 0.6037736, a: 1}
   m_Intensity: 1.8
   m_Range: 10
   m_SpotAngle: 30
@@ -15776,43 +16067,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224937814710100824, guid: c22749c16bfe8aa428f5e54cf7cc6505, type: 3}
   m_PrefabInstance: {fileID: 961340984}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &1061006906
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 512
-  m_Height: 512
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 48
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1 &1092219484
 GameObject:
   m_ObjectHideFlags: 0
@@ -16087,6 +16341,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1124095679}
   - component: {fileID: 1124095680}
+  - component: {fileID: 1124095683}
+  - component: {fileID: 1124095682}
   m_Layer: 0
   m_Name: Global Post Processing
   m_TagString: Untagged
@@ -16124,8 +16380,84 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 1
+  weight: 0.407
   sharedProfile: {fileID: 11400000, guid: 7414d4a52da263e4fa1af979a460032f, type: 2}
+--- !u!114 &1124095682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124095678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+--- !u!20 &1124095683
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124095678}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &1159792387
 GameObject:
   m_ObjectHideFlags: 0
@@ -16174,55 +16506,6 @@ MonoBehaviour:
   _interactInput: 101
   pickUpRange: 3
   holdParent: {fileID: 1159792388}
---- !u!1 &1162231993
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1162231995}
-  - component: {fileID: 1162231994}
-  m_Layer: 0
-  m_Name: Post-Processing
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1162231994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1162231993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: b720a6fbdfc35ac46aa80dad7b313d42, type: 2}
---- !u!4 &1162231995
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1162231993}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.798855, y: 66.363, z: 51.67763}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1168862979
 GameObject:
   m_ObjectHideFlags: 0
@@ -16521,7 +16804,7 @@ MonoBehaviour:
     - 0
     m_textureResolution: 512
   m_gameCamera: {fileID: 1282300070}
-  m_reflectionTexture: {fileID: 1061006906}
+  m_reflectionTexture: {fileID: 458079684}
   m_distances:
   - 500
   - 500
@@ -16636,6 +16919,7 @@ GameObject:
   - component: {fileID: 1282300067}
   - component: {fileID: 1282300066}
   - component: {fileID: 1282300071}
+  - component: {fileID: 1282300072}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -16790,6 +17074,34 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1282300072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282300064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded16ed81af5a3c46a67ce93019ada2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_disableSystem: 0
+  m_interactWithPlayer: 1
+  m_renderPipeLine: 2
+  m_trackingType: 3
+  m_focusOffset: 0
+  m_sourceCamera: {fileID: 1282300070}
+  m_targetObject: {fileID: 0}
+  m_targetLayer:
+    serializedVersion: 2
+    m_Bits: 3585
+  m_maxFocusDistance: 100
+  m_actualFocusDistance: 1
+  m_dofAperture: 7.5
+  m_dofFocalLength: 30
+  m_debug: 0
+  m_playerTag: Player
 --- !u!1 &1283551534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8463162857090469484, guid: 0289bd53a8e96fe4da3c721fe9288f0c, type: 3}
@@ -21750,7 +22062,7 @@ MonoBehaviour:
   m_spawnRange: 500
   m_generateRandomSeed: 0
   m_randomSeed: 0
-  m_spawnDensity: 1
+  m_spawnDensity: 0.01
   m_resourcesPath: 
   m_spawnerRules: []
   m_showGizmos: 1
@@ -21950,6 +22262,10 @@ PrefabInstance:
     - target: {fileID: 3908942355945226409, guid: 4350fe924597ab44d9c4e83588111d5b, type: 3}
       propertyPath: m_Name
       value: AnansiPillar (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541882858447825254, guid: 4350fe924597ab44d9c4e83588111d5b, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4350fe924597ab44d9c4e83588111d5b, type: 3}
@@ -26982,9 +27298,6 @@ MonoBehaviour:
     status: 0
     lastSpawnTimeStamp: -3.4028235e+38
     spawner: {fileID: 0}
-  m_postProcessProfile: {fileID: 0}
-  m_ppVIsGlobal: 1
-  m_ppVSpawnMode: 1
   m_autoSpawnRequested: 0
   m_drawPreview: 0
   m_biomePreviewDirty: 1
@@ -27291,10 +27604,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stool (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 4879286816868195670, guid: 181815e2061707d47888d4a4844ac648, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4879286816868195674, guid: 181815e2061707d47888d4a4844ac648, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.172
@@ -27303,8 +27612,7 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4879286816868195670, guid: 181815e2061707d47888d4a4844ac648, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 181815e2061707d47888d4a4844ac648, type: 3}
 --- !u!4 &1475455022 stripped
 Transform:
@@ -27322,87 +27630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea74da6856303447b8b2fa3647bae69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1475455024 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4879286816868195675, guid: 181815e2061707d47888d4a4844ac648, type: 3}
-  m_PrefabInstance: {fileID: 1475455021}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1475455025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475455024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
---- !u!20 &1475455026
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475455024}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &1518775095
 GameObject:
   m_ObjectHideFlags: 0
@@ -35346,7 +35573,7 @@ MonoBehaviour:
   m_renamingProfile: 0
   m_lightingEditSettings: 0
   m_lightingBakeMode: 1
-  m_lightmappingMode: 2
+  m_lightmappingMode: 0
   m_masterSkyboxMaterial: {fileID: 2100000, guid: 11f9a890b6e86384aaf4d69fbe79a6c1, type: 2}
   m_lightingProfiles:
   - m_typeOfLighting: Morning
@@ -35354,7 +35581,6 @@ MonoBehaviour:
     m_userCustomProfile: 0
     m_profileRename: 
     m_postProcessExposure: 1.25
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 19774c7b570298d45a79f1009fae78d7
     m_directToCamera: 0
     m_postProcessProfileURP: {fileID: 11400000, guid: f730ec2a2de88db4b80f44d5c13539b0, type: 2}
@@ -36936,7 +37162,6 @@ MonoBehaviour:
     m_userCustomProfile: 0
     m_profileRename: 
     m_postProcessExposure: 1
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: f0d3288284853394ea58e38e5dd7f195
     m_directToCamera: 0
     m_postProcessProfileURP: {fileID: 11400000, guid: 04ac2e73977d2264ca4cf6fffa78d9d7, type: 2}
@@ -38518,7 +38743,6 @@ MonoBehaviour:
     m_userCustomProfile: 0
     m_profileRename: 
     m_postProcessExposure: 1.15
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: f00c6215d794e3b4fa7c9224ffe53339
     m_directToCamera: 0
     m_postProcessProfileURP: {fileID: 11400000, guid: ebf6808a9760bd04b956d636ac2feb62, type: 2}
@@ -40100,7 +40324,6 @@ MonoBehaviour:
     m_userCustomProfile: 0
     m_profileRename: 
     m_postProcessExposure: 1
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 1d8a7fb1b5c317b4ca0499e227820e25
     m_directToCamera: 0
     m_postProcessProfileURP: {fileID: 11400000, guid: 905a3a1a6e290f84ca6a624430636454, type: 2}
@@ -40665,7 +40888,6 @@ MonoBehaviour:
     m_userCustomProfile: 0
     m_profileRename: 
     m_postProcessExposure: 1
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 069b4a41406d63c40b2a3c4bec000bbe
     m_directToCamera: 0
     m_postProcessProfileURP: {fileID: 0}
@@ -42247,7 +42469,6 @@ MonoBehaviour:
     m_userCustomProfile: 0
     m_profileRename: 
     m_postProcessExposure: 1
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: ef34dc04f7da6784d84249ab870770a0
     m_directToCamera: 0
     m_postProcessProfileURP: {fileID: 11400000, guid: fa9aefa98126463418fea44ea0fc1660, type: 2}
@@ -44186,7 +44407,6 @@ MonoBehaviour:
     m_userCustomProfile: 1
     m_profileRename: 
     m_postProcessExposure: 1
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 1d8a7fb1b5c317b4ca0499e227820e25
     m_directToCamera: 0
     m_postProcessProfileURP: {fileID: 11400000, guid: 4ef5dff6f24fbb1429df36f2ab363369, type: 2}
@@ -44751,7 +44971,6 @@ MonoBehaviour:
     m_userCustomProfile: 1
     m_profileRename: 
     m_postProcessExposure: 1
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 1d8a7fb1b5c317b4ca0499e227820e25
     m_directToCamera: 0
     m_postProcessProfileURP: {fileID: 11400000, guid: 7414d4a52da263e4fa1af979a460032f, type: 2}
@@ -44787,7 +45006,7 @@ MonoBehaviour:
     m_hDMicroShadows: 1
     m_hDMicroShadowOpacity: 1
     m_skyboxHDRI: {fileID: 8900000, guid: 9780b565a77e33a458f48949179057ba, type: 3}
-    m_skyboxTint: {r: 0.18867892, g: 0.18867892, b: 0.18867892, a: 1}
+    m_skyboxTint: {r: 0.18867883, g: 0.18867883, b: 0.18867883, a: 1}
     m_skyboxExposure: 1.67
     m_skyboxRotationOffset: -14
     m_sunSize: 0.04
@@ -45316,7 +45535,6 @@ MonoBehaviour:
     m_userCustomProfile: 1
     m_profileRename: 
     m_postProcessExposure: 1
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 1d8a7fb1b5c317b4ca0499e227820e25
     m_directToCamera: 0
     m_postProcessProfileURP: {fileID: 11400000, guid: 92e7fdb5466bcee42bfa6e1b390051cd, type: 2}
@@ -46032,7 +46250,6 @@ MonoBehaviour:
   - m_typeOfWater: Deep Blue Ocean
     m_profileRename: 
     m_userCustomProfile: 0
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 621882b688d3a034a8377536e9c0ef66
     m_directToCamera: 0
     m_postProcessProfileURP: {fileID: 11400000, guid: eab86dbbf9117fb4f9a54b786b342118, type: 2}
@@ -46201,7 +46418,6 @@ MonoBehaviour:
   - m_typeOfWater: Clear Blue Ocean
     m_profileRename: 
     m_userCustomProfile: 0
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 621882b688d3a034a8377536e9c0ef66
     m_directToCamera: 1
     m_postProcessProfileURP: {fileID: 11400000, guid: eab86dbbf9117fb4f9a54b786b342118, type: 2}
@@ -46370,7 +46586,6 @@ MonoBehaviour:
   - m_typeOfWater: Standard Lake
     m_profileRename: 
     m_userCustomProfile: 0
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 621882b688d3a034a8377536e9c0ef66
     m_directToCamera: 1
     m_postProcessProfileURP: {fileID: 11400000, guid: eab86dbbf9117fb4f9a54b786b342118, type: 2}
@@ -46539,7 +46754,6 @@ MonoBehaviour:
   - m_typeOfWater: Standard Clear Lake
     m_profileRename: 
     m_userCustomProfile: 0
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 621882b688d3a034a8377536e9c0ef66
     m_directToCamera: 1
     m_postProcessProfileURP: {fileID: 11400000, guid: eab86dbbf9117fb4f9a54b786b342118, type: 2}
@@ -46708,7 +46922,6 @@ MonoBehaviour:
   - m_typeOfWater: Low Poly
     m_profileRename: 
     m_userCustomProfile: 0
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 621882b688d3a034a8377536e9c0ef66
     m_directToCamera: 1
     m_postProcessProfileURP: {fileID: 11400000, guid: eab86dbbf9117fb4f9a54b786b342118, type: 2}
@@ -46877,7 +47090,6 @@ MonoBehaviour:
   - m_typeOfWater: New User Profile 6
     m_profileRename: 
     m_userCustomProfile: 1
-    m_postProcessProfileBuiltIn: {fileID: 0}
     m_postProcessingProfileGUIDBuiltIn: 621882b688d3a034a8377536e9c0ef66
     m_directToCamera: 1
     m_postProcessProfileURP: {fileID: 11400000, guid: eab86dbbf9117fb4f9a54b786b342118, type: 2}
@@ -47115,7 +47327,7 @@ MonoBehaviour:
   m_customCamera: {fileID: 0}
   m_enableLayerCulling: 1
   m_cullingProfile: {fileID: 11400000, guid: 2f5300c8f2e360a408bc26c9d0e932e4, type: 2}
-  m_sunLight: {fileID: 0}
+  m_sunLight: {fileID: 921728041}
   m_moonLight: {fileID: 0}
   m_terrainCullingEnabled: 1
 --- !u!114 &1886289793 stripped
@@ -52100,7 +52312,7 @@ PrefabInstance:
     - target: {fileID: 7074128776551527244, guid: 0289bd53a8e96fe4da3c721fe9288f0c, type: 3}
       propertyPath: m_RenderCamera
       value: 
-      objectReference: {fileID: 1282300070}
+      objectReference: {fileID: 0}
     - target: {fileID: 7074128776551527244, guid: 0289bd53a8e96fe4da3c721fe9288f0c, type: 3}
       propertyPath: m_meshRenderer
       value: 

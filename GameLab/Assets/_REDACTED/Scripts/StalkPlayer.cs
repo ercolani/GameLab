@@ -2,30 +2,57 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class that handles the movement of stalking the player.
+/// </summary>
 public class StalkPlayer : MonoBehaviour
 {
+    /// <summary>
+    /// The target player.
+    /// </summary>
     [SerializeField]
     private Transform _player;
 
+    /// <summary>
+    /// The speed of the movement.
+    /// </summary>
     [SerializeField]
     private float _speed;
 
+    /// <summary>
+    /// The offset for where this objects movement. (Ex if this object should fly over the player then the Y should be offsetted).
+    /// </summary>
     [SerializeField]
     private Vector3 _offset;
 
+    /// <summary>
+    /// The range at which the stalker stops before a candle.
+    /// </summary>
     [SerializeField]
     private float _candleRange;
 
+    /// <summary>
+    /// The particle systems of the stalker.
+    /// </summary>
     [SerializeField]
     private ParticleSystem[] _particleSystems;
 
     [SerializeField]
     private GameObject _candles;
 
+    /// <summary>
+    /// The new destination for the stalking
+    /// </summary>
     private Vector3 _newDestination;
 
+    /// <summary>
+    /// The timer for the changing of the destination.
+    /// </summary>
     private float _newDestinationTimer;
 
+    /// <summary>
+    /// Whether the stalker should follow the player.
+    /// </summary>
     private bool _followPlayer = true;
 
     // Update is called once per frame
@@ -42,6 +69,9 @@ public class StalkPlayer : MonoBehaviour
         CheckCandleRange();
     }
 
+    /// <summary>
+    /// Moves the stalker to the new destination.
+    /// </summary>
     private void MoveToDestination()
     {
         Vector3 velocity = Vector3.zero;
