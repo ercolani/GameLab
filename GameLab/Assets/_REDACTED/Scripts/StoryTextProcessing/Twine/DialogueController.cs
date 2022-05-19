@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 using static DialogueObject;
 
 public class DialogueController : MonoBehaviour
 {
-
     [SerializeField] private TextAsset twineText;
     private Dialogue dialogueObject;
     private Node currentNode;
@@ -16,6 +16,9 @@ public class DialogueController : MonoBehaviour
     public delegate void NodeEnteredHandler(Node node);
     public event NodeEnteredHandler onEnteredNode;
 
+    public event Action<bool> ToggleDialogue;
+    private bool dialogueActive;
+
     private void Awake()
     {
         dialogueObject = new Dialogue(twineText);
@@ -24,7 +27,31 @@ public class DialogueController : MonoBehaviour
     private void Start()
     {
         allStartNodes = dialogueObject.FindAllStartNodes();
-        InitializeDialogue();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            if (!dialogueActive)
+            {
+                ToggleDialogue?.Invoke(true);
+                dialogueActive = true;
+                InitializeDialogue();
+            }
+            else
+            {
+                if (!currentNode.tags.Contains("END"))
+                {
+                    NextNode(0);
+                }
+                else
+                {
+                    dialogueActive = false;
+                    ToggleDialogue?.Invoke(false);
+                }
+            }
+        }
     }
 
     public void SetCurrentNodeTitle(string title)
@@ -43,7 +70,7 @@ public class DialogueController : MonoBehaviour
 
     }
 
-    public void ChooseResponse(int responseIndex)
+    public void NextNode(int responseIndex)
     {
         string nextNodeID = currentNode.responses[responseIndex].destinationNode;
         Node nextNode = dialogueObject.GetNode(nextNodeID);
@@ -51,3 +78,4 @@ public class DialogueController : MonoBehaviour
         onEnteredNode?.Invoke(nextNode);
     }
 }
+
