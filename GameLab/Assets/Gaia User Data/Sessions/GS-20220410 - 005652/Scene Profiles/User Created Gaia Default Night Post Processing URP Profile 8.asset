@@ -59,10 +59,10 @@ MonoBehaviour:
   active: 1
   temperature:
     m_OverrideState: 1
-    m_Value: -70
+    m_Value: -18.3
   tint:
     m_OverrideState: 1
-    m_Value: -20
+    m_Value: 22.5
 --- !u!114 &-1810686304675309265
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -100,16 +100,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
   m_Name: LiftGammaGain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.9863572, y: 1, z: 0.9958084, w: 0}
+    m_Value: {x: 0.9850585, y: 1, z: 0.9925349, w: -4.3690918e-10}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 0.9994479, y: 1, z: 0.99035364, w: -0.103256665}
+    m_Value: {x: 0.9994479, y: 1, z: 0.99035364, w: 0.0071275826}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.9849001, y: 1, z: 0.96980155, w: 0.11914215}
+    m_Value: {x: 0.9849001, y: 1, z: 0.96980155, w: -0.09468533}
 --- !u!114 &-914117920517921920
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -420,7 +420,7 @@ MonoBehaviour:
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 10.293067
+    m_Value: 91.38694
   aperture:
     m_OverrideState: 1
     m_Value: 5.6
@@ -457,7 +457,7 @@ MonoBehaviour:
     m_Value: 0.5
   scatter:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.2
   clamp:
     m_OverrideState: 1
     m_Value: 2
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   postExposure:
     m_OverrideState: 1
     m_Value: 1
@@ -566,7 +566,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.15
 --- !u!114 &7723670474760334209
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -672,7 +672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70afe9e12c7a7ed47911bb608a23a8ff, type: 3}
   m_Name: SplitToning
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   shadows:
     m_OverrideState: 1
     m_Value: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}

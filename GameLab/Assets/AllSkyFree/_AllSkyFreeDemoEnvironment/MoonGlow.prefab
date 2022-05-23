@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 669, y: 8531, z: 14410}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -39,7 +40,7 @@ LensFlare:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135272}
   m_Enabled: 1
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 241af96f1ab544ef09a3a66d01d8c862, type: 2}
   m_Color: {r: 0.17052338, g: 0.21633165, b: 0.2794118, a: 1}
   m_Brightness: 1
   m_FadeSpeed: 0.1
