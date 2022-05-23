@@ -13,10 +13,9 @@ Material:
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: -1
   stringTagMap:
     NatureRendererInstancing: true
-    RenderType: AlphaTest
     UseExternalSettings: true
   disabledShaderPasses: []
   m_SavedProperties:
@@ -58,6 +57,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AddPrecomputedVelocity: 1
     - _AlphaCutoff: 0.25
@@ -105,6 +105,7 @@ Material:
     - _InteractionMaskValue: 0
     - _IsGrassShader: 1
     - _IsLeafShader: 1
+    - _IsStandardShader: 1
     - _IsSubsurfaceShader: 1
     - _IsTVEShader: 1
     - _IsVersion: 620
@@ -246,11 +247,10 @@ Material:
     - _NoiseMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _OverlayMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _SubsurfaceColor: {r: 5.992157, g: 3.759171, b: 0, a: 1}
-    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
-    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
+    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
+    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _VertexOcclusionColor: {r: 0.13522962, g: 0.1981132, b: 0.062611245, a: 1}
     - _VertexOcclusionRemap: {r: 0, g: 0, b: 0, a: 0}
     - _render_normals_options: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []
