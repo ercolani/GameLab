@@ -46,7 +46,9 @@ Material:
         m_Texture: {fileID: 2800000, guid: 46ca6abcf1ceaf349bc5cbde2228e908, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
+    - _AlphaCutoff: 0.5
     - _AlphaVariationValue: 1
     - _ColorsMaskMaxValue: 1
     - _ColorsMaskMinValue: 0
@@ -94,18 +96,18 @@ Material:
     - _MainNormalValue: 2
     - _MainOcclusionValue: 1
     - _MainSmoothnessValue: 1
-    - _MotionAmplitude_10: 0.122
+    - _MotionAmplitude_10: 0.192
     - _MotionAmplitude_20: 0.3
     - _MotionAmplitude_21: 0.3
-    - _MotionAmplitude_22: 0.3
+    - _MotionAmplitude_22: 0.358
     - _MotionAmplitude_32: 0.4
     - _MotionCat: 1
-    - _MotionScale_10: 0
-    - _MotionScale_20: 0.2
+    - _MotionScale_10: 2.5
+    - _MotionScale_20: 9.615
     - _MotionScale_32: 20
     - _MotionSpace: 0
-    - _MotionSpeed_10: 2
-    - _MotionSpeed_20: 6
+    - _MotionSpeed_10: 5
+    - _MotionSpeed_20: 9
     - _MotionSpeed_32: 30
     - _MotionValue_20: 1
     - _MotionVariation_10: 0
@@ -134,7 +136,10 @@ Material:
     - _RenderZWrite: 1
     - _RenderingCat: 1
     - _SizeFadeCat: 0
+    - _SizeFadeEndValue: 300
     - _SizeFadeMessage: 0
+    - _SizeFadeMode: 0
+    - _SizeFadeStartValue: 200
     - _SubsurfaceCat: 1
     - _SubsurfaceDiffusion: 3.5648174
     - _SubsurfaceMaskMaxValue: 1
@@ -167,6 +172,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorsMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _DetailBlendRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissiveIntensityParams: {r: 1, g: 1, b: 1, a: 0}
     - _EmissiveUVs: {r: 1, g: 1, b: 0, a: 0}
@@ -182,11 +188,10 @@ Material:
     - _NoiseMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _OverlayMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _SubsurfaceColor: {r: 0.4, g: 0.4, b: 0.1, a: 1}
-    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
-    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
+    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
+    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _VertexOcclusionColor: {r: 1, g: 1, b: 1, a: 1}
     - _VertexOcclusionRemap: {r: 0, g: 0, b: 0, a: 0}
     - _render_normals_options: {r: -1, g: -1, b: -1, a: 0}
+  m_BuildTextureStacks: []

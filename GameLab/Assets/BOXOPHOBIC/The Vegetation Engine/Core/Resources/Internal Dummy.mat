@@ -19,8 +19,9 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
+    m_Ints: []
     m_Floats:
-    - _DummyValue: 0.75
+    - _DummyValue: 0.2
     - _IsHelperShader: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

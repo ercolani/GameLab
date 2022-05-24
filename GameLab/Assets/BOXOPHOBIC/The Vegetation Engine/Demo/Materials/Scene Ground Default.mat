@@ -61,8 +61,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedCat: 0
+    - _AlphaCutoff: 0.5
     - _Banner: 0
     - _BatchingMessage: 0
     - _BillboardFadeHValue: 0
@@ -71,7 +73,7 @@ Material:
     - _DetailBlendMaxValue: 0.6
     - _DetailBlendMinValue: 0.4
     - _DetailBlendMode: 1
-    - _DetailCat: 0
+    - _DetailCat: 1
     - _DetailCoordMode: 0
     - _DetailMapsMode: 0
     - _DetailMaskContrast: 0
@@ -85,8 +87,9 @@ Material:
     - _DetailTypeMode: 0
     - _EmissiveCat: 1
     - _EmissiveFlagMode: 0
+    - _FadeCameraValue: 1
     - _FadeSpace: 0
-    - _GlobalCat: 0
+    - _GlobalCat: 1
     - _GlobalEmissive: 1
     - _GlobalLeaves: 1
     - _GlobalOverlay: 0
@@ -96,17 +99,21 @@ Material:
     - _GrassPerspectiveAngleValue: 0
     - _GrassPerspectiveNoiseValue: 0
     - _GrassPerspectivePushValue: 0
+    - _HasEmissive: 1
+    - _HasGradient: 0
+    - _HasOcclusion: 0
     - _IsAnyPathShader: 1
     - _IsBalancedShader: 1
     - _IsPropShader: 1
     - _IsStandardShader: 1
     - _IsTVEShader: 1
     - _IsTarget40Shader: 1
-    - _IsVersion: 320
+    - _IsVersion: 620
     - _LayerExtrasValue: 0
+    - _LayerReactValue: 0
     - _LayersSpace: 0
     - _LeavesVariationValue: 0
-    - _MainCat: 0
+    - _MainCat: 1
     - _MainMaskMaxValue: 1
     - _MainMaskMinValue: 0
     - _MainMetallicValue: 0
@@ -136,9 +143,10 @@ Material:
     - _RenderMode: 0
     - _RenderNormals: 0
     - _RenderPriority: 0
+    - _RenderQueue: 0
     - _RenderSSR: 1
     - _RenderZWrite: 1
-    - _RenderingCat: 0
+    - _RenderingCat: 1
     - _SecondMetallicValue: 0
     - _SecondNormalValue: 0
     - _SecondOcclusionValue: 1
@@ -157,8 +165,10 @@ Material:
     - _TranslucencyShadowValue: 1
     - _VariationGlobalsMessage: 0
     - _VariationMotionMessage: 0
+    - _VertexDynamicMode: 0
     - _VertexMasksMode: 0
     - _VertexOcclusionValue: 0
+    - _VertexRollingMode: 1
     - _VertexVariationMode: 0
     - __dirty: 1
     - _material_batching: 0
@@ -172,13 +182,16 @@ Material:
     - _render_src: 1
     - _render_zw: 1
     m_Colors:
+    - _AlphaMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.18867922, g: 0.13714035, b: 0.10768955, a: 1}
     - _ColorsMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _DetailBlendRemap: {r: 0.4, g: 0.6, b: 0, a: 3}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissiveIntensityParams: {r: 1, g: 1, b: 1, a: 0}
     - _EmissiveUVs: {r: 1, g: 1, b: 0, a: 0}
     - _GradientMaskRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _LeavesMaskRemap: {r: 0, g: 0, b: 0, a: 2}
     - _MainColor: {r: 0.18867922, g: 0.13714035, b: 0.10768955, a: 1}
     - _MainUVs: {r: 1, g: 1, b: 0, a: 0}
     - _MaxBoundsInfo: {r: 1, g: 1, b: 1, a: 1}
@@ -188,10 +201,9 @@ Material:
     - _OverlayMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _SecondColor: {r: 1, g: 1, b: 1, a: 1}
     - _SecondUVs: {r: 1, g: 1, b: 0, a: 0}
-    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
-    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
+    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
+    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _VertexOcclusionRemap: {r: 0, g: 0, b: 0, a: 0}
     - _render_normals_options: {r: -1, g: -1, b: -1, a: 0}
+  m_BuildTextureStacks: []
