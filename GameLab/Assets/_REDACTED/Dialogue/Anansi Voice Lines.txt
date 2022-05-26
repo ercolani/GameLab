@@ -1,0 +1,46 @@
+:: StoryTitle
+GameLab Voice Lines
+
+:: StoryData
+{
+ "ifid": "30A8739A-A601-42C2-B84F-FDC60BCD5887",
+ "format": "Entweedle",
+ "format-version": "1.1.1",
+ "startnode": "2",
+ "zoom": "1",
+ "start": "aa_fe_01"
+}
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+:: aa_fe_02 {"position":"102,242","size":"100,100"}
+Oh... (//disappointed pause//) you're just a dull-witted, impudent speck of dust. 
+[[aa_fe_03]]
+
+:: aa_fe_01 [START] {"position":"101,99","size":"100,100"}
+(//annoyed and groggy//) (sigh) What foolish imbecile dares to summon me?
+[[aa_fe_02]]
+
+:: aa_fe_03 {"position":"105,394","size":"100,100"}
+Well, I'm bored enough anyway. Hopefully at the very least you can provide some entertainment.
+[[aa_fe_04]]
+
+:: aa_fe_04 {"position":"104,549","size":"100,100"}
+Do you wish to challenge my infinite wisdom by trying yourself at my puzzle?
+[[aa_fe_05]]
+
+:: aa_fe_05 {"position":"105,690","size":"100,100"}
+(//sarcastic encouragement//) Nobody has ever managed but don't let THAT stop you.
+[[aa_fe_06]]
+
+:: aa_fe_06 {"position":"105,832","size":"100,100"}
+Why? (//pause//) (//sternly//) Do not question my authority. I am a mighty god and you are but a measly mortal. You should be grateful I am even conversing with you. 
+[[aa_fe_07]]
+
+:: aa_fe_07 [END] {"position":"103,984","size":"100,100"}
+Now, GO! Before I (//unenthusiastically//) smite you, (//pause//) or something...
+

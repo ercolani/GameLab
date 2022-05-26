@@ -43,6 +43,8 @@ public class MatchingPuzzle : PuzzleManager
     /// <summary>
     /// Sets the index for each puzzle torch and saves their initial position.
     /// </summary>
+    /// 
+ 
     private void Start()
     {
         int index = 0;
@@ -89,6 +91,8 @@ public class MatchingPuzzle : PuzzleManager
     {
         if (phase == 0)
         {
+            DialogueController dialogueController = new DialogueController();
+            dialogueController.InitializeDialogue();
             // RESET TO THE STARTING POS OR HOLDER
             for (int i = 0; i < _puzzleTorches.Count; i++)
             {
