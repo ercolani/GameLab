@@ -8,8 +8,8 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 0158cf79e7ee5a248a7db78ab2d7e7f2
+  m_OcclusionCullingData: {fileID: 36300000, guid: 80be668ec2bfcff4b91ffc4e5d77995a, type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -17,13 +17,13 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.16981131, g: 0.120950505, b: 0.13491073, a: 1}
   m_FogMode: 2
-  m_FogDensity: 0.022
+  m_FogDensity: 0.025
   m_LinearFogStart: -10
   m_LinearFogEnd: 800
-  m_AmbientSkyColor: {r: 0.36249998, g: 0.36874998, b: 0.4, a: 1}
-  m_AmbientEquatorColor: {r: 0.56804025, g: 0.58717173, b: 0.6509434, a: 1}
-  m_AmbientGroundColor: {r: 0.084905684, g: 0.03481688, b: 0.024430407, a: 1}
-  m_AmbientIntensity: 0.66
+  m_AmbientSkyColor: {r: 0.24951048, g: 0.31847632, b: 0.5943396, a: 1}
+  m_AmbientEquatorColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+  m_AmbientGroundColor: {r: 0.6415094, g: 0.3587687, b: 0.29352084, a: 1}
+  m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.38901743, g: 0.4444574, b: 0.5849056, a: 1}
   m_SkyboxMaterial: {fileID: 1034904486}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 921728041}
-  m_IndirectSpecularColor: {r: 0.012791033, g: 0.010229024, b: 0.014564459, a: 1}
+  m_IndirectSpecularColor: {r: 0.02502159, g: 0.020010263, b: 0.028490936, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5051,7 +5051,7 @@ Material:
     - _NormalTile: 512
     - _OpaqueCullMode: 2
     - _PW_DstBlend: 0
-    - _PW_MainLightIntensity: 0.3
+    - _PW_MainLightIntensity: 0.4
     - _PW_SSS: 1
     - _PW_SSSDistortion: 0.34
     - _PW_SSSPower: 1
@@ -5099,7 +5099,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _AmbientColor: {r: 0.36249998, g: 0.36874998, b: 0.4, a: 1}
+    - _AmbientColor: {r: 0.24951048, g: 0.31847632, b: 0.5943396, a: 1}
     - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}
     - _EdgeWaterColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
@@ -15693,16 +15693,16 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.9433625, b: 0.98279023, a: 1}
-  m_Intensity: 0.3
+  m_Intensity: 0.4
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: 0
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.78
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.38
@@ -16454,7 +16454,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Exposure: 0.09999982
+    - _Exposure: 0.09999966
     - _Rotation: -222
     m_Colors:
     - _Tint: {r: 0.9245283, g: 0.9201673, b: 0.9201673, a: 1}
@@ -16497,7 +16497,7 @@ MonoBehaviour:
   elementsVisibility: 20
   elementsVisibilityOld: 20
   elementsSorting: 0
-  elementsEdgeFade: 0.528
+  elementsEdgeFade: 0.5
   dataCat: 1
   renderColors: 1024
   renderExtras: 1024
@@ -17336,7 +17336,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 50
   field of view: 80
   orthographic: 0
   orthographic size: 5
@@ -45469,15 +45469,15 @@ MonoBehaviour:
     m_sunColor: {r: 1, g: 0.9433625, b: 0.98279023, a: 1}
     m_sunIntensity: 1.1
     m_lWSunColor: {r: 1, g: 0.9433625, b: 0.98279023, a: 1}
-    m_lWSunIntensity: 0.3
+    m_lWSunIntensity: 0.4
     m_useGlobalIllumination: 1
     m_hDSunColor: {r: 0.43479353, g: 0.5892579, b: 1, a: 1}
     m_hDSunIntensity: 1
     m_hDSunVolumetricMultiplier: 1
-    m_shadowCastingMode: 2
-    m_shadowStrength: 1
+    m_shadowCastingMode: 1
+    m_shadowStrength: 0.78
     m_sunShadowResolution: 0
-    m_shadowDistance: 2400
+    m_shadowDistance: 2000
     m_hDShadowDistance: 700
     m_hDShadowResolution: 2
     m_hDContactShadows: 1
@@ -45489,7 +45489,7 @@ MonoBehaviour:
     m_hDMicroShadowOpacity: 1
     m_skyboxHDRI: {fileID: 8900000, guid: 8a293ce833d584fc98516e0e74f495a4, type: 3}
     m_skyboxTint: {r: 0.9245283, g: 0.9201673, b: 0.9201673, a: 1}
-    m_skyboxExposure: 0.09999982
+    m_skyboxExposure: 0.09999963
     m_skyboxRotationOffset: -121
     m_sunSize: 0.04
     m_sunConvergence: 10
@@ -45553,10 +45553,10 @@ MonoBehaviour:
     m_hDPBSExposure: 1
     m_hDPBSIncludeSunInBaking: 1
     m_ambientMode: 0
-    m_ambientIntensity: 0.66
-    m_skyAmbient: {r: 0.36249998, g: 0.36874998, b: 0.4, a: 1}
-    m_equatorAmbient: {r: 0.56804025, g: 0.58717173, b: 0.6509434, a: 1}
-    m_groundAmbient: {r: 0.084905684, g: 0.03481688, b: 0.024430407, a: 1}
+    m_ambientIntensity: 1
+    m_skyAmbient: {r: 0.24951048, g: 0.31847632, b: 0.5943396, a: 1}
+    m_equatorAmbient: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+    m_groundAmbient: {r: 0.6415094, g: 0.3587687, b: 0.29352084, a: 1}
     m_hDAmbientMode: 1
     m_hDAmbientDiffuseIntensity: 1
     m_hDAmbientSpecularIntensity: 1
@@ -45564,7 +45564,7 @@ MonoBehaviour:
     m_skyboxFogGradient: 0.5
     m_fogMode: 2
     m_fogColor: {r: 0.16981131, g: 0.120950505, b: 0.13491073, a: 1}
-    m_fogDensity: 0.022
+    m_fogDensity: 0.025
     m_fogStartDistance: -10
     m_fogEndDistance: 800
     m_hDFogType: 3
