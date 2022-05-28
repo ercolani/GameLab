@@ -2,43 +2,100 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// A singleton class controlling all in-game audio using FMOD.
+/// </summary>
 public class AudioController : MonoBehaviour
 {
-    [SerializeField]
-    private string[] _areaCodes;
-    
-    [SerializeField]
-    private string[] _encounterTypes;
+    private static AudioController _instance;
+
+    public static AudioController Instance => _instance;
 
     [SerializeField]
-    private string _currentAreaCode;
+    private static string _currentAreaCode;
 
     [SerializeField]
-    private string _currentEncounterType;
+    private static string _currentEncounterType;
 
     [SerializeField]
-    private string _currentPuzzleThoughtType;
+    private static string _currentPuzzleThoughtType;
 
     [SerializeField]
-    private int _currentLineNumber;
+    private static int _currentLineNumber;
 
     [SerializeField]
-    private bool _isPuzzleThought;
+    private static bool _isPuzzleThought;
 
-    private void PlayVoiceLine()
+    private void Awake()
     {
-        if (_isPuzzleThought)
+        //singleton destroy pattern
+        if (_instance != null && _instance != this)
         {
-            FMODUnity.RuntimeManager.PlayOneShot($"event:/{_currentAreaCode} + {_currentEncounterType} + { _currentLineNumber}");
+            Destroy(this.gameObject);
         }
         else
         {
-            FMODUnity.RuntimeManager.PlayOneShot($"event:/{_currentAreaCode} + {_currentEncounterType} + {_currentPuzzleThoughtType} + { _currentLineNumber}");
+            _instance = this;
         }
     }
 
-    public void SetVoiceLineParameters(string areaCode, string encounterType)
+    /// <summary>
+    /// Plays a voice line using a code from FMOD depending on if it is a puzzle thought or not.
+    /// </summary>
+    private static void PlayVoiceLine()
     {
-        
+        if (_isPuzzleThought)
+        {
+            print($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{ _currentLineNumber}");
+            FMODUnity.RuntimeManager.PlayOneShot($"event:/{_currentAreaCode}"+ "_" + $"{_currentEncounterType}" + "_" + $"{ _currentLineNumber}");
+        }
+        else
+        {
+            print($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentPuzzleThoughtType}" + "_" + $"{ _currentLineNumber}");
+            FMODUnity.RuntimeManager.PlayOneShot($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentPuzzleThoughtType}" + "_"+ $"{ _currentLineNumber}");
+        }
+    }
+
+    /// <summary>
+    /// Sets the parameters for playing the correct voice line if it is not a puzzle thought.
+    /// </summary>
+    private static void SetVoiceLineParameters(string areaCode, string encounterType, int currentLineNumber)
+    {
+        _currentAreaCode = areaCode;
+        _currentEncounterType = encounterType;
+        _currentLineNumber = currentLineNumber;
+        PlayVoiceLine();
+    }
+
+    /// <summary>
+    /// Sets the parameters for playing the correct voice line if it is a puzzle thought.
+    /// </summary>
+    private static void SetVoiceLineParameters(string areaCode, string encounterType, string currentPuzzleThoughtType, int currentLineNumber)
+    {
+        _currentAreaCode = areaCode;
+        _currentEncounterType = encounterType;
+        _currentLineNumber = currentLineNumber;
+        _currentPuzzleThoughtType = currentPuzzleThoughtType;
+        PlayVoiceLine();
+    }
+
+    /// <summary>
+    /// Parses the input voice line code from the dialogue node's title and sets the parameters for the correct voice line.
+    /// </summary>
+    public static void ParseVoiceLineCode(string input)
+    {
+        string[] parameterCodes = input.Split("_"); 
+        if (parameterCodes.Length == 3)
+        {
+            SetVoiceLineParameters(parameterCodes[0], parameterCodes[1], int.Parse(parameterCodes[2]));
+        }
+        else if (parameterCodes.Length == 4)    
+        {
+            SetVoiceLineParameters(parameterCodes[0], parameterCodes[1], parameterCodes[2], int.Parse(parameterCodes[3]));
+        }
+        else
+        {
+            Debug.LogError("Voiceline input string invalid.");
+        }
     }
 }
