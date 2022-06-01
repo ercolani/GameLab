@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class DialogueObject : MonoBehaviour
 {
     private const string kStart = "START";
@@ -31,7 +30,6 @@ public class DialogueObject : MonoBehaviour
         {
             return tags.Contains(kEnd);
         }
-
     }
 
     public class Dialogue
@@ -45,12 +43,38 @@ public class DialogueObject : MonoBehaviour
             List<string> startNodes = new List<string>();
             foreach (KeyValuePair<string, Node> node in nodes)
             {
-                if (node.Value.tags.Contains("START"))
+                if (node.Value.tags.Contains("START") && !node.Value.title.Contains("tt"))
                 {
                     startNodes.Add(node.Key);
                 }
             }
-            return startNodes;
+            return startNodes;       
+        }
+
+        public List<string> FindAllTorchThoughtNodes()
+        {
+            List<string> torchThoughtStartNodes = new List<string>();
+            foreach (KeyValuePair<string, Node> node in nodes)
+            {
+                if (node.Value.title.Contains("tt"))
+                {
+                    torchThoughtStartNodes.Add(node.Key);
+                }
+            }
+            return torchThoughtStartNodes;
+        }
+
+        public List<string> FindAllPuzzleCommentNodes()
+        {
+            List<string> puzzleCommentNodes = new List<string>();
+            foreach (KeyValuePair<string, Node> node in nodes)
+            {
+                if (node.Value.title.Contains("pc"))
+                {
+                    puzzleCommentNodes.Add(node.Key);
+                }
+            }
+            return puzzleCommentNodes;
         }
 
         public Dialogue(TextAsset twineText)
@@ -61,7 +85,6 @@ public class DialogueObject : MonoBehaviour
 
         public Node GetNode(string nodeTitle)
         {
-            Debug.Log(nodeTitle);
             return nodes[nodeTitle];
         }
 
@@ -120,7 +143,7 @@ public class DialogueObject : MonoBehaviour
                 //extract title
                 int titleStart = 0;
                 int titleEnd = tagsPresent ? currentLineText.IndexOf("[") : endOfFirstLine;
-                UnityEngine.Assertions.Assert.IsTrue(titleEnd > 0, "Maybe you have a node with no responses?");
+                //UnityEngine.Assertions.Assert.IsTrue(titleEnd > 0, "Maybe you have a node with no responses?");
                 string title = currentLineText.Substring(titleStart, titleEnd).Trim();
 
                 //extract tags (if any)
