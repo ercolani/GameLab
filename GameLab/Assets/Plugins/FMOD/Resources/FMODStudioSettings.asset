@@ -333,10 +333,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   SwitchSettingsMigration: 1
-  HasSourceProject: 0
-  HasPlatforms: 0
-  sourceProjectPath: C:/Users/IgorK/Documents/FMOD Studio/GameLab/GameLab.fspro
-  sourceBankPath: 
+  HasSourceProject: 1
+  HasPlatforms: 1
+  sourceProjectPath: FMODAssets/GameLab.fspro
+  sourceBankPath: FMODAssets/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -358,7 +358,8 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
