@@ -1,0 +1,447 @@
+:: StoryTitle
+GameLab Voice Lines
+
+:: StoryData
+{
+ "ifid": "30A8739A-A601-42C2-B84F-FDC60BCD5887",
+ "format": "Entweedle",
+ "format-version": "1.1.1",
+ "startnode": "2",
+ "zoom": "1",
+ "start": "aa_fe_01"
+}
+
+:: UserScript [script]
+
+
+:: UserStylesheet [stylesheet]
+
+
+:: aa_fe_02 {"position":"101,242","size":"100,100"}
+Oh... (//disappointed pause//) you're just a dull-witted, impudent speck of dust. 
+[[aa_fe_03]]
+
+:: aa_fe_01 [START] {"position":"101,99","size":"100,100"}
+(//annoyed and groggy//) (sigh) What foolish imbecile dares to summon me?
+[[aa_fe_02]]
+
+:: aa_fe_03 {"position":"104,392","size":"100,100"}
+Well, I'm bored enough anyway. Hopefully at the very least you can provide some amusement.
+[[aa_fe_04]]
+
+:: aa_fe_04 {"position":"104,549","size":"100,100"}
+Do you wish to challenge my infinite wisdom by trying yourself at my puzzle?
+[[aa_fe_05]]
+
+:: aa_fe_05 {"position":"105,689","size":"100,100"}
+(//sarcastic encouragement//) Nobody has ever managed but don't let THAT stop you.
+[[aa_fe_06]]
+
+:: aa_fe_06 {"position":"105,832","size":"100,100"}
+Why? (//pause//) (//sternly//) Do not question my authority. I am a mighty god and you are but a measly mortal. 
+[[aa_fe_07]]
+
+:: aa_fe_07 [END] {"position":"103,983","size":"100,100"}
+You should be grateful I am even conversing with you. 
+[[aa_fe_08]] 
+
+
+:: aa_tt_01 {"position":"701,104","size":"100,100"}
+I wonder what fun, malevolent deeds I should impose on this fool. (sigh) So hard to get quality entertainment these days.
+
+
+:: aa_tt_02 {"position":"701,255","size":"100,100"}
+Who were the people these stools belonged to again? 
+
+
+:: aa_tt_03 {"position":"702,406","size":"100,100"}
+(//regretfully//) My family... That I (//pause//) When was the last time I saw them? When did their souls- (//pause//)? 
+
+
+:: aa_tt_04 {"position":"701,556","size":"100,100"}
+I have... lost my way. I went too far. I never... (//pause//) meant to (//with difficulty//) hurt them. I pushed them away and now... it's too late. 
+
+:: aa_pc_dn_01 {"position":"891,102","size":"100,100"}
+(//acting like a wise-ass//) No one tests the depth of a river with both feet.
+
+
+:: aa_pc_dn_02 {"position":"890,253","size":"100,100"}
+(//acting like a wise-ass//) Drop by drop - a whole river becomes.
+
+
+:: aa_pc_dn_03 {"position":"889,404","size":"100,100"}
+(//acting like a wise-ass//) A frog in the well does not recognize a king.
+
+
+:: aa_pc_dn_04 {"position":"888,549","size":"100,100"}
+(//acting like a wise-ass//) When spider webs unite, they can tie up a lion.
+
+
+:: aa_pc_dw_01 {"position":"1088,104","size":"100,100"}
+(//condescending//) Just don't saw off the branch you're sitting on.
+
+
+:: aa_pc_mm_01 {"position":"1290,105","size":"100,100"}
+(//sarcastically//) Ooooooooo, getting warmer.
+
+
+:: aa_pc_dw_02 {"position":"1088,250","size":"100,100"}
+(//snarky and condescending//) Well, aren't you clever.
+
+
+:: aa_pc_dw_03 {"position":"1092,403","size":"100,100"}
+(//annoyed teenager tone//) Ugh, even the most vacuous fool could figure that one out.
+
+
+:: aa_pc_dw_04 {"position":"1088,550","size":"100,100"}
+I would've already been finished by now. What on earth is taking you so long?
+
+
+:: aa_ca_01 [START] {"position":"301,100","size":"100,100"}
+Oh, are you FINALLY done? Took you long enough. 
+[[aa_ca_02]]
+
+:: aa_ca_02 {"position":"299,250","size":"100,100"}
+You actually did alright for such a simple-minded creature. 
+[[aa_ca_03]]
+
+:: aa_ca_03 {"position":"302,400","size":"100,100"}
+Never expected you to even get past the first obstacle.
+
+[[aa_ca_04]]
+
+:: aa_ca_04 {"position":"302,550","size":"100,100"}
+But what took me by surprise the most was... a certain realization.
+
+[[aa_ca_05]]
+
+:: aa_ca_05 {"position":"302,700","size":"100,100"}
+I have gotten... (//remorsefully//) carried away.
+
+[[aa_ca_06]]
+
+:: aa_ca_06 {"position":"302,850","size":"100,100"}
+You have actually managed to achieve something nobody has been able to thus far. 
+[[aa_ca_07]]
+
+:: aa_ca_07 {"position":"301,1000","size":"100,100"}
+You have helped me... see a little clearer.
+
+[[aa_ca_08]]
+
+:: aa_le_01 [START] {"position":"499,102","size":"100,100"}
+I want to say two simple words that my arrogance has always caused me to withhold: (//pause//) (//sincerely//) Thank you.
+[[aa_le_02]]
+
+:: aa_le_02 {"position":"500,252","size":"100,100"}
+I do not know how to repay you but at the very least I will leave you with this:
+[[aa_le_03]]
+
+:: aa_le_03 [END] {"position":"499,402","size":"100,100"}
+In the process of letting go, you will lose many things from the past but you will find yourself. 
+[[aa_le_04]]
+
+:: ea_fe_01 [START] {"position":"1904,101","size":"100,100"}
+(//creepy uncle//) Oh myyyyyyy... Darling, do you believe in love at first sight or should I appear again?
+[[ea_fe_02]]
+
+:: ea_fe_02 {"position":"1903,251","size":"100,100"}
+You have quite a fine body on you, sweetheart. You wear it well.
+[[ea_fe_03]]
+
+:: ea_fe_03 {"position":"1903,401","size":"100,100"}
+(//sadly//) Ah, you remind me of my pantheon of beautiful women. It saddens me, for you see (//inhales cigar//) they were taken from me!
+[[ea_fe_04]]
+
+:: ea_fe_04 {"position":"1903,551","size":"100,100"}
+(//overly dramatic//) Whatever should I do now without my beloved harem!?
+[[ea_fe_05]]
+
+:: ea_fe_05 {"position":"1903,701","size":"100,100"}
+You can help me, right?? RIGHT? 
+[[ea_fe_06]]
+
+:: ea_fe_06 {"position":"1903,851","size":"100,100"}
+You do have a soul, don't you? Doesn't your heart cry for me? 
+[[ea_fe_07]]
+
+:: ea_fe_07 {"position":"1903,1001","size":"100,100"}
+Oh, I beg you, my beauty, do be a little lamb and help out this fine gentleman.
+[[ea_fe_08]]
+
+:: ea_fe_08 [END] {"position":"1901,1150","size":"100,100"}
+See, my belles have been taken from me and I don't know where they've gone. Find them and bring them back to me. I'm certain the poor, powerless things long for me dearly.
+
+:: ea_tt_01 {"position":"2498,100","size":"100,100"}
+No matter how many beautiful ladies walk by, I can only think of Her.
+
+
+:: ea_tt_02 {"position":"2498,250","size":"100,100"}
+I see Her everywhere. In every little crinkle of the leaves around and in every creature that struts about. 
+
+
+:: ea_tt_03 {"position":"2498,402","size":"100,100"}
+She lives in my broken mind rent-free and I don't have the heart to make her leave.
+
+
+:: ea_tt_04 {"position":"2503,549","size":"100,100"}
+I cannot escape Her; She's like a ghost holding my heart captive and choking the air out of my weak lungs.
+
+
+:: ea_tt_05 {"position":"2503,699","size":"100,100"}
+Why can I only remember the good? What otherwordly storm took Her away? There is no way She could be gone.
+
+
+:: ea_tt_06 {"position":"2503,849","size":"100,100"}
+I try everything to numb the pain. I seek these distractions over, and over, and over, and over, and over, and over again. To what end? At the end of the day, I cry through the cold nights longing for Her. 
+
+
+:: ea_tt_07 {"position":"2503,1000","size":"100,100"}
+I have done nothing wrong! And yet, why do I spend every endless night at the heartbreak hotel?
+
+
+:: ea_tt_08 {"position":"2503,1149","size":"100,100"}
+I wish the materialistic gifts of all my worshippers and the sight of all the dames in the world could cure my lovesickness. But I cannot find the medicine no matter what doctor I turn to.
+
+
+:: ea_tt_09 {"position":"2503,1299","size":"100,100"}
+Why can't tobacco replace love? Instead it just collapses my lungs into bits of charcoal.
+
+
+:: ea_tt_10 {"position":"2503,1449","size":"100,100"}
+The shattering of a heart when being broken is the loudest quiet ever.
+
+
+:: ea_tt_11 {"position":"2503,1599","size":"100,100"}
+I think about Her. But I don't say it anymore.
+
+
+:: ea_tt_12 {"position":"2502,1748","size":"100,100"}
+I wish I didn't have a heart. It's the source of all my unhappiness.
+
+
+:: ea_tt_13 {"position":"2502,1899","size":"100,100"}
+I don't know why they call it heartbreak. It feels like every other part of my body is broken too.
+
+
+:: ea_tt_14 {"position":"2502,2048","size":"100,100"}
+Thinking of Her is a poison I drink often.
+
+
+:: ea_tt_15 {"position":"2503,2199","size":"100,100"}
+I am hopelessly in love with a memory. An echo from another time, another place.
+
+
+:: ea_tt_16 {"position":"2503,2349","size":"100,100"}
+The heart is heaviest when it's empty and lightest when it's full.
+
+
+:: ea_tt_17 {"position":"2503,2499","size":"100,100"}
+A broken heart is the worst. It's like having broken ribs. Nobody can see it, but it hurts every time you breathe.
+
+:: ea_pc_dn_01 {"position":"2711,96","size":"100,100"}
+I’m sorry, something’s off with my eyes. I can’t seem to take them off you.
+
+
+:: ea_pc_dn_02 {"position":"2711,247","size":"100,100"}
+You must be tired because you’ve been running through my mind all night. 
+
+
+:: ea_pc_dn_03 {"position":"2711,396","size":"100,100"}
+I wish I were cross-eyed so I can see you twice.
+
+
+:: ea_pc_dn_04 {"position":"2711,546","size":"100,100"}
+If you were a chicken, you'd be impeccable.
+
+
+:: ea_pc_dn_05 {"position":"2711,696","size":"100,100"}
+Can I follow you where you're going right now? Because I've been told to always follow my dreams.
+
+
+:: ea_pc_dn_06 {"position":"2711,846","size":"100,100"}
+My affection for you is like diarrhea - I just can't hold it in.
+
+
+:: ea_pc_dn_07 {"position":"2711,996","size":"100,100"}
+If nothing lasts forever, will you be my nothing?
+
+
+:: ea_ca_01 [START] {"position":"2103,99","size":"100,100"}
+Wait. (//pause//) This- (//pause//) (//baffled//) this isn't what I asked!
+[[ea_ca_02]] 
+
+:: ea_le_01 [START] {"position":"2301,99","size":"100,100"}
+I wanted to thank you for freeing my heart. (//pause//) As painstaking as it may be... The first step towards facing myself has been taken, I suppose. 
+[[ea_le_02]]
+
+:: ea_ca_02 {"position":"2103,249","size":"100,100"}
+H-how? (//pause//) How can it be you?
+[[ea_ca_03]] 
+
+:: ea_ca_03 {"position":"2103,399","size":"100,100"}
+Am I really seeing you? Or are you just another projection of my mind?
+[[ea_ca_04]] 
+
+:: ea_ca_04 {"position":"2103,549","size":"100,100"}
+Please... (//pause//) Just... (//pause//) Lend me a helping hand in finally letting you go.
+[[ea_ca_05]] 
+
+:: ea_ca_05 {"position":"2103,699","size":"100,100"}
+How do I live without you?
+[[ea_ca_06]] 
+
+:: ea_ca_06 {"position":"2103,849","size":"100,100"}
+I want my mind to be free of your ghost. 
+[[ea_ca_07]] 
+
+:: ea_ca_07 {"position":"2103,999","size":"100,100"}
+I... I'm scared.
+[[ea_ca_08]] 
+
+:: ea_ca_08 {"position":"2103,1149","size":"100,100"}
+You're not real, you're just the projection my heart created. You're not coming back, I know it. All I have left of you is this faded memory.
+[[ea_ca_09]] 
+
+:: ea_ca_09 {"position":"2102,1299","size":"100,100"}
+I must... take the final step.
+(blows out the flame within the statue of his ex-lover)
+[[ea_ca_10]] 
+
+:: ea_ca_10 [END] {"position":"2104,1453","size":"100,100"}
+Young soul... Take this. And don't let me set eyes on it ever again. 
+
+:: ea_le_02 {"position":"2301,249","size":"100,100"}
+Wanting her is hard to forget, loving her is hard to regret, losing her is hard to accept, but letting go is the most painful.
+[[ea_le_03]]
+
+:: ea_le_03 [END] {"position":"2301,399","size":"100,100"}
+But you know... (//smiling//) Sometimes the emotion that can break your heart is the very one that heals it.
+
+:: aa_pc_mm_02 {"position":"1290,254","size":"100,100"}
+Give up yet?
+
+
+:: aa_pc_mm_03 {"position":"1298,401","size":"100,100"}
+You're even more boring than I thought.
+
+
+:: aa_pc_mm_04 {"position":"1295,551","size":"100,100"}
+Can you at least try to be entertaining when you fail oh so miserably?
+
+
+:: aa_pc_dw_05 {"position":"1089,700","size":"100,100"}
+One small victory on the way to utter failure.
+
+
+:: aa_pc_dw_06 {"position":"1089,850","size":"100,100"}
+Ah, false hope in your own success is beautiful to watch.
+
+
+:: aa_pc_dw_07 {"position":"1089,1000","size":"100,100"}
+The more you perservere, the more I will enjoy watching you fail and have your effortful hopes shattered.
+
+:: aa_pc_mm_05 {"position":"1290,704","size":"100,100"}
+Is it proving to be too challenging? Are you losing all hope? Are you realizing how much of an idiot you are?
+
+:: aa_ca_08 [END] {"position":"301,1150","size":"100,100"}
+I express my gratitude for your perserverance despite my treatment of you.
+[[aa_ca_09]] 
+
+:: ea_pc_dw_01 {"position":"2909,92","size":"100,100"}
+Do that again (//super creepily//) but slower.
+
+
+:: ea_pc_mm_01 {"position":"3112,95","size":"100,100"}
+Oh, sweetheart, don't fuss. Beauty is more important than intelligence.
+
+
+:: ea_pc_mm_02 {"position":"3112,245","size":"100,100"}
+That doesn't appear to live up to the standards I set for you.
+
+
+:: ea_pc_dw_02 {"position":"2908,242","size":"100,100"}
+(//overly enthusiastic//) Oh my, smarts AND beauty! My heart has been conquered. 
+
+
+:: ea_pc_dw_03 {"position":"2908,392","size":"100,100"}
+So... what are you doing later?
+
+
+:: ea_pc_dw_04 {"position":"2907,541","size":"100,100"}
+Would you like to have the honor of joining my collection of exquisite women?
+
+
+:: ea_pc_mm_03 {"position":"3112,395","size":"100,100"}
+Well, at least you've got your looks going for you..
+
+
+:: ea_pc_mm_04 {"position":"3112,545","size":"100,100"}
+I guess you're not the clever type... I don't mind;)
+
+
+:: ea_pc_mm_05 {"position":"3112,694","size":"100,100"}
+I guess asking you to help was worth a shot at the very least.
+
+
+:: ea_pc_mm_06 {"position":"3110,845","size":"100,100"}
+Ok, you can give up now.
+
+
+:: ea_pc_mm_07 {"position":"3111,995","size":"100,100"}
+Since you're so bad at fulfilling your task, care to just spend the night with me? We'll have so much fuuuuuun.
+
+
+:: ea_pc_mm_08 {"position":"3112,1145","size":"100,100"}
+Don't forget to smile and look pretty, even when you fail embarrassingly. 
+
+:: ea_pc_dw_05 {"position":"2908,692","size":"100,100"}
+Oh yes, one step closer. I will finally be reunited.
+
+
+:: ea_pc_dw_06 {"position":"2908,842","size":"100,100"}
+(//failing to be flirty//) You make me want to create puzzles for you to solve while I watch real closely.
+
+
+:: ea_pc_dw_07 {"position":"2907,992","size":"100,100"}
+Baby, my darling sweetheart, you have such a beautiful brain.
+
+
+:: ea_pc_dn_08 {"position":"2711,1146","size":"100,100"}
+Do you know what you'd look great in? (//pause//) My arms.
+
+:: ea_pc_dw_08 [END] {"position":"2908,1142","size":"100,100"}
+Is this cruel mistress's intention to steal my heart?
+
+:: aa_le_04 {"position":"499,552","size":"100,100"}
+Remember that suffering is not holding you. 
+[[aa_le_05]]
+
+:: aa_le_05 {"position":"499,702","size":"100,100"}
+You are holding suffering. 
+[[aa_le_06]]
+
+:: aa_le_06 {"position":"499,852","size":"100,100"}
+When you become good at the art of letting sufferings go, you'll come to realize how unnecessary it was for you to drag those burdens around with you. 
+[[aa_le_07]]
+
+:: aa_le_07 {"position":"499,1002","size":"100,100"}
+You'll see that no one else other than you was responsible. 
+[[aa_le_08]]
+
+:: aa_le_08 {"position":"499,1152","size":"100,100"}
+You can only really lose what you cling to. 
+[[aa_le_09]]
+
+:: aa_le_09 [END] {"position":"499,1302","size":"100,100"}
+If you don't forget that change has to come for life to struggle forward, you will always perservere through the darkest depths of existence.
+
+:: aa_fe_08 [END] {"position":"103,1133","size":"100,100"}
+Now, GO! Before I (//unenthusiastically//) smite you, (//pause//) or something...
+
+:: aa_ca_09 {"position":"301,1300","size":"100,100"}
+Now, I will ask one last thing of you.
+[[aa_ca_10]] 
+
+:: aa_ca_10 [END] {"position":"301,1450","size":"100,100"}
+(//sternly//) Take this and take it far away from me. (//remorsefully//) I do not wish to stray the way I did before.

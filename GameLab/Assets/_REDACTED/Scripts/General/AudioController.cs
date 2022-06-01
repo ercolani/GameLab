@@ -44,15 +44,22 @@ public class AudioController : MonoBehaviour
     /// </summary>
     private static void PlayVoiceLine()
     {
+        string currentLineNumberFormatted = "";
+
+        if (_currentLineNumber < 10)
+        {
+            currentLineNumberFormatted = "0" + $"{_currentLineNumber}";
+        }
+
         if (_isPuzzleThought)
         {
-            print($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{ _currentLineNumber}");
-            FMODUnity.RuntimeManager.PlayOneShot($"event:/{_currentAreaCode}"+ "_" + $"{_currentEncounterType}" + "_" + $"{ _currentLineNumber}");
+            //print($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentLineNumber}");
+            FMODUnity.RuntimeManager.PlayOneShot($"event:/{_currentAreaCode}"+ "_" + $"{_currentEncounterType}" + "_" + currentLineNumberFormatted);
         }
         else
         {
-            print($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentPuzzleThoughtType}" + "_" + $"{ _currentLineNumber}");
-            FMODUnity.RuntimeManager.PlayOneShot($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentPuzzleThoughtType}" + "_"+ $"{ _currentLineNumber}");
+            //print($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentPuzzleThoughtType}" + "_" + $"{_currentLineNumber}");
+            FMODUnity.RuntimeManager.PlayOneShot($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentPuzzleThoughtType}" + "_" + currentLineNumberFormatted);
         }
     }
 
@@ -95,7 +102,7 @@ public class AudioController : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Voiceline input string invalid.");
+            Debug.LogError("Voice line input string invalid.");
         }
     }
 }

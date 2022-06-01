@@ -92,7 +92,7 @@ public class MatchingPuzzle : PuzzleManager
         if (phase == 0)
         {
             DialogueController dialogueController = new DialogueController();
-            dialogueController.InitializeDialogue();
+            //dialogueController.InitializeDialogue();
             // RESET TO THE STARTING POS OR HOLDER
             for (int i = 0; i < _puzzleTorches.Count; i++)
             {

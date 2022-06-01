@@ -8784,17 +8784,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7919cf61856c2e444bb3d0249793f773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &601640460 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 567792290738722770, guid: 4350fe924597ab44d9c4e83588111d5b, type: 3}
-  m_PrefabInstance: {fileID: 1725731596}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea74da6856303447b8b2fa3647bae69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &604824769
 GameObject:
   m_ObjectHideFlags: 0
@@ -17022,7 +17011,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 10
   field of view: 80
   orthographic: 0
   orthographic size: 5
@@ -32530,17 +32519,6 @@ MonoBehaviour:
   m_trackLoadingProgressTimeOut: 10000
   m_terrainSceneStorage: {fileID: 11400000, guid: 981adbecc79d48e48a31d9070d625aab, type: 2}
   m_lastUsedGUID: 981adbecc79d48e48a31d9070d625aab
---- !u!114 &1528646809 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 567792290738722770, guid: 4350fe924597ab44d9c4e83588111d5b, type: 3}
-  m_PrefabInstance: {fileID: 598659732}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea74da6856303447b8b2fa3647bae69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1560563516
 GameObject:
   m_ObjectHideFlags: 0
@@ -33804,14 +33782,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   styledBanner: 0
   windCat: 1
-  windPower: 0.543
+  windPower: 0
   motionCat: 1
   minimumMotionSettings: {x: 0.2, y: 0.4, z: 0.6, w: 1.4}
   maximumMotionSettings: {x: 1, y: 1, z: 1, w: 0.2}
   noiseCat: 1
   noiseTexture: {fileID: 2800000, guid: 9881e099480439147ba51cc2d31303b6, type: 3}
-  noiseScale: 1
-  noiseSpeed: 1
+  noiseScale: 0
+  noiseSpeed: 0
   styledLinkMessage: 1
   syncNoiseWithMotionDirection: 1
   styledSpace0: 0
@@ -35284,10 +35262,10 @@ MonoBehaviour:
   - {fileID: 794035162}
   - {fileID: 1475455023}
   _torchHolders:
-  - {fileID: 1886289793}
-  - {fileID: 1528646809}
-  - {fileID: 601640460}
-  - {fileID: 2120481698}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!117 &1758388175
 Texture3D:
   m_ObjectHideFlags: 0
@@ -47330,17 +47308,6 @@ MonoBehaviour:
   m_sunLight: {fileID: 921728041}
   m_moonLight: {fileID: 0}
   m_terrainCullingEnabled: 1
---- !u!114 &1886289793 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 567792290738722770, guid: 4350fe924597ab44d9c4e83588111d5b, type: 3}
-  m_PrefabInstance: {fileID: 3908942356315596555}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea74da6856303447b8b2fa3647bae69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1901573537
 GameObject:
   m_ObjectHideFlags: 0
@@ -53039,17 +53006,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0289bd53a8e96fe4da3c721fe9288f0c, type: 3}
---- !u!114 &2120481698 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 567792290738722770, guid: 4350fe924597ab44d9c4e83588111d5b, type: 3}
-  m_PrefabInstance: {fileID: 1442852003}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea74da6856303447b8b2fa3647bae69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3908942356315596555
 PrefabInstance:
   m_ObjectHideFlags: 0
