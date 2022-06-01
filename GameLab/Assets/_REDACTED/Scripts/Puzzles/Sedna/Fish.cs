@@ -1,87 +1,120 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class responsible for the behavior of a single fish.
+/// </summary>
 public class Fish : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public GameObject fishManager;
-    public float speed = 2f;
-    public float offset = 2f;
-    public float maxSize = 100f;
-    public float minSize = 30f;
-    private float ogSpeed = 2f;
-    float rotationSpeed = 4f;
-    Vector3 averageHeading;
-    Vector3 averagePosition;
-    float neighbourDistance = 5;
+    /// <summary>
+    /// Reference to the Flocking fish component.
+    /// </summary>
+    private FlockingFish _fishManager;
 
-    bool turning = false;
-    void Start()
+    /// <summary>
+    /// The speed of the fish.
+    /// </summary>
+    private float _currentSpeed = 2f;
+
+    /// <summary>
+    /// The speed of the fish.
+    /// </summary>
+    private float _originalSpeed = 2f;
+
+    /// <summary>
+    /// The speed at which the fish rotates.
+    /// </summary>
+    float _rotationSpeed = 4f;
+
+    /// <summary>
+    /// The distance between fish.
+    /// </summary>
+    float _neighbourDistance = 5;
+
+    /// <summary>
+    /// Whether or not the fish is turning.
+    /// </summary>
+    private bool _turning = false;
+
+    private bool _moving = false;
+
+    private float rotationTimer = 0;
+
+    /// <summary>
+    /// Initializes a fish.
+    /// </summary>
+    /// <param name="manager"> Reference to the Flocking fish component</param>
+    /// <param name="size">The size for this fish</param>
+    /// <param name="speed">The speed for this fish</param>
+    /// <param name="rotationSpeed">The speed rotation of this fish</param>
+    public void Initialize(FlockingFish manager, float size, float speed, float rotationSpeed, float distance)
     {
-        ogSpeed = speed;
-        speed = ogSpeed + Random.Range(-offset, offset);
-        float r = Random.Range(minSize, maxSize);
-        this.transform.localScale = new Vector3(r, r, r);
+        _fishManager = manager;
+        this.transform.localScale = new Vector3(size, size, size);
+        _currentSpeed = speed;
+        _originalSpeed = speed;
+        this._rotationSpeed = rotationSpeed;
+        _neighbourDistance = distance;
+        _moving = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.position, fishManager.GetComponent<FlockingFish>().getGoalPos()) >= fishManager.GetComponent<FlockingFish>().getTankSize())
+        rotationTimer += Time.deltaTime;
+        if (_moving)
         {
-            turning = true;
-        }
-        else
-        {
-            turning = false;
-        }
-
-        if (turning)
-        {
-            Vector3 direction = fishManager.GetComponent<FlockingFish>().getGoalPos() - transform.position;
-            transform.rotation = Quaternion.Slerp(transform.rotation, 
-                Quaternion.LookRotation(direction),
-                rotationSpeed * Time.deltaTime);
-
-
-        }
-        else
-        {
-            if (Random.Range(0, 60) < 2)
+            if (Vector3.Distance(transform.position, _fishManager.GetComponent<FlockingFish>().getGoalPos()) >= _fishManager.GetComponent<FlockingFish>().getTankSize())
             {
-                ApplyRules();
-                rotationSpeed = Random.Range(2f, 4f);
-                neighbourDistance = Random.Range(1f, 3f);
+                _turning = true;
             }
+            else
+            {
+                _turning = false;
+            }
+
+            if (_turning)
+            {
+                Vector3 direction = _fishManager.GetComponent<FlockingFish>().getGoalPos() - transform.position;
+                transform.rotation = Quaternion.Slerp(transform.rotation,
+                    Quaternion.LookRotation(direction),
+                    _rotationSpeed * Time.deltaTime);
+            }
+            else
+            {
+                if (rotationTimer > 2)
+                {
+                    ApplyRules();
+                    rotationTimer = 0;
+                }
+            }
+            transform.Translate(0, 0, Time.deltaTime * _currentSpeed);
         }
-        transform.Translate(0, 0, Time.deltaTime * speed);
     }
 
     void ApplyRules()
     {
-        GameObject[] gos;
-        gos = fishManager.GetComponent<FlockingFish>().getAllFish();
+        Fish[] gos;
+        gos = _fishManager.GetComponent<FlockingFish>().getAllFish();
 
         Vector3 vcentre = Vector3.zero;
         Vector3 vavoid = Vector3.zero;
-        float gSpeed = ogSpeed; 
-        Vector3 goalPos = fishManager.GetComponent<FlockingFish>().getGoalPos();
+        float gSpeed = _originalSpeed; 
+        Vector3 goalPos = _fishManager.GetComponent<FlockingFish>().getGoalPos();
 
         float dist;
         int groupSize = 0;
 
-        foreach (GameObject go in gos)
+        foreach (Fish go in gos)
         {
             if(go != this.gameObject)
             {
                 dist = Vector3.Distance(go.transform.position, this.transform.position);
-                if(dist <= neighbourDistance)
+                if(dist <= _neighbourDistance)
                 {
                     vcentre += go.transform.position;
                     groupSize++;
 
-                    if (dist < neighbourDistance)
+                    if (dist < _neighbourDistance)
                     {
                         vavoid = vavoid + (this.transform.position - go.transform.position);
                     }
@@ -94,13 +127,13 @@ public class Fish : MonoBehaviour
             if(groupSize > 0)
             {
                 vcentre = vcentre / groupSize + (goalPos - this.transform.position);
-                speed = gSpeed / groupSize;
+                _currentSpeed = gSpeed / groupSize;
 
                 Vector3 direction = (vcentre + vavoid) - transform.position;
                 if(direction != Vector3.zero)
                 {
                     transform.rotation = Quaternion.Slerp(transform.rotation, 
-                        Quaternion.LookRotation(direction), rotationSpeed * Time.deltaTime);
+                        Quaternion.LookRotation(direction), _rotationSpeed * Time.deltaTime);
                 }
             }
         }

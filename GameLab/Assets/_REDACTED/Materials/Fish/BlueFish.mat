@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Fish
+  m_Name: BlueFish
   m_Shader: {fileID: 4800000, guid: 37e7d76e23af4bf49a7a4c354560406b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
