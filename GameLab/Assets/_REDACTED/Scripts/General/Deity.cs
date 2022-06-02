@@ -110,7 +110,7 @@ public class Deity : MonoBehaviour
                 dialogueController.InitializeDialogue(firstEncounterIndex, new string[0]);
                 isFirstEncounter = false;
                 hasAcquiredCandle = true;
-                //ToggleDeityReadyForDialogue();
+                ToggleDeityReadyForDialogue();
             }
             else if (hasAcquiredCandle && !isLastEncounter)
             {
@@ -121,7 +121,7 @@ public class Deity : MonoBehaviour
             {
                 dialogueController.InitializeDialogue(lastEnconterIndex, new string[0]);
                 isLastEncounter = false;
-                //ToggleDeityReadyForDialogue();
+                ToggleDeityReadyForDialogue();
             }
         }
     }
@@ -140,6 +140,7 @@ public class Deity : MonoBehaviour
     /// </summary>
     public void FirePuzzleComment(string puzzleThoughtType)
     {
+        currentDeityPuzzleCommentType = puzzleThoughtType;
         string[] puzzleCommentInfo = new string[] { deityAreaCode, currentDeityPuzzleCommentType };
         dialogueController.InitializeDialogue(-1, puzzleCommentInfo);
     }

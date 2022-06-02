@@ -124,6 +124,8 @@ public class DialogueObject : MonoBehaviour
                     currentLineText = currentLineText.Substring(0, posBegin) + currentLineText.Substring(posEnd + 1); //title + message
                 }
 
+                int index = currentLineText.IndexOf("[");
+                int index2 = currentLineText.IndexOf("\r\n");
                 bool tagsPresent = currentLineText.IndexOf("[") < currentLineText.IndexOf("\r\n");
                 int endOfFirstLine = currentLineText.IndexOf("\r\n");
 
