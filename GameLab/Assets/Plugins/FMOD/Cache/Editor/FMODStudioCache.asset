@@ -1,6 +1,136 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5998180801626841593
+--- !u!114 &-8270905863701211540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/aa_tt_02
+  m_EditorClassIdentifier: 
+  Path: event:/aa_tt_02
+  Guid:
+    Data1: -1622311859
+    Data2: 1099556131
+    Data3: 1189296288
+    Data4: 893268919
+  Banks:
+  - {fileID: 7151341731490660277}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3265
+--- !u!114 &-7249339507179411368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/aa_tt_03
+  m_EditorClassIdentifier: 
+  Path: event:/aa_tt_03
+  Guid:
+    Data1: 79629217
+    Data2: 1112439420
+    Data3: 1985582231
+    Data4: 406009445
+  Banks:
+  - {fileID: 7151341731490660277}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7758
+--- !u!114 &-3554692828354673651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/aa_tt_04
+  m_EditorClassIdentifier: 
+  Path: event:/aa_tt_04
+  Guid:
+    Data1: 393514208
+    Data2: 1177471752
+    Data3: 2002924444
+    Data4: -2113691148
+  Banks:
+  - {fileID: 7151341731490660277}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11258
+--- !u!114 &-3300221208914343021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMODAssets/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637896984822896890
+  FileSizes:
+  - Name: Desktop
+    Value: 972
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -3300221208914343021}
+  - {fileID: 7151341731490660277}
+  EditorEvents:
+  - {fileID: 4312293605254871490}
+  - {fileID: -8270905863701211540}
+  - {fileID: 1155196080543744239}
+  - {fileID: -7249339507179411368}
+  - {fileID: 1653345476971257172}
+  - {fileID: -3554692828354673651}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 7151341731490660277}
+  StringsBanks:
+  - {fileID: -3300221208914343021}
+  cacheTime: 637896984822896890
+  cacheVersion: 10
+--- !u!114 &1155196080543744239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27,7 +157,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 72019
---- !u!114 &-3300221208914343021
+--- !u!114 &1653345476971257172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,18 +166,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/aa_tt_01
   m_EditorClassIdentifier: 
-  Path: FMODAssets/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637893616941727754
-  FileSizes:
-  - Name: Desktop
-    Value: 764
-  Exists: 1
---- !u!114 &11400000
+  Path: event:/aa_tt_01
+  Guid:
+    Data1: 331056851
+    Data2: 1252097656
+    Data3: 1410602630
+    Data4: -1471068079
+  Banks:
+  - {fileID: 7151341731490660277}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8751
+--- !u!114 &4312293605254871490
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,21 +193,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/aa_fe_01
   m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -3300221208914343021}
+  Path: event:/aa_fe_01
+  Guid:
+    Data1: -1746788071
+    Data2: 1156493113
+    Data3: -1052873539
+    Data4: 1715339532
+  Banks:
   - {fileID: 7151341731490660277}
-  EditorEvents:
-  - {fileID: -5998180801626841593}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 7151341731490660277}
-  StringsBanks:
-  - {fileID: -3300221208914343021}
-  cacheTime: 637893616941727754
-  cacheVersion: 10
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3996
 --- !u!114 &7151341731490660277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,8 +226,8 @@ MonoBehaviour:
   Path: FMODAssets/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637893616941717765
+  lastModified: 637896984822876900
   FileSizes:
   - Name: Desktop
-    Value: 700352
+    Value: 1116032
   Exists: 1

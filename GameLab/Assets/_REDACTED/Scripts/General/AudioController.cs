@@ -26,6 +26,14 @@ public class AudioController : MonoBehaviour
     [SerializeField]
     private static bool _isPuzzleThought;
 
+    [SerializeField]
+    private static FMOD.Studio.EventInstance instance;
+
+    [SerializeField]
+    private static int _instanceLength;
+
+    public static int InstanceLength => _instanceLength;
+
     private void Awake()
     {
         //singleton destroy pattern
@@ -51,15 +59,19 @@ public class AudioController : MonoBehaviour
             currentLineNumberFormatted = "0" + $"{_currentLineNumber}";
         }
 
-        if (_isPuzzleThought)
+        if (!_isPuzzleThought)
         {
-            //print($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentLineNumber}");
-            FMODUnity.RuntimeManager.PlayOneShot($"event:/{_currentAreaCode}"+ "_" + $"{_currentEncounterType}" + "_" + currentLineNumberFormatted);
+            instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + currentLineNumberFormatted);
+            instance.start();
+            GetInstanceLength();
+            instance.release();
         }
         else
         {
-            //print($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentPuzzleThoughtType}" + "_" + $"{_currentLineNumber}");
-            FMODUnity.RuntimeManager.PlayOneShot($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentPuzzleThoughtType}" + "_" + currentLineNumberFormatted);
+            instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentPuzzleThoughtType}" + "" + currentLineNumberFormatted);
+            instance.start();
+            GetInstanceLength();
+            instance.release();
         }
     }
 
@@ -105,4 +117,14 @@ public class AudioController : MonoBehaviour
             Debug.LogError("Voice line input string invalid.");
         }
     }
+
+    public static void GetInstanceLength()
+    {
+        FMOD.Studio.EventDescription eventDescription;
+        instance.getDescription(out eventDescription);
+        eventDescription.getLength(out _instanceLength);
+        float ceil = (float)_instanceLength / 1000;
+        _instanceLength = Mathf.CeilToInt(ceil);
+    }
 }
+
