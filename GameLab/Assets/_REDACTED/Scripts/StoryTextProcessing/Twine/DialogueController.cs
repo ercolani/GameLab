@@ -1,8 +1,10 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using static DialogueObject;
+using static AudioController;
 
 public class DialogueController : MonoBehaviour
 {
@@ -31,6 +33,9 @@ public class DialogueController : MonoBehaviour
     public event Action<bool> ToggleDialogue;
     private bool dialogueActive;
 
+    [SerializeField]
+    private PlayerDialogueInteraction playerDialogueInteraction;
+
     private void Awake()
     {
         dialogueObject = new Dialogue(twineText);
@@ -45,25 +50,15 @@ public class DialogueController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(playerDialogueInteraction.dialogueInteraction) && dialogueActive)
         {
-            if (!dialogueActive)
+            if (!currentNode.tags.Contains("END"))
             {
-                ToggleDialogue?.Invoke(true);
-                dialogueActive = true;
-               // InitializeDialogue();
+                NextNode(0);
             }
             else
             {
-                if (!currentNode.tags.Contains("END"))
-                {
-                    NextNode(0);
-                }
-                else
-                {
-                    dialogueActive = false;
-                    ToggleDialogue?.Invoke(false);
-                }
+                ToggleDialogue?.Invoke(false);
             }
         }
     }
@@ -85,8 +80,7 @@ public class DialogueController : MonoBehaviour
     {
         if (puzzleCommentInfo.Length == 0)
         {
-            ToggleDialogue?.Invoke(true);
-            dialogueActive = true;
+            ToggleDialogueState();
 
             currentNodeTitle = allStartNodes[passageIndex]; 
             currentNode = dialogueObject.GetNode(currentNodeTitle);
@@ -97,8 +91,7 @@ public class DialogueController : MonoBehaviour
             string areaCode = puzzleCommentInfo[0];
             string puzzleCommentType = puzzleCommentInfo[1];
 
-            ToggleDialogue?.Invoke(true);
-            dialogueActive = true;
+            ToggleDialogueState();
 
             List<string> matchingAreaPuzzleCommentNodes = allPuzzleCommentNodes.FindAll(node => node.Contains($"{areaCode}") && node.Contains($"{puzzleCommentType}"));
             currentNodeTitle = matchingAreaPuzzleCommentNodes[UnityEngine.Random.Range(0, matchingAreaPuzzleCommentNodes.Count)];
@@ -117,8 +110,7 @@ public class DialogueController : MonoBehaviour
 
         if (torchThoughtIndex < areaTorchThoughtNodes.Count)
         {
-            ToggleDialogue?.Invoke(true);
-            dialogueActive = true;
+            ToggleDialogueState();
 
             currentNodeTitle = areaTorchThoughtNodes[torchThoughtIndex];
             currentNode = dialogueObject.GetNode(currentNodeTitle);
@@ -137,6 +129,19 @@ public class DialogueController : MonoBehaviour
         Node nextNode = dialogueObject.GetNode(nextNodeID);
         currentNode = nextNode;
         onEnteredNode?.Invoke(nextNode);
+    }
+
+    public IEnumerator PlayAndRemoveTemporaryDialogueCoroutine(Node node)
+    {
+        float voiceLineLength = AudioController.InstanceLength;
+        yield return new WaitForSeconds(voiceLineLength);
+        ToggleDialogueState();
+    }
+
+    private void ToggleDialogueState()
+    {
+        dialogueActive = !dialogueActive;
+        ToggleDialogue?.Invoke(dialogueActive);
     }
 }
 

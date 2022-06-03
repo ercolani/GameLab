@@ -28,16 +28,16 @@ public class PlayerDialogueInteraction : MonoBehaviour
     private GameObject dialogueButton;
 
     /// <summary>
-    /// The key the player presses to interact with dialogue.
-    /// </summary>
-    [SerializeField]
-    private KeyCode dialogueInteraction;
-
-    /// <summary>
     /// The deity that currently is in range to be in dialogue with.
     /// </summary>
     [SerializeField]
     private Deity currentDeityInDialogue;
+
+    /// <summary>
+    /// The key the player presses to interact with dialogue.
+    /// </summary>
+    [SerializeField]
+    public KeyCode dialogueInteraction;
 
     /// <summary>
     /// Invoked when the player is in the dialogue range and presses the dialogue interaction key.
@@ -59,10 +59,7 @@ public class PlayerDialogueInteraction : MonoBehaviour
                 currentDeityInDialogue = deityComponent;
             }
         }
-
-        inRange = deityFound ? true : false;
-        dialogueButton.SetActive(inRange);
-
+        ChangeDialogueButtonState(deityFound);
         CheckPlayerInput();
     }
 
@@ -71,6 +68,16 @@ public class PlayerDialogueInteraction : MonoBehaviour
         if (Input.GetKeyDown(dialogueInteraction) && inRange && currentDeityInDialogue.IsReadyForDialogue)
         {
             DialogueFired?.Invoke(currentDeityInDialogue);
+        }
+    }
+
+    private void ChangeDialogueButtonState(bool deityFound)
+    {
+        inRange = deityFound ? true : false;
+        dialogueButton.SetActive(inRange);
+        if (inRange && !currentDeityInDialogue.IsReadyForDialogue)
+        {
+            dialogueButton.SetActive(false);
         }
     }
 }
