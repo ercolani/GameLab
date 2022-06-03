@@ -1285,7 +1285,7 @@ MonoBehaviour:
     isWorldmap: 0
     recalculate: 1
     min: 0
-    max: 122.81438
+    max: 284.31683
   - guid: Worldmap
     isWorldmap: 1
     recalculate: 0
