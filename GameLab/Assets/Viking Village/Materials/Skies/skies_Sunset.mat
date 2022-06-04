@@ -59,20 +59,19 @@ Material:
         m_Texture: {fileID: 8900000, guid: 162dc31de7b037a499723ffee6bd3e07, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
     m_Floats:
     - _AlphaTestRef: 0.5
     - _BumpScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EmissionScaleUI: 1
-    - _Exposure: 0.1
+    - _Exposure: 1.22
     - _Glossiness: 0
     - _Lightmapping: 1
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Rotation: 206
+    - _Rotation: 210
     - _SkyExponent: 3
     - _SrcBlend: 1
     - _UVSec: 0
@@ -83,7 +82,7 @@ Material:
     - _EmissionColorUI: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColorWithMapUI: {r: 1, g: 1, b: 1, a: 1}
     - _SpecularColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _Tint: {r: 0.8726415, g: 0.97879255, b: 1, a: 0.56078434}
+    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
     - _TintDay: {r: 1, g: 1, b: 1, a: 1}
     - _TintNight: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
