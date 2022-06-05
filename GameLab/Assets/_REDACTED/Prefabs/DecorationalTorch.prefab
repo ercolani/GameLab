@@ -14588,14 +14588,14 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.55087817, b: 0.25098038, a: 1}
-  m_Intensity: 40
-  m_Range: 40
+  m_Color: {r: 1, g: 0.7720167, b: 0.514151, a: 1}
+  m_Intensity: 30
+  m_Range: 30
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -14632,7 +14632,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 4170
+  m_ColorTemperature: 5977
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 1e-45, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
