@@ -1283,7 +1283,7 @@ MonoBehaviour:
     max: 126.78319
   - guid: 9444ce1709ee2604ea99306f01a3dae0
     isWorldmap: 0
-    recalculate: 1
+    recalculate: 0
     min: 0
     max: 284.31683
   - guid: Worldmap
