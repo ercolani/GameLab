@@ -106,12 +106,12 @@ Material:
     - _EmissionScaleUI: 1
     - _EnvironmentReflections: 1
     - _GlossMapScale: 1
-    - _Glossiness: 0.054
+    - _Glossiness: 0.8
     - _GlossyReflections: 1
     - _Lightmapping: 1
     - _Metallic: 0
     - _Mode: 0
-    - _OcclusionStrength: 0.3
+    - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
