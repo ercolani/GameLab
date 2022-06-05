@@ -123,11 +123,11 @@ Material:
     - _node_34: 0.1
     - _node_77: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.6508255, b: 0.33490568, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorAddSubDiff: {r: 1, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 1, g: 0.6508255, b: 0.33490565, a: 1}
-    - _EmissionColor: {r: 39.280815, g: 0.28959933, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 77.419815, g: 18.946169, b: 1.2160158, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 1, b: 0, a: 0}
     - _SpecularColor: {r: 0, g: 0, b: 0, a: 1}
     - _TintColor: {r: 1, g: 1, b: 1, a: 1}
