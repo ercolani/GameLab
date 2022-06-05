@@ -15,11 +15,11 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.16078432, g: 0.13333334, b: 0.15823741, a: 1}
-  m_FogMode: 2
+  m_FogColor: {r: 0.16078432, g: 0.13333334, b: 0.15686275, a: 1}
+  m_FogMode: 1
   m_FogDensity: 0.01
-  m_LinearFogStart: -10
-  m_LinearFogEnd: 800
+  m_LinearFogStart: 5
+  m_LinearFogEnd: 250
   m_AmbientSkyColor: {r: 0.36249998, g: 0.36874998, b: 0.4, a: 1}
   m_AmbientEquatorColor: {r: 0.2993421, g: 0.30855262, b: 0.35, a: 1}
   m_AmbientGroundColor: {r: 0.0375, g: 0.03877048, b: 0.05, a: 1}
@@ -5985,7 +5985,6 @@ Transform:
   - {fileID: 258011212}
   - {fileID: 966381878}
   - {fileID: 1637887328}
-  - {fileID: 1683373610}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6076,7 +6075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 946875588272133524, guid: e7adc6df976213b428ac7a82f5d3e632, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 946875588272133524, guid: e7adc6df976213b428ac7a82f5d3e632, type: 3}
       propertyPath: m_LocalScale.x
@@ -6691,7 +6690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 946875588272133524, guid: e7adc6df976213b428ac7a82f5d3e632, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 946875588272133524, guid: e7adc6df976213b428ac7a82f5d3e632, type: 3}
       propertyPath: m_LocalScale.x
@@ -8066,10 +8065,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Exposure: 0.39999983
+    - _Exposure: 0.39999974
     - _Rotation: -501
     m_Colors:
-    - _Tint: {r: 0.43845662, g: 0.50039303, b: 0.5566037, a: 1}
+    - _Tint: {r: 0.4384565, g: 0.50039303, b: 0.5566037, a: 1}
   m_BuildTextureStacks: []
 --- !u!4 &308076167 stripped
 Transform:
@@ -39469,134 +39468,6 @@ MonoBehaviour:
   m_stampJitter: 0.25
   m_stampWidth: 100
   m_stampHeight: 100
---- !u!1 &1683373609
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1683373610}
-  - component: {fileID: 1683373611}
-  m_Layer: 0
-  m_Name: Gaia Audio
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1683373610
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1683373609}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 106319443}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1683373611
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1683373609}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9ebcb7af51ae1964fa6e010748771eea, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.55
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 5000
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1711173896
 GameObject:
   m_ObjectHideFlags: 0
@@ -40721,7 +40592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 946875588272133524, guid: e7adc6df976213b428ac7a82f5d3e632, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 946875588272133524, guid: e7adc6df976213b428ac7a82f5d3e632, type: 3}
       propertyPath: m_LocalScale.x
@@ -40918,7 +40789,7 @@ MonoBehaviour:
   m_gaiaWeather:
     m_season: 0
     m_windDirection: 0
-  m_lodBias: 1
+  m_lodBias: 0.6
   m_kelvinTexture: {fileID: 2800000, guid: 4bd5e15076bc61649a16cce53a3ca4f7, type: 3}
   m_lightSystemMode: 0
   m_thirdPartyLightObject: {fileID: 0}
@@ -49799,8 +49670,8 @@ MonoBehaviour:
     m_hDMicroShadows: 1
     m_hDMicroShadowOpacity: 1
     m_skyboxHDRI: {fileID: 8900000, guid: 162dc31de7b037a499723ffee6bd3e07, type: 3}
-    m_skyboxTint: {r: 0.4384566, g: 0.50039303, b: 0.5566037, a: 1}
-    m_skyboxExposure: 0.3999998
+    m_skyboxTint: {r: 0.4384565, g: 0.50039303, b: 0.5566037, a: 1}
+    m_skyboxExposure: 0.39999974
     m_skyboxRotationOffset: 144
     m_sunSize: 0.04
     m_sunConvergence: 10
@@ -49873,11 +49744,11 @@ MonoBehaviour:
     m_hDAmbientSpecularIntensity: 1
     m_skyboxFogHeight: 0
     m_skyboxFogGradient: 0.75
-    m_fogMode: 2
-    m_fogColor: {r: 0.16078432, g: 0.13333334, b: 0.15823741, a: 1}
+    m_fogMode: 1
+    m_fogColor: {r: 0.16078432, g: 0.13333334, b: 0.15686275, a: 1}
     m_fogDensity: 0.01
-    m_fogStartDistance: -10
-    m_fogEndDistance: 800
+    m_fogStartDistance: 5
+    m_fogEndDistance: 250
     m_hDFogType: 3
     m_hDFogType2019_3: 1
     m_hDExponentialFogDensity: 1
@@ -51454,7 +51325,7 @@ MonoBehaviour:
   m_parentObjects: 1
   m_hideProcessVolume: 1
   m_enablePostProcessing: 1
-  m_enableAmbientAudio: 1
+  m_enableAmbientAudio: 0
   m_enableFog: 1
   m_antiAliasingMode: 3
   m_AAJitterSpread: 0.55

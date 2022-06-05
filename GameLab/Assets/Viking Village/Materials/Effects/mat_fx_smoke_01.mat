@@ -109,14 +109,14 @@ Material:
     - _InvFade: 3
     - _LightingEnabled: 1
     - _MaxDist: 10
-    - _Metallic: 0
+    - _Metallic: 0.95
     - _MinDist: 0
     - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.203
+    - _Smoothness: 1
     - _SmoothnessSource: 0
     - _SmoothnessTextureChannel: 0
     - _SoftParticlesEnabled: 1
