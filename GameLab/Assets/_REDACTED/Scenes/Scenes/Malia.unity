@@ -8,21 +8,21 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 0158cf79e7ee5a248a7db78ab2d7e7f2
-  m_OcclusionCullingData: {fileID: 36300000, guid: 80be668ec2bfcff4b91ffc4e5d77995a, type: 2}
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.16078432, g: 0.13333334, b: 0.15686275, a: 1}
-  m_FogMode: 1
-  m_FogDensity: 0.01
+  m_FogColor: {r: 0.8295964, g: 0.9417041, b: 1, a: 1}
+  m_FogMode: 2
+  m_FogDensity: 0.001
   m_LinearFogStart: 5
-  m_LinearFogEnd: 250
-  m_AmbientSkyColor: {r: 0.36249998, g: 0.36874998, b: 0.4, a: 1}
-  m_AmbientEquatorColor: {r: 0.2993421, g: 0.30855262, b: 0.35, a: 1}
-  m_AmbientGroundColor: {r: 0.0375, g: 0.03877048, b: 0.05, a: 1}
+  m_LinearFogEnd: 1100
+  m_AmbientSkyColor: {r: 0.70933735, g: 0.75, b: 0.75, a: 1}
+  m_AmbientEquatorColor: {r: 0.6, g: 0.5203125, b: 0.5109375, a: 1}
+  m_AmbientGroundColor: {r: 0.2, g: 0.17820264, b: 0.17, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
@@ -8060,15 +8060,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Tex:
-        m_Texture: {fileID: 8900000, guid: 162dc31de7b037a499723ffee6bd3e07, type: 3}
+        m_Texture: {fileID: 8900000, guid: 7f366e2ef5b515746af2ea5425c50daf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Exposure: 0.39999974
-    - _Rotation: -501
+    - _Exposure: 1
+    - _Rotation: 0
     m_Colors:
-    - _Tint: {r: 0.4384565, g: 0.50039303, b: 0.5566037, a: 1}
+    - _Tint: {r: 0.48749977, g: 0.5558694, b: 0.65, a: 1}
   m_BuildTextureStacks: []
 --- !u!4 &308076167 stripped
 Transform:
@@ -11058,7 +11058,7 @@ Material:
     - _NormalTile: 512
     - _OpaqueCullMode: 2
     - _PW_DstBlend: 0
-    - _PW_MainLightIntensity: 0.4
+    - _PW_MainLightIntensity: 5.5
     - _PW_SSS: 1
     - _PW_SSSDistortion: 0.34
     - _PW_SSSPower: 1
@@ -11106,12 +11106,12 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _AmbientColor: {r: 0.36249998, g: 0.36874998, b: 0.4, a: 1}
+    - _AmbientColor: {r: 0.70933735, g: 0.75, b: 0.75, a: 1}
     - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}
     - _EdgeWaterColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _PW_MainLightColor: {r: 0.42169428, g: 0.57919383, b: 1, a: 1}
-    - _PW_MainLightDir: {r: 0.037007116, g: 0.7071068, b: -0.70613766, a: 0}
+    - _PW_MainLightColor: {r: 1, g: 0.86903584, b: 0.8074487, a: 1}
+    - _PW_MainLightDir: {r: -0, g: 0.7660446, b: -0.6427874, a: 0}
     - _PW_MainLightSpecular: {r: 0.3137255, g: 0.27189302, b: 0.22345544, a: 1}
     - _PW_SSSTint: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectionColor: {r: 0.1, g: 0.12, b: 0.17, a: 1}
@@ -18138,8 +18138,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.42169428, g: 0.57919383, b: 1, a: 1}
-  m_Intensity: 0.4
+  m_Color: {r: 1, g: 0.86903584, b: 0.8074487, a: 1}
+  m_Intensity: 5.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -18196,7 +18196,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921728040}
-  m_LocalRotation: {x: -0.38255233, y: 0.02418435, z: -0.010017486, w: -0.92356294}
+  m_LocalRotation: {x: 0.4226184, y: 0, z: 0, w: 0.9063077}
   m_LocalPosition: {x: 196.6, y: 171.05, z: 500}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -20034,7 +20034,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 7414d4a52da263e4fa1af979a460032f, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 831d348cb92146f4ba475a9d34decfc4, type: 2}
 --- !u!1001 &1128753838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40796,7 +40796,7 @@ MonoBehaviour:
   DefaultLightingSet: 1
   m_lightingMultiSceneLightingSupport: 1
   m_lightingUpdateInRealtime: 1
-  m_selectedLightingProfileValuesIndex: 6
+  m_selectedLightingProfileValuesIndex: 1
   m_profileType: 1
   m_renamingProfile: 0
   m_lightingEditSettings: 0
@@ -49670,8 +49670,8 @@ MonoBehaviour:
     m_hDMicroShadows: 1
     m_hDMicroShadowOpacity: 1
     m_skyboxHDRI: {fileID: 8900000, guid: 162dc31de7b037a499723ffee6bd3e07, type: 3}
-    m_skyboxTint: {r: 0.4384565, g: 0.50039303, b: 0.5566037, a: 1}
-    m_skyboxExposure: 0.39999974
+    m_skyboxTint: {r: 0.43845648, g: 0.50039303, b: 0.5566037, a: 1}
+    m_skyboxExposure: 0.3999997
     m_skyboxRotationOffset: 144
     m_sunSize: 0.04
     m_sunConvergence: 10
@@ -51339,7 +51339,7 @@ MonoBehaviour:
   m_cameraSensorSize: {x: 70.41, y: 52.63}
   m_cameraFocalLength: 50
   m_globalReflectionProbe: 0
-  m_isUserProfileSet: 1
+  m_isUserProfileSet: 0
   m_enableAutoDOF: 1
   m_dofLayerDetection:
     serializedVersion: 2
@@ -51363,7 +51363,7 @@ MonoBehaviour:
     lightProbeSpawnRadius: 25
     seaLevel: 50
     filterMode: 1
-  m_universalPostFXProfile: {fileID: 11400000, guid: 7414d4a52da263e4fa1af979a460032f, type: 2}
+  m_universalPostFXProfile: {fileID: 11400000, guid: 831d348cb92146f4ba475a9d34decfc4, type: 2}
   m_waterSystemMode: 0
   m_thirdPartyWaterObject: {fileID: 0}
   DefaultWaterSet: 1
