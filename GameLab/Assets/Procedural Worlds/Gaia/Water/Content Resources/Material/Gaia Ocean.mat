@@ -87,24 +87,24 @@ Material:
     - _FoamBubbblesScale: 0.5
     - _FoamBubblesStrength: 0.8
     - _FoamBubblesTile: 1536
-    - _FoamDepth: 1
+    - _FoamDepth: 0.2
     - _FoamEdge: 0.25
     - _FoamMoveSpeed: 0.3
-    - _FoamStrength: 2
+    - _FoamStrength: 1.78
     - _FoamTexTile: 256
     - _Foam_Metallic: 0.4
     - _Foam_Smoothness: 0.2
-    - _Metallic: 0.2
+    - _Metallic: 0.72
     - _NormalFadeDistance: 300
     - _NormalFadeStart: 50
     - _NormalLayer0: 0.4
-    - _NormalLayer0Scale: 0.33
+    - _NormalLayer0Scale: 0
     - _NormalLayer1: 0.6
-    - _NormalLayer1Scale: 0.33
-    - _NormalLayer2Scale: 0.08
+    - _NormalLayer1Scale: 0
+    - _NormalLayer2Scale: 0
     - _NormalMoveScale: 0.0003
     - _NormalSpeed: 1.25
-    - _NormalTile: 512
+    - _NormalTile: 64
     - _OpaqueCullMode: 2
     - _PW_DstBlend: 0
     - _PW_MainLightIntensity: 5.5
@@ -145,11 +145,11 @@ Material:
     - _UseShadowThreshold: 0
     - _WaveBackwashToggle: 0
     - _WaveDirGlobal: 0
-    - _WaveLength: 128
+    - _WaveLength: 64
     - _WavePeakToggle: 1
     - _WaveShoreClamp: 0
-    - _WaveSpeed: 10
-    - _WaveSteepness: 0.1
+    - _WaveSpeed: 5
+    - _WaveSteepness: 0.3
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
@@ -160,7 +160,7 @@ Material:
     - _EdgeWaterColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _PW_MainLightColor: {r: 1, g: 0.86903584, b: 0.8074487, a: 1}
-    - _PW_MainLightDir: {r: -0, g: 0.7660446, b: -0.64278746, a: 0}
+    - _PW_MainLightDir: {r: -0, g: 0.7660446, b: -0.6427874, a: 0}
     - _PW_MainLightSpecular: {r: 0.3137255, g: 0.27189302, b: 0.22345544, a: 1}
     - _PW_SSSTint: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectionColor: {r: 0.1, g: 0.12, b: 0.17, a: 1}
