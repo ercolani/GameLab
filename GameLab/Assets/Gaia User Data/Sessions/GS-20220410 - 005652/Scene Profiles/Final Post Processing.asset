@@ -28,7 +28,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5e1dc532bcb41949b58bc4f2abfbb7e, type: 3}
   m_Name: LensDistortion
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   intensity:
     m_OverrideState: 1
     m_Value: -0.1
@@ -420,7 +420,7 @@ MonoBehaviour:
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 37.833313
+    m_Value: 2.2124152
   aperture:
     m_OverrideState: 1
     m_Value: 15.4
@@ -547,7 +547,7 @@ MonoBehaviour:
   active: 1
   distance:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 0.2
   cropToFit:
     m_OverrideState: 1
     m_Value: 1

@@ -91,12 +91,12 @@ Material:
     - _ElementLayer: 0
     - _ElementLayerCustomMessage: 0
     - _ElementLayerGrassMessage: 0
-    - _ElementLayerMask: 1
+    - _ElementLayerMask: -1
     - _ElementLayerMessage: 0
     - _ElementLayerObjectsMessage: 0
     - _ElementLayerValue: 0
     - _ElementLayerVegetationMessage: 0
-    - _ElementLayerWarning: 0
+    - _ElementLayerWarning: 1
     - _ElementMode: 0
     - _ElementRaycastEndValue: 15
     - _ElementRaycastMask: 1
@@ -130,7 +130,7 @@ Material:
     - _MotionDirectionX: 0
     - _MotionDirectionZ: 1
     - _MotionPower: 0.871
-    - _NoiseIntensityValue: 0.529
+    - _NoiseIntensityValue: 0.5
     - _NoiseMaxValue: 1
     - _NoiseMinValue: 0
     - _NoiseScaleValue: 5.58
