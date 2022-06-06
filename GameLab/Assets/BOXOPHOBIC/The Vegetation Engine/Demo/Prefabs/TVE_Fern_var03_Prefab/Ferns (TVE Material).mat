@@ -365,16 +365,17 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
     - _AdvancedCat: 0
     - _AlbedoAffectEmissive: 0
-    - _AlphaCutoff: 0.061
+    - _AlphaCutoff: 0.5
     - _AlphaCutoffEnable: 1
-    - _AlphaCutoffPostpass: 0.061
-    - _AlphaCutoffPrepass: 0.061
+    - _AlphaCutoffPostpass: 0.5
+    - _AlphaCutoffPrepass: 0.5
     - _AlphaMaskMaxValue: 0
     - _AlphaMaskMinValue: 0
     - _AlphaVariationValue: 0
@@ -405,7 +406,7 @@ Material:
     - _CullMode: 0
     - _CullModeForward: 0
     - _CullModeNormalFlip: 1
-    - _Cutoff: 0.061
+    - _Cutoff: 0.5
     - _DebugTreeOcclusion: 0
     - _DepthOffset: 0
     - _DepthOffsetEnable: 0
@@ -639,7 +640,7 @@ Material:
     - _ShaderMode: 0
     - _ShiverDirectionality: 0.5
     - _ShiverDrag: 0.2
-    - _SizeFadeCat: 0
+    - _SizeFadeCat: 1
     - _SizeFadeEndValue: 300
     - _SizeFadeMessage: 0
     - _SizeFadeMode: 0
@@ -760,7 +761,7 @@ Material:
     - _render_blend: 0
     - _render_clip: 1
     - _render_cull: 0
-    - _render_cutoff: 0.061
+    - _render_cutoff: 0.5
     - _render_dst: 0
     - _render_mode: 0
     - _render_normals: 0
@@ -806,10 +807,8 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _SubsurfaceColor: {r: 0.3146554, g: 0.3679245, b: 0.005206469, a: 1}
-    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
-    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
+    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
+    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceMaskRemap: {r: 0.42937854, g: 1, b: 0, a: 0}
     - _ThicknessRemap: {r: 0, g: 0.493397, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
@@ -819,3 +818,4 @@ Material:
     - _VertexOcclusionColor: {r: 1, g: 1, b: 1, a: 1}
     - _VertexOcclusionRemap: {r: 0, g: 1, b: 0, a: 0}
     - _render_normals_options: {r: -1, g: -1, b: -1, a: 0}
+  m_BuildTextureStacks: []

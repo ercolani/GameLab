@@ -63,6 +63,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdditionalValue1: 0
     - _AdditionalValue2: 0
@@ -90,12 +91,12 @@ Material:
     - _ElementLayer: 0
     - _ElementLayerCustomMessage: 0
     - _ElementLayerGrassMessage: 0
-    - _ElementLayerMask: 1
+    - _ElementLayerMask: -1
     - _ElementLayerMessage: 0
     - _ElementLayerObjectsMessage: 0
     - _ElementLayerValue: 0
     - _ElementLayerVegetationMessage: 0
-    - _ElementLayerWarning: 0
+    - _ElementLayerWarning: 1
     - _ElementMode: 0
     - _ElementRaycastEndValue: 15
     - _ElementRaycastMask: 1
@@ -128,12 +129,12 @@ Material:
     - _Mode: 0
     - _MotionDirectionX: 0
     - _MotionDirectionZ: 1
-    - _MotionPower: 1
-    - _NoiseIntensityValue: 1
+    - _MotionPower: 0.871
+    - _NoiseIntensityValue: 0.5
     - _NoiseMaxValue: 1
     - _NoiseMinValue: 0
-    - _NoiseScaleValue: 10
-    - _NoiseSpeedValue: 0.5
+    - _NoiseScaleValue: 5.58
+    - _NoiseSpeedValue: 0.999
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RaycastDistanceEndValue: 20
@@ -176,3 +177,4 @@ Material:
     - _SpringColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
     - _SummerColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
     - _WinterColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  m_BuildTextureStacks: []

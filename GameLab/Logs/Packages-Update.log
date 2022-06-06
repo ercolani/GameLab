@@ -59,3 +59,12 @@ The following packages were updated:
   com.unity.terrain-tools from version 3.0.2-preview.3 to 4.0.3
   com.unity.test-framework from version 1.1.27 to 1.1.29
   com.unity.timeline from version 1.4.8 to 1.6.3
+
+=== Mon Jun  6 09:00:58 2022
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.cinemachine@2.8.3
+  com.unity.visualscripting@1.7.6

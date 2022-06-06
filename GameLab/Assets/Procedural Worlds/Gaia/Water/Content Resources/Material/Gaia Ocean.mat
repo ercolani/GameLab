@@ -118,7 +118,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
-    - _Smoothness: 0.8
+    - _Smoothness: 0.7
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 0
@@ -134,7 +134,7 @@ Material:
     - _SurfaceType: 1
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
-    - _TransparentDepth: 0.3
+    - _TransparentDepth: 0.2
     - _TransparentDepthPostpassEnable: 0
     - _TransparentDepthPrepassEnable: 0
     - _TransparentMin: 0
@@ -149,7 +149,7 @@ Material:
     - _WavePeakToggle: 1
     - _WaveShoreClamp: 0
     - _WaveSpeed: 15
-    - _WaveSteepness: 0.2
+    - _WaveSteepness: 0.5
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4

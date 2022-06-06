@@ -46,7 +46,9 @@ Material:
         m_Texture: {fileID: 2800000, guid: 0fc0d86c15de4a46b1c81c01416fc7fb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
+    - _AlphaCutoff: 0.3
     - _AlphaVariationValue: 1
     - _ColorsMaskMaxValue: 0
     - _ColorsMaskMinValue: 0
@@ -91,7 +93,7 @@ Material:
     - _MainCat: 1
     - _MainLightAngleValue: 16
     - _MainLightNormalValue: 0.5
-    - _MainLightScatteringValue: 2
+    - _MainLightScatteringValue: 1.66
     - _MainNormalValue: 2
     - _MainOcclusionValue: 0
     - _MainSmoothnessValue: 0.2
@@ -116,8 +118,8 @@ Material:
     - _NoiseMinValue: 0
     - _NoiseScaleValue: 0.01
     - _OcclusionCat: 1
-    - _OverlayMaskMaxValue: 0.445
-    - _OverlayMaskMinValue: 0.181
+    - _OverlayMaskMaxValue: 0.264
+    - _OverlayMaskMinValue: 0
     - _OverlayVariationValue: 0.5
     - _PerspectiveAngleValue: 1
     - _PerspectiveCat: 1
@@ -174,6 +176,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorsMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _DetailBlendRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissiveIntensityParams: {r: 1, g: 1, b: 1, a: 0}
     - _EmissiveUVs: {r: 1, g: 1, b: 0, a: 0}
@@ -188,13 +191,12 @@ Material:
     - _NoiseColorOne: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseColorTwo: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseMaskRemap: {r: 0, g: 0, b: 0, a: 0}
-    - _OverlayMaskRemap: {r: 0, g: 0, b: 0, a: 0}
-    - _SubsurfaceColor: {r: 5.992157, g: 3.759171, b: 0, a: 1}
-    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
-    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
+    - _OverlayMaskRemap: {r: 0, g: 0.264, b: 0, a: 0}
+    - _SubsurfaceColor: {r: 4.8301888, g: 3.0346735, b: 0, a: 1}
+    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
+    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceMaskRemap: {r: 0, g: 0, b: 0, a: 0}
-    - _VertexOcclusionColor: {r: 0.13522962, g: 0.1981132, b: 0.062611245, a: 1}
+    - _VertexOcclusionColor: {r: 0, g: 0, b: 0, a: 1}
     - _VertexOcclusionRemap: {r: 0, g: 0, b: 0, a: 0}
     - _render_normals_options: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []

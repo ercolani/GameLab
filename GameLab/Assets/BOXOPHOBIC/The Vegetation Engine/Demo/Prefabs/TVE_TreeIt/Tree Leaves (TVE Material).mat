@@ -135,7 +135,7 @@ Material:
     - _RenderSpecular: 1
     - _RenderZWrite: 1
     - _RenderingCat: 1
-    - _SizeFadeCat: 0
+    - _SizeFadeCat: 1
     - _SizeFadeEndValue: 300
     - _SizeFadeMessage: 0
     - _SizeFadeMode: 0
@@ -187,7 +187,7 @@ Material:
     - _NoiseColorTwo: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _OverlayMaskRemap: {r: 0, g: 0, b: 0, a: 0}
-    - _SubsurfaceColor: {r: 0.4, g: 0.4, b: 0.1, a: 1}
+    - _SubsurfaceColor: {r: 0.38679248, g: 0.38679248, b: 0.10764508, a: 1}
     - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceMaskRemap: {r: 0, g: 0, b: 0, a: 0}
