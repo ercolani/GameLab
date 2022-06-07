@@ -9680,7 +9680,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 1
+  moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
   randomSeed: 0
@@ -14322,8 +14322,8 @@ Transform:
   m_GameObject: {fileID: 7927658294689351783}
   m_LocalRotation: {x: -0, y: -0.34987795, z: -0, w: -0.93679535}
   m_LocalPosition: {x: -0.345, y: -0.336, z: 0.027}
-  m_LocalScale: {x: 20.400003, y: 20.400002, z: 20.400002}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 20.4, y: 20.400002, z: 20.400002}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1011114956668699693}
   m_Father: {fileID: 0}

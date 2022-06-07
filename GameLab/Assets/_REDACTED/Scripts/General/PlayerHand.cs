@@ -95,6 +95,7 @@ public class PlayerHand : MonoBehaviour
             {
                 if (obj.gameObject.CompareTag("Holder"))
                 {
+                    Debug.LogError(obj.name);
                     if (obj.TryGetComponent(out ObjectHolder objectHolder))
                     {
                         if (!objectHolder.HasObject())
