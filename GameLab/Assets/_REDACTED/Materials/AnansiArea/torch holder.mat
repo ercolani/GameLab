@@ -21,18 +21,21 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: torch holder
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP
+  m_Shader: {fileID: 4800000, guid: 1179777fe2a84944798f2df69a9616a5, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: 693c8f80d1a341f45b1b557d7cf2ab77, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -58,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 693c8f80d1a341f45b1b557d7cf2ab77, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5a48fe1c6a0db614d8f1824bc51404cd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -91,7 +94,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Boolean_8A2B8817: 0
+    - PixelSnap: 0
+    - _AdditionalValue1: 1
+    - _AdditionalValue2: 1
+    - _AdditionalValue3: 1
+    - _AdditionalValue4: 1
+    - _AdvancedCat: 1
     - _AlphaClip: 0
+    - _Banner: 0
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -101,27 +112,74 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _ElementBlendA: 0
+    - _ElementCat: 1
+    - _ElementColorsMode: 15
+    - _ElementFadeSupport: 0
+    - _ElementIntensity: 1
+    - _ElementLayerMask: 1
+    - _ElementLayerMessage: 0
+    - _ElementLayerValue: -1
+    - _ElementLayerWarning: 0
+    - _ElementMode: 0
+    - _ElementRaycastMode: 0
+    - _ElementVolumeFadeMode: 0
+    - _EnableExternalAlpha: 0
     - _EnvironmentReflections: 1
+    - _FadeCat: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _InfluenceValue1: 1
+    - _InfluenceValue2: 1
+    - _InfluenceValue3: 1
+    - _InfluenceValue4: 1
+    - _InvertX: 0
+    - _IsColorsElement: 1
+    - _IsElementShader: 1
+    - _IsVersion: 600
+    - _MainTexMaxValue: 1
+    - _MainTexMinValue: 0
+    - _MainValue: 1
+    - _Message: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _OpacityThreshold: 0
     - _Parallax: 0.02
+    - _QueueControl: 0
     - _QueueOffset: 0
+    - _RaycastDistanceEndValue: 2
+    - _RaycastFadeValue: 1
+    - _RaycastLayerMask: 1
+    - _RaycastMessage: 0
     - _ReceiveShadows: 1
+    - _RenderCat: 1
     - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
     - _UVSec: 0
+    - _UseColorMap: 0
+    - _UseEmissiveMap: 0
+    - _UseMetallicMap: 0
+    - _UseNormalMap: 0
+    - _UseRoughnessMap: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - _render_colormask: 15
+    - _render_dst: 0
+    - _render_src: 2
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MainColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+    - _MainTexRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _MainUVs: {r: 1, g: 1, b: 0, a: 0}
+    - _NoiseRemap: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _UvOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _UvTiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

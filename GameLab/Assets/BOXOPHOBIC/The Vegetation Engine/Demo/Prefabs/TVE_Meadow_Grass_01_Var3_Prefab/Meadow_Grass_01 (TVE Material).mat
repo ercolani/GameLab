@@ -50,9 +50,9 @@ Material:
     m_Floats:
     - _AlphaCutoff: 0.3
     - _AlphaVariationValue: 1
-    - _ColorsMaskMaxValue: 0
+    - _ColorsMaskMaxValue: 1
     - _ColorsMaskMinValue: 0
-    - _ColorsVariationValue: 0
+    - _ColorsVariationValue: 0.5
     - _Cutoff: 0.3
     - _DetailBlendMode: 1
     - _DetailCat: 0
@@ -118,7 +118,7 @@ Material:
     - _NoiseMinValue: 0
     - _NoiseScaleValue: 0.01
     - _OcclusionCat: 1
-    - _OverlayMaskMaxValue: 0.264
+    - _OverlayMaskMaxValue: 1
     - _OverlayMaskMinValue: 0
     - _OverlayVariationValue: 0.5
     - _PerspectiveAngleValue: 1
@@ -174,7 +174,7 @@ Material:
     m_Colors:
     - _AlphaMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorsMaskRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorsMaskRemap: {r: 0, g: 1, b: 0, a: 0}
     - _DetailBlendRemap: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
@@ -190,12 +190,12 @@ Material:
     - _MotionHighlightColor: {r: 2.9960785, g: 1.882353, b: 0, a: 1}
     - _NoiseColorOne: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseColorTwo: {r: 1, g: 1, b: 1, a: 1}
-    - _NoiseMaskRemap: {r: 0, g: 0, b: 0, a: 0}
-    - _OverlayMaskRemap: {r: 0, g: 0.264, b: 0, a: 0}
+    - _NoiseMaskRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _OverlayMaskRemap: {r: 0, g: 1, b: 0, a: 0}
     - _SubsurfaceColor: {r: 4.8301888, g: 3.0346735, b: 0, a: 1}
     - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
-    - _SubsurfaceMaskRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _SubsurfaceMaskRemap: {r: 0, g: 1, b: 0, a: 0}
     - _VertexOcclusionColor: {r: 0, g: 0, b: 0, a: 1}
     - _VertexOcclusionRemap: {r: 0, g: 0, b: 0, a: 0}
     - _render_normals_options: {r: 1, g: 1, b: 1, a: 0}

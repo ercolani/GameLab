@@ -123,6 +123,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedCat: 0
     - _AlphaCutoff: 0.5
@@ -161,7 +162,7 @@ Material:
     - _GlobalEmissive: 1
     - _GlobalHealthiness: 1
     - _GlobalLeaves: 1
-    - _GlobalOverlay: 1
+    - _GlobalOverlay: 0.239
     - _GlobalSize: 1
     - _GlobalSizeFade: 0
     - _GlobalSpace: 0
