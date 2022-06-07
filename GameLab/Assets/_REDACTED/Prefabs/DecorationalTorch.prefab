@@ -14661,8 +14661,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LensFlareData: {fileID: 11400000, guid: 3a39ff759ebd46646b9fe5b4b47c82c9, type: 2}
-  intensity: 0.1
-  maxAttenuationDistance: 20
+  intensity: 0.08
+  maxAttenuationDistance: 10
   maxAttenuationScale: 20
   distanceAttenuationCurve:
     serializedVersion: 2
