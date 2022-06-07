@@ -91,11 +91,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Banner: 0
-    - _BarkCategory: 0
+    - _BarkCategory: 1
     - _BarkMessage: 0
-    - _BaseCategory: 0
+    - _BaseCategory: 1
     - _BumpScale: 1
     - _Cutoff: 0.075
     - _DetailNormalMapScale: 1
@@ -104,20 +105,20 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _LeafCategory: 0
+    - _LeafCategory: 1
     - _LeafMessage: 0
     - _MainMessage: 0
     - _Metallic: 0
     - _Mode: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _SettingsCategory: 0
+    - _SettingsCategory: 1
     - _ShaderMode: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SubsurfaceMode: 0
-    - _SurfaceCategory: 0
+    - _SurfaceCategory: 1
     - _SurfaceMessage: 0
     - _UVSec: 0
     - _ZWrite: 1
@@ -125,3 +126,4 @@ Material:
     m_Colors:
     - _Color: {r: 0.55, g: 0.55, b: 0.55, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

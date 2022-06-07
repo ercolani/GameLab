@@ -123,6 +123,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedCat: 0
     - _AlphaCutoff: 0.6
@@ -294,7 +295,7 @@ Material:
     - _RenderingCat: 1
     - _SettingsCategory: 0
     - _ShaderMode: 0
-    - _SizeFadeCat: 0
+    - _SizeFadeCat: 1
     - _SizeFadeEndValue: 300
     - _SizeFadeMessage: 0
     - _SizeFadeMode: 0
