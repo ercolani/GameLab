@@ -4,7 +4,7 @@ ShaderImporter:
   externalObjects: {}
   defaultTextures:
   - _TextureSample0: {fileID: 2800000, guid: eef1af8311c1a42488221f58f7351552, type: 3}
-  - _TextureSample1: {fileID: 2800000, guid: 195239ab5bed5b449ac82988aa70cd44, type: 3}
+  - _TextureSample1: {fileID: 2800000, guid: 32412e58747b92647aaf7ae19216e336, type: 3}
   nonModifiableTextures: []
   preprocessorOverride: 0
   userData: 

@@ -73,14 +73,14 @@ public class GrowVines : MonoBehaviour
         }
     }
 
-    private void Update()
+    /// <summary>
+    /// Called by an external class to begin the vine growing.
+    /// </summary>
+    public void ToggleGrowingVines()
     {
-        if (Input.GetKeyDown(KeyCode.V))
+        for (int i = 0; i < vineGrowMaterials.Count; i++)
         {
-            for (int i = 0; i < vineGrowMaterials.Count; i++)
-            {
-                StartCoroutine(GrowVinesCoroutine(vineGrowMaterials[i]));
-            }
+            StartCoroutine(GrowVinesCoroutine(vineGrowMaterials[i]));
         }
     }
 
