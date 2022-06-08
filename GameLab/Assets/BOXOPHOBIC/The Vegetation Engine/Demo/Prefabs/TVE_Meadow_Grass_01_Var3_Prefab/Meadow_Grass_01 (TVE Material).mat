@@ -50,8 +50,8 @@ Material:
     m_Floats:
     - _AlphaCutoff: 0.3
     - _AlphaVariationValue: 1
-    - _ColorsMaskMaxValue: 1
-    - _ColorsMaskMinValue: 0
+    - _ColorsMaskMaxValue: 0.9999999
+    - _ColorsMaskMinValue: 0.49541286
     - _ColorsVariationValue: 0.5
     - _Cutoff: 0.3
     - _DetailBlendMode: 1
@@ -174,7 +174,7 @@ Material:
     m_Colors:
     - _AlphaMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorsMaskRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _ColorsMaskRemap: {r: 0.49541286, g: 0.9999999, b: 0, a: 0}
     - _DetailBlendRemap: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
