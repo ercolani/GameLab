@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 921728041}
-  m_IndirectSpecularColor: {r: 0.01774839, g: 0.021389263, b: 0.029315477, a: 1}
+  m_IndirectSpecularColor: {r: 0.012506857, g: 0.013853676, b: 0.017045192, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9325,68 +9325,6 @@ MonoBehaviour:
   m_gaiaCreatedControllers:
   - {fileID: 0}
   - {fileID: 0}
---- !u!21 &366667905
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Element
-  m_Shader: {fileID: 4800000, guid: 853be43322d350648a82ec17b27de5cf, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _AdvancedCat: 1
-    - _Banner: 0
-    - _ElementCat: 1
-    - _ElementColorsMode: 15
-    - _ElementFadeSupport: 0
-    - _ElementIntensity: 1
-    - _ElementLayerMask: 1
-    - _ElementLayerMessage: 0
-    - _ElementLayerValue: 0
-    - _ElementLayerWarning: 0
-    - _ElementMode: 0
-    - _ElementRaycastMode: 0
-    - _ElementVolumeFadeMode: 0
-    - _FadeCat: 1
-    - _InvertX: 0
-    - _IsColorsElement: 1
-    - _IsElementShader: 1
-    - _IsVersion: 600
-    - _MainTexMaxValue: 1
-    - _MainTexMinValue: 0
-    - _Message: 0
-    - _RaycastDistanceEndValue: 2
-    - _RaycastFadeValue: 1
-    - _RaycastLayerMask: 1
-    - _RaycastMessage: 0
-    - _RenderCat: 1
-    - _render_colormask: 15
-    m_Colors:
-    - _AdditionalColor1: {r: 1, g: 0.90744704, b: 0.8349056, a: 1}
-    - _AdditionalColor2: {r: 0.5548354, g: 0.57547164, b: 0.24158859, a: 0.6509804}
-    - _AdditionalColor3: {r: 0.37496215, g: 0.5, b: 0.29481032, a: 0.5019608}
-    - _AdditionalColor4: {r: 0.5943396, g: 0.43294215, b: 0.31118658, a: 1}
-    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MainTexRemap: {r: 0, g: 0.99999994, b: 0, a: 0}
-    - _MainUVs: {r: 1, g: 1, b: 0, a: 0}
-    - _NoiseRemap: {r: 0, g: 0, b: 0, a: 0}
-  m_BuildTextureStacks: []
 --- !u!1 &368834992
 GameObject:
   m_ObjectHideFlags: 0
@@ -18253,7 +18191,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 3b10ef2caf2292d4e99442a9682de863, type: 3}
   m_PrefabInstance: {fileID: 1749624632}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &738162500
+--- !u!21 &746389132
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -18261,7 +18199,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Element
-  m_Shader: {fileID: 4800000, guid: 853be43322d350648a82ec17b27de5cf, type: 3}
+  m_Shader: {fileID: 4800000, guid: b3820571eb3f04f4f855cc7161c165d7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -18278,41 +18216,39 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AdditionalValue1: 1
+    - _AdditionalValue2: 0
+    - _AdditionalValue3: 0
+    - _AdditionalValue4: 0
     - _AdvancedCat: 1
     - _Banner: 0
     - _ElementCat: 1
-    - _ElementColorsMode: 15
     - _ElementFadeSupport: 0
     - _ElementIntensity: 1
     - _ElementLayerMask: 1
     - _ElementLayerMessage: 0
     - _ElementLayerValue: 0
     - _ElementLayerWarning: 0
-    - _ElementMode: 0
+    - _ElementMode: 1
     - _ElementRaycastMode: 0
     - _ElementVolumeFadeMode: 0
     - _FadeCat: 1
     - _InvertX: 0
-    - _IsColorsElement: 1
     - _IsElementShader: 1
+    - _IsExtrasElement: 1
     - _IsVersion: 600
     - _MainTexMaxValue: 1
     - _MainTexMinValue: 0
+    - _MainValue: 0
     - _Message: 0
     - _RaycastDistanceEndValue: 2
     - _RaycastFadeValue: 1
     - _RaycastLayerMask: 1
     - _RaycastMessage: 0
     - _RenderCat: 1
-    - _render_colormask: 15
     m_Colors:
-    - _AdditionalColor1: {r: 1, g: 0.90744704, b: 0.8349056, a: 1}
-    - _AdditionalColor2: {r: 0.5548354, g: 0.57547164, b: 0.24158856, a: 0.6509804}
-    - _AdditionalColor3: {r: 0.37496212, g: 0.5, b: 0.2948103, a: 0.5019608}
-    - _AdditionalColor4: {r: 0.5943396, g: 0.43294212, b: 0.31118655, a: 1}
-    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MainTexRemap: {r: 0, g: 0.99999994, b: 0, a: 0}
-    - _MainUVs: {r: 1, g: 1, b: 0, a: 0}
+    - _MainTexRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _MainUVs: {r: 4, g: 4, b: 0, a: 0}
     - _NoiseRemap: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!4 &746952497 stripped
@@ -24667,6 +24603,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 6e2eab48a2a561b4fa3c068ad21b25fe, type: 3}
   m_PrefabInstance: {fileID: 2027896320}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &936248365
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Element
+  m_Shader: {fileID: 4800000, guid: 853be43322d350648a82ec17b27de5cf, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AdvancedCat: 1
+    - _Banner: 0
+    - _ElementCat: 1
+    - _ElementColorsMode: 15
+    - _ElementFadeSupport: 0
+    - _ElementIntensity: 1
+    - _ElementLayerMask: 1
+    - _ElementLayerMessage: 0
+    - _ElementLayerValue: 0
+    - _ElementLayerWarning: 0
+    - _ElementMode: 0
+    - _ElementRaycastMode: 0
+    - _ElementVolumeFadeMode: 0
+    - _FadeCat: 1
+    - _InvertX: 0
+    - _IsColorsElement: 1
+    - _IsElementShader: 1
+    - _IsVersion: 600
+    - _MainTexMaxValue: 1
+    - _MainTexMinValue: 0
+    - _Message: 0
+    - _RaycastDistanceEndValue: 2
+    - _RaycastFadeValue: 1
+    - _RaycastLayerMask: 1
+    - _RaycastMessage: 0
+    - _RenderCat: 1
+    - _render_colormask: 15
+    m_Colors:
+    - _AdditionalColor1: {r: 1, g: 0.90744704, b: 0.8349056, a: 1}
+    - _AdditionalColor2: {r: 0.5548354, g: 0.57547164, b: 0.24158856, a: 0.6509804}
+    - _AdditionalColor3: {r: 0.37496212, g: 0.5, b: 0.2948103, a: 0.5019608}
+    - _AdditionalColor4: {r: 0.5943396, g: 0.43294212, b: 0.31118655, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainTexRemap: {r: 0, g: 0.99999994, b: 0, a: 0}
+    - _MainUVs: {r: 1, g: 1, b: 0, a: 0}
+    - _NoiseRemap: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
 --- !u!114 &944995304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25272,66 +25270,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: f52a56c4da29c034f9836ff268f823d6, type: 3}
   m_PrefabInstance: {fileID: 7065985690040653183}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &996476307
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Element
-  m_Shader: {fileID: 4800000, guid: b3820571eb3f04f4f855cc7161c165d7, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _AdditionalValue1: 1
-    - _AdditionalValue2: 0
-    - _AdditionalValue3: 0
-    - _AdditionalValue4: 0
-    - _AdvancedCat: 1
-    - _Banner: 0
-    - _ElementCat: 1
-    - _ElementFadeSupport: 0
-    - _ElementIntensity: 1
-    - _ElementLayerMask: 1
-    - _ElementLayerMessage: 0
-    - _ElementLayerValue: 0
-    - _ElementLayerWarning: 0
-    - _ElementMode: 1
-    - _ElementRaycastMode: 0
-    - _ElementVolumeFadeMode: 0
-    - _FadeCat: 1
-    - _InvertX: 0
-    - _IsElementShader: 1
-    - _IsExtrasElement: 1
-    - _IsVersion: 600
-    - _MainTexMaxValue: 1
-    - _MainTexMinValue: 0
-    - _MainValue: 0
-    - _Message: 0
-    - _RaycastDistanceEndValue: 2
-    - _RaycastFadeValue: 1
-    - _RaycastLayerMask: 1
-    - _RaycastMessage: 0
-    - _RenderCat: 1
-    m_Colors:
-    - _MainTexRemap: {r: 0, g: 0, b: 0, a: 0}
-    - _MainUVs: {r: 4, g: 4, b: 0, a: 0}
-    - _NoiseRemap: {r: 0, g: 0, b: 0, a: 0}
-  m_BuildTextureStacks: []
 --- !u!1 &998392636
 GameObject:
   m_ObjectHideFlags: 0
@@ -26991,6 +26929,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 31ff1d9c660717640aa75c9feef614cd, type: 3}
   m_PrefabInstance: {fileID: 4524660983026964620}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1170431015
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Element
+  m_Shader: {fileID: 4800000, guid: b3820571eb3f04f4f855cc7161c165d7, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AdditionalValue1: 1
+    - _AdditionalValue2: 0
+    - _AdditionalValue3: 0
+    - _AdditionalValue4: 0
+    - _AdvancedCat: 1
+    - _Banner: 0
+    - _ElementCat: 1
+    - _ElementFadeSupport: 0
+    - _ElementIntensity: 1
+    - _ElementLayerMask: 1
+    - _ElementLayerMessage: 0
+    - _ElementLayerValue: 0
+    - _ElementLayerWarning: 0
+    - _ElementMode: 1
+    - _ElementRaycastMode: 0
+    - _ElementVolumeFadeMode: 0
+    - _FadeCat: 1
+    - _InvertX: 0
+    - _IsElementShader: 1
+    - _IsExtrasElement: 1
+    - _IsVersion: 600
+    - _MainTexMaxValue: 1
+    - _MainTexMinValue: 0
+    - _MainValue: 0
+    - _Message: 0
+    - _RaycastDistanceEndValue: 2
+    - _RaycastFadeValue: 1
+    - _RaycastLayerMask: 1
+    - _RaycastMessage: 0
+    - _RenderCat: 1
+    m_Colors:
+    - _MainTexRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _MainUVs: {r: 4, g: 4, b: 0, a: 0}
+    - _NoiseRemap: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
 --- !u!4 &1176203856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 18943e248bf020344bc794f906887d5c, type: 3}
@@ -27385,68 +27383,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7b254f559af8e2a4a8926fde2063b21e, type: 3}
   m_PrefabInstance: {fileID: 1227524107}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1228007883
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Element
-  m_Shader: {fileID: 4800000, guid: 853be43322d350648a82ec17b27de5cf, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _AdvancedCat: 1
-    - _Banner: 0
-    - _ElementCat: 1
-    - _ElementColorsMode: 15
-    - _ElementFadeSupport: 0
-    - _ElementIntensity: 1
-    - _ElementLayerMask: 1
-    - _ElementLayerMessage: 0
-    - _ElementLayerValue: 0
-    - _ElementLayerWarning: 0
-    - _ElementMode: 0
-    - _ElementRaycastMode: 0
-    - _ElementVolumeFadeMode: 0
-    - _FadeCat: 1
-    - _InvertX: 0
-    - _IsColorsElement: 1
-    - _IsElementShader: 1
-    - _IsVersion: 600
-    - _MainTexMaxValue: 1
-    - _MainTexMinValue: 0
-    - _Message: 0
-    - _RaycastDistanceEndValue: 2
-    - _RaycastFadeValue: 1
-    - _RaycastLayerMask: 1
-    - _RaycastMessage: 0
-    - _RenderCat: 1
-    - _render_colormask: 15
-    m_Colors:
-    - _AdditionalColor1: {r: 1, g: 0.90744704, b: 0.8349056, a: 1}
-    - _AdditionalColor2: {r: 0.5548354, g: 0.57547164, b: 0.2415882, a: 0.6509804}
-    - _AdditionalColor3: {r: 0.37496176, g: 0.5, b: 0.29480994, a: 0.5019608}
-    - _AdditionalColor4: {r: 0.5943396, g: 0.4329418, b: 0.31118622, a: 1}
-    - _MainColor: {r: 0.42452806, g: 0.20191771, b: 0.13416672, a: 1}
-    - _MainTexRemap: {r: 0, g: 0.99999994, b: 0, a: 0}
-    - _MainUVs: {r: 1, g: 1, b: 0, a: 0}
-    - _NoiseRemap: {r: 0, g: 0, b: 0, a: 0}
-  m_BuildTextureStacks: []
 --- !u!4 &1232369326 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 946875588272133524, guid: e7adc6df976213b428ac7a82f5d3e632, type: 3}
@@ -27889,6 +27825,7 @@ GameObject:
   - component: {fileID: 1282300066}
   - component: {fileID: 1282300071}
   - component: {fileID: 1282300072}
+  - component: {fileID: 1282300073}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -28071,6 +28008,20 @@ MonoBehaviour:
   m_dofFocalLength: 30
   m_debug: 0
   m_playerTag: Player
+--- !u!114 &1282300073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282300064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eed1d9cbe64423499f1fefc0ce50417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Resolution: 1
+  DefaultSpotCookie: {fileID: 2800000, guid: 5157bf6d690b6df458f6c0ce0c06d329, type: 3}
 --- !u!1 &1283551534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8463162857090469484, guid: 0289bd53a8e96fe4da3c721fe9288f0c, type: 3}
@@ -33439,7 +33390,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1228007883}
+  - {fileID: 2081227974}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48571,6 +48522,68 @@ Texture3D:
     offset: 0
     size: 0
     path: 
+--- !u!21 &1767884742
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Element
+  m_Shader: {fileID: 4800000, guid: 853be43322d350648a82ec17b27de5cf, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AdvancedCat: 1
+    - _Banner: 0
+    - _ElementCat: 1
+    - _ElementColorsMode: 15
+    - _ElementFadeSupport: 0
+    - _ElementIntensity: 1
+    - _ElementLayerMask: 1
+    - _ElementLayerMessage: 0
+    - _ElementLayerValue: 0
+    - _ElementLayerWarning: 0
+    - _ElementMode: 0
+    - _ElementRaycastMode: 0
+    - _ElementVolumeFadeMode: 0
+    - _FadeCat: 1
+    - _InvertX: 0
+    - _IsColorsElement: 1
+    - _IsElementShader: 1
+    - _IsVersion: 600
+    - _MainTexMaxValue: 1
+    - _MainTexMinValue: 0
+    - _Message: 0
+    - _RaycastDistanceEndValue: 2
+    - _RaycastFadeValue: 1
+    - _RaycastLayerMask: 1
+    - _RaycastMessage: 0
+    - _RenderCat: 1
+    - _render_colormask: 15
+    m_Colors:
+    - _AdditionalColor1: {r: 1, g: 0.90744704, b: 0.8349056, a: 1}
+    - _AdditionalColor2: {r: 0.5548354, g: 0.57547164, b: 0.24158859, a: 0.6509804}
+    - _AdditionalColor3: {r: 0.37496215, g: 0.5, b: 0.29481032, a: 0.5019608}
+    - _AdditionalColor4: {r: 0.5943396, g: 0.43294215, b: 0.31118658, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainTexRemap: {r: 0, g: 0.99999994, b: 0, a: 0}
+    - _MainUVs: {r: 1, g: 1, b: 0, a: 0}
+    - _NoiseRemap: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
 --- !u!1 &1775443600
 GameObject:
   m_ObjectHideFlags: 0
@@ -49116,7 +49129,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1985126359}
+  - {fileID: 746389132}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58127,8 +58140,8 @@ MonoBehaviour:
     m_hDMicroShadows: 1
     m_hDMicroShadowOpacity: 1
     m_skyboxHDRI: {fileID: 8900000, guid: 162dc31de7b037a499723ffee6bd3e07, type: 3}
-    m_skyboxTint: {r: 0.43921566, g: 0.5019608, b: 0.5568628, a: 1}
-    m_skyboxExposure: 0.34999996
+    m_skyboxTint: {r: 0.43921563, g: 0.5019608, b: 0.5568628, a: 1}
+    m_skyboxExposure: 0.34999993
     m_skyboxRotationOffset: 14
     m_sunSize: 0.04
     m_sunConvergence: 10
@@ -66453,7 +66466,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 366667905}
+  - {fileID: 1767884742}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66592,66 +66605,6 @@ Transform:
   m_Father: {fileID: 864720480}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1985126359
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Element
-  m_Shader: {fileID: 4800000, guid: b3820571eb3f04f4f855cc7161c165d7, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _AdditionalValue1: 1
-    - _AdditionalValue2: 0
-    - _AdditionalValue3: 0
-    - _AdditionalValue4: 0
-    - _AdvancedCat: 1
-    - _Banner: 0
-    - _ElementCat: 1
-    - _ElementFadeSupport: 0
-    - _ElementIntensity: 1
-    - _ElementLayerMask: 1
-    - _ElementLayerMessage: 0
-    - _ElementLayerValue: 0
-    - _ElementLayerWarning: 0
-    - _ElementMode: 1
-    - _ElementRaycastMode: 0
-    - _ElementVolumeFadeMode: 0
-    - _FadeCat: 1
-    - _InvertX: 0
-    - _IsElementShader: 1
-    - _IsExtrasElement: 1
-    - _IsVersion: 600
-    - _MainTexMaxValue: 1
-    - _MainTexMinValue: 0
-    - _MainValue: 0
-    - _Message: 0
-    - _RaycastDistanceEndValue: 2
-    - _RaycastFadeValue: 1
-    - _RaycastLayerMask: 1
-    - _RaycastMessage: 0
-    - _RenderCat: 1
-    m_Colors:
-    - _MainTexRemap: {r: 0, g: 0, b: 0, a: 0}
-    - _MainUVs: {r: 4, g: 4, b: 0, a: 0}
-    - _NoiseRemap: {r: 0, g: 0, b: 0, a: 0}
-  m_BuildTextureStacks: []
 --- !u!1001 &2025374001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67703,6 +67656,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6474294433454662129, guid: ce76539100d80574ea33d73bfd40c307, type: 3}
   m_PrefabInstance: {fileID: 1449808965}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &2081227974
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Element
+  m_Shader: {fileID: 4800000, guid: 853be43322d350648a82ec17b27de5cf, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AdvancedCat: 1
+    - _Banner: 0
+    - _ElementCat: 1
+    - _ElementColorsMode: 15
+    - _ElementFadeSupport: 0
+    - _ElementIntensity: 1
+    - _ElementLayerMask: 1
+    - _ElementLayerMessage: 0
+    - _ElementLayerValue: 0
+    - _ElementLayerWarning: 0
+    - _ElementMode: 0
+    - _ElementRaycastMode: 0
+    - _ElementVolumeFadeMode: 0
+    - _FadeCat: 1
+    - _InvertX: 0
+    - _IsColorsElement: 1
+    - _IsElementShader: 1
+    - _IsVersion: 600
+    - _MainTexMaxValue: 1
+    - _MainTexMinValue: 0
+    - _Message: 0
+    - _RaycastDistanceEndValue: 2
+    - _RaycastFadeValue: 1
+    - _RaycastLayerMask: 1
+    - _RaycastMessage: 0
+    - _RenderCat: 1
+    - _render_colormask: 15
+    m_Colors:
+    - _AdditionalColor1: {r: 1, g: 0.90744704, b: 0.8349056, a: 1}
+    - _AdditionalColor2: {r: 0.5548354, g: 0.57547164, b: 0.2415882, a: 0.6509804}
+    - _AdditionalColor3: {r: 0.37496176, g: 0.5, b: 0.29480994, a: 0.5019608}
+    - _AdditionalColor4: {r: 0.5943396, g: 0.4329418, b: 0.31118622, a: 1}
+    - _MainColor: {r: 0.42452806, g: 0.20191771, b: 0.13416672, a: 1}
+    - _MainTexRemap: {r: 0, g: 0.99999994, b: 0, a: 0}
+    - _MainUVs: {r: 1, g: 1, b: 0, a: 0}
+    - _NoiseRemap: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
 --- !u!4 &2110957696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 67bdb793a7c824e488c31e62b27fefe1, type: 3}
@@ -90407,7 +90422,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 996476307}
+  - {fileID: 1170431015}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90484,7 +90499,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 738162500}
+  - {fileID: 936248365}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
