@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7242146030563666664}
   - component: {fileID: 4016590858878670353}
   - component: {fileID: 8141321686423420881}
+  - component: {fileID: 7732141615591221401}
   m_Layer: 0
   m_Name: Bush2
   m_TagString: Untagged
@@ -101,3 +102,22 @@ MonoBehaviour:
   storedPrefabBackupGUID: e83489f89fbc07f47bf211842c404cb5
   storedPreset: Tools/Tree It/Vegetation
   storedOverrides: []
+--- !u!205 &7732141615591221401
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3423045874678850253}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.061804507
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4016590858878670353}
+  m_Enabled: 1
