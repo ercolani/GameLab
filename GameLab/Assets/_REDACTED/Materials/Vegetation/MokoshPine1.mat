@@ -364,7 +364,7 @@ Material:
     - _ColorsMaskRemap: {r: 0, g: 0.25297627, b: 0, a: 0}
     - _DetailBlendRemap: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissiveColor: {r: 0.1792453, g: 0.031283375, b: 0.031283375, a: 0}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissiveIntensityParams: {r: 1, g: 1, b: 1, a: 0}
     - _EmissiveUVs: {r: 1, g: 1, b: 0, a: 0}
     - _GradientColorOne: {r: 1, g: 1, b: 1, a: 1}

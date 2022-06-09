@@ -13,9 +13,10 @@ Material:
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2450
   stringTagMap:
     NatureRendererInstancing: true
+    RenderType: AlphaTest
     UseExternalSettings: true
   disabledShaderPasses: []
   m_SavedProperties:
