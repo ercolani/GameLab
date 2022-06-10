@@ -96,31 +96,31 @@ Material:
     - _MainNormalValue: 2
     - _MainOcclusionValue: 1
     - _MainSmoothnessValue: 1
-    - _MotionAmplitude_10: 0.192
+    - _MotionAmplitude_10: 0.219
     - _MotionAmplitude_20: 0.3
     - _MotionAmplitude_21: 0.3
     - _MotionAmplitude_22: 0.358
     - _MotionAmplitude_32: 0.4
     - _MotionCat: 1
-    - _MotionScale_10: 2.5
+    - _MotionScale_10: 6.9
     - _MotionScale_20: 9.615
     - _MotionScale_32: 20
     - _MotionSpace: 0
-    - _MotionSpeed_10: 5
+    - _MotionSpeed_10: 10
     - _MotionSpeed_20: 9
     - _MotionSpeed_32: 30
     - _MotionValue_20: 1
-    - _MotionVariation_10: 0
+    - _MotionVariation_10: 8.4
     - _MotionVariation_20: 20
     - _MotionVariation_32: 20
     - _NoiseCat: 1
     - _NoiseMaxValue: 1
     - _NoiseMinValue: 0
-    - _NoiseScaleValue: 0.01
+    - _NoiseScaleValue: 0
     - _OcclusionCat: 1
     - _OverlayBottomValue: 0.5
     - _OverlayMaskMaxValue: 0.55
-    - _OverlayMaskMinValue: 0.45
+    - _OverlayMaskMinValue: 0.40555555
     - _OverlayVariationValue: 0
     - _PerspectiveCat: 0
     - _ReceiveSpace: 0
@@ -170,7 +170,7 @@ Material:
     m_Colors:
     - _AlphaMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorsMaskRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorsMaskRemap: {r: 0, g: 1, b: 0, a: 0}
     - _DetailBlendRemap: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
@@ -186,8 +186,8 @@ Material:
     - _NoiseColorOne: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseColorTwo: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseMaskRemap: {r: 0, g: 0, b: 0, a: 0}
-    - _OverlayMaskRemap: {r: 0, g: 0, b: 0, a: 0}
-    - _SubsurfaceColor: {r: 0.38679248, g: 0.38679248, b: 0.10764508, a: 1}
+    - _OverlayMaskRemap: {r: 0.40555555, g: 0.55, b: 0, a: 0}
+    - _SubsurfaceColor: {r: 0.9056604, g: 0.9056604, b: 0.6450694, a: 1}
     - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceMaskRemap: {r: 0, g: 0, b: 0, a: 0}
