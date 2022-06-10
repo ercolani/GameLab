@@ -50,7 +50,14 @@ public class GrowVines : MonoBehaviour
     /// </summary>
     [SerializeField]
     private bool isFullyGrown;
-
+    
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            ToggleGrowingVines();
+        }
+    }
 
     void Start()
     {
@@ -116,5 +123,4 @@ public class GrowVines : MonoBehaviour
 
         isFullyGrown = currentGrowValue >= maxGrowth ? true : false;
     }
-
 }
