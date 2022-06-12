@@ -372,10 +372,10 @@ Material:
     - _ATDistance: 1
     - _AdvancedCat: 0
     - _AlbedoAffectEmissive: 0
-    - _AlphaCutoff: 0.4
+    - _AlphaCutoff: 0.427
     - _AlphaCutoffEnable: 1
-    - _AlphaCutoffPostpass: 0.4
-    - _AlphaCutoffPrepass: 0.4
+    - _AlphaCutoffPostpass: 0.427
+    - _AlphaCutoffPrepass: 0.427
     - _AlphaVariationValue: 0
     - _Anisotropy: 0
     - _Asperity: 0.25
@@ -397,14 +397,14 @@ Material:
     - _CoatCoverage: 1
     - _CoatIOR: 0.5
     - _CoatMask: 0
-    - _ColorsMaskMaxValue: 0.20833331
+    - _ColorsMaskMaxValue: 0.625
     - _ColorsMaskMinValue: 0
     - _ColorsMaskValue: 0
-    - _ColorsVariationValue: 0
+    - _ColorsVariationValue: 0.125
     - _CullMode: 0
     - _CullModeForward: 0
     - _CullModeNormalFlip: 1
-    - _Cutoff: 0.4
+    - _Cutoff: 0.427
     - _DebugTreeOcclusion: 0
     - _DepthOffset: 0
     - _DepthOffsetEnable: 0
@@ -456,9 +456,9 @@ Material:
     - _EnableSpecularOcclusion: 0
     - _EnableWind: 4
     - _EnergyConservingSpecularColor: 1
-    - _FadeCameraValue: 1
+    - _FadeCameraValue: 0.995
     - _FadeCat: 0
-    - _FadeGlancingValue: 0
+    - _FadeGlancingValue: 0.119
     - _FadeSpace: 0
     - _Float14: 0
     - _Float6: 0.5
@@ -753,7 +753,7 @@ Material:
     - _render_blend: 0
     - _render_clip: 1
     - _render_cull: 0
-    - _render_cutoff: 0.4
+    - _render_cutoff: 0.427
     - _render_dst: 0
     - _render_mode: 0
     - _render_normals: 0
@@ -769,7 +769,7 @@ Material:
     - _BaseColor: {r: 0.9117647, g: 0.9570134, b: 1, a: 1}
     - _BaseColorRandomize: {r: 0, g: 0, b: 0, a: 0.05}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorsMaskRemap: {r: 0, g: 0.20833331, b: 0, a: 0}
+    - _ColorsMaskRemap: {r: 0, g: 0.625, b: 0, a: 0}
     - _DetailBlendRemap: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: -1, g: -1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}

@@ -426,11 +426,11 @@ Material:
     - _DetailMaskInvertMode: 0
     - _DetailMaskMode: 0
     - _DetailMaskValue: 0
-    - _DetailMeshValue: -0.202
+    - _DetailMeshValue: -0.32
     - _DetailMode: 0
     - _DetailNormalMapScale: 1
     - _DetailNormalScale: 1
-    - _DetailNormalValue: 0.5
+    - _DetailNormalValue: 0.562
     - _DetailShadingCat: 0
     - _DetailSmoothnessScale: 1
     - _DetailSpace: 0
@@ -632,7 +632,7 @@ Material:
     - _SSRefractionProjectionModel: 0
     - _SSSAndTransmissionType: 0
     - _SecondMetallicValue: 0
-    - _SecondNormalValue: 0
+    - _SecondNormalValue: 2.1
     - _SecondOcclusionValue: 1
     - _SecondSmoothnessValue: 1
     - _SettingsCategory: 0

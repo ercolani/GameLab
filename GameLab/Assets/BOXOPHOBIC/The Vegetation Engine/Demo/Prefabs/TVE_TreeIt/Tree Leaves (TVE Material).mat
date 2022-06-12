@@ -48,12 +48,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaCutoff: 0.5
+    - _AlphaCutoff: 0.683
     - _AlphaVariationValue: 1
-    - _ColorsMaskMaxValue: 1
-    - _ColorsMaskMinValue: 0
-    - _ColorsVariationValue: 0
-    - _Cutoff: 0.5
+    - _ColorsMaskMaxValue: 0.82777774
+    - _ColorsMaskMinValue: 0.12222222
+    - _ColorsVariationValue: 0.273
+    - _Cutoff: 0.683
     - _DetailBlendMode: 1
     - _DetailCat: 0
     - _DetailMode: 0
@@ -121,7 +121,7 @@ Material:
     - _OverlayBottomValue: 0.5
     - _OverlayMaskMaxValue: 0.55
     - _OverlayMaskMinValue: 0.40555555
-    - _OverlayVariationValue: 0
+    - _OverlayVariationValue: 0.081
     - _PerspectiveCat: 0
     - _ReceiveSpace: 0
     - _RenderClip: 1
@@ -170,11 +170,11 @@ Material:
     m_Colors:
     - _AlphaMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorsMaskRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _ColorsMaskRemap: {r: 0.12222222, g: 0.82777774, b: 0, a: 0}
     - _DetailBlendRemap: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissiveIntensityParams: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissiveIntensityParams: {r: 0, g: 0, b: 1, a: 0}
     - _EmissiveUVs: {r: 1, g: 1, b: 0, a: 0}
     - _GradientColorOne: {r: 1, g: 1, b: 1, a: 1}
     - _GradientColorTwo: {r: 1, g: 1, b: 1, a: 1}
