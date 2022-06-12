@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139688816461121415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.89, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 1786195165665455208}
   - component: {fileID: 8282257052073066869}
   - component: {fileID: 6841421587738305859}
-  - component: {fileID: 8022771579586352426}
   m_Layer: 0
   m_Name: Conifer_LOD2
   m_TagString: Untagged
@@ -57,7 +56,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318108979425647336}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -72,7 +71,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318108979425647336}
-  m_Mesh: {fileID: 4300004, guid: c7068782d88ce434ba35d8cf4f84f657, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 1f082045823c9684088af0f448bb9df5, type: 2}
 --- !u!23 &6841421587738305859
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -93,8 +92,8 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ec4c06a182765544895a679bdb5c4bcb, type: 2}
-  - {fileID: 2100000, guid: 6ed8d863fa4e4ee4db27ac197ce98d99, type: 2}
+  - {fileID: 2100000, guid: 5b0a886b21cbda54486e4913fbb732b7, type: 2}
+  - {fileID: 2100000, guid: 68c9e10626e5100439d14b4cf0d78b69, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -116,15 +115,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!193 &8022771579586352426
-Tree:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318108979425647336}
-  m_SpeedTreeWindAsset: {fileID: 22800000, guid: c7068782d88ce434ba35d8cf4f84f657, type: 3}
-  m_TreeData: {fileID: 0}
 --- !u!1 &2030601878447967979
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +126,6 @@ GameObject:
   - component: {fileID: 4873218657953753161}
   - component: {fileID: 1706627489586142495}
   - component: {fileID: 687928956863574600}
-  - component: {fileID: 2511832911224205673}
   m_Layer: 0
   m_Name: Conifer_LOD0
   m_TagString: Untagged
@@ -151,7 +140,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030601878447967979}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -166,7 +155,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030601878447967979}
-  m_Mesh: {fileID: 4300000, guid: c7068782d88ce434ba35d8cf4f84f657, type: 3}
+  m_Mesh: {fileID: 4300000, guid: f581bcb7e00a7cc4a9f72cec2ed860b3, type: 2}
 --- !u!23 &687928956863574600
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -187,9 +176,9 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ec4c06a182765544895a679bdb5c4bcb, type: 2}
-  - {fileID: 2100000, guid: 792a237589906584cab08fca5ee836de, type: 2}
-  - {fileID: 2100000, guid: 6ed8d863fa4e4ee4db27ac197ce98d99, type: 2}
+  - {fileID: 2100000, guid: 5b0a886b21cbda54486e4913fbb732b7, type: 2}
+  - {fileID: 2100000, guid: 9395cc95e8629324098a99c47d31ed40, type: 2}
+  - {fileID: 2100000, guid: 68c9e10626e5100439d14b4cf0d78b69, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -211,15 +200,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!193 &2511832911224205673
-Tree:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2030601878447967979}
-  m_SpeedTreeWindAsset: {fileID: 22800000, guid: c7068782d88ce434ba35d8cf4f84f657, type: 3}
-  m_TreeData: {fileID: 0}
 --- !u!1 &4012337630082778474
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +211,7 @@ GameObject:
   - component: {fileID: 4388053584151060432}
   - component: {fileID: 8844894662087583905}
   - component: {fileID: 764084673278205021}
+  - component: {fileID: 5728818883666425666}
   m_Layer: 0
   m_Name: Conifer
   m_TagString: Untagged
@@ -302,6 +283,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 6.3285794, z: 1}
   m_Center: {x: 0, y: 3.0896623, z: 0}
+--- !u!114 &5728818883666425666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4012337630082778474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 089e7123bacb77a429df24ec08d2d672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  styledBanner: 0
+  storedPrefabBackupGUID: a7003b9432481d842a0488f1cdad625a
+  storedPreset: Realistic/Gaia Pro/Standard/Trees
+  storedOverrides: []
 --- !u!1 &6995092061016009708
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,7 +310,6 @@ GameObject:
   - component: {fileID: 1441666999768819030}
   - component: {fileID: 8047741024393290668}
   - component: {fileID: 4793922944099726314}
-  - component: {fileID: 6527774816124042769}
   m_Layer: 0
   m_Name: Conifer_LOD1
   m_TagString: Untagged
@@ -328,7 +324,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6995092061016009708}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -343,7 +339,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6995092061016009708}
-  m_Mesh: {fileID: 4300002, guid: c7068782d88ce434ba35d8cf4f84f657, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 1164e7354e3e5034ebbdf18e8974092e, type: 2}
 --- !u!23 &4793922944099726314
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -364,9 +360,9 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ec4c06a182765544895a679bdb5c4bcb, type: 2}
-  - {fileID: 2100000, guid: 792a237589906584cab08fca5ee836de, type: 2}
-  - {fileID: 2100000, guid: 6ed8d863fa4e4ee4db27ac197ce98d99, type: 2}
+  - {fileID: 2100000, guid: 5b0a886b21cbda54486e4913fbb732b7, type: 2}
+  - {fileID: 2100000, guid: 9395cc95e8629324098a99c47d31ed40, type: 2}
+  - {fileID: 2100000, guid: 68c9e10626e5100439d14b4cf0d78b69, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -388,15 +384,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!193 &6527774816124042769
-Tree:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6995092061016009708}
-  m_SpeedTreeWindAsset: {fileID: 22800000, guid: c7068782d88ce434ba35d8cf4f84f657, type: 3}
-  m_TreeData: {fileID: 0}
 --- !u!1 &8274503946972659281
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +395,6 @@ GameObject:
   - component: {fileID: 4266699451482346370}
   - component: {fileID: 2631920329066186502}
   - component: {fileID: 908614307137176814}
-  - component: {fileID: 6204508305717342976}
   m_Layer: 0
   m_Name: Conifer_LOD3
   m_TagString: Untagged
@@ -423,7 +409,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8274503946972659281}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -438,7 +424,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8274503946972659281}
-  m_Mesh: {fileID: 4300006, guid: c7068782d88ce434ba35d8cf4f84f657, type: 3}
+  m_Mesh: {fileID: 4300000, guid: d7b75b47ed915b74baa3f5f9d8c0b9ac, type: 2}
 --- !u!23 &908614307137176814
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -459,7 +445,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 807b0ad96d574a1469ca70ba065258a7, type: 2}
+  - {fileID: 2100000, guid: f1c99fd7bf85f1a47879e239b9dc7215, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -481,12 +467,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!193 &6204508305717342976
-Tree:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8274503946972659281}
-  m_SpeedTreeWindAsset: {fileID: 22800000, guid: c7068782d88ce434ba35d8cf4f84f657, type: 3}
-  m_TreeData: {fileID: 0}

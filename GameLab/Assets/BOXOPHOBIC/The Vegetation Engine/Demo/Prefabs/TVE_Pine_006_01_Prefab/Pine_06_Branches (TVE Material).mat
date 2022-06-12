@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Pine_06_Branches (TVE Material)
   m_Shader: {fileID: 4800000, guid: a933075b367f9b24981408633f72ff34, type: 3}
-  m_ShaderKeywords: TVE_ALPHA_CLIP TVE_DETAIL_MODE_OFF TVE_DETAIL_TYPE_VERTEX_BLUE
+  m_ShaderKeywords: TVE_ALPHA_CLIP
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1

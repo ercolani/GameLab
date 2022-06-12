@@ -230,7 +230,7 @@ Material:
     - _DiffusionProfileAsset: {r: -5.7855046e-23, g: -2.7243504e-36, b: -1.8891285e+22, a: -12817017}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SSSColor: {r: 1, g: 0.94250834, b: 0.4764151, a: 1}
+    - _SSSColor: {r: 1, g: 0.93822163, b: 0.4481132, a: 1}
     - _Thickness_Remap: {r: 0.1, g: 1, b: 0, a: 0}
     - _blendOffset: {r: 1024, g: 1024, b: 0, a: 0}
     - smoothness_near_far: {r: 0, g: 0, b: 0, a: 0}
