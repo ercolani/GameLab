@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:GameLab/Assets/URP_Flares_Pack.meta
 guid: 4da11745f297da84eac10c8fbb3ac490
+========
+guid: 1cc8151b892892a46844bc773843d576
+>>>>>>>> Igor-2.0:GameLab/Assets/_REDACTED/Meshes/Vines/Meshes.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -55,4 +55,15 @@ public class FlameController : MonoBehaviour
         _flame.SetActive(state);
         FlameToggled?.Invoke(this);
     }
+    
+    public void ToggleFlame(bool state, bool invokeEvent)
+    {
+        _flameActive = state;
+        _flame.SetActive(state);
+
+        if (invokeEvent)
+        {
+            FlameToggled?.Invoke(this);
+        }
+    }
 }

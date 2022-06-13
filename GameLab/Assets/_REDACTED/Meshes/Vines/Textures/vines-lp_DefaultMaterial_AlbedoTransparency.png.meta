@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:GameLab/Assets/TerrainDemoScene_URP/Prefabs/Rocks/Textures/Cliff_Mossy_A/Cliff_Mossy_A_BaseColor.tiff.meta
-guid: 7b0825bd71fce084aa81cb2e3f1ff3b9
+<<<<<<<< HEAD:GameLab/Assets/TerrainDemoScene_URP/Prefabs/Rocks/Textures/Cliff_Mossy_B/Cliff_Mossy_B_Normal.tiff.meta
+guid: 876c5b04879dbda4d9ae3f28e1326b02
 ========
 guid: 8f68bbbbc8792fa4bb39ecb1b7580ba2
->>>>>>>> origin/Main-2.0:GameLab/Assets/_REDACTED/Meshes/Vines/Textures/vines-lp_DefaultMaterial_AlbedoTransparency.png.meta
+>>>>>>>> Igor-2.0:GameLab/Assets/_REDACTED/Meshes/Vines/Textures/vines-lp_DefaultMaterial_AlbedoTransparency.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:GameLab/Assets/OccaSoftware/Buto-VolumetricLightingAndFog/Textures/ColorRamps/T_ColorRamp_08.png.meta
 guid: c012936ff7c918a45aaa43e0f0cc7e12
+========
+guid: 32412e58747b92647aaf7ae19216e336
+>>>>>>>> Igor-2.0:GameLab/Assets/_REDACTED/VFX/chrome_2022-06-04_23-45-38.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

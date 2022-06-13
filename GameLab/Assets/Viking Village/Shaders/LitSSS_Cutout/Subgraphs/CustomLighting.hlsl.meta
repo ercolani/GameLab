@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:GameLab/Assets/Viking Village/Shaders/LitSSS_Cutout/Subgraphs/CustomLighting.hlsl.meta
 guid: 67baf233c3876ca4abb90f38e60552e3
+========
+guid: 928beaf5cbd634c46bdfa033904aca2f
+>>>>>>>> Igor-2.0:GameLab/Assets/_REDACTED/VFX/SubsurfaceScatter.shader.meta
 ShaderImporter:
   externalObjects: {}
   defaultTextures: []

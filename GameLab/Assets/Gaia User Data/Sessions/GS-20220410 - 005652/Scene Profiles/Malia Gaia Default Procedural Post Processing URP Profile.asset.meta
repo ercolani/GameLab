@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:GameLab/Assets/Gaia User Data/Sessions/GS-20220410 - 005652/Scene Profiles/Malia Gaia Default Procedural Post Processing URP Profile.asset.meta
 guid: 2a9cbec7a12e27d41b68c12b2dbb552d
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
+========
+guid: b405d7921123eab489e00521fcf3ed8c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+>>>>>>>> Igor-2.0:GameLab/Assets/_REDACTED/Scenes/Scenes/IgorMainTest/Custom Volume Profile.asset.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

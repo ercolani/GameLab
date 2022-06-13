@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:GameLab/Assets/OccaSoftware.meta
-guid: dd53898622f639143b8731f3f856cede
+<<<<<<<< HEAD:GameLab/Assets/StreamingAssets.meta
+guid: a1b7f688bfb89364f99c61604f8d6a89
 ========
 guid: b31fb576a49ed98469c8cdded020d243
->>>>>>>> origin/Main-2.0:GameLab/Assets/_REDACTED/Meshes/Vines.meta
+>>>>>>>> Igor-2.0:GameLab/Assets/_REDACTED/Meshes/Vines.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
