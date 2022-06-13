@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 0
     m_Value: 0
@@ -420,7 +420,7 @@ MonoBehaviour:
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 14.423237
+    m_Value: 29.68058
   aperture:
     m_OverrideState: 1
     m_Value: 15.4
@@ -531,7 +531,7 @@ MonoBehaviour:
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: 18
+    m_Value: 20
 --- !u!114 &6156198692628454245
 MonoBehaviour:
   m_ObjectHideFlags: 3
