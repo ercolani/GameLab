@@ -39,7 +39,7 @@ Material:
     - _ElementCat: 1
     - _ElementColorsMode: 15
     - _ElementFadeSupport: 0
-    - _ElementIntensity: 0.817
+    - _ElementIntensity: 0.95
     - _ElementInteractionMode: 15
     - _ElementLayerMask: -1
     - _ElementLayerMessage: 0
@@ -59,7 +59,7 @@ Material:
     - _IsExtrasElement: 1
     - _IsMotionElement: 1
     - _IsVersion: 600
-    - _MainTexMaxValue: 0.99999994
+    - _MainTexMaxValue: 1
     - _MainTexMinValue: 0
     - _MainValue: 1
     - _Message: 0
@@ -81,8 +81,8 @@ Material:
     - _AdditionalColor2: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
     - _AdditionalColor3: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
     - _AdditionalColor4: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
-    - _MainColor: {r: 0.18400262, g: 0.254717, b: 0, a: 1}
-    - _MainTexRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _MainColor: {r: 0.18417998, g: 0.254717, b: 0, a: 1}
+    - _MainTexRemap: {r: 0, g: 0.99999994, b: 0, a: 0}
     - _MainUVs: {r: 1, g: 1, b: 0, a: 0}
     - _NoiseColorOne: {r: 0.06367925, g: 0.254717, b: 0.20202588, a: 1}
     - _NoiseColorTwo: {r: 0.04685831, g: 0.2753749, b: 0.3679245, a: 1}

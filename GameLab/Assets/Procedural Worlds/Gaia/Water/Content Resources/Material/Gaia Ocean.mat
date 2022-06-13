@@ -94,7 +94,7 @@ Material:
     - _FoamTexTile: 256
     - _Foam_Metallic: 0.4
     - _Foam_Smoothness: 0.2
-    - _Metallic: 0.8
+    - _Metallic: 0.149
     - _NormalFadeDistance: 300
     - _NormalFadeStart: 50
     - _NormalLayer0: 0.4
@@ -118,7 +118,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
-    - _Smoothness: 0.7
+    - _Smoothness: 0.809
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 0
@@ -134,7 +134,7 @@ Material:
     - _SurfaceType: 1
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
-    - _TransparentDepth: 0.2
+    - _TransparentDepth: 0.3
     - _TransparentDepthPostpassEnable: 0
     - _TransparentDepthPrepassEnable: 0
     - _TransparentMin: 0

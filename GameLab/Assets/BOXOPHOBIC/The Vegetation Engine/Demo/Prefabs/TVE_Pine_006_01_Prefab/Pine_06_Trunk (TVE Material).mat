@@ -426,11 +426,11 @@ Material:
     - _DetailMaskInvertMode: 0
     - _DetailMaskMode: 0
     - _DetailMaskValue: 0
-    - _DetailMeshValue: -0.202
+    - _DetailMeshValue: -0.32
     - _DetailMode: 0
     - _DetailNormalMapScale: 1
     - _DetailNormalScale: 1
-    - _DetailNormalValue: 0.5
+    - _DetailNormalValue: 0.562
     - _DetailShadingCat: 0
     - _DetailSmoothnessScale: 1
     - _DetailSpace: 0
@@ -550,7 +550,7 @@ Material:
     - _MainMaskValue: 0
     - _MainMessage: 0
     - _MainMetallicValue: 0
-    - _MainNormalValue: 0.2
+    - _MainNormalValue: 0.5
     - _MainOcclusionValue: 1
     - _MainSmoothnessValue: 1
     - _MaskMapEncoding: 0
@@ -600,7 +600,7 @@ Material:
     - _OverlayContrast: 0
     - _OverlayContrastValue: 4
     - _OverlayMaskMaxValue: 0.52616215
-    - _OverlayMaskMinValue: 0.43316215
+    - _OverlayMaskMinValue: 0.3914955
     - _OverlayVariation: 0
     - _OverlayVariationValue: 0
     - _PPDLodThreshold: 5
@@ -632,7 +632,7 @@ Material:
     - _SSRefractionProjectionModel: 0
     - _SSSAndTransmissionType: 0
     - _SecondMetallicValue: 0
-    - _SecondNormalValue: 0
+    - _SecondNormalValue: 2.1
     - _SecondOcclusionValue: 1
     - _SecondSmoothnessValue: 1
     - _SettingsCategory: 0
@@ -801,7 +801,7 @@ Material:
     - _NoiseMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _NoiseTintOne: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseTintTwo: {r: 1, g: 1, b: 1, a: 1}
-    - _OverlayMaskRemap: {r: 0.43316215, g: 0.52616215, b: 0, a: 0}
+    - _OverlayMaskRemap: {r: 0.3914955, g: 0.52616215, b: 0, a: 0}
     - _PeeledBarkColor: {r: 1, g: 1, b: 1, a: 1}
     - _PeeledBarkColorAlt: {r: 0.9, g: 0.9, b: 1, a: 1}
     - _PeeledBarkUVRangeScale: {r: 0, g: 1, b: 2, a: 0}

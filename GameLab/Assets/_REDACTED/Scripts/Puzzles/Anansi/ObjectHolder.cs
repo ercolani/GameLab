@@ -59,6 +59,8 @@ public class ObjectHolder : MonoBehaviour
             _heldObject = heldObj;
             _heldObject.transform.SetParent(_handle);
             _heldObject.transform.position = _handle.transform.position;
+            _heldObject.transform.rotation = _handle.transform.rotation;
+
 
             if (heldObj.TryGetComponent(out Rigidbody body))
             {

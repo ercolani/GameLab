@@ -333,6 +333,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AORemapMax: 1
     - _AORemapMin: 0
@@ -346,9 +347,9 @@ Material:
     - _Asperity: 0
     - _BackfaceSmoothnessScale: 1
     - _Banner: 0
-    - _BarkCategory: 0
+    - _BarkCategory: 1
     - _BarkMessage: 0
-    - _BaseCategory: 0
+    - _BaseCategory: 1
     - _BaseMapEncoding: 1
     - _BillboardMode: 0
     - _BillboardShadowMode: 0
@@ -427,7 +428,7 @@ Material:
     - _Ior: 1
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
-    - _LeafCategory: 0
+    - _LeafCategory: 1
     - _LeafMessage: 0
     - _LinkDetailsWithBase: 1
     - _MainMessage: 0
@@ -452,7 +453,7 @@ Material:
     - _RefractionSSRayModel: 0
     - _SSRefractionProjectionModel: 0
     - _SSSAndTransmissionType: 0
-    - _SettingsCategory: 0
+    - _SettingsCategory: 1
     - _ShaderMode: 1
     - _ShiverDirectionality: 0.5
     - _ShiverDrag: 0.2
@@ -475,7 +476,7 @@ Material:
     - _SubsurfaceProfile: 0
     - _SubsurfaceRadius: 1
     - _SupportDBuffer: 1
-    - _SurfaceCategory: 0
+    - _SurfaceCategory: 1
     - _SurfaceMessage: 0
     - _SurfaceType: 0
     - _TessellationBackFaceCullEpsilon: -0.33
@@ -561,3 +562,4 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

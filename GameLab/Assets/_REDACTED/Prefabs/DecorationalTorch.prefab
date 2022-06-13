@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 946875588272228788}
   m_LocalRotation: {x: -0.014890836, y: -0.6352389, z: 0.012246311, w: 0.77207506}
   m_LocalPosition: {x: -193.11186, y: 47.14057, z: 265.77298}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 946875588272133534}
   - {fileID: 946875588272133532}
@@ -53,7 +53,7 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.031005338
+  - screenRelativeHeight: 0.05242204
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 946875588270233464}
@@ -14584,7 +14584,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -14661,9 +14661,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LensFlareData: {fileID: 11400000, guid: 3a39ff759ebd46646b9fe5b4b47c82c9, type: 2}
-  intensity: 0.1
+  intensity: 0.08
   maxAttenuationDistance: 20
-  maxAttenuationScale: 20
+  maxAttenuationScale: 30
   distanceAttenuationCurve:
     serializedVersion: 2
     m_Curve:
@@ -14676,6 +14676,15 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0
+    - serializedVersion: 3
+      time: 0.39767283
+      value: 0.3536495
+      inSlope: -1.4559693
+      outSlope: -1.4559693
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 0

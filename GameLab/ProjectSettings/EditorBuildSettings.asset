@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/_REDACTED/Scenes/Malia.unity
-    guid: 0158cf79e7ee5a248a7db78ab2d7e7f2
   - enabled: 0
-    path: Assets/_REDACTED/Scenes/IgorPuzzleTest.unity
-    guid: 361b18931c61be04b97a4d483b5c0c18
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/_REDACTED/Scenes/Scenes/Malia.unity
+    guid: 891229c8b8d81b54885b63534c934145
   m_configObjects: {}

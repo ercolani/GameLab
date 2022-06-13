@@ -123,6 +123,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AdvancedCat: 0
     - _AlphaCutoff: 0.5
@@ -135,7 +136,7 @@ Material:
     - _BillboardFadeHValue: 0
     - _BillboardFadeVValue: 0
     - _BumpScale: 1
-    - _ColorsMaskMaxValue: 1
+    - _ColorsMaskMaxValue: 0.79444444
     - _ColorsMaskMinValue: 0
     - _ColorsMaskValue: 0
     - _Cutoff: 0.5
@@ -161,7 +162,7 @@ Material:
     - _GlobalEmissive: 1
     - _GlobalHealthiness: 1
     - _GlobalLeaves: 1
-    - _GlobalOverlay: 1
+    - _GlobalOverlay: 0.239
     - _GlobalSize: 1
     - _GlobalSizeFade: 0
     - _GlobalSpace: 0
@@ -347,7 +348,7 @@ Material:
     m_Colors:
     - _AlphaMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorsMaskRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorsMaskRemap: {r: 0, g: 0.79444444, b: 0, a: 0}
     - _DetailBlendRemap: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
@@ -366,7 +367,7 @@ Material:
     - _NoiseMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _NoiseTintOne: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseTintTwo: {r: 1, g: 1, b: 1, a: 1}
-    - _OverlayMaskRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _OverlayMaskRemap: {r: 0.368, g: 0.489, b: 0, a: 0}
     - _SubsurfaceColor: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
     - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}

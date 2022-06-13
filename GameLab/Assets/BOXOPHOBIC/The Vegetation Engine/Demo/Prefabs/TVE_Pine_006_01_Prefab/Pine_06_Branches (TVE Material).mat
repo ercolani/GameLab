@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Pine_06_Branches (TVE Material)
   m_Shader: {fileID: 4800000, guid: a933075b367f9b24981408633f72ff34, type: 3}
-  m_ShaderKeywords: TVE_ALPHA_CLIP TVE_DETAIL_MODE_OFF TVE_DETAIL_TYPE_VERTEX_BLUE
+  m_ShaderKeywords: TVE_ALPHA_CLIP
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
@@ -365,6 +365,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AORemapMax: 1
     - _AORemapMin: 0
@@ -597,10 +598,10 @@ Material:
     - _OverlayBottomValue: 0.5
     - _OverlayContrast: 0
     - _OverlayContrastValue: 2
-    - _OverlayMaskMaxValue: 0.15520877
-    - _OverlayMaskMinValue: 0.13363735
+    - _OverlayMaskMaxValue: 0.31294686
+    - _OverlayMaskMinValue: 0.1845238
     - _OverlayVariation: 0
-    - _OverlayVariationValue: 0.5
+    - _OverlayVariationValue: 0.468
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
@@ -633,7 +634,7 @@ Material:
     - _ShaderMode: 0
     - _ShiverDirectionality: 0.5
     - _ShiverDrag: 0.2
-    - _SizeFadeCat: 0
+    - _SizeFadeCat: 1
     - _SizeFadeEndValue: 300
     - _SizeFadeMessage: 0
     - _SizeFadeMode: 0
@@ -791,17 +792,15 @@ Material:
     - _NoiseMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _NoiseTintOne: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseTintTwo: {r: 1, g: 1, b: 1, a: 1}
-    - _OverlayMaskRemap: {r: 0.13363735, g: 0.15520877, b: 0, a: 0}
+    - _OverlayMaskRemap: {r: 0.1845238, g: 0.31294686, b: 0, a: 0}
     - _PeeledBarkColor: {r: 1, g: 1, b: 1, a: 1}
     - _PeeledBarkColorAlt: {r: 0.9, g: 0.9, b: 1, a: 1}
     - _PeeledBarkUVRangeScale: {r: 0, g: 1, b: 2, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SubsurfaceColor: {r: 0.23529461, g: 0.27450982, b: 0, a: 1}
-    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
-    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37,
-        a: 0.00018220427}
+    - _SubsurfaceColor: {r: 0.37254903, g: 0.39215687, b: 0.11764706, a: 1}
+    - _SubsurfaceDiffusion_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
+    - _SubsurfaceDiffusion_asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _SubsurfaceMaskRemap: {r: 0, g: 0, b: 0, a: 0}
     - _ThicknessRemap: {r: 0.000000007450581, g: 1, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
@@ -811,3 +810,4 @@ Material:
     - _VertexOcclusionColor: {r: 0, g: 0, b: 0, a: 0}
     - _VertexOcclusionRemap: {r: 0, g: 0, b: 0, a: 0}
     - _render_normals_options: {r: -1, g: -1, b: -1, a: 0}
+  m_BuildTextureStacks: []
