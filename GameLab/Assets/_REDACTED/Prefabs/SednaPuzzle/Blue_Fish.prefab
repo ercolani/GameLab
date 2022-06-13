@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2819495205293787783
 Transform:
   m_ObjectHideFlags: 0
@@ -223,7 +223,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.11792451, g: 1, b: 0.99015045, a: 0.3529412}
+      maxColor: {r: 0.899414, g: 0.11764705, b: 1, a: 0.3529412}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4824,8 +4824,9 @@ GameObject:
   - component: {fileID: 1658935564549064100}
   - component: {fileID: 3522182500562858350}
   - component: {fileID: 1587000587400680320}
+  - component: {fileID: 2158633789120660398}
   m_Layer: 0
-  m_Name: Blue_Fish
+  m_Name: Blue_fish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4854,7 +4855,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3162004275082219707}
-  m_Mesh: {fileID: 2959467708922500008, guid: 22fd2761bc6482d4c80403c6c3b2800d, type: 3}
+  m_Mesh: {fileID: 2959467708922500008, guid: 9c4840762895cb84fa12fd0a85f67e6d, type: 3}
 --- !u!23 &3522182500562858350
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4875,7 +4876,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 68ae3487759f5064496f4a4dbbfcd7d7, type: 2}
+  - {fileID: 2100000, guid: 5b158ba93e8e87541a565bc310c1e624, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4909,3 +4910,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf04e63713681844fb0862b6dac6d0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!205 &2158633789120660398
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3162004275082219707}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.07729104
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
