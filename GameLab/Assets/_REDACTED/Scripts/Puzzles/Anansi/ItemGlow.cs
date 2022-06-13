@@ -51,7 +51,7 @@ public class ItemGlow : MonoBehaviour
     /// Toggle the emissive light on and off.
     /// </summary>
     /// <returns></returns>
-    private IEnumerator ToggleCoroutine(bool on)
+    public IEnumerator ToggleCoroutine(bool on)
     {
         yield return new WaitForSeconds(2.5f);
         if (on) 

@@ -77,11 +77,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample0:
-        m_Texture: {fileID: 2800000, guid: 67ea27a941f475e4bbd05a19b63053d9, type: 3}
+        m_Texture: {fileID: 2800000, guid: eef1af8311c1a42488221f58f7351552, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample1:
-        m_Texture: {fileID: 2800000, guid: 69d91f0b66a320543ab5e0abdcf6a390, type: 3}
+        m_Texture: {fileID: 2800000, guid: 32412e58747b92647aaf7ae19216e336, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -141,6 +141,10 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Offset: {r: 0.2, g: -0.0055233743, b: 0, a: 0}
+<<<<<<< Updated upstream
+    - _Offset: {r: 0.35854083, g: -0.0020271149, b: 0, a: 0}
+=======
+    - _Offset: {r: -0.2788958, g: 0.0030073924, b: 0, a: 0}
+>>>>>>> Stashed changes
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
