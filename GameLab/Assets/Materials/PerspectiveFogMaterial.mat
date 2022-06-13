@@ -48,9 +48,9 @@ Material:
     m_Floats:
     - BOOLEAN_0107A33C3886411D8E1319901D3A8A0D: 1
     - BOOLEAN_6C4164AC: 0
-    - Vector1_BF525535: 0.11
+    - Vector1_BF525535: 0.1
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - Color_58E0201D: {r: 0.40392157, g: 0.8666667, b: 0.08627451, a: 0.69411767}
+    - Color_58E0201D: {r: 0, g: 0, b: 0, a: 0.69411767}
   m_BuildTextureStacks: []
