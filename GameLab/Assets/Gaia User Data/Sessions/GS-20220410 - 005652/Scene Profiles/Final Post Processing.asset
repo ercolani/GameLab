@@ -420,7 +420,7 @@ MonoBehaviour:
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 29.68058
+    m_Value: 62.183983
   aperture:
     m_OverrideState: 1
     m_Value: 15.4
@@ -544,7 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb60a22f311433c4c962b888d1393f88, type: 3}
   m_Name: PaniniProjection
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   distance:
     m_OverrideState: 1
     m_Value: 0.2
