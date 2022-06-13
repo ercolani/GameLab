@@ -50,7 +50,7 @@ public class CustomPostProcessPass : ScriptableRenderPass
         var materials = CustomPostProcessingMaterials.Instance;
         if (materials == null)
         {
-            Debug.LogError("Custom Post Processing Materials instance is null");
+            //Debug.LogError("Custom Post Processing Materials instance is null");
             return;
         }
 
@@ -74,7 +74,7 @@ public class CustomPostProcessPass : ScriptableRenderPass
             latestDest = last;
         }
 
-        #endregion
+        #endregion 
 
         // Starts with the camera source
         latestDest = source;

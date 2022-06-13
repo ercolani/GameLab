@@ -1,8 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:GameLab/Assets/OccaSoftware/Buto-VolumetricLightingAndFog/Textures/VolumetricNoise/Perlin32.asset.meta
 guid: 9cef6b4da1df1814d867a18e291b6de3
+========
+guid: 6972c123a8db4b3449e1f105a7cfbd2b
+>>>>>>>> origin/Main-2.0:GameLab/Assets/_REDACTED/VFX/Test.mat.meta
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 11700000
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

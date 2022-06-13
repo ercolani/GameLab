@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:GameLab/Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Prefabs/TVE_Fern_var03_Prefab/Ferns (TVE Material) 1.mat.meta
 guid: 28a33ad578a47f443be3fdfe541efb9b
+========
+guid: 209c70c63aabb0b4eaa7b9d3382d1074
+>>>>>>>> origin/Main-2.0:GameLab/Assets/_REDACTED/VFX/Effect Materials/SubsurfaceScatter.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000

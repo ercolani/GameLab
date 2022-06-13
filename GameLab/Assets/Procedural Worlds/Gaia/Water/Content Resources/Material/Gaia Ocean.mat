@@ -94,7 +94,11 @@ Material:
     - _FoamTexTile: 256
     - _Foam_Metallic: 0.4
     - _Foam_Smoothness: 0.2
+<<<<<<< HEAD
     - _Metallic: 0.149
+=======
+    - _Metallic: 0.8
+>>>>>>> origin/Main-2.0
     - _NormalFadeDistance: 300
     - _NormalFadeStart: 50
     - _NormalLayer0: 0.4
@@ -118,7 +122,11 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
+<<<<<<< HEAD
     - _Smoothness: 0.809
+=======
+    - _Smoothness: 0.8
+>>>>>>> origin/Main-2.0
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 0
@@ -149,7 +157,11 @@ Material:
     - _WavePeakToggle: 1
     - _WaveShoreClamp: 0
     - _WaveSpeed: 15
+<<<<<<< HEAD
     - _WaveSteepness: 0.5
+=======
+    - _WaveSteepness: 0.2
+>>>>>>> origin/Main-2.0
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4

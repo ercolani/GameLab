@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:GameLab/Assets/OccaSoftware/Buto-VolumetricLightingAndFog/Shaders/CustomFunctionHLSL/osDepthAwareUpscaling.hlsl.meta
 guid: 0ea78fa9640420d429471c0230a81a94
+========
+guid: 928beaf5cbd634c46bdfa033904aca2f
+>>>>>>>> origin/Main-2.0:GameLab/Assets/_REDACTED/VFX/SubsurfaceScatter.shader.meta
 ShaderImporter:
   externalObjects: {}
   defaultTextures: []
