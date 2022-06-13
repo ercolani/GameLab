@@ -14,7 +14,6 @@ public class SunflowerSegment
     [SerializeField]
     private GameObject _sunflower;
 
-
     [SerializeField]
     private int _sunflowerRotationOrigin;
 
@@ -22,7 +21,9 @@ public class SunflowerSegment
     private int _sunflowerRotationDestination;
 
     [SerializeField]
-    private float rotateSpeed = 5f;
+    private float timeToRotate = 2f;
+
+    private bool rotating;
 
     public void ResetSegment()
     {
@@ -39,12 +40,39 @@ public class SunflowerSegment
         foreach (FlameController segmentTorch in _segmentTorches)
         {
             torchIndex = torch == segmentTorch ? _segmentTorches.IndexOf(torch) : -1;
+
             if (torchIndex != -1)
             {
-                _sunflower.transform.rotation = Quaternion.RotateTowards(_sunflower.transform.rotation, Quaternion.Euler(_sunflower.transform.rotation.x, _torchRotationAngles[torchIndex], _sunflower.transform.rotation.z), Time.deltaTime * rotateSpeed);
+                Vector3 endRotation = new Vector3(_torchRotationAngles[torchIndex], 0, 0);
+                _sunflower.transform.Rotate(endRotation * Time.deltaTime);
+                //StartCoroutine(RotateSunflowerCoroutine(endRotation));
             }
         }
     }
+
+    //private IEnumerator RotateSunflowerCoroutine(Vector3 eulerAngles)
+    //{
+    //    if (rotating)
+    //        yield break;
+    //    }
+    //    {
+    //    rotating = true;
+
+    //    Vector3 newRotation = _sunflower.transform.eulerAngles + eulerAngles;
+
+    //    Vector3 currentRotation = _sunflower.transform.eulerAngles;
+
+    //    float counter = 0;
+
+    //    while (counter < timeToRotate)
+    //    {
+    //        counter += Time.deltaTime;
+    //        _sunflower.transform.eulerAngles = Vector3.Lerp(currentRotation, newRotation, counter / timeToRotate);
+    //        yield return null;
+    //    }
+
+    //    rotating = false;
+    //}
 }
 
 public class SunflowerPuzzle : PuzzleManager

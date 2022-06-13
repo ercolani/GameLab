@@ -20,14 +20,9 @@ public class MatchingPuzzle : PuzzleManager
     private List<ObjectHolder> _puzzleStools = new List<ObjectHolder>();
 
     /// <summary>
-    /// The initial holders for the torches.
-    /// </summary>
-    [SerializeField]
-    private List<ObjectHolder> _torchHolders = new List<ObjectHolder>();
-
-    /// <summary>
     /// The order in which the torches should be lit off.
     /// </summary>
+    [SerializeField]
     private List<FlameController> _blownOutTorches = new List<FlameController>();
 
     /// <summary>
@@ -129,6 +124,8 @@ public class MatchingPuzzle : PuzzleManager
     /// </summary>
     private void CheckTorchPlacements()
     {
+        int correctStools = 0;
+
         for (int i = 0; i < _puzzleStools.Count; i++)
         {
             if (!_puzzleStools[i].HasObject())
@@ -139,8 +136,12 @@ public class MatchingPuzzle : PuzzleManager
             {
                 return;
             }
+            correctStools++;
+        }
+
+        if (correctStools == _puzzleStools.Count)
+        {
             phase++;
-            Debug.Log("placing puzzle succesfully completed");
         }
     }
 
