@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7081967748588987853
+--- !u!114 &-5768754670624292869
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SubsurfaceScatter
-  m_Shader: {fileID: 4800000, guid: 928beaf5cbd634c46bdfa033904aca2f, type: 3}
+  m_Name: CandleWick
+  m_Shader: {fileID: 4800000, guid: 9a52518d0d3fd134e91de1523b1447ab, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -76,21 +76,18 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-<<<<<<<< HEAD:GameLab/Assets/_REDACTED/VFX/Effect Materials/SubsurfaceScatter.mat
-========
     - _TextureSample0:
-        m_Texture: {fileID: 2800000, guid: eef1af8311c1a42488221f58f7351552, type: 3}
+        m_Texture: {fileID: 2800000, guid: 67ea27a941f475e4bbd05a19b63053d9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample1:
-        m_Texture: {fileID: 2800000, guid: 32412e58747b92647aaf7ae19216e336, type: 3}
+        m_Texture: {fileID: 2800000, guid: 69d91f0b66a320543ab5e0abdcf6a390, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
->>>>>>>> Igor-2.0:GameLab/Assets/_REDACTED/VFX/Effect Materials/CandleWick.mat
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -108,59 +105,42 @@ Material:
     - _AlphaClip: 0
     - _AlphaCutoff: 0.5
     - _Blend: 0
+    - _Brightness: 1.51
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
+    - _DecalMeshBiasType: 0
+    - _DecalMeshDepthBias: 0
+    - _DecalMeshViewBias: 0
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _DrawOrder: 0
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-<<<<<<<< HEAD:GameLab/Assets/_REDACTED/VFX/Effect Materials/SubsurfaceScatter.mat
-========
     - _FlameFlickerSpeed: 0.15
->>>>>>>> Igor-2.0:GameLab/Assets/_REDACTED/VFX/Effect Materials/CandleWick.mat
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-<<<<<<<< HEAD:GameLab/Assets/_REDACTED/VFX/Effect Materials/SubsurfaceScatter.mat
-========
     - _NoiseScale: 0.1
->>>>>>>> Igor-2.0:GameLab/Assets/_REDACTED/VFX/Effect Materials/CandleWick.mat
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _SSSPower: 1
-    - _SSSScale: 0.3
-    - _Shininess: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SubsurfaceDistortionModifier: 1
     - _Surface: 0
-    - _TransAmbient: 0.1
-    - _TransDirect: 0.9
-    - _TransNormal: 0.5
-    - _TransScattering: 2
-    - _TransShadow: 0.5
-    - _TransStrength: 1
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - __dirty: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-<<<<<<<< HEAD:GameLab/Assets/_REDACTED/VFX/Effect Materials/SubsurfaceScatter.mat
-    - _SSSColor: {r: 1, g: 1, b: 1, a: 1}
-========
-    - _Offset: {r: 0.35854083, g: -0.0020271149, b: 0, a: 0}
->>>>>>>> Igor-2.0:GameLab/Assets/_REDACTED/VFX/Effect Materials/CandleWick.mat
+    - _Offset: {r: 0.2, g: -0.0055233743, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
