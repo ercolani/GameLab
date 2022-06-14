@@ -19,11 +19,6 @@ public class MatchingPuzzle : PuzzleManager
     [SerializeField]
     private List<ObjectHolder> _puzzleStools = new List<ObjectHolder>();
 
-    /// <summary>
-    /// The order in which the torches should be lit off.
-    /// </summary>
-    [SerializeField]
-    private List<FlameController> _blownOutTorches = new List<FlameController>();
 
     /// <summary>
     /// The order in which the symbols glow up.
@@ -41,6 +36,11 @@ public class MatchingPuzzle : PuzzleManager
     /// The current symbol index that is glowing.
     /// </summary>
     private int _glowIndex = 0;
+
+    /// <summary>
+    /// The order in which the torches should be lit off.
+    /// </summary>
+    private List<FlameController> _blownOutTorches = new List<FlameController>();
 
     /// <summary>
     /// The initial position for each torch.
