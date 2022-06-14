@@ -34,7 +34,30 @@ public class ItemGlow : MonoBehaviour
     /// At what intensity point the light stops becoming brighter.
     /// </summary>
     [SerializeField]
-    private float _intensityThreshold = 3f;
+    private float _intensityHighThreshold = 3f;
+
+    /// <summary>
+    /// At what intensity point the light stops becoming darker.
+    /// </summary>
+    [SerializeField]
+    private float _intensityLowThreshold = 0.5f;
+
+    /// <summary>
+    /// How quickly the light becomes brighter and darker.
+    /// </summary>
+    [SerializeField]
+    private float _intensitySpeed = 0.02f;
+
+    /// <summary>
+    /// How quickly the light becomes brighter and darker.
+    /// </summary>
+    [SerializeField]
+    private bool _alreadyGlowing = false;
+
+    /// <summary>
+    /// A getter for _alreadyGlowing.
+    /// </summary>
+    public bool AlreadyGlowing => _alreadyGlowing;
 
     private void Awake()
     {
@@ -43,32 +66,41 @@ public class ItemGlow : MonoBehaviour
 
         //Gets the initial emission colour of the material, as we have to store the information before turning off the light.
         _emissionColor = _material.GetColor("_EmissionColor");
-
-        StartCoroutine(ToggleCoroutine(true));
     }
 
     /// <summary>
     /// Toggle the emissive light on and off.
     /// </summary>
     /// <returns></returns>
-    public IEnumerator ToggleCoroutine(bool on)
+    public IEnumerator ToggleCoroutine(bool on, bool stayOn, float delay)
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(delay);
+
         if (on) 
         {
-            bool turningOn = true;
-            while (turningOn)
+            if (!_alreadyGlowing)
             {
-                if (_intensity <= _intensityThreshold)
+                bool turningOn = true;
+                while (turningOn)
                 {
-                    yield return new WaitForSeconds(0.0005f);
-                    Activate(true, _intensity);
-                    _intensity += 0.005f;
-                }
-                else
-                {
-                    turningOn = false;
-                    StartCoroutine(ToggleCoroutine(true));
+                    if (_intensity <= _intensityHighThreshold)
+                    {
+                        yield return new WaitForSeconds(0.0005f);
+                        Activate(_intensity);
+                        _intensity += _intensitySpeed;
+                    }
+                    else
+                    {
+                        turningOn = false;
+                        if (!stayOn)
+                        {
+                            StartCoroutine(ToggleCoroutine(false, false, 0f));
+                        }
+                        else
+                        {
+                            _alreadyGlowing = true;
+                        }
+                    }
                 }
             }
         }
@@ -77,11 +109,11 @@ public class ItemGlow : MonoBehaviour
             bool turningOff = true;
             while (turningOff)
             {
-                if (_intensity >= _intensityThreshold)
+                if (_intensity >= _intensityLowThreshold)
                 {
                     yield return new WaitForSeconds(0.0005f);
-                    Activate(true, _intensity);
-                    _intensity -= 0.005f;
+                    Activate(_intensity);
+                    _intensity -= _intensitySpeed;
                 }
                 else
                 {
@@ -89,39 +121,23 @@ public class ItemGlow : MonoBehaviour
                 }
             }
         }
-      
     }
 
     //Call this method to turn on or turn off emissive light.
-    public void Activate(bool on, float intensity)
+    public void Activate(float intensity)
     {
-        if (on)
-        {
-            //enables emission for the material, and make the material use realtime emission.
-            _material.EnableKeyword("_EMISSION");
-            _material.globalIlluminationFlags = MaterialGlobalIlluminationFlags.RealtimeEmissive;
+        //enables emission for the material, and make the material use realtime emission.
+        _material.EnableKeyword("_EMISSION");
+        _material.globalIlluminationFlags = MaterialGlobalIlluminationFlags.RealtimeEmissive;
 
-            //update the emission color and intensity of the material.
-            _material.SetColor("_EmissionColor", _emissionColor * intensity);
+        //update the emission color and intensity of the material.
+        _material.SetColor("_EmissionColor", _emissionColor * intensity);
 
-            //makes the renderer update the emission and albedo maps of our material.
-            RendererExtensions.UpdateGIMaterials(_renderer);
+        //makes the renderer update the emission and albedo maps of our material.
+        RendererExtensions.UpdateGIMaterials(_renderer);
 
-            //inform Unity's GI system to recalculate GI based on the new emission map.
-            DynamicGI.SetEmissive(_renderer, _emissionColor * intensity);
-            DynamicGI.UpdateEnvironment();
-        }
-        else
-        {
-
-            _material.DisableKeyword("_EMISSION");
-            _material.globalIlluminationFlags = MaterialGlobalIlluminationFlags.EmissiveIsBlack;
-
-            _material.SetColor("_EmissionColor", Color.black);
-            RendererExtensions.UpdateGIMaterials(_renderer);
-
-            DynamicGI.SetEmissive(_renderer, Color.black);
-            DynamicGI.UpdateEnvironment();
-        }
+        //inform Unity's GI system to recalculate GI based on the new emission map.
+        DynamicGI.SetEmissive(_renderer, _emissionColor * intensity);
+        DynamicGI.UpdateEnvironment();
     }
 }

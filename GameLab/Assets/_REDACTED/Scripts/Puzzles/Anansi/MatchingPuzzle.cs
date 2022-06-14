@@ -26,6 +26,23 @@ public class MatchingPuzzle : PuzzleManager
     private List<FlameController> _blownOutTorches = new List<FlameController>();
 
     /// <summary>
+    /// The order in which the symbols glow up.
+    /// </summary>
+    [SerializeField]
+    private List<ItemGlow> _symbolGlowOrder = new List<ItemGlow>();
+
+    /// <summary>
+    /// The list of symbols on the stools.
+    /// </summary>
+    [SerializeField]
+    private List<ItemGlow> _stoolSymbols = new List<ItemGlow>();
+
+    /// <summary>
+    /// The current symbol index that is glowing.
+    /// </summary>
+    private int _glowIndex = 0;
+
+    /// <summary>
     /// The initial position for each torch.
     /// </summary>
     private List<Vector3> _initialPosition = new List<Vector3>();
@@ -36,10 +53,10 @@ public class MatchingPuzzle : PuzzleManager
     private int phase = 0;
 
     /// <summary>
-    /// Sets the index for each puzzle torch and saves their initial position.
+    /// How often the symbols begin to light up (are invoked).
     /// </summary>
-    /// 
- 
+    private float _symbolInvokeTime = 2.5f;
+
     private void Start()
     {
         int index = 0;
@@ -62,6 +79,7 @@ public class MatchingPuzzle : PuzzleManager
         foreach (FlameController torch in _puzzleTorches)
         {
             torch.FlameToggled += OnTorchToggled;
+            torch.ToggleCanBeBlownOut(false);
         }
 
         foreach (ObjectHolder stool in _puzzleStools)
@@ -86,20 +104,18 @@ public class MatchingPuzzle : PuzzleManager
     {
         if (phase == 0)
         {
-            DialogueController dialogueController = new DialogueController();
-            //dialogueController.InitializeDialogue();
-            // RESET TO THE STARTING POS OR HOLDER
             for (int i = 0; i < _puzzleTorches.Count; i++)
             {
                 _puzzleTorches[i].transform.position = _initialPosition[i];
             }
         }
-        else if(phase == 1)
+        else if (phase == 1)
         {
             for (int i = 0; i < _puzzleTorches.Count; i++)
             {
                 _puzzleTorches[i].ToggleFlame(true);
             }
+            _blownOutTorches.Clear();
         }
     }
 
@@ -128,20 +144,24 @@ public class MatchingPuzzle : PuzzleManager
 
         for (int i = 0; i < _puzzleStools.Count; i++)
         {
-            if (!_puzzleStools[i].HasObject())
+            if (_puzzleStools[i].HasObject())
             {
-                return;
+                if (_puzzleStools[i].HeldObject.GetComponent<PuzzleTorch>().Index == i)
+                {
+                    correctStools++;
+                    StartCoroutine(_stoolSymbols[i].ToggleCoroutine(true, true, 0f));
+                }
             }
-            if (_puzzleStools[i].HeldObject.GetComponent<PuzzleTorch>().Index != i)
-            {
-                return;
-            }
-            correctStools++;
         }
 
         if (correctStools == _puzzleStools.Count)
         {
             phase++;
+            InvokeRepeating("StartSymbolGlows", 0f, _symbolInvokeTime);
+            foreach (FlameController torch in _puzzleTorches)
+            {
+                torch.ToggleCanBeBlownOut(true);
+            }
         }
     }
 
@@ -158,10 +178,14 @@ public class MatchingPuzzle : PuzzleManager
             }
             else
             {
+                if (_blownOutTorches.Count == _puzzleTorches.Count)
+                {
+                    ResetPuzzle();
+                }
                 return;
             }
         }
-        // If reaches end of for loop without returning it means it was completed successfully.
+
         PuzzleCompleted();
     }
 
@@ -170,6 +194,25 @@ public class MatchingPuzzle : PuzzleManager
     /// </summary>
     public override void PuzzleCompleted()
     {
-        Debug.Log("Anansi's puzzle has been completed");
+        CancelInvoke("StartSymbolGlows");
     }
+
+    private void StartSymbolGlows()
+    {
+        if (_glowIndex == 0)
+        {
+            StartCoroutine(_symbolGlowOrder[_glowIndex].ToggleCoroutine(true, false, 2f));
+        }
+        else
+        {
+            StartCoroutine(_symbolGlowOrder[_glowIndex].ToggleCoroutine(true, false, 0f));
+        }
+        _glowIndex++;
+
+        if (_glowIndex == _symbolGlowOrder.Count)
+        {
+            _glowIndex = 0;
+        }
+    }
+
 }
