@@ -18,12 +18,18 @@ public class ItemGlow : MonoBehaviour
     private Material _material;
 
     /// <summary>
-    /// <summary>
     /// Holds the emission color.
     /// </summary>
     [SerializeField]
     private Color _emissionColor;
 
+
+    /// <summary>
+    /// <summary>
+    /// Holds the alternate emission color.
+    /// </summary>
+    [SerializeField]
+    private Color _alternateEmissionColor;
     /// <summary>
     /// The intensity of the emissive light.
     /// </summary>
@@ -124,7 +130,7 @@ public class ItemGlow : MonoBehaviour
     }
 
     //Call this method to turn on or turn off emissive light.
-    public void Activate(float intensity)
+    private void Activate(float intensity)
     {
         //enables emission for the material, and make the material use realtime emission.
         _material.EnableKeyword("_EMISSION");
@@ -139,5 +145,10 @@ public class ItemGlow : MonoBehaviour
         //inform Unity's GI system to recalculate GI based on the new emission map.
         DynamicGI.SetEmissive(_renderer, _emissionColor * intensity);
         DynamicGI.UpdateEnvironment();
+    }
+
+    public void SetAlternateEmissionColor()
+    {
+        _emissionColor = _alternateEmissionColor;
     }
 }

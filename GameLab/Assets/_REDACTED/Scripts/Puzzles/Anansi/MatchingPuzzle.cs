@@ -102,21 +102,7 @@ public class MatchingPuzzle : PuzzleManager
     /// </summary>
     public override void ResetPuzzle()
     {
-        if (phase == 0)
-        {
-            for (int i = 0; i < _puzzleTorches.Count; i++)
-            {
-                _puzzleTorches[i].transform.position = _initialPosition[i];
-            }
-        }
-        else if (phase == 1)
-        {
-            for (int i = 0; i < _puzzleTorches.Count; i++)
-            {
-                _puzzleTorches[i].ToggleFlame(true);
-            }
-            _blownOutTorches.Clear();
-        }
+        StartCoroutine(ResetPuzzleCoroutine());
     }
 
     /// <summary>
@@ -195,18 +181,22 @@ public class MatchingPuzzle : PuzzleManager
     public override void PuzzleCompleted()
     {
         CancelInvoke("StartSymbolGlows");
+        foreach (ItemGlow symbol in _stoolSymbols)
+        {
+            StartCoroutine(symbol.ToggleCoroutine(false, false, 0f));
+        }
     }
 
     private void StartSymbolGlows()
     {
+       
         if (_glowIndex == 0)
         {
-            StartCoroutine(_symbolGlowOrder[_glowIndex].ToggleCoroutine(true, false, 2f));
+            _symbolGlowOrder[_glowIndex].SetAlternateEmissionColor();
         }
-        else
-        {
-            StartCoroutine(_symbolGlowOrder[_glowIndex].ToggleCoroutine(true, false, 0f));
-        }
+
+        StartCoroutine(_symbolGlowOrder[_glowIndex].ToggleCoroutine(true, false, 0f));
+
         _glowIndex++;
 
         if (_glowIndex == _symbolGlowOrder.Count)
@@ -215,4 +205,24 @@ public class MatchingPuzzle : PuzzleManager
         }
     }
 
+    private IEnumerator ResetPuzzleCoroutine()
+    {
+        if (phase == 0)
+        {
+            for (int i = 0; i < _puzzleTorches.Count; i++)
+            {
+                _puzzleTorches[i].transform.position = _initialPosition[i];
+            }
+        }
+        else if (phase == 1)
+        {
+            yield return new WaitForSeconds(1.5f);
+
+            for (int i = 0; i < _puzzleTorches.Count; i++)
+            {
+                _puzzleTorches[i].ToggleFlame(true, false);
+            }
+            _blownOutTorches.Clear();
+        }
+    }
 }
