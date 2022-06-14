@@ -21,6 +21,17 @@ public class FlameController : MonoBehaviour
     /// <summary>
     /// Whether the flame is active or not.
     /// </summary>
+    [SerializeField]
+    private bool _canBeBlownOut = true;
+
+    /// <summary>
+    /// A getter for whether the flame can be blown out or not.
+    /// </summary>
+    public bool CanBeBlownOut => _canBeBlownOut;
+
+    /// <summary>
+    /// Whether the flame is active or not.
+    /// </summary>
     public event Action<FlameController> FlameToggled;
 
     /// <summary>
@@ -51,19 +62,31 @@ public class FlameController : MonoBehaviour
     /// </summary>
     public void ToggleFlame(bool state)
     {
-        _flameActive = state;
-        _flame.SetActive(state);
-        FlameToggled?.Invoke(this);
+        if (_canBeBlownOut)
+        {
+            _flameActive = state;
+            _flame.SetActive(state);
+            FlameToggled?.Invoke(this);
+        }
     }
     
     public void ToggleFlame(bool state, bool invokeEvent)
     {
-        _flameActive = state;
-        _flame.SetActive(state);
-
-        if (invokeEvent)
+        if (_canBeBlownOut)
         {
-            FlameToggled?.Invoke(this);
+            _flameActive = state;
+            _flame.SetActive(state);
+
+            if (invokeEvent)
+            {
+                FlameToggled?.Invoke(this);
+            }
         }
+    }
+       
+
+    public void ToggleCanBeBlownOut(bool state)
+    {
+        _canBeBlownOut = state;
     }
 }
