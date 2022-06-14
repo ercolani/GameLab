@@ -141,6 +141,10 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+<<<<<<< Updated upstream
     - _Offset: {r: 0.2, g: 0.004314713, b: 0, a: 0}
+=======
+    - _Offset: {r: 0.51997095, g: -0.0005471455, b: 0, a: 0}
+>>>>>>> Stashed changes
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
