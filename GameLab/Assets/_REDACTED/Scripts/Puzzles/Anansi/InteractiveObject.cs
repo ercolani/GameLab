@@ -4,7 +4,7 @@ using System;
 public class InteractiveObject : MonoBehaviour
 {
     /// <summary>
-    /// The range at which the player can pick up objects.
+    /// The particles that emit from interactible objects.
     /// </summary>
     private ParticleSystem _particleEffect;
 
@@ -12,6 +12,11 @@ public class InteractiveObject : MonoBehaviour
     /// The object that is being held.
     /// </summary>
     public Action Interacted;
+
+    /// <summary>
+    /// The object that is being held with the object as a parameter.
+    /// </summary>
+    public Action<InteractiveObject> InteractedWithReturn;
 
     /// <summary>
     /// Whether the object can be interacted with.
@@ -26,10 +31,29 @@ public class InteractiveObject : MonoBehaviour
     /// <summary>
     /// Whether the object can be interacted with.
     /// </summary>
+    [SerializeField]
     private bool _IsInteractive = true;
+
+    /// <summary>
+    /// Whether the object can be picked up.
+    /// </summary>
+    [SerializeField]
+    private bool _canBePickedUp = true;
+
+
+    /// <summary>
+    /// Whether the object can be picked up.
+    /// </summary>
+    public bool CanBePickedUp => _canBePickedUp;
 
     public void Interact()
     {
         Interacted?.Invoke();
+        InteractedWithReturn?.Invoke(this);
+    }
+
+    public void SetInteractivity(bool state)
+    {
+        _IsInteractive = state;
     }
 }
