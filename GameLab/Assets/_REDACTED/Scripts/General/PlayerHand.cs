@@ -86,7 +86,10 @@ public class PlayerHand : MonoBehaviour
                     if (interactiveComponent.IsInteractive)
                     {
                         obj.GetComponent<InteractiveObject>().Interact();
-                        PickUpObject(obj.gameObject);
+                        if (obj.GetComponent<InteractiveObject>().CanBePickedUp)
+                        {
+                            PickUpObject(obj.gameObject);
+                        }
                         return;
                     }
                 }
