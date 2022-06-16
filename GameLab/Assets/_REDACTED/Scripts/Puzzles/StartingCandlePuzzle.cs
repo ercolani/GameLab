@@ -50,9 +50,17 @@ public class StartingCandlePuzzle : MonoBehaviour
     /// </summary>
     private IEnumerator OpenSeaAnimation()
     {
-        for (int i = 0; i < 60; i++)
+        for (int i = 0; i < 50; i++)
         {
             _waterSystem.SeaLevel = _waterSystem.SeaLevel - 0.1f;
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        yield return new WaitForSeconds(20);
+
+        for (int i = 0; i < 50; i++)
+        {
+            _waterSystem.SeaLevel = _waterSystem.SeaLevel + 0.1f;
             yield return new WaitForSeconds(0.1f);
         }
     }
