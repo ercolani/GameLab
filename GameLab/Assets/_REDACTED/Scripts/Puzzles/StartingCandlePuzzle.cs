@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Gaia;
+using static AudioController;
 
 public class StartingCandlePuzzle : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class StartingCandlePuzzle : MonoBehaviour
     /// The candles that form the puzzle.
     /// </summary>
     [SerializeField]
-    private List<LightUp> _candles;
+    private List<FlameController> _torches;
 
     /// <summary>
     /// The water system for Gaia.
@@ -22,28 +23,25 @@ public class StartingCandlePuzzle : MonoBehaviour
     /// </summary>
     private void OnEnable()
     {
-        foreach (LightUp candle in _candles)
+        foreach (FlameController torch in _torches)
         {
-            candle.Activated += CheckCompleted;
+            torch.FlameToggled += CheckCompleted;
         }
     }
 
     /// <summary>
     /// Checks if every candle has been lit up.
     /// </summary>
-    private void CheckCompleted()
+    private void CheckCompleted(FlameController torchParameter)
     {
-        foreach (LightUp candle in _candles)
+        foreach (FlameController torch in _torches)
         {
-            if (!candle.Active)
+            if (torch.FlameActive)
             {
                 return;
             }
         }
-        foreach (LightUp candle in _candles)
-        {
-            candle.KeepActive = true;
-        }
+
         StartCoroutine(OpenSeaAnimation());
     }
 
@@ -52,7 +50,7 @@ public class StartingCandlePuzzle : MonoBehaviour
     /// </summary>
     private IEnumerator OpenSeaAnimation()
     {
-        for(int i= 0; i<60; i++)
+        for (int i = 0; i < 60; i++)
         {
             _waterSystem.SeaLevel = _waterSystem.SeaLevel - 0.1f;
             yield return new WaitForSeconds(0.1f);

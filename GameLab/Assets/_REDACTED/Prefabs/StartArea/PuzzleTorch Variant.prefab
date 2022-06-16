@@ -169,6 +169,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8548046163407230169, guid: 81b9fffb92b1c6f41a64576274be40f9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f19b95b8b991cc49b7f64b527249669, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81b9fffb92b1c6f41a64576274be40f9, type: 3}
 --- !u!4 &1744942337816830171 stripped

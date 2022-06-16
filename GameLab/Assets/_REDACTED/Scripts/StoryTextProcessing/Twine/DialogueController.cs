@@ -31,6 +31,9 @@ public class DialogueController : MonoBehaviour
     private float _deityAutoBeginDelay = 7f;
 
     [SerializeField]
+    private float _subtitleDelay = 1f;
+
+    [SerializeField]
     private float _deityAutoDelay = 15f;
 
     public delegate void NodeEnteredHandler(Node node);
@@ -60,19 +63,21 @@ public class DialogueController : MonoBehaviour
 
     private IEnumerator NextDialogue()
     {
-        yield return new WaitForSeconds(AudioController.InstanceLength);
-
         if (!_autoMode)
         {
+            yield return new WaitForSeconds(AudioController.InstanceLength - _subtitleDelay);
+            ToggleDialogueState();
+
             if (currentNode.tags.Contains("Auto"))
             {
+                yield return new WaitForSeconds(_subtitleDelay);
                 StartCoroutine(BeginAutomaticMode());
-                ToggleDialogueState();
             }
             else
             {
                 if (!currentNode.tags.Contains("END"))
                 {
+                    yield return new WaitForSeconds(_subtitleDelay);
                     NextNode(0);
                 }
                 else
@@ -83,11 +88,22 @@ public class DialogueController : MonoBehaviour
         }
         else
         {
-            if (currentNode.tags.Contains("TorchThought"))
-            {
-                _autoMode = false;
-                ToggleDialogueState();
-            }
+            yield return new WaitForSeconds(AudioController.InstanceLength - _subtitleDelay);
+
+           // if (currentNode.tags.Contains("TorchThought"))
+           // {
+                if (currentNode.tags.Contains("END"))
+                {
+                    _autoMode = false;
+                    ToggleDialogueState();
+                }
+                else
+                {
+                    ToggleDialogueState();
+                    yield return new WaitForSeconds(_subtitleDelay);
+                    StartAutoVoiceLines();
+                }
+            //}
         }
     }
 
@@ -156,6 +172,7 @@ public class DialogueController : MonoBehaviour
 
     public void NextNode(int responseIndex)
     {
+        ToggleDialogueState();
         string nextNodeID = currentNode.responses[responseIndex].destinationNode;
         Node nextNode = dialogueObject.GetNode(nextNodeID);
         currentNode = nextNode;
@@ -179,19 +196,13 @@ public class DialogueController : MonoBehaviour
     private IEnumerator BeginAutomaticMode()
     {
         yield return new WaitForSeconds(_deityAutoBeginDelay);
-        StartCoroutine(StartAutoVoiceLines());
+        StartAutoVoiceLines();
     }
 
-    private IEnumerator StartAutoVoiceLines()
+    private void StartAutoVoiceLines()
     {
         _autoMode = true;
-        ToggleDialogueState();
         NextNode(0);
-        yield return new WaitForSeconds(AudioController.InstanceLength + _deityAutoDelay);
-        if (_autoMode)
-        {
-            StartCoroutine(StartAutoVoiceLines());
-        }
     }
 }
 

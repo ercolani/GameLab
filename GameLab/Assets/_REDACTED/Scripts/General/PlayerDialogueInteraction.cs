@@ -55,7 +55,7 @@ public class PlayerDialogueInteraction : MonoBehaviour
     /// <summary>
     /// Invoked when the player is in the dialogue range and presses the dialogue interaction key.
     /// </summary>
-    public event Action<Deity> DialogueFired;
+    public event Action<Deity, bool> DialogueFired;
 
     private void Update()
     {
@@ -80,7 +80,14 @@ public class PlayerDialogueInteraction : MonoBehaviour
     {
         if (Input.GetKeyDown(dialogueInteraction) && inRange && currentDeityInDialogue.IsReadyForDialogue)
         {
-            DialogueFired?.Invoke(currentDeityInDialogue);
+            if (!currentDeityInDialogue.isFirstEncounter && !currentDeityInDialogue.isLastEncounter)
+            {
+                DialogueFired?.Invoke(currentDeityInDialogue, true);
+            } 
+            else
+            {
+                DialogueFired?.Invoke(currentDeityInDialogue, false);
+            }
         }
     }
 

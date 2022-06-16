@@ -47,6 +47,12 @@ public class AudioController : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        PlaySound("Main Theme");
+        PlaySound("Forest Ambience");
+    }
+
     /// <summary>
     /// Plays a voice line using a code from FMOD depending on if it is a puzzle thought or not.
     /// </summary>
@@ -129,6 +135,13 @@ public class AudioController : MonoBehaviour
         eventDescription.getLength(out _instanceLength);
         float ceil = (float)_instanceLength / 1000;
         _instanceLength = Mathf.CeilToInt(ceil);
+    }
+
+    public static void PlaySound(string sound)
+    {
+        instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{sound}");
+        instance.start();
+        instance.release();
     }
 }
 

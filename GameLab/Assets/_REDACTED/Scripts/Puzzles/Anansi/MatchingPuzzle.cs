@@ -185,6 +185,8 @@ public class MatchingPuzzle : PuzzleManager
         {
             StartCoroutine(symbol.ToggleCoroutine(false, false, 0f));
         }
+        deity.isLastEncounter = true;
+        deity.ToggleDeityReadyForDialogue();
     }
 
     private void StartSymbolGlows()

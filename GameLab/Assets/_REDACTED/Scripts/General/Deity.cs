@@ -56,13 +56,13 @@ public class Deity : MonoBehaviour
     /// Whether the player has interacted with the deity before or not.
     /// </summary>
     [SerializeField]
-    private bool isFirstEncounter;
+    public bool isFirstEncounter;
 
     /// <summary>
     /// Whether the player is awaiting their last encounter with the deity.
     /// </summary>
     [SerializeField]
-    private bool isLastEncounter;
+    public bool isLastEncounter;
 
     /// <summary>
     /// Whether the deity is available for dialogue.
@@ -89,21 +89,43 @@ public class Deity : MonoBehaviour
     /// Called when the player interacts to speak with the deity. The passage changes depending on when the player interacts with the deity (first encounter, then candle acquired, then last encounter).
     /// </summary>
     /// <param name="deity"></param>
-    private void FireDialogue(Deity deity)
+    private void FireDialogue(Deity deity, bool isPuzzleComment)
     {
         if (deity == this)
         {
-            if (isFirstEncounter)
+            if (isPuzzleComment)
             {
-                dialogueController.InitializeDialogue(firstEncounterIndex, new string[0]);
-                isFirstEncounter = false;
-                ToggleDeityReadyForDialogue();
+                string type = "";
+                int r = Random.Range(0, 3);
+                switch (r)
+                {
+                    case 0:
+                        type = "dw";
+                        break;
+                    case 1:
+                        type = "dn";
+                        break;
+                    case 2:
+                        type = "mm";
+                        break;
+                }
+
+                FirePuzzleComment(type);
             }
-            else if (isLastEncounter)
+            else
             {
-                dialogueController.InitializeDialogue(lastEnconterIndex, new string[0]);
-                isLastEncounter = false;
-                ToggleDeityReadyForDialogue();
+                if (isFirstEncounter)
+                {
+                    dialogueController.InitializeDialogue(firstEncounterIndex, new string[0]);
+                    isFirstEncounter = false;
+                    ToggleDeityReadyForDialogue();
+                }
+                else if (isLastEncounter)
+                {
+                    dialogueController.InitializeDialogue(lastEnconterIndex, new string[0]);
+                    isLastEncounter = false;
+                    ToggleDeityReadyForDialogue();
+                }
             }
         }
     }

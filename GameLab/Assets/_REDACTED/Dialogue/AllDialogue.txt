@@ -42,7 +42,7 @@ Go on then, have at it.
 [[aa_fe_07]]
 
 :: aa_fe_07 {"position":"105,832","size":"100,100"}
-I've always been fascinated puzzles. The more they get your gears grinding, the better.
+I've always been fascinated by puzzles. The more they get your gears grinding, the better.
 [[aa_fe_09]]
 
 :: aa_fe_08 {"position":"102,983","size":"100,100"}
@@ -62,7 +62,7 @@ Shunned by my family, I realized they were jealous of the superiority of my wit.
 [[aa_fe_12]] 
 
 :: aa_fe_12 {"position":"103,1583","size":"100,100"}
-They have learned their lesson, though, don't worry.
+They have learned their lesson, though, don't you worry.
 [[aa_fe_13]] 
 
 :: aa_fe_13 {"position":"103,1733","size":"100,100"}

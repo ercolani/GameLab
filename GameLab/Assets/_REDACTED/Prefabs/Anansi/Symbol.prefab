@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderer: {fileID: 0}
   _material: {fileID: 0}
-  _emissionColor: {r: 0.7490196, g: 0.7411765, b: 0.36862746, a: 1}
+  _emissionColor: {r: 0.6132076, g: 0.60226154, b: 0.054957267, a: 1}
   _alternateEmissionColor: {r: 0.108668566, g: 0.34761238, b: 0.6226415, a: 1}
   _intensity: 0.3
   _intensityHighThreshold: 4

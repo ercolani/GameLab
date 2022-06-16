@@ -70,10 +70,10 @@ public class CandleWickController : MonoBehaviour
         previousRotation = transform.forward;
         Quaternion localRotation = Quaternion.FromToRotation(previousRotation, currentRotation);
 
-        CalculateVelocity(localVelocity.x, randomLerpValue);
+        CalculateVelocity(localVelocity.z, randomLerpValue);
         CalculateRotation(localRotation.y);
 
-        material.SetVector("_Offset", new Vector2(-candleOffset.x + defaultCandleOffset.x, randomCandleYOffset));
+        material.SetVector("_Offset", new Vector2(candleOffset.x + defaultCandleOffset.x, randomCandleYOffset));
         material.SetFloat("_NoiseScale", noiseScale);
     }
 
