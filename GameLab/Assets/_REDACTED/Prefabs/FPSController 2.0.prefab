@@ -62,7 +62,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 50
+  far clip plane: 275
   field of view: 80
   orthographic: 0
   orthographic size: 5
@@ -5117,7 +5117,6 @@ GameObject:
   - component: {fileID: 3981293114543799251}
   - component: {fileID: 3981293114543799250}
   - component: {fileID: 3981293114543799255}
-  - component: {fileID: 3981293114543799080}
   - component: {fileID: 3981293114543799082}
   - component: {fileID: 3981293114543799081}
   - component: {fileID: 3981293114543799083}
@@ -5304,7 +5303,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!82 &3981293114543799250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5413,19 +5412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def5751c45bc4c242944fd0af3fd4c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &3981293114543799080
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3981293114543799263}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 6.4135246, z: 1}
-  m_Center: {x: 0, y: 0.17410088, z: 0}
 --- !u!114 &3981293114543799082
 MonoBehaviour:
   m_ObjectHideFlags: 0

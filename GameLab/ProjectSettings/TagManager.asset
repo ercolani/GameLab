@@ -15,6 +15,7 @@ TagManager:
   - Holder
   - PickUp
   - Water
+  - Terrain
   layers:
   - Default
   - TransparentFX

@@ -16,7 +16,7 @@ public class StartingCandlePuzzle : MonoBehaviour
     /// The water system for Gaia.
     /// </summary>
     [SerializeField]
-    private PWS_WaterSystem _waterSystem;
+    private Animator _waterObject;
 
     /// <summary>
     /// Subscribing to event
@@ -50,18 +50,8 @@ public class StartingCandlePuzzle : MonoBehaviour
     /// </summary>
     private IEnumerator OpenSeaAnimation()
     {
-        for (int i = 0; i < 50; i++)
-        {
-            _waterSystem.SeaLevel = _waterSystem.SeaLevel - 0.1f;
-            yield return new WaitForSeconds(0.1f);
-        }
-
-        yield return new WaitForSeconds(20);
-
-        for (int i = 0; i < 50; i++)
-        {
-            _waterSystem.SeaLevel = _waterSystem.SeaLevel + 0.1f;
-            yield return new WaitForSeconds(0.1f);
-        }
+        _waterObject.Play("LowerWater");
+        yield return new WaitForSeconds(10);
+        _waterObject.Play("RiseWater");
     }
 }
