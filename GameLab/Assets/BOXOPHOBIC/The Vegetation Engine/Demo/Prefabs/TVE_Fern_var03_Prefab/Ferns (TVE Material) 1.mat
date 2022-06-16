@@ -560,7 +560,7 @@ Material:
     - _Metallic: 0
     - _Mode: 1
     - _MoiseCat: 0
-    - _MotionAmplitude_10: 0.232
+    - _MotionAmplitude_10: 0
     - _MotionAmplitude_20: 0.1
     - _MotionAmplitude_21: 0
     - _MotionAmplitude_22: 0
@@ -572,7 +572,7 @@ Material:
     - _MotionScale_30: 20
     - _MotionScale_32: 20
     - _MotionSpace: 0
-    - _MotionSpeed_10: 4
+    - _MotionSpeed_10: 0
     - _MotionSpeed_20: 6
     - _MotionSpeed_30: 15
     - _MotionSpeed_32: 30
@@ -591,7 +591,7 @@ Material:
     - _NoiseCat: 1
     - _NoiseMaxValue: 1
     - _NoiseMinValue: 0
-    - _NoiseScaleValue: 0.01
+    - _NoiseScaleValue: 0
     - _NormalMapSpace: 0
     - _NormalScale: 4.03
     - _ObjectDataMessage: 0
@@ -797,7 +797,7 @@ Material:
     - _MaxBoundsInfo: {r: 1.5089474, g: 0.91847914, b: 1.5089474, a: 0}
     - _NoiseColorOne: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseColorTwo: {r: 1, g: 1, b: 1, a: 1}
-    - _NoiseMaskRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _NoiseMaskRemap: {r: 0, g: 1, b: 0, a: 0}
     - _NoiseTintOne: {r: 1, g: 1, b: 1, a: 1}
     - _NoiseTintTwo: {r: 1, g: 1, b: 1, a: 1}
     - _OverlayMaskRemap: {r: 0.4236305, g: 0.46963054, b: 0, a: 0}
