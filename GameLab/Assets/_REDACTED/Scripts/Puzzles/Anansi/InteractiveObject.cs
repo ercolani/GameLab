@@ -6,6 +6,7 @@ public class InteractiveObject : MonoBehaviour
     /// <summary>
     /// The particles that emit from interactible objects.
     /// </summary>
+    [SerializeField]
     private ParticleSystem _particleEffect;
 
     /// <summary>
@@ -55,5 +56,9 @@ public class InteractiveObject : MonoBehaviour
     public void SetInteractivity(bool state)
     {
         _IsInteractive = state;
+        if (_particleEffect != null)
+        {
+            _particleEffect.gameObject.SetActive(state);
+        }
     }
 }
