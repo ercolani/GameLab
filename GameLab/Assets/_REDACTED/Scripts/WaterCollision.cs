@@ -5,23 +5,47 @@ using UnityEngine;
 public class WaterCollision : MonoBehaviour
 {
     // Start is called before the first frame update
+    [SerializeField]
+    private CharacterController _playerController;
+
+    [SerializeField]
+    private float _updateTime = 1;
+
+    private GameObject _player;
+
     private Vector3 _savedPosition;
 
-    private bool _colliding;
+    private float _timer = 0;
 
-    // Update is called once per frame
-    private void LateUpdate()
+    private bool _onGround = true;
+
+    private void Update()
     {
-        _savedPosition = this.transform.position;
+        _timer += Time.deltaTime;
+        if(_timer > _updateTime && _onGround)
+        {
+            _savedPosition = _player.transform.localPosition;
+            _timer = 0;
+        }
+        else if (!_onGround)
+        {
+            _playerController.enabled = false;
+            _player.transform.localPosition = _savedPosition;
+            _playerController.enabled = true;
+            _onGround = true;
+        }
     }
 
-    private void OnCollisionEnter(Collider other)
+    private void Awake()
+    {
+        _player = _playerController.gameObject;
+    }
+
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Water")
         {
-            Debug.LogError("Collided");
-            _colliding = true;
-            this.transform.position = _savedPosition;
+            _onGround = false;
         }
     }
 }

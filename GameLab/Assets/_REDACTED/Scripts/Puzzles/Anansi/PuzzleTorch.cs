@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class PuzzleTorch : FlameController
 {
     /// <summary>
@@ -23,5 +22,3 @@ public class PuzzleTorch : FlameController
         index = n;
     }
 }
-
-
