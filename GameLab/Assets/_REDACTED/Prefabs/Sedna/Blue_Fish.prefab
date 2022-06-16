@@ -4826,7 +4826,7 @@ GameObject:
   - component: {fileID: 1587000587400680320}
   - component: {fileID: 2158633789120660398}
   m_Layer: 0
-  m_Name: Blue_fish
+  m_Name: Blue_Fish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4876,7 +4876,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5b158ba93e8e87541a565bc310c1e624, type: 2}
+  - {fileID: 2100000, guid: 68ae3487759f5064496f4a4dbbfcd7d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
