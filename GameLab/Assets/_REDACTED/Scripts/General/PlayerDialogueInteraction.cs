@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Linq;
+using UnityStandardAssets.Characters.FirstPerson;
 
 /// <summary>
 /// Controls the player's interaction with dialogue.
@@ -14,6 +15,12 @@ public class PlayerDialogueInteraction : MonoBehaviour
     /// </summary>
     [SerializeField]
     private float dialogueRange = 3f;
+
+    /// <summary>
+    /// The default speed at which the player walks.
+    /// </summary>
+    [SerializeField]
+    private float defaultWalkSpeed;
 
     /// <summary>
     /// Whether the player is in the dialogue range.
@@ -32,6 +39,12 @@ public class PlayerDialogueInteraction : MonoBehaviour
     /// </summary>
     [SerializeField]
     private Deity currentDeityInDialogue;
+
+    /// <summary>
+    /// The player character controller.
+    /// </summary>
+    [SerializeField]
+    private FirstPersonController firstPersonController;
 
     /// <summary>
     /// The key the player presses to interact with dialogue.
@@ -78,6 +91,18 @@ public class PlayerDialogueInteraction : MonoBehaviour
         if (inRange && !currentDeityInDialogue.IsReadyForDialogue)
         {
             dialogueButton.SetActive(false);
+        }
+    }
+
+    public void ToggleFreezePlayer(bool state)
+    {
+        if (state)
+        {
+            firstPersonController.SetWalkSpeed(defaultWalkSpeed);
+        }
+        else
+        {
+            firstPersonController.SetWalkSpeed(0f);
         }
     }
 }

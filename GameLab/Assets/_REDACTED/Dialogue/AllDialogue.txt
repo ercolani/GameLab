@@ -17,13 +17,13 @@ GameLab Voice Lines
 :: UserStylesheet [stylesheet]
 
 
-:: aa_fe_02 {"position":"101,242","size":"100,100"}
-Oh... you're just a dull-witted, impudent speck of dust. 
-[[aa_fe_03]]
-
 :: aa_fe_01 [START] {"position":"101,99","size":"100,100"}
 What foolish imbecile dares to summon me?
 [[aa_fe_02]]
+
+:: aa_fe_02 {"position":"101,242","size":"100,100"}
+Oh... you're just a dull-witted, impudent speck of dust. 
+[[aa_fe_03]]
 
 :: aa_fe_03 {"position":"104,392","size":"100,100"}
 Well, I'm bored enough anyway. Hopefully, at the very least, you can provide some amusement.
@@ -37,69 +37,64 @@ Do you wish to challenge my infinite wisdom by trying yourself at my puzzle?
 Only the most adept beings can deduce the denotement of the stools.
 [[aa_fe_06]]
 
-:: aa_fe_06 {"position":"105,832","size":"100,100"}
-I've always been fascinated puzzles. The more they get your gears grinding, the better.
+:: aa_fe_06 [Auto] {"position":"103,2333","size":"100,100"}
+Go on then, have at it.
 [[aa_fe_07]]
 
-:: aa_fe_07 {"position":"102,983","size":"100,100"}
-They always contain so much more than they let on.
-[[aa_fe_08]] 
+:: aa_fe_07 {"position":"105,832","size":"100,100"}
+I've always been fascinated puzzles. The more they get your gears grinding, the better.
+[[aa_fe_09]]
 
+:: aa_fe_08 {"position":"102,983","size":"100,100"}
+They always contain so much more than they let on.
+[[aa_fe_09]] 
+
+:: aa_fe_09 {"position":"103,1133","size":"100,100"}
+Peeling away the riddles and discovering the deep secrets within is the only experience that brings me ecstatic elation.
+[[aa_fe_10]] 
+
+:: aa_fe_10 {"position":"103,1283","size":"100,100"}
+But nobody else understood.
+[[aa_fe_11]]
+
+:: aa_fe_11 {"position":"103,1433","size":"100,100"}
+Shunned by my family, I realized they were jealous of the superiority of my wit.
+[[aa_fe_12]] 
+
+:: aa_fe_12 {"position":"103,1583","size":"100,100"}
+They have learned their lesson, though, don't worry.
+[[aa_fe_13]] 
+
+:: aa_fe_13 {"position":"103,1733","size":"100,100"}
+Since then, nobody has ever managed to surpass me, thus proving my unsurmountable intelligence.
+[[aa_fe_14]] 
+
+:: aa_fe_14 {"position":"103,1883","size":"100,100"}
+Oh, but do not let that discourage you!
+[[aa_fe_15]] 
+
+:: aa_fe_15 {"position":"103,2032","size":"100,100"}
+See if you are worthy of challenging Anansi, the mighty god of all knowledge.
+[[aa_fe_16]] 
+
+:: aa_fe_16 {"position":"103,2184","size":"100,100"}
+A measly little mortal running amock is bound to keep things interesting.
+[[aa_tt_01]]
 
 :: aa_tt_01 [TorchThought] {"position":"503,98","size":"100,100"}
 I wonder what fun, malevolent deeds I should impose on this fool. So hard to get quality entertainment these days.
-[[]]
+[[aa_tt_02]]
 
 :: aa_tt_02 [TorchThought] {"position":"503,249","size":"100,100"}
 Who were the people these stools belonged to again? 
-[[]]
+[[aa_tt_03]]
 
 :: aa_tt_03 [TorchThought] {"position":"504,400","size":"100,100"}
 My family... That I... When was the last time I saw them? When did their souls- 
-[[]]
+[[aa_tt_04]]
 
-:: aa_tt_04 [TorchThought] {"position":"503,550","size":"100,100"}
+:: aa_tt_04 [TorchThought END] {"position":"503,550","size":"100,100"}
 I have... lost my way. I went too far. I never... meant to hurt them. I pushed them away and now... it's too late. 
-[[]]
-
-:: aa_pc_dn_01 [PuzzleComment] {"position":"699,99","size":"100,100"}
-No one tests the depth of a river with both feet.
-[[]]
-
-
-:: aa_pc_dn_02 [PuzzleComment] {"position":"698,251","size":"100,100"}
-Drop by drop - a whole river becomes.
-[[]]
-
-
-:: aa_pc_dn_03 [PuzzleComment] {"position":"697,401","size":"100,100"}
-A frog in the well does not recognize a king.
-[[]]
-
-:: aa_pc_dn_04 [PuzzleComment] {"position":"696,546","size":"100,100"}
-When spider webs unite, they can tie up a lion.
-[[]]
-
-:: aa_pc_dw_01 [PuzzleComment] {"position":"900,100","size":"100,100"}
-Just don't saw off the branch you're sitting on.
-[[]]
-
-:: aa_pc_mm_01 [PuzzleComment] {"position":"1098,102","size":"100,100"}
-Ooooooooo, getting warmer.
-[[]]
-
-
-:: aa_pc_dw_02 [PuzzleComment] {"position":"900,246","size":"100,100"}
-Well, aren't you clever.
-[[]]
-
-:: aa_pc_dw_03 [PuzzleComment] {"position":"904,399","size":"100,100"}
-Ugh, even the most vacuous fool could figure that one out.
-[[]]
-
-:: aa_pc_dw_04 [PuzzleComment] {"position":"900,546","size":"100,100"}
-I would've already been finished by now. What on earth is taking you so long?
-[[]]
 
 :: aa_le_01 [START] {"position":"301,100","size":"100,100"}
 Oh, are you FINALLY done? Took you long enough. 
@@ -129,12 +124,111 @@ You've actually managed to achieve something nobody has been able to thus far.
 You have helped me... see a little clearer.
 [[aa_le_08]]
 
+:: aa_le_08 {"position":"301,1150","size":"100,100"}
+I express my gratitude for your perserverance despite my treatment of you.
+[[aa_le_09]] 
+
+:: aa_le_09 {"position":"300,1301","size":"100,100"}
+Now... Take this and get it far away from me. I do not wish to stray the way I did before.
+[[aa_le_10]] 
+
+:: aa_le_10 {"position":"301,1450","size":"100,100"}
+And while you're at it... Pay the others a visit too. 
+[[aa_le_11]] 
+
+:: aa_le_11 {"position":"301,1600","size":"100,100"}
+They are just as lost as you and I. 
+[[aa_le_12]] 
+
+:: aa_le_12 {"position":"301,1750","size":"100,100"}
+But perhaps you can open their eyes as you did mine.
+[[aa_le_13]] 
+
+:: aa_le_13 {"position":"300,1900","size":"100,100"}
+As you persevere on this journey, keep the following in mind.
+[[aa_le_14]] 
+
+:: aa_le_14 [END] {"position":"300,2050","size":"100,100"}
+In the process of letting go, you will lose many things from the past but you will find yourself.
+
+:: aa_pc_dn_01 [PuzzleComment] {"position":"699,99","size":"100,100"}
+No one tests the depth of a river with both feet.
+[[]]
+
+:: aa_pc_dn_02 [PuzzleComment] {"position":"698,251","size":"100,100"}
+Drop by drop - a whole river becomes.
+[[]]
+
+:: aa_pc_dn_03 [PuzzleComment] {"position":"697,401","size":"100,100"}
+A frog in the well does not recognize a king.
+[[]]
+
+:: aa_pc_dn_04 [PuzzleComment] {"position":"696,546","size":"100,100"}
+When spider webs unite, they can tie up a lion.
+[[]]
+
+:: aa_pc_dw_01 [PuzzleComment] {"position":"900,100","size":"100,100"}
+Just don't saw off the branch you're sitting on.
+[[]]
+
+:: aa_pc_dw_02 [PuzzleComment] {"position":"900,246","size":"100,100"}
+Well, aren't you clever.
+[[]]
+
+:: aa_pc_dw_03 [PuzzleComment] {"position":"904,399","size":"100,100"}
+Ugh, even the most vacuous fool could figure that one out.
+[[]]
+
+:: aa_pc_dw_04 [PuzzleComment] {"position":"900,546","size":"100,100"}
+I would've already been finished by now. What on earth is taking you so long?
+[[]]
+
+:: aa_pc_dw_05 [PuzzleComment] {"position":"901,696","size":"100,100"}
+One small victory on the way to utter failure.
+[[]]
+
+:: aa_pc_dw_06 [PuzzleComment] {"position":"901,846","size":"100,100"}
+Ah, false hope in your own success is beautiful to watch.
+[[]]
+
+:: aa_pc_dw_07 [PuzzleComment] {"position":"904,989","size":"100,100"}
+The more you persevere, the more I will enjoy watching you fail and have your effortful hopes shattered.
+[[]]
+
+:: aa_pc_dw_08 [PuzzleComment] {"position":"899,1132","size":"100,100"}
+Do not attempt to fool a trickster. 
+[[]]
+
+:: aa_pc_mm_01 [PuzzleComment] {"position":"1098,102","size":"100,100"}
+Ooooooooo, getting warmer.
+[[]]
+
+:: aa_pc_mm_02 [PuzzleComment] {"position":"1098,251","size":"100,100"}
+Give up yet?
+[[]]
+
+:: aa_pc_mm_03 [PuzzleComment] {"position":"1106,398","size":"100,100"}
+You're even more boring than I thought.
+[[]]
+
+:: aa_pc_mm_04 [PuzzleComment] {"position":"1103,547","size":"100,100"}
+Can you at least try to be entertaining when you fail oh so miserably?
+[[]]
+
+:: aa_pc_mm_05 [PuzzleComment] {"position":"1103,700","size":"100,100"}
+Is it proving to be too challenging? Are you losing all hope? Are you realizing how much of an idiot you are?
+[[]]
+
+:: aa_pc_mm_06 [PuzzleComment] {"position":"1101.2000122070312,836","size":"100,100"}
+Somewhere a village is missing its idiot.
+[[]]
+
 :: ea_fe_01 [START] {"position":"1904,101","size":"100,100"}
 Oh myyyyyyy... Darling, do you believe in love at first sight or should I appear again?
 [[ea_fe_02]]
 
 :: ea_fe_02 {"position":"1903,251","size":"100,100"}
-Ah, pardon my rudeness! My name is Ekeko, but you can just call me handsome;)
+Ah, pardon my rudeness! I am Ekeko, but you can just call me handsome;)
 [[ea_fe_03]]
 
 :: ea_fe_03 {"position":"1903,401","size":"100,100"}
@@ -160,6 +254,72 @@ You can help me, right?? RIGHT?
 :: ea_fe_08 {"position":"1901,1150","size":"100,100"}
 You do have a soul, don't you? Doesn't your heart cry for me?
 [[ea_fe_09]]
+
+:: ea_fe_09 {"position":"1901,1300","size":"100,100"}
+Oh, I beg you, my beauty, do be a little lamb and help out this fine gentleman.
+[[ea_fe_10]]
+
+:: ea_fe_10 {"position":"1901,1447","size":"100,100"}
+Find them and bring them back to me. 
+[[ea_fe_11]]
+
+:: ea_fe_11 [END] {"position":"1901,1597","size":"100,100"}
+I'm certain the poor, powerless things long for me dearly.
+
+:: ea_le_01 [START] {"position":"2103,99","size":"100,100"}
+Wait. This- this isn't what I asked!
+[[ea_le_02]] 
+
+:: ea_le_02 {"position":"2103,249","size":"100,100"}
+How? How can it be you?
+[[ea_le_03]] 
+
+:: ea_le_03 {"position":"2103,399","size":"100,100"}
+Am I really seeing you? Or are you just another illusion?
+[[ea_le_04]] 
+
+:: ea_le_04 {"position":"2103,549","size":"100,100"}
+Please... Just... Lend me a helping hand in finally letting you go.
+[[ea_le_05]] 
+
+:: ea_le_05 {"position":"2102,703","size":"100,100"}
+I want my mind to be free of your ghost. 
+[[ea_le_06]] 
+
+:: ea_le_06 {"position":"2102,853","size":"100,100"}
+I... I'm scared.
+[[ea_le_07]] 
+
+:: ea_le_07 {"position":"2102,1003","size":"100,100"}
+You're not real, you're just the projection my heart created. 
+[[ea_le_08]] 
+
+:: ea_le_08 {"position":"2101,1153","size":"100,100"}
+You're not coming back, I know it. 
+[[ea_le_09]] 
+
+:: ea_le_09 {"position":"2100,1310","size":"100,100"}
+All I have left of you is this faded memory.
+[[ea_le_10]] 
+
+:: ea_le_10 {"position":"2099,1461","size":"100,100"}
+I cannot let you devour me any longer... This is goodbye.
+[[ea_le_11]] 
+
+:: ea_le_11 {"position":"2099,1609","size":"100,100"}
+Young soul... Take this. And don't let me set eyes on it ever again. 
+[[ea_le_12]] 
+
+:: ea_le_12 {"position":"2100,1760","size":"100,100"}
+Oh, and before you go...
+[[ea_le_13]] 
+
+:: ea_le_13 {"position":"2100,1910","size":"100,100"}
+Thank you for guiding me towards taking the first step of freeing my burdened heart.
+[[ea_le_14]]
+
+:: ea_le_14 [END] {"position":"2100,2058","size":"100,100"}
+I guess, sometimes... The emotion that can break your heart... Is the very one that heals it.
 
 :: ea_tt_01 [TorchThought] {"position":"2299,100","size":"100,100"}
 No matter how many beautiful ladies walk by, I can only think of Her.
@@ -233,84 +393,12 @@ My affection for you is like diarrhea - I just can't hold it in.
 If nothing lasts forever, will you be my nothing?
 [[]]
 
-:: ea_le_01 [START] {"position":"2103,99","size":"100,100"}
-Wait. This- this isn't what I asked!
-[[ea_le_02]] 
-
-:: ea_le_02 {"position":"2103,249","size":"100,100"}
-How? How can it be you?
-[[ea_le_03]] 
-
-:: ea_le_03 {"position":"2103,399","size":"100,100"}
-Am I really seeing you? Or are you just another illusion?
-[[ea_le_04]] 
-
-:: ea_le_04 {"position":"2103,549","size":"100,100"}
-Please... Just... Lend me a helping hand in finally letting you go.
-[[ea_le_05]] 
-
-:: ea_le_05 {"position":"2102,703","size":"100,100"}
-I want my mind to be free of your ghost. 
-[[ea_le_06]] 
-
-:: ea_le_06 {"position":"2102,853","size":"100,100"}
-I... I'm scared.
-[[ea_le_07]] 
-
-:: ea_le_07 {"position":"2102,1003","size":"100,100"}
-You're not real, you're just the projection my heart created. 
-[[ea_le_08]] 
-
-:: ea_le_08 {"position":"2101,1153","size":"100,100"}
-You're not coming back, I know it. 
-[[ea_le_09]] 
-
-:: ea_le_09 {"position":"2100,1310","size":"100,100"}
-All I have left of you is this faded memory.
-[[ea_le_10]] 
-
-:: aa_pc_mm_02 [PuzzleComment] {"position":"1098,251","size":"100,100"}
-Give up yet?
+:: ea_pc_dn_08 [PuzzleComment] {"position":"2502,1149","size":"100,100"}
+You know what you'd look great in? My arms.
 [[]]
-
-:: aa_pc_mm_03 [PuzzleComment] {"position":"1106,398","size":"100,100"}
-You're even more boring than I thought.
-[[]]
-
-:: aa_pc_mm_04 [PuzzleComment] {"position":"1103,547","size":"100,100"}
-Can you at least try to be entertaining when you fail oh so miserably?
-[[]]
-
-:: aa_pc_dw_05 [PuzzleComment] {"position":"901,696","size":"100,100"}
-One small victory on the way to utter failure.
-[[]]
-
-:: aa_pc_dw_06 [PuzzleComment] {"position":"901,846","size":"100,100"}
-Ah, false hope in your own success is beautiful to watch.
-[[]]
-
-:: aa_pc_dw_07 [PuzzleComment] {"position":"904,989","size":"100,100"}
-The more you persevere, the more I will enjoy watching you fail and have your effortful hopes shattered.
-[[]]
-
-:: aa_pc_mm_05 [PuzzleComment] {"position":"1103,700","size":"100,100"}
-Is it proving to be too challenging? Are you losing all hope? Are you realizing how much of an idiot you are?
-[[]]
-
-:: aa_le_08 [END] {"position":"301,1150","size":"100,100"}
-I express my gratitude for your perserverance despite my treatment of you.
-[[aa_le_09]] 
 
 :: ea_pc_dw_01 [PuzzleComment] {"position":"2700,95","size":"100,100"}
 Do that again... but slower.
-[[]]
-
-:: ea_pc_mm_01 [PuzzleComment] {"position":"2903,98","size":"100,100"}
-Oh, sweetheart, don't fuss. Beauty is more important than intelligence.
-[[]]
-
-:: ea_pc_mm_02 [PuzzleComment] {"position":"2903,248","size":"100,100"}
-That doesn't appear to live up to the standards I set for you.
 [[]]
 
 :: ea_pc_dw_02 [PuzzleComment] {"position":"2698,244","size":"100,100"}
@@ -319,6 +407,30 @@ Oh my, smarts AND beauty! My heart has been conquered.
 
 :: ea_pc_dw_03 [PuzzleComment] {"position":"2699,395","size":"100,100"}
 So... what are you doing later?
+[[]]
+
+:: ea_pc_dw_04 [PuzzleComment] {"position":"2700,549","size":"100,100"}
+Oh yes, one step closer. I will finally be reunited.
+[[]]
+
+:: ea_pc_dw_05 [PuzzleComment] {"position":"2700,699","size":"100,100"}
+You make me want to create puzzles for you to solve while I watch real closely.
+[[]]
+
+:: ea_pc_dw_06 [PuzzleComment] {"position":"2699,849","size":"100,100"}
+Baby, my darling sweetheart, you have such a beautiful brain.
+[[]]
+
+:: ea_pc_dw_07 [PuzzleComment] {"position":"2700,999","size":"100,100"}
+Is this cruel mistress's intention to steal my heart?
+[[]]
+
+:: ea_pc_mm_01 [PuzzleComment] {"position":"2903,98","size":"100,100"}
+Oh, sweetheart, don't fuss. Beauty is more important than intelligence.
+[[]]
+
+:: ea_pc_mm_02 [PuzzleComment] {"position":"2903,248","size":"100,100"}
+That doesn't appear to live up to the standards I set for you.
 [[]]
 
 :: ea_pc_mm_03 [PuzzleComment] {"position":"2902,399","size":"100,100"}
@@ -345,111 +457,9 @@ Since you're so bad at fulfilling your task, care to just spend the night with m
 Don't forget to smile and look pretty - even when you fail embarrassingly. 
 [[]]
 
-:: ea_pc_dw_04 [PuzzleComment] {"position":"2700,549","size":"100,100"}
-Oh yes, one step closer. I will finally be reunited.
-[[]]
-
-:: ea_pc_dw_05 [PuzzleComment] {"position":"2700,699","size":"100,100"}
-You make me want to create puzzles for you to solve while I watch real closely.
-[[]]
-
-:: ea_pc_dw_06 [PuzzleComment] {"position":"2699,849","size":"100,100"}
-Baby, my darling sweetheart, you have such a beautiful brain.
-[[]]
-
-:: ea_pc_dn_08 [PuzzleComment] {"position":"2502,1149","size":"100,100"}
-You know what you'd look great in? My arms.
-[[]]
-
-:: ea_pc_dw_07 [PuzzleComment] {"position":"2700,999","size":"100,100"}
-Is this cruel mistress's intention to steal my heart?
-[[]]
-
-:: aa_fe_08 {"position":"103,1133","size":"100,100"}
-Peeling away the riddles and discovering the deep secrets within is the only experience that brings me ecstatic elation.
-[[aa_fe_09]] 
-
-
-:: aa_le_09 {"position":"300,1301","size":"100,100"}
-Now... Take this and get it far away from me. I do not wish to stray the way I did before.
-[[aa_le_10]] 
-
-:: aa_le_10 {"position":"301,1450","size":"100,100"}
-And while you're at it... Pay the others a visit too. 
-[[aa_le_11]] 
-
-:: aa_fe_09 {"position":"103,1283","size":"100,100"}
-But nobody else understood.
-[[aa_fe_10]]
-
-:: aa_pc_dw_08 [PuzzleComment] {"position":"899,1132","size":"100,100"}
-Do not attempt to fool a trickster. 
-[[]]
-
-:: aa_le_11 {"position":"301,1600","size":"100,100"}
-They are just as lost as you and I. 
-[[aa_le_12]] 
-
-:: aa_le_12 {"position":"301,1750","size":"100,100"}
-But perhaps you can open their eyes as you did mine.
-[[aa_le_13]] 
-
-:: aa_le_13 {"position":"300,1900","size":"100,100"}
-As you persevere on this journey, keep the following in mind.
-[[aa_le_14]] 
-
-:: aa_le_14 [END] {"position":"300,2050","size":"100,100"}
-In the process of letting go, you will lose many things from the past but you will find yourself. 
-
-:: ea_fe_09 {"position":"1901,1300","size":"100,100"}
-Oh, I beg you, my beauty, do be a little lamb and help out this fine gentleman.
-[[ea_fe_10]]
-
-:: ea_fe_10 {"position":"1901,1447","size":"100,100"}
-Find them and bring them back to me. 
-[[ea_fe_11]]
-
-:: ea_fe_11 [END] {"position":"1901,1597","size":"100,100"}
-I'm certain the poor, powerless things long for me dearly.
-
-:: ea_le_10 {"position":"2099,1461","size":"100,100"}
-I cannot let you devour me any longer... This is goodbye.
-[[ea_le_11]] 
-
-:: ea_le_11 {"position":"2099,1609","size":"100,100"}
-Young soul... Take this. And don't let me set eyes on it ever again. 
-[[ea_le_12]] 
-
-:: ea_le_12 {"position":"2100,1760","size":"100,100"}
-Oh, and before you go...
-[[ea_le_13]] 
-
-:: ea_le_13 {"position":"2100,1910","size":"100,100"}
-Thank you for guiding me towards taking the first step of freeing my burdened heart.
-[[ea_le_14]]
-
-:: ea_le_14 [END] {"position":"2100,2058","size":"100,100"}
-I guess, sometimes... The emotion that can break your heart... Is the very one that heals it.
-
 :: sa_fe_01 [START] {"position":"3577,95","size":"100,100"}
 Great, they can't be found anywhere.
 [[sa_fe_02]]
-
-:: sa_le_01 [START] {"position":"3782,92","size":"100,100"}
-My dears... Thank you for taking a chance on me, time and time again. 
-[[sa_le_02]]
-
-:: sa_pc_dw_02 [PuzzleComment] {"position":"4401,239","size":"100,100"}
-Don't you have anything better to do?
-[[]]
-
-:: sa_pc_mm_01 [PuzzleComment] {"position":"4600,92","size":"100,100"}
-Don't take Sedna's threats lightly.
-[[]]
-
-:: sa_tt_02 [TorchThought] {"position":"4001,230","size":"100,100"}
-hate hate hate hate hate hate hate hate HATE HIM
-[[]]
 
 :: sa_fe_02 {"position":"3577,245","size":"100,100"}
 Only problems for Sedna.
@@ -486,82 +496,9 @@ WHY ARE YOU STILL LINGERING HERE, PEST?!
 :: sa_fe_10 [END] {"position":"3577,1446","size":"100,100"}
 Sedna will snap those fragile little bones into teeny tiny bits in a matter of seconds.
 
-
-:: sa_tt_03 [TorchThought] {"position":"4001,370","size":"100,100"}
-Daddy decided he doesn't need Sedna anymore.
-[[]]
-
-:: sa_tt_04 [TorchThought] {"position":"4000,509","size":"100,100"}
-Daddy thinks Sedna should perish.
-[[]]
-
-:: sa_tt_05 [TorchThought] {"position":"3998,659","size":"100,100"}
-Well, his gift of severing Sedna's fingers are nothing compared to what she will do to him.
-[[]]
-
-:: sa_tt_09 [TorchThought] {"position":"3997,1218","size":"100,100"}
-Was Father ever there for Sedna? Even before he... cast her away?
-[[]]
-
-:: sa_tt_14 [TorchThought] {"position":"3998,1916","size":"100,100"}
-They've never left Sedna's side no matter what. Whenever she'd get angry they would... Oh.
-[[]]
-
-:: sa_tt_11 [TorchThought] {"position":"3998,1501","size":"100,100"}
-But Sedna... has felt the absence of misery. The little ones have always been there for her.
-[[]]
-
-:: sa_tt_12 [TorchThought] {"position":"3997,1641","size":"100,100"}
-Alas, at the end of the day she's all alone again...
-[[]]
-
-:: sa_tt_13 [TorchThought] {"position":"3996,1782","size":"100,100"}
-But why did the fish scatter away? It felt so sudden.
-[[]]
-
-:: sa_tt_06 [TorchThought] {"position":"4001,800","size":"100,100"}
-Sedna must exact the ultimate revenge on Father. 
-[[]]
-
-:: sa_tt_07 [TorchThought] {"position":"4000,935","size":"100,100"}
-Torture him in every single way, make him beg for mercy. 
-[[]]
-
-:: sa_tt_08 [TorchThought] {"position":"3999,1074","size":"100,100"}
-Yes, Sedna will eviscerate him and scatter his wretched carcass bits all across this stupid world.
-[[]]
-
-:: sa_tt_16 [TorchThought] {"position":"4000,2198","size":"100,100"}
-Whenever I'd get upset... They'd get in the way.
-[[]]
-
-:: sa_tt_10 [TorchThought] {"position":"3995,1363","size":"100,100"}
-Was there ever a life devoid of misery?
-[[]]
-
-:: sa_tt_15 [TorchThought] {"position":"4002,2060","size":"100,100"}
-Their attempts to soothe me... Always ended badly.
-[[]]
-
-:: sa_tt_17 [TorchThought] {"position":"3999,2351","size":"100,100"}
-I nearly killed the only creatures that have ever cared for me.
-[[]]
-
-:: sa_tt_18 [TorchThought Loud] {"position":"3999,2491","size":"100,100"}
-BUT IT'S ALL HIS FAULT! Daddy cursed Sedna's mind with revenge!
-[[]]
-
-:: sa_tt_19 [TorchThought] {"position":"4000,2632","size":"100,100"}
-I just need to face the fears in my heart and reach out to my little fish.
-[[]]
-
-:: sa_tt_20 [TorchThought] {"position":"4000,2766","size":"100,100"}
-They'll come back to Sedna. They always do, so why worry?
-[[]] 
-
-:: sa_tt_21 [TorchThought] {"position":"3997,2900","size":"100,100"}
-What if... This time... I need to take the first step?
-[[]]
+:: sa_le_01 [START] {"position":"3782,92","size":"100,100"}
+My dears... Thank you for taking a chance on me, time and time again. 
+[[sa_le_02]]
 
 :: sa_le_02 {"position":"3786,245","size":"100,100"}
 My mind has been blinded by hatred, but you... you've taught me love.
@@ -595,32 +532,119 @@ And certainly not how to care for others.
 It's pathetic. He's not worthy of my thought.
 [[sa_le_10]] 
 
+:: sa_le_10 {"position":"3791,1450","size":"100,100"}
+Anyway, mortal, you have helped in changing my perspective. 
+[[sa_le_11]]
+
+:: sa_le_11 {"position":"3791,1600","size":"100,100"}
+I know what to focus my energy on now. 
+[[sa_le_12]]
+
+:: sa_le_12 {"position":"3791,1750","size":"100,100"}
+I hope you will discover that for yourself, too.
+[[sa_le_13]]
+
+:: sa_le_13 {"position":"3792,1906","size":"100,100"}
+Take this. I will not be needing it anymore.
+[[sa_le_14]]
+
+:: sa_le_14 [END] {"position":"3792,2056","size":"100,100"}
+We will see you when you're ready.
+
+:: sa_tt_01 [TorchThought] {"position":"4000,98","size":"100,100"}
+Fish would rather swim around the lights without Sedna. 
+[[]]
+
+:: sa_tt_02 [TorchThought] {"position":"4001,230","size":"100,100"}
+hate hate hate hate hate hate hate hate HATE HIM
+[[]]
+
+:: sa_tt_03 [TorchThought] {"position":"4001,370","size":"100,100"}
+Daddy decided he doesn't need Sedna anymore.
+[[]]
+
+:: sa_tt_04 [TorchThought] {"position":"4000,509","size":"100,100"}
+Daddy thinks Sedna should perish.
+[[]]
+
+:: sa_tt_05 [TorchThought] {"position":"3998,659","size":"100,100"}
+Well, his gift of severing Sedna's fingers are nothing compared to what she will do to him.
+[[]]
+
+:: sa_tt_06 [TorchThought] {"position":"4001,800","size":"100,100"}
+Sedna must exact the ultimate revenge on Father. 
+[[]]
+
+:: sa_tt_07 [TorchThought] {"position":"4000,935","size":"100,100"}
+Torture him in every single way, make him beg for mercy. 
+[[]]
+
+:: sa_tt_08 [TorchThought] {"position":"3999,1074","size":"100,100"}
+Yes, Sedna will eviscerate him and scatter his wretched carcass bits all across this stupid world.
+[[]]
+
+:: sa_tt_09 [TorchThought] {"position":"3997,1218","size":"100,100"}
+Was Father ever there for Sedna? Even before he... cast her away?
+[[]]
+
+:: sa_tt_10 [TorchThought] {"position":"3995,1363","size":"100,100"}
+Was there ever a life devoid of misery?
+[[]]
+
+:: sa_tt_11 [TorchThought] {"position":"3998,1501","size":"100,100"}
+But Sedna... has felt the absence of misery. The little ones have always been there for her.
+[[]]
+
+:: sa_tt_12 [TorchThought] {"position":"3997,1641","size":"100,100"}
+Alas, at the end of the day she's all alone again...
+[[]]
+
+:: sa_tt_13 [TorchThought] {"position":"3996,1782","size":"100,100"}
+But why did the fish scatter away? It felt so sudden.
+[[]]
+
+:: sa_tt_14 [TorchThought] {"position":"3998,1916","size":"100,100"}
+They've never left Sedna's side no matter what. Whenever she'd get angry they would... Oh.
+[[]]
+
+:: sa_tt_15 [TorchThought] {"position":"4002,2060","size":"100,100"}
+Their attempts to soothe me... Always ended badly.
+[[]]
+
+:: sa_tt_16 [TorchThought] {"position":"4000,2198","size":"100,100"}
+Whenever I'd get upset... They'd get in the way.
+[[]]
+
+:: sa_tt_17 [TorchThought] {"position":"3999,2351","size":"100,100"}
+I nearly killed the only creatures that have ever cared for me.
+[[]]
+
+:: sa_tt_18 [TorchThought Loud] {"position":"3999,2491","size":"100,100"}
+BUT IT'S ALL HIS FAULT! Daddy cursed Sedna's mind with revenge!
+[[]]
+
+:: sa_tt_19 [TorchThought] {"position":"4000,2632","size":"100,100"}
+I just need to face the fears in my heart and reach out to my little fish.
+[[]]
+
+:: sa_tt_20 [TorchThought] {"position":"4000,2766","size":"100,100"}
+They'll come back to Sedna. They always do, so why worry?
+[[]] 
+
+:: sa_tt_21 [TorchThought] {"position":"3997,2900","size":"100,100"}
+What if... This time... I need to take the first step?
+[[]]
+
 :: sa_pc_dn_01 [PuzzleComment] {"position":"4200,100","size":"100,100"}
 This place is missing some good old chaos.
-[[]]
-
-:: sa_pc_mm_02 [PuzzleComment] {"position":"4601,242","size":"100,100"}
-You screwed up AGAIN. Can't do anything right, huh?
-[[]]
-
-:: sa_pc_mm_03 [PuzzleComment] {"position":"4601,379","size":"100,100"}
-You screwed up AGAIN. Can't do anything right, huh?
 [[]]
 
 :: sa_pc_dn_02 [PuzzleComment] {"position":"4197,237","size":"100,100"}
 Stay out of Sedna's business or you might not like what comes next.
 [[]]
 
-:: sa_pc_mm_04 [PuzzleComment] {"position":"4604,534","size":"100,100"}
-Sedna loses her temper, you lose your head.
-[[]]
-
 :: sa_pc_dn_03 [PuzzleComment] {"position":"4198,374","size":"100,100"}
 Crushing your bones seems like a good way to fix you.
-[[]]
-
-:: sa_pc_mm_05 [PuzzleComment] {"position":"4602,680","size":"100,100"}
-You will regret this for the rest of your life. Both seconds of it.
 [[]]
 
 :: sa_pc_dn_04 [PuzzleComment] {"position":"4202,515","size":"100,100"}
@@ -631,8 +655,12 @@ Are you in the mood for having your limbs ripped to shreds?
 Sedna is going to behead you and feed your body to wild animals. 
 [[]]
 
-:: sa_pc_mm_06 [PuzzleComment] {"position":"4603,816","size":"100,100"}
-Why are you wasting your time on this?!
+:: sa_pc_dw_01 [PuzzleComment] {"position":"4401,100","size":"100,100"}
+Maybe Sedna will give you a quick little death this time.
+[[]]
+
+:: sa_pc_dw_02 [PuzzleComment] {"position":"4401,239","size":"100,100"}
+Don't you have anything better to do?
 [[]]
 
 :: sa_pc_dw_03 [PuzzleComment] {"position":"4400,387","size":"100,100"}
@@ -643,29 +671,33 @@ You're still here?
 LEAVE SEDNA ALONE.
 [[]]
 
+:: sa_pc_mm_01 [PuzzleComment] {"position":"4600,92","size":"100,100"}
+Don't take Sedna's threats lightly.
+[[]]
+
+:: sa_pc_mm_02 [PuzzleComment] {"position":"4601,242","size":"100,100"}
+You screwed up AGAIN. Can't do anything right, huh?
+[[]]
+
+:: sa_pc_mm_03 [PuzzleComment] {"position":"4601,379","size":"100,100"}
+You screwed up AGAIN. Can't do anything right, huh?
+[[]]
+
+:: sa_pc_mm_04 [PuzzleComment] {"position":"4604,534","size":"100,100"}
+Sedna loses her temper, you lose your head.
+[[]]
+
+:: sa_pc_mm_05 [PuzzleComment] {"position":"4602,680","size":"100,100"}
+You will regret this for the rest of your life. Both seconds of it.
+[[]]
+
+:: sa_pc_mm_06 [PuzzleComment] {"position":"4603,816","size":"100,100"}
+Why are you wasting your time on this?!
+[[]]
+
 :: ma_fe_01 [START] {"position":"5288,104","size":"100,100"}
 Aw, what a sweet dear soul that has stumbled into my arms.
 [[ma_fe_02]] 
-
-:: ma_le_01 [START] {"position":"5489,103","size":"100,100"}
-I killed them... I killed them. I killed them. I killed them. 
-[[ma_le_02]] 
-
-:: ma_tt_01 [TorchThought] {"position":"5690,106","size":"100,100"}
-I am so lucky to have such a lovely innocent young soul stumble right into my warm embrace. I will take care of this wonderful child forever.
-[[]]
-
-:: ma_pc_dn_01 [PuzzleComment] {"position":"5888,104","size":"100,100"}
-Child, are you hungry? Have you eaten today?
-[[]]
-
-:: ma_pc_dw_01 [PuzzleComment] {"position":"6086,104","size":"100,100"}
-You're doing amazing, sweetie!
-[[]]
-
-:: ma_pc_mm_01 [PuzzleComment] {"position":"6290,105","size":"100,100"}
-You're so weak. Why don't you get some rest?
-[[]]
 
 :: ma_fe_02 {"position":"5288,254","size":"100,100"}
 Oh, these interwoven vines? 
@@ -699,28 +731,12 @@ You don't ever have to leave this place.
 Now then, go ahead and get acquainted with my precious flowers.
 [[ma_fe_10]] 
 
-
 :: ma_fe_10 [END] {"position":"5285,1502","size":"100,100"}
 I'm certain you will get along.
 
-:: sa_le_10 {"position":"3791,1450","size":"100,100"}
-Anyway, mortal, you have helped in changing my perspective. 
-[[sa_le_11]]
-
-:: sa_le_11 {"position":"3791,1600","size":"100,100"}
-I know what to focus my energy on now. 
-[[sa_le_12]]
-
-:: sa_le_12 {"position":"3791,1750","size":"100,100"}
-I hope you will discover that for yourself, too.
-[[sa_le_13]]
-
-:: sa_le_13 {"position":"3792,1906","size":"100,100"}
-Take this. I will not be needing it anymore.
-[[sa_le_14]]
-
-:: sa_le_14 [END] {"position":"3792,2056","size":"100,100"}
-We will see you when you're ready.
+:: ma_le_01 [START] {"position":"5489,103","size":"100,100"}
+I killed them... I killed them. I killed them. I killed them. 
+[[ma_le_02]] 
 
 :: ma_le_02 {"position":"5488,253","size":"100,100"}
 I killed my beloved children!
@@ -768,6 +784,10 @@ This will never happen again.
 
 :: ma_le_13 [END] {"position":"5488,1904","size":"100,100"}
 I will make sure of it.
+
+:: ma_tt_01 [TorchThought] {"position":"5690,106","size":"100,100"}
+I am so lucky to have such a lovely innocent young soul stumble right into my warm embrace. I will take care of this wonderful child forever.
+[[]]
 
 :: ma_tt_02 [TorchThought] {"position":"5690,229","size":"100,100"}
 How curious; the precious flowers that the young soul is playing with are so similar to my little children.
@@ -833,39 +853,8 @@ I- I just controlled them until all that remained were the puppets of their bodi
 The only way my children could truly live was by dying! Who would dare call herself a mother after that?!
 [[]]
 
-:: sa_tt_01 [TorchThought] {"position":"4000,98","size":"100,100"}
-Fish would rather swim around the lights without Sedna. 
-[[]]
-
-:: aa_fe_10 {"position":"103,1433","size":"100,100"}
-Shunned by my family, I realized they were jealous of the superiority of my wit.
-[[aa_fe_11]] 
-
-:: aa_fe_11 {"position":"103,1583","size":"100,100"}
-They have learned their lesson, though, don't worry.
-[[aa_fe_12]] 
-
-:: aa_fe_12 {"position":"103,1733","size":"100,100"}
-Since then, nobody has ever managed to surpass me, thus proving my unsurmountable intelligence.
-[[aa_fe_13]] 
-
-:: aa_fe_13 {"position":"103,1883","size":"100,100"}
-Oh, but do not let that discourage you!
-[[aa_fe_14]] 
-
-:: aa_fe_14 {"position":"103,2032","size":"100,100"}
-See if you are worthy of challenging Anansi, the mighty god of all knowledge.
-[[aa_fe_15]] 
-
-:: aa_fe_15 {"position":"103,2184","size":"100,100"}
-A measly little mortal running amock is bound to keep things interesting.
-[[aa_fe_16]] 
-
-:: aa_fe_16 [END] {"position":"103,2333","size":"100,100"}
-Go on then, have at it.
-
-:: sa_pc_dw_01 [PuzzleComment] {"position":"4401,100","size":"100,100"}
-Maybe Sedna will give you a quick little death this time.
+:: ma_pc_dn_01 [PuzzleComment] {"position":"5888,104","size":"100,100"}
+Child, are you hungry? Have you eaten today?
 [[]]
 
 :: ma_pc_dn_02 [PuzzleComment] {"position":"5888.39990234375,226.29999923706055","size":"100,100"}
@@ -920,6 +909,10 @@ You can stay with me for eternity.
 You're always going to be by my side, right?
 [[]]
 
+:: ma_pc_dw_01 [PuzzleComment] {"position":"6086,104","size":"100,100"}
+You're doing amazing, sweetie!
+[[]]
+
 :: ma_pc_dw_02 [PuzzleComment] {"position":"6086.39990234375,219","size":"100,100"}
 I am so proud of you!
 [[]]
@@ -936,8 +929,8 @@ You're the best.
 Very good!
 [[]]
 
-:: aa_pc_mm_06 [PuzzleComment] {"position":"1101.2000122070312,836","size":"100,100"}
-Somewhere a village is missing its idiot.
+:: ma_pc_mm_01 [PuzzleComment] {"position":"6290,105","size":"100,100"}
+You're so weak. Why don't you get some rest?
 [[]]
 
 :: ma_pc_mm_02 [PuzzleComment] {"position":"6292,224","size":"100,100"}

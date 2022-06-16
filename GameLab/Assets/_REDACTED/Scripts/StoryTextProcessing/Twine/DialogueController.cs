@@ -8,7 +8,7 @@ using static AudioController;
 
 public class DialogueController : MonoBehaviour
 {
-    [SerializeField] 
+    [SerializeField]
     private TextAsset twineText;
 
     private Dialogue dialogueObject;
@@ -27,11 +27,21 @@ public class DialogueController : MonoBehaviour
     [SerializeField]
     private List<string> allPuzzleCommentNodes;
 
+    [SerializeField]
+    private float _deityAutoBeginDelay = 7f;
+
+    [SerializeField]
+    private float _deityAutoDelay = 15f;
+
     public delegate void NodeEnteredHandler(Node node);
+
     public event NodeEnteredHandler onEnteredNode;
 
     public event Action<bool> ToggleDialogue;
+
     private bool dialogueActive;
+
+    private bool _autoMode;
 
     [SerializeField]
     private PlayerDialogueInteraction playerDialogueInteraction;
@@ -48,17 +58,35 @@ public class DialogueController : MonoBehaviour
         allPuzzleCommentNodes = dialogueObject.FindAllPuzzleCommentNodes();
     }
 
-    private void Update()
+    private IEnumerator NextDialogue()
     {
-        if (Input.GetKeyDown(playerDialogueInteraction.dialogueInteraction) && dialogueActive)
+        yield return new WaitForSeconds(AudioController.InstanceLength);
+
+        if (!_autoMode)
         {
-            if (!currentNode.tags.Contains("END"))
+            if (currentNode.tags.Contains("Auto"))
             {
-                NextNode(0);
+                StartCoroutine(BeginAutomaticMode());
+                ToggleDialogueState();
             }
             else
             {
-                ToggleDialogue?.Invoke(false);
+                if (!currentNode.tags.Contains("END"))
+                {
+                    NextNode(0);
+                }
+                else
+                {
+                    ToggleDialogueState();
+                }
+            }
+        }
+        else
+        {
+            if (currentNode.tags.Contains("TorchThought"))
+            {
+                _autoMode = false;
+                ToggleDialogueState();
             }
         }
     }
@@ -82,9 +110,10 @@ public class DialogueController : MonoBehaviour
         {
             ToggleDialogueState();
 
-            currentNodeTitle = allStartNodes[passageIndex]; 
+            currentNodeTitle = allStartNodes[passageIndex];
             currentNode = dialogueObject.GetNode(currentNodeTitle);
             onEnteredNode?.Invoke(currentNode);
+            StartCoroutine(NextDialogue());
         }
         else
         {
@@ -97,6 +126,7 @@ public class DialogueController : MonoBehaviour
             currentNodeTitle = matchingAreaPuzzleCommentNodes[UnityEngine.Random.Range(0, matchingAreaPuzzleCommentNodes.Count)];
             currentNode = dialogueObject.GetNode(currentNodeTitle);
             onEnteredNode?.Invoke(currentNode);
+            StartCoroutine(NextDialogue());
             allPuzzleCommentNodes.Remove(currentNodeTitle);
         }
     }
@@ -115,6 +145,7 @@ public class DialogueController : MonoBehaviour
             currentNodeTitle = areaTorchThoughtNodes[torchThoughtIndex];
             currentNode = dialogueObject.GetNode(currentNodeTitle);
             onEnteredNode?.Invoke(currentNode);
+            StartCoroutine(NextDialogue());
             allPuzzleCommentNodes.Remove(currentNodeTitle);
         }
         else
@@ -129,6 +160,7 @@ public class DialogueController : MonoBehaviour
         Node nextNode = dialogueObject.GetNode(nextNodeID);
         currentNode = nextNode;
         onEnteredNode?.Invoke(nextNode);
+        StartCoroutine(NextDialogue());
     }
 
     public IEnumerator PlayAndRemoveTemporaryDialogueCoroutine(Node node)
@@ -142,6 +174,25 @@ public class DialogueController : MonoBehaviour
     {
         dialogueActive = !dialogueActive;
         ToggleDialogue?.Invoke(dialogueActive);
+    } 
+    
+    private IEnumerator BeginAutomaticMode()
+    {
+        yield return new WaitForSeconds(_deityAutoBeginDelay);
+        StartCoroutine(StartAutoVoiceLines());
+    }
+
+    private IEnumerator StartAutoVoiceLines()
+    {
+        _autoMode = true;
+        ToggleDialogueState();
+        NextNode(0);
+        yield return new WaitForSeconds(AudioController.InstanceLength + _deityAutoDelay);
+        if (_autoMode)
+        {
+            StartCoroutine(StartAutoVoiceLines());
+        }
     }
 }
+
 

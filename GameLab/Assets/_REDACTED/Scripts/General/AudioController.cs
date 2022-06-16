@@ -58,6 +58,10 @@ public class AudioController : MonoBehaviour
         {
             currentLineNumberFormatted = "0" + $"{_currentLineNumber}";
         }
+        else
+        {
+            currentLineNumberFormatted = _currentLineNumber.ToString();
+        }
 
         if (!_isPuzzleThought)
         {

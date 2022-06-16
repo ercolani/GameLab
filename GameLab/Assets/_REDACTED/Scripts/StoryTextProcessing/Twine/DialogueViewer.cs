@@ -35,7 +35,7 @@ public class DialogueViewer : MonoBehaviour
     {
         nodeText.text = newNode.text;
         AudioController.ParseVoiceLineCode(newNode.title);
-        if (newNode.tags.Contains("TorchThought") || newNode.tags.Contains("PuzzleComment"))
+        if (newNode.tags.Contains("PuzzleComment"))
         {
             StartCoroutine(dialogueController.PlayAndRemoveTemporaryDialogueCoroutine(newNode));
         }

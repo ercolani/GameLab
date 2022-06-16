@@ -200,6 +200,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Camera.transform.localPosition = newCameraPosition;
         }
 
+        public void SetWalkSpeed(float speed)
+        {
+            m_WalkSpeed = speed;
+        }
+
 
         private void GetInput(out float speed)
         {

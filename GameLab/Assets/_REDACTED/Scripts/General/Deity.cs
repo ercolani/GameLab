@@ -11,12 +11,6 @@ public class Deity : MonoBehaviour
     private int firstEncounterIndex;
 
     /// <summary>
-    /// The index for the candle acquired start node in the text file for a specific deity.
-    /// </summary>
-    [SerializeField]
-    private int candleAcquiredIndex;
-
-    /// <summary>
     /// The index for the last encounter start node in the text file for a specific deity.
     /// </summary>
     [SerializeField]
@@ -65,12 +59,6 @@ public class Deity : MonoBehaviour
     private bool isFirstEncounter;
 
     /// <summary>
-    /// Whether the player has acquired the deity's candle.
-    /// </summary>
-    [SerializeField]
-    private bool hasAcquiredCandle;
-
-    /// <summary>
     /// Whether the player is awaiting their last encounter with the deity.
     /// </summary>
     [SerializeField]
@@ -109,13 +97,7 @@ public class Deity : MonoBehaviour
             {
                 dialogueController.InitializeDialogue(firstEncounterIndex, new string[0]);
                 isFirstEncounter = false;
-                hasAcquiredCandle = true;
                 ToggleDeityReadyForDialogue();
-            }
-            else if (hasAcquiredCandle && !isLastEncounter)
-            {
-                dialogueController.InitializeDialogue(candleAcquiredIndex, new string[0]);
-                isLastEncounter = true;
             }
             else if (isLastEncounter)
             {
