@@ -45,6 +45,8 @@ public class MatrixPuzzle : PuzzleManager
     public override void PuzzleCompleted()
     {
         _mainFigurine.SetActive(true);
+        deity.isLastEncounter = true;
+        deity.ToggleDeityReadyForDialogue();
     }
 
     public override void ResetPuzzle()

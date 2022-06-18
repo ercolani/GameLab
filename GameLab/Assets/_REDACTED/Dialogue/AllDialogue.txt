@@ -228,7 +228,7 @@ Oh myyyyyyy... Darling, do you believe in love at first sight or should I appear
 [[ea_fe_02]]
 
 :: ea_fe_02 {"position":"1903,251","size":"100,100"}
-Ah, pardon my rudeness! I am Ekeko, but you can just call me handsome;)
+Ah, pardon my rudeness! I am Ekeko, but you can just call me handsome.
 [[ea_fe_03]]
 
 :: ea_fe_03 {"position":"1903,401","size":"100,100"}
@@ -240,11 +240,11 @@ Ah, you remind me of my pantheon of beautiful women.
 [[ea_fe_05]]
 
 :: ea_fe_05 {"position":"1903,701","size":"100,100"}
-It saddens me, for you see they were taken from me!
+It saddens me, for you see, they were taken from me!
 [[ea_fe_06]]
 
 :: ea_fe_06 {"position":"1903,849","size":"100,100"}
-Whatever should I do now without my beloved harem!? 
+Whatever should I do now without my beloved harem?!
 [[ea_fe_07]]
 
 :: ea_fe_07 {"position":"1903,1001","size":"100,100"}
