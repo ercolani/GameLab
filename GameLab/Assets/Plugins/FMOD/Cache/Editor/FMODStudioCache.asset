@@ -528,7 +528,7 @@ MonoBehaviour:
   Path: FMODAssets/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637911097810162883
+  lastModified: 637911534310259921
   FileSizes:
   - Name: Desktop
     Value: 4846
@@ -1519,10 +1519,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/ea_fe_11
   Guid:
-    Data1: 1749718288
-    Data2: 1125533027
-    Data3: 1527111809
-    Data4: 1883286603
+    Data1: 752286234
+    Data2: 1253767577
+    Data3: -110950738
+    Data4: -1636359825
   Banks:
   - {fileID: 265565727182705413}
   IsStream: 0
@@ -1531,7 +1531,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3996
+  Length: 6765
 --- !u!114 &-414943544483655127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1749,7 +1749,7 @@ MonoBehaviour:
   - {fileID: 265565727182705413}
   StringsBanks:
   - {fileID: -6579752522758612124}
-  cacheTime: 637911097810162883
+  cacheTime: 637911534310259921
   cacheVersion: 10
 --- !u!114 &68668183131685083
 MonoBehaviour:
@@ -1793,7 +1793,7 @@ MonoBehaviour:
   Path: FMODAssets/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637911097810082929
+  lastModified: 637911534310150043
   FileSizes:
   - Name: Desktop
     Value: 17083808
@@ -3270,10 +3270,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/ea_fe_10
   Guid:
-    Data1: 752286234
-    Data2: 1253767577
-    Data3: -110950738
-    Data4: -1636359825
+    Data1: 1749718288
+    Data2: 1125533027
+    Data3: 1527111809
+    Data4: 1883286603
   Banks:
   - {fileID: 265565727182705413}
   IsStream: 0
@@ -3282,4 +3282,4 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 6765
+  Length: 3996
