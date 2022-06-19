@@ -228,7 +228,7 @@ public class MatchingPuzzle : PuzzleManager
         }
     }
 
-    public override void ActivatePuzzle()
+    public override void TogglePuzzle(bool state)
     {
         throw new System.NotImplementedException();
     }

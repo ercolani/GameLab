@@ -71,4 +71,9 @@ public class FishPuzzle : PuzzleManager
         _torches[_torchIndex].ToggleFlame(true);
         _puzzleFish.FollowWaypoints = true;
     }
+
+    public override void TogglePuzzle(bool state)
+    {
+        throw new System.NotImplementedException();
+    }
 }

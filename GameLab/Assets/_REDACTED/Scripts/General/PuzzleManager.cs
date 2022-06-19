@@ -11,10 +11,10 @@ public abstract class PuzzleManager : MonoBehaviour
     protected abstract void OnEnable();
 
     protected abstract void OnDisable();
-    
+
     public abstract void ResetPuzzle();
 
     public abstract void PuzzleCompleted();
 
-    public abstract void ActivatePuzzle();
+    public abstract void TogglePuzzle(bool state);
 }

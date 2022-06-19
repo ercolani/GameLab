@@ -80,7 +80,7 @@ public class Deity : MonoBehaviour
     /// Invokes when the puzzle needs to be activated.
     /// </summary>
     [SerializeField]
-    public event Action OnPuzzleActivated;
+    public event Action<bool> OnPuzzleToggled;
 
     private void OnEnable()
     {
@@ -141,7 +141,7 @@ public class Deity : MonoBehaviour
 
     private void ActivatePuzzle()
     {
-        OnPuzzleActivated?.Invoke();
+        OnPuzzleToggled?.Invoke(true);
     }
 
     /// <summary>

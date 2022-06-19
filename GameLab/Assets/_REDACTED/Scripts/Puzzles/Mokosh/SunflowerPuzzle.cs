@@ -7,13 +7,13 @@ public class SunflowerPuzzle : PuzzleManager
 {
     [SerializeField]
     private List<SunflowerSegment> _sunflowerSegments;
-    
+
     [SerializeField]
     private int _currentSegment;
 
     private void Start()
     {
-        ActivatePuzzle();
+        TogglePuzzle(true);
     }
 
     protected override void OnEnable()
@@ -26,7 +26,7 @@ public class SunflowerPuzzle : PuzzleManager
                 _sunflowerSegments[i]._segmentTorches[j].FlameToggled += OnTorchToggled;
             }
         }
-        deity.OnPuzzleActivated += ActivatePuzzle;
+        deity.OnPuzzleToggled += TogglePuzzle;
     }
 
     protected override void OnDisable()
@@ -57,7 +57,7 @@ public class SunflowerPuzzle : PuzzleManager
         _sunflowerSegments[_currentSegment].RotateSunflower(torch);
     }
 
-    public override void ActivatePuzzle()
+    public override void TogglePuzzle(bool state)
     {
         GetComponent<GrowVines>().ToggleGrowingVines();
     }
