@@ -17,6 +17,8 @@ public class FishPuzzle : PuzzleManager
 
     public override void PuzzleCompleted()
     {
+        deity.isLastEncounter = true;
+        deity.ToggleDeityReadyForDialogue();
     }
 
     public override void ResetPuzzle()
@@ -74,6 +76,10 @@ public class FishPuzzle : PuzzleManager
 
     public override void TogglePuzzle(bool state)
     {
-        throw new System.NotImplementedException();
+        _puzzleFish.gameObject.SetActive(state);
+        foreach (FlameController torch in _torches)
+        {
+            torch.ToggleFlame(state);
+        }
     }
 }
