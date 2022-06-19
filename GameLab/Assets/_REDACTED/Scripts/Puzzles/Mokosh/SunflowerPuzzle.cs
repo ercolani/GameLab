@@ -11,21 +11,29 @@ public class SunflowerPuzzle : PuzzleManager
     [SerializeField]
     private int _currentSegment;
 
+    private void Start()
+    {
+        ActivatePuzzle();
+    }
+
     protected override void OnEnable()
     {
         for (int i = 0; i < _sunflowerSegments.Count; i++)
         {
+            _sunflowerSegments[i].OnSegmentCompleted += SegmentComplete;
             for (int j = 0; j < _sunflowerSegments[i]._segmentTorches.Count; j++)
             {
                 _sunflowerSegments[i]._segmentTorches[j].FlameToggled += OnTorchToggled;
             }
         }
+        deity.OnPuzzleActivated += ActivatePuzzle;
     }
 
     protected override void OnDisable()
     {
         for (int i = 0; i < _sunflowerSegments.Count; i++)
         {
+            _sunflowerSegments[i].OnSegmentCompleted -= SegmentComplete;
             for (int j = 0; j < _sunflowerSegments[i]._segmentTorches.Count; j++)
             {
                 FlameController torch = _sunflowerSegments[i]._segmentTorches[j];
@@ -36,7 +44,7 @@ public class SunflowerPuzzle : PuzzleManager
 
     public override void ResetPuzzle()
     {
-        _sunflowerSegments[_currentSegment].ResetSegment();
+
     }
 
     public override void PuzzleCompleted()
@@ -47,5 +55,26 @@ public class SunflowerPuzzle : PuzzleManager
     private void OnTorchToggled(FlameController torch)
     {
         _sunflowerSegments[_currentSegment].RotateSunflower(torch);
+    }
+
+    public override void ActivatePuzzle()
+    {
+        GetComponent<GrowVines>().ToggleGrowingVines();
+    }
+
+    private void SegmentComplete()
+    {
+        _currentSegment++;
+
+        if (_currentSegment > 3)
+        {
+            PuzzleCompleted();
+            return;
+        }
+
+        foreach (PuzzleTorch torch in _sunflowerSegments[_currentSegment]._segmentTorches)
+        {
+            torch.ToggleFlame(true);
+        }
     }
 }

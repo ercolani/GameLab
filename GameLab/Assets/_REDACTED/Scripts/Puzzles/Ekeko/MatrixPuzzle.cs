@@ -63,5 +63,10 @@ public class MatrixPuzzle : PuzzleManager
             PuzzleCompleted();
         }
     }
+
+    public override void ActivatePuzzle()
+    {
+        throw new System.NotImplementedException();
+    }
 }
 

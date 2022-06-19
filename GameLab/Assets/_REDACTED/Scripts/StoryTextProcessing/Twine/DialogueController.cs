@@ -42,6 +42,8 @@ public class DialogueController : MonoBehaviour
 
     public event Action<bool> ToggleDialogue;
 
+    public event Action OnActivatePuzzle;
+
     private bool dialogueActive;
 
     private bool _autoMode;
@@ -96,6 +98,7 @@ public class DialogueController : MonoBehaviour
                 {
                     _autoMode = false;
                     ToggleDialogueState();
+                    OnActivatePuzzle?.Invoke();
                 }
                 else
                 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Linq;
-using UnityStandardAssets.Characters.FirstPerson;
+using TMPro;
 
 /// <summary>
 /// Controls the player's interaction with dialogue.
@@ -34,17 +34,19 @@ public class PlayerDialogueInteraction : MonoBehaviour
     [SerializeField]
     private GameObject dialogueButton;
 
+
+    /// <summary>
+    /// The deity name that shows when the player is in the dialogue range.
+    /// </summary>
+    [SerializeField]
+    private TMP_Text deityName;
+
+
     /// <summary>
     /// The deity that currently is in range to be in dialogue with.
     /// </summary>
     [SerializeField]
     private Deity currentDeityInDialogue;
-
-    /// <summary>
-    /// The player character controller.
-    /// </summary>
-    [SerializeField]
-    private FirstPersonController firstPersonController;
 
     /// <summary>
     /// The key the player presses to interact with dialogue.
@@ -56,6 +58,11 @@ public class PlayerDialogueInteraction : MonoBehaviour
     /// Invoked when the player is in the dialogue range and presses the dialogue interaction key.
     /// </summary>
     public event Action<Deity, bool> DialogueFired;
+
+    /// <summary>
+    /// Invoked when the player ends dialogue with the deity.
+    /// </summary>
+    public event Action<Deity> OnActivatePuzzle;
 
     private void Update()
     {
@@ -83,7 +90,7 @@ public class PlayerDialogueInteraction : MonoBehaviour
             if (!currentDeityInDialogue.isFirstEncounter && !currentDeityInDialogue.isLastEncounter)
             {
                 DialogueFired?.Invoke(currentDeityInDialogue, true);
-            } 
+            }
             else
             {
                 DialogueFired?.Invoke(currentDeityInDialogue, false);
@@ -93,23 +100,13 @@ public class PlayerDialogueInteraction : MonoBehaviour
 
     private void ChangeDialogueButtonState(bool deityFound)
     {
-        inRange = deityFound ? true : false;
-        dialogueButton.SetActive(inRange);
+        dialogueButton.SetActive(deityFound);
+        deityName.gameObject.SetActive(deityFound);
+
         if (inRange && !currentDeityInDialogue.IsReadyForDialogue)
         {
-            dialogueButton.SetActive(false);
-        }
-    }
-
-    public void ToggleFreezePlayer(bool state)
-    {
-        if (state)
-        {
-            firstPersonController.SetWalkSpeed(defaultWalkSpeed);
-        }
-        else
-        {
-            firstPersonController.SetWalkSpeed(0f);
+            deityName.text = currentDeityInDialogue.gameObject.name;
+            deityName.gameObject.SetActive(false);
         }
     }
 }
