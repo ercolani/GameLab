@@ -50,7 +50,7 @@ public class MatchingPuzzle : PuzzleManager
     /// <summary>
     /// The current phase of the puzzle.
     /// </summary>
-    private int phase = 0;
+    private int _phase = 0;
 
     /// <summary>
     /// How often the symbols begin to light up (are invoked).
@@ -142,7 +142,7 @@ public class MatchingPuzzle : PuzzleManager
 
         if (correctStools == _puzzleStools.Count)
         {
-            phase++;
+            _phase++;
             InvokeRepeating("StartSymbolGlows", 0f, _symbolInvokeTime);
             foreach (FlameController torch in _puzzleTorches)
             {
@@ -209,14 +209,14 @@ public class MatchingPuzzle : PuzzleManager
 
     private IEnumerator ResetPuzzleCoroutine()
     {
-        if (phase == 0)
+        if (_phase == 0)
         {
             for (int i = 0; i < _puzzleTorches.Count; i++)
             {
                 _puzzleTorches[i].transform.position = _initialPosition[i];
             }
         }
-        else if (phase == 1)
+        else if (_phase == 1)
         {
             yield return new WaitForSeconds(1.5f);
 
