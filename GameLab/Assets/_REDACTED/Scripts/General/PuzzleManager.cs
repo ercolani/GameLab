@@ -15,4 +15,6 @@ public abstract class PuzzleManager : MonoBehaviour
     public abstract void ResetPuzzle();
 
     public abstract void PuzzleCompleted();
+
+    public abstract void ActivatePuzzle();
 }

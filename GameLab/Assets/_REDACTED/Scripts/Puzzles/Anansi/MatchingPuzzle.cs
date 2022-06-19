@@ -227,4 +227,9 @@ public class MatchingPuzzle : PuzzleManager
             _blownOutTorches.Clear();
         }
     }
+
+    public override void ActivatePuzzle()
+    {
+        throw new System.NotImplementedException();
+    }
 }

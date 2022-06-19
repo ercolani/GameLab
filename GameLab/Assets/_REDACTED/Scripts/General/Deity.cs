@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Deity : MonoBehaviour
 {
@@ -75,14 +76,22 @@ public class Deity : MonoBehaviour
     /// </summary>
     public bool IsReadyForDialogue => isReadyForDialogue;
 
+    /// <summary>
+    /// Invokes when the puzzle needs to be activated.
+    /// </summary>
+    [SerializeField]
+    public event Action OnPuzzleActivated;
+
     private void OnEnable()
     {
         playerDialogueInteraction.DialogueFired += FireDialogue;
+        dialogueController.OnActivatePuzzle += ActivatePuzzle;
     }
 
     private void OnDisable()
     {
         playerDialogueInteraction.DialogueFired -= FireDialogue;
+        dialogueController.OnActivatePuzzle += ActivatePuzzle;
     }
 
     /// <summary>
@@ -96,7 +105,7 @@ public class Deity : MonoBehaviour
             if (isPuzzleComment)
             {
                 string type = "";
-                int r = Random.Range(0, 3);
+                int r = UnityEngine.Random.Range(0, 3);
                 switch (r)
                 {
                     case 0:
@@ -128,6 +137,11 @@ public class Deity : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void ActivatePuzzle()
+    {
+        OnPuzzleActivated?.Invoke();
     }
 
     /// <summary>
