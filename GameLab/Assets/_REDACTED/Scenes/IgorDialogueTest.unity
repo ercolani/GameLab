@@ -29367,7 +29367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2360759180776328347, guid: c568bdc562121194d9d4ccb1a7177d70, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.87
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 2360759180776328347, guid: c568bdc562121194d9d4ccb1a7177d70, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30213,6 +30213,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactInput: 323
   _blowOutRange: 3
+  _particles: {fileID: 0}
+  _blowDelay: 0
+  _cooldown: 2
 --- !u!114 &1467920538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45189,6 +45192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e25185838c9dc4abf10fa236a1f167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _particleEffect: {fileID: 0}
   _IsInteractive: 1
   _canBePickedUp: 1
 --- !u!23 &1909528317
@@ -54967,6 +54971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e25185838c9dc4abf10fa236a1f167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _particleEffect: {fileID: 0}
   _IsInteractive: 1
   _canBePickedUp: 1
 --- !u!64 &4295680354675289894
@@ -55365,6 +55370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e25185838c9dc4abf10fa236a1f167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _particleEffect: {fileID: 0}
   _IsInteractive: 1
   _canBePickedUp: 1
 --- !u!64 &7966415517892404176
@@ -55416,6 +55422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e25185838c9dc4abf10fa236a1f167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _particleEffect: {fileID: 0}
   _IsInteractive: 1
   _canBePickedUp: 1
 --- !u!64 &8184566217646877961
@@ -55580,6 +55587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e25185838c9dc4abf10fa236a1f167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _particleEffect: {fileID: 0}
   _IsInteractive: 1
   _canBePickedUp: 1
 --- !u!64 &8593804575336656554

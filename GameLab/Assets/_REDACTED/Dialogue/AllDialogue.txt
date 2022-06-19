@@ -110,14 +110,6 @@ Never expected you to even get past the first obstacle.
 
 :: aa_le_04 {"position":"302,550","size":"100,100"}
 But what took me by surprise the most was... a certain realization.
-[[aa_le_05]]
-
-:: aa_le_05 {"position":"302,700","size":"100,100"}
-I have gotten... carried away.
-[[aa_le_06]]
-
-:: aa_le_06 {"position":"302,850","size":"100,100"}
-You've actually managed to achieve something nobody has been able to thus far. 
 [[aa_le_07]]
 
 :: aa_le_07 {"position":"300,1002","size":"100,100"}
@@ -136,20 +128,8 @@ Now... Take this and get it far away from me. I do not wish to stray the way I d
 And while you're at it... Pay the others a visit too. 
 [[aa_le_11]] 
 
-:: aa_le_11 {"position":"301,1600","size":"100,100"}
+:: aa_le_11 [END] {"position":"301,1600","size":"100,100"}
 They are just as lost as you and I. 
-[[aa_le_12]] 
-
-:: aa_le_12 {"position":"301,1750","size":"100,100"}
-But perhaps you can open their eyes as you did mine.
-[[aa_le_13]] 
-
-:: aa_le_13 {"position":"300,1900","size":"100,100"}
-As you persevere on this journey, keep the following in mind.
-[[aa_le_14]] 
-
-:: aa_le_14 [END] {"position":"300,2050","size":"100,100"}
-In the process of letting go, you will lose many things from the past but you will find yourself.
 
 :: aa_pc_dn_01 [PuzzleComment] {"position":"699,99","size":"100,100"}
 No one tests the depth of a river with both feet.
@@ -228,7 +208,7 @@ Oh myyyyyyy... Darling, do you believe in love at first sight or should I appear
 [[ea_fe_02]]
 
 :: ea_fe_02 {"position":"1903,251","size":"100,100"}
-Ah, pardon my rudeness! I am Ekeko, but you can just call me handsome;)
+Ah, pardon my rudeness! I am Ekeko, but you can just call me handsome.
 [[ea_fe_03]]
 
 :: ea_fe_03 {"position":"1903,401","size":"100,100"}
@@ -240,11 +220,11 @@ Ah, you remind me of my pantheon of beautiful women.
 [[ea_fe_05]]
 
 :: ea_fe_05 {"position":"1903,701","size":"100,100"}
-It saddens me, for you see they were taken from me!
+It saddens me, for you see, they were taken from me!
 [[ea_fe_06]]
 
 :: ea_fe_06 {"position":"1903,849","size":"100,100"}
-Whatever should I do now without my beloved harem!? 
+Whatever should I do now without my beloved harem?!
 [[ea_fe_07]]
 
 :: ea_fe_07 {"position":"1903,1001","size":"100,100"}
