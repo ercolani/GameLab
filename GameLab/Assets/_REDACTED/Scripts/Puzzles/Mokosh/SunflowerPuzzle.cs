@@ -50,7 +50,7 @@ public class SunflowerPuzzle : PuzzleManager
 
     public override void PuzzleCompleted()
     {
-        print("meow");
+        
     }
 
     private void OnTorchToggled(FlameController torch)
@@ -60,7 +60,7 @@ public class SunflowerPuzzle : PuzzleManager
 
     public override void TogglePuzzle(bool state)
     {
-        GetComponent<GrowVines>().ToggleGrowingVines();
+
     }
 
     private void SegmentComplete()

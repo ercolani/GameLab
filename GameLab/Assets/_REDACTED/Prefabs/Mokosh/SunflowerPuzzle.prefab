@@ -45,7 +45,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3171557733660556966}
   - component: {fileID: 8684934303717781573}
-  - component: {fileID: 6852992037423469148}
   m_Layer: 0
   m_Name: SunflowerPuzzle
   m_TagString: Untagged
@@ -92,47 +91,6 @@ MonoBehaviour:
   - {fileID: 7393714790581979721}
   - {fileID: 737091924821977207}
   _currentSegment: 0
---- !u!114 &6852992037423469148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1524433955008533171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a691244168fb8d4a906f753466d6247, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vineMeshes:
-  - {fileID: 1819555560591252605}
-  - {fileID: 8996210712785005556}
-  - {fileID: 3914854678459249285}
-  - {fileID: 3637434548023130453}
-  - {fileID: 7371571248611048412}
-  - {fileID: 4874836692323058509}
-  - {fileID: 6665363205470451435}
-  - {fileID: 4823878421442754341}
-  - {fileID: 9153871788673889408}
-  - {fileID: 5807270733767133406}
-  - {fileID: 2871093018276929689}
-  - {fileID: 4193047486956531550}
-  - {fileID: 4870120964325023861}
-  - {fileID: 1427244135298167554}
-  - {fileID: 4138028311104983491}
-  - {fileID: 3692913792620377463}
-  - {fileID: 5335800053653284147}
-  - {fileID: 8234636292614221341}
-  - {fileID: 753933890906617313}
-  - {fileID: 4068676929862703049}
-  - {fileID: 4575664504094867251}
-  - {fileID: 5214134677512454400}
-  timeToGrow: 5
-  refreshRate: 0.05
-  minGrowth: 0
-  maxGrowth: 1
-  vineGrowMaterials: []
-  isFullyGrown: 0
 --- !u!1 &1587760259333320560
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7687708265355601137
 Transform:
   m_ObjectHideFlags: 0
@@ -1411,6 +1369,106 @@ PrefabInstance:
     - target: {fileID: 5716135350453260326, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
       propertyPath: m_Name
       value: Mokosh
+      objectReference: {fileID: 0}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: _vineObject
+      value: 
+      objectReference: {fileID: 8277658090085518303}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1819555560591252605}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[1]
+      value: 
+      objectReference: {fileID: 8996210712785005556}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[2]
+      value: 
+      objectReference: {fileID: 3914854678459249285}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[3]
+      value: 
+      objectReference: {fileID: 3637434548023130453}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[4]
+      value: 
+      objectReference: {fileID: 7371571248611048412}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[5]
+      value: 
+      objectReference: {fileID: 4874836692323058509}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[6]
+      value: 
+      objectReference: {fileID: 6665363205470451435}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[7]
+      value: 
+      objectReference: {fileID: 4823878421442754341}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[8]
+      value: 
+      objectReference: {fileID: 9153871788673889408}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[9]
+      value: 
+      objectReference: {fileID: 5807270733767133406}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[10]
+      value: 
+      objectReference: {fileID: 2871093018276929689}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[11]
+      value: 
+      objectReference: {fileID: 4193047486956531550}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[12]
+      value: 
+      objectReference: {fileID: 4870120964325023861}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[13]
+      value: 
+      objectReference: {fileID: 1427244135298167554}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[14]
+      value: 
+      objectReference: {fileID: 4138028311104983491}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[15]
+      value: 
+      objectReference: {fileID: 3692913792620377463}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[16]
+      value: 
+      objectReference: {fileID: 5335800053653284147}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[17]
+      value: 
+      objectReference: {fileID: 8234636292614221341}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[18]
+      value: 
+      objectReference: {fileID: 753933890906617313}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[19]
+      value: 
+      objectReference: {fileID: 4068676929862703049}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[20]
+      value: 
+      objectReference: {fileID: 4575664504094867251}
+    - target: {fileID: 6036240855604381290, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: vineMeshes.Array.data[21]
+      value: 
+      objectReference: {fileID: 5214134677512454400}
+    - target: {fileID: 8603881116302381247, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: isFirstEncounter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8603881116302381247, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: isReadyForDialogue
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}

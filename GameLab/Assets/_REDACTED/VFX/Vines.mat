@@ -51,7 +51,7 @@ Material:
     m_Floats:
     - _AlphaCutoff: 0.5
     - _ClipThreshold: 1
-    - _Grow: 0.495
+    - _Grow: 0
     - _MeshScale: 0
     - _QueueControl: 0
     - _QueueOffset: 0

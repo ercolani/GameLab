@@ -9831,6 +9831,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4316052579009671692}
     m_Modifications:
+    - target: {fileID: 1564283787856731923, guid: 81b9fffb92b1c6f41a64576274be40f9, type: 3}
+      propertyPath: _IsInteractive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7927658294689351783, guid: 81b9fffb92b1c6f41a64576274be40f9, type: 3}
       propertyPath: m_Name
       value: PuzzleTorch

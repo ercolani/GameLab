@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5300990506717672014}
   - component: {fileID: 8603881116302381247}
   - component: {fileID: 1137752137392502729}
+  - component: {fileID: 6036240855604381290}
   m_Layer: 0
   m_Name: Mokosh
   m_TagString: Untagged
@@ -121,3 +122,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020974126, y: 0.017769784, z: 0.027683748}
   m_Center: {x: 0.00000006752089, y: -0.0038281083, z: 0.013769624}
+--- !u!114 &6036240855604381290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716135350453260326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a691244168fb8d4a906f753466d6247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vineMeshes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  timeToGrow: 5
+  refreshRate: 0.05
+  minGrowth: 0
+  maxGrowth: 1
+  vineGrowMaterials: []
+  isFullyGrown: 0

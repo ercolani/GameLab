@@ -50,14 +50,9 @@ public class GrowVines : MonoBehaviour
     /// </summary>
     [SerializeField]
     private bool isFullyGrown;
-    
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            ToggleGrowingVines();
-        }
-    }
+
+    [SerializeField]
+    private GameObject _vineObject;
 
     void Start()
     {
@@ -83,10 +78,15 @@ public class GrowVines : MonoBehaviour
     /// <summary>
     /// Called by an external class to begin the vine growing.
     /// </summary>
-    public void ToggleGrowingVines()
+    public void ToggleGrowingVines(bool state)
     {
         for (int i = 0; i < vineGrowMaterials.Count; i++)
         {
+            if (state)
+            {
+                _vineObject.SetActive(state);
+            }
+
             StartCoroutine(GrowVinesCoroutine(vineGrowMaterials[i]));
         }
     }
@@ -119,6 +119,8 @@ public class GrowVines : MonoBehaviour
 
                 yield return new WaitForSeconds(refreshRate);
             }
+
+            _vineObject.SetActive(false);
         }
 
         isFullyGrown = currentGrowValue >= maxGrowth ? true : false;

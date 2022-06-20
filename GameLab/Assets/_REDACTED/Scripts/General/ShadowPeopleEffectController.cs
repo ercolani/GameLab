@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class ShadowPeopleEffectController : MonoBehaviour
 {
-    
+    [SerializeField]
+    private Material material;
+
+
 }
