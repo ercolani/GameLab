@@ -66,7 +66,7 @@ public class MatrixPuzzle : PuzzleManager
 
     public override void TogglePuzzle(bool state)
     {
-        throw new System.NotImplementedException();
+        // For each torch in each matrix disable their interactability and toggle their flame off.
     }
 }
 

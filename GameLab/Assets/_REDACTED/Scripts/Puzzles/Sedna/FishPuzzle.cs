@@ -29,7 +29,8 @@ public class FishPuzzle : PuzzleManager
     {
         _puzzleFish.UpdateWaypoints(_torches[0].GetComponent<TorchWaypoints>().Waypoints, 0);
         _puzzleFish.FollowWaypoints = true;
-        //TogglePuzzle(false);
+        _deity.OnPuzzleToggled += TogglePuzzle;
+        TogglePuzzle(false);
     }
 
     protected override void OnDisable()
