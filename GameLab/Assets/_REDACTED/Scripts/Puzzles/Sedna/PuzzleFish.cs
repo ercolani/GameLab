@@ -103,8 +103,8 @@ public class PuzzleFish : MonoBehaviour
     /// <param name="startWaypoint">The starting index</param>
     public void UpdateWaypoints(Transform[] _waypoints, int torchIndex)
     {
-        _currentWaypoints = _waypoints;
         _targetIndex = 0;
+        _currentWaypoints = _waypoints;
         _currentTorchIndex = torchIndex;
     }
 }

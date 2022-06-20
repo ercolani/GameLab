@@ -58,8 +58,8 @@ public class FishPuzzle : PuzzleManager
                 }
                 else
                 {
-                    _puzzleFish.MovementSpeed = _puzzleFish.MovementSpeed + 1f;
                     _puzzleFish.UpdateWaypoints(_torches[_torchIndex].GetComponent<TorchWaypoints>().Waypoints, _torchIndex);
+                    _puzzleFish.MovementSpeed = _puzzleFish.MovementSpeed + 1f;
                 }
             }
             else
