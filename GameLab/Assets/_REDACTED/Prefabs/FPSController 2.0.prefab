@@ -88,7 +88,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3981293112694322697}
   - component: {fileID: 3981293112694322702}
-  - component: {fileID: 3981293112694322701}
   - component: {fileID: 3981293112694322700}
   - component: {fileID: 3981293112694322699}
   - component: {fileID: 3981293112694322698}
@@ -160,14 +159,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &3981293112694322701
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3981293112694322696}
-  m_Enabled: 1
 --- !u!124 &3981293112694322700
 Behaviour:
   m_ObjectHideFlags: 0
@@ -5254,7 +5245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IsWalking: 0
+  m_IsWalking: 1
   m_WalkSpeed: 8
   m_RunSpeed: 30
   m_RunstepLenghten: 0.7
@@ -5272,8 +5263,8 @@ MonoBehaviour:
     lockCursor: 0
   m_UseFovKick: 1
   m_FovKick:
-    Camera: {fileID: 0}
-    originalFov: 0
+    Camera: {fileID: 3981293112694322702}
+    originalFov: 80
     FOVIncrease: 3
     TimeToIncrease: 1
     TimeToDecrease: 1
@@ -5301,58 +5292,40 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_UseHeadBob: 0
+  m_UseHeadBob: 1
   m_HeadBob:
-    HorizontalBobRange: 0.1
-    VerticalBobRange: 0.1
+    HorizontalBobRange: 0.05
+    VerticalBobRange: 0.05
     Bobcurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
+        time: 0.025623322
+        value: 0.16201782
+        inSlope: 2
+        outSlope: 2
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
       - serializedVersion: 3
-        time: 0.5
-        value: 1
+        time: 1.2129059
+        value: -0.047145844
         inSlope: 0
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
       - serializedVersion: 3
-        time: 1
-        value: 0
+        time: 1.9902112
+        value: 0.1575939
         inSlope: 0
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.5
-        value: -1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 2
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -5362,10 +5335,14 @@ MonoBehaviour:
     BobAmount: 0.1
   m_StepInterval: 5
   m_FootstepSounds:
-  - {fileID: 8300000, guid: e909d08c1a0a20e4ebb4988b8d0e0f3c, type: 3}
-  - {fileID: 8300000, guid: 859ea5b3accb9d64785ffc7480fd9323, type: 3}
-  m_JumpSound: {fileID: 8300000, guid: f18861a914031a94da03588710655a7a, type: 3}
-  m_LandSound: {fileID: 8300000, guid: db8c613281f4e2f4ba3db6a36819dcb7, type: 3}
+  - {fileID: 8300000, guid: 8420cf17e21d6354a98e6ef6d19dc9cc, type: 3}
+  - {fileID: 8300000, guid: e708389b7a8f64a46aa12d201c187b69, type: 3}
+  - {fileID: 8300000, guid: f85e18b3e969dac4bbfc7f6b18139932, type: 3}
+  - {fileID: 8300000, guid: caceea3cf407e1b47a4024a755887675, type: 3}
+  - {fileID: 8300000, guid: 322f3dcfdbd5b5742a885bfbc4fe5365, type: 3}
+  - {fileID: 8300000, guid: 866abdf3a931850498786581089be202, type: 3}
+  m_JumpSound: {fileID: 8300000, guid: fe175f117cf3fb2428d279bc830a1830, type: 3}
+  m_LandSound: {fileID: 8300000, guid: 79e6e1370ee1ca747b469e68d0dcb0fe, type: 3}
 --- !u!54 &3981293114543799251
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5394,21 +5371,21 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -5438,7 +5415,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5514,7 +5491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactInput: 323
-  _blowOutRange: 5
+  _blowOutRange: 3
   _particles: {fileID: 3981293113065246892}
   _blowDelay: 0.5
   _cooldown: 2
@@ -5530,12 +5507,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ddc75e9bc067c4f8f16e442fdc7deb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueRange: 5
+  dialogueRange: 3
   defaultWalkSpeed: 0
   inRange: 0
   dialogueButton: {fileID: 0}
+  deityName: {fileID: 0}
   currentDeityInDialogue: {fileID: 0}
-  firstPersonController: {fileID: 3981293114543799252}
   dialogueInteraction: 101
 --- !u!1001 &1230970942658181734
 PrefabInstance:
