@@ -917,8 +917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 451462debcb1ad4498fd05046a82ee35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetSwitch: {fileID: 3493906201898934560}
-  deity: {fileID: 5625960501898567585}
+  _resetSwitch: {fileID: 0}
+  _deity: {fileID: 5625960501898567585}
   _puzzleTorches:
   - {fileID: 528087488383800275}
   - {fileID: 1772157526774726305}
@@ -934,7 +934,11 @@ MonoBehaviour:
   - {fileID: 6263821073287002992}
   - {fileID: 6058289809425222635}
   - {fileID: 6906188665829925692}
-  _outlineGlows: []
+  _outlineGlows:
+  - {fileID: 7343699677795946755}
+  - {fileID: 1438804352821841279}
+  - {fileID: 8560046260787962609}
+  - {fileID: 1867672190845319063}
   _stoolSymbols:
   - {fileID: 945815467845751285}
   - {fileID: 5920761536111732677}

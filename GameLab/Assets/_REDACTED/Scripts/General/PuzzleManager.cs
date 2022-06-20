@@ -3,10 +3,7 @@ using UnityEngine;
 public abstract class PuzzleManager : MonoBehaviour
 {
     [SerializeField]
-    protected ResetSwitch resetSwitch;
-
-    [SerializeField]
-    protected Deity deity;
+    protected Deity _deity;
 
     protected abstract void OnEnable();
 

@@ -17,8 +17,8 @@ public class FishPuzzle : PuzzleManager
 
     public override void PuzzleCompleted()
     {
-        deity.isLastEncounter = true;
-        deity.ToggleDeityReadyForDialogue();
+        _deity.isLastEncounter = true;
+        _deity.ToggleDeityReadyForDialogue();
     }
 
     public override void ResetPuzzle()

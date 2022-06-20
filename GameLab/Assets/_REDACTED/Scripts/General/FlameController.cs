@@ -83,7 +83,15 @@ public class FlameController : MonoBehaviour
             }
         }
     }
-       
+
+    /// <summary>
+    /// Called by an external class to toggle the state of the flame.
+    /// </summary>
+    public void ForceToggleFlame(bool state)
+    {
+        _flameActive = state;
+        _flame.SetActive(state);
+    }
 
     public void ToggleCanBeBlownOut(bool state)
     {

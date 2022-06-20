@@ -5272,8 +5272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8abae5b23ecbef47818020e3a0c6178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetSwitch: {fileID: 0}
-  deity: {fileID: 6699015293092189144}
+  _resetSwitch: {fileID: 0}
+  _deity: {fileID: 6699015293092189144}
   _torches:
   - {fileID: 2669153995186330815}
   - {fileID: 2852369581524862000}

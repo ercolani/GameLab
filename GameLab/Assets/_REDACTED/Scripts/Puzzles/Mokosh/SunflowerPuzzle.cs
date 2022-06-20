@@ -27,7 +27,7 @@ public class SunflowerPuzzle : PuzzleManager
                 _sunflowerSegments[i]._segmentTorches[j].FlameToggled += OnTorchToggled;
             }
         }
-        deity.OnPuzzleToggled += TogglePuzzle;
+        _deity.OnPuzzleToggled += TogglePuzzle;
     }
 
     protected override void OnDisable()

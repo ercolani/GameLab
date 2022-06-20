@@ -73,7 +73,7 @@ public class MatchingPuzzle : PuzzleManager
             _initialPosition.Add(torch.transform.position);
             index++;
         }
-        ResetPuzzle();
+        TogglePuzzle(false);
     }
 
     /// <summary>
@@ -81,7 +81,8 @@ public class MatchingPuzzle : PuzzleManager
     /// </summary>
     protected override void OnEnable()
     {
-        resetSwitch.Reset += ResetPuzzle; 
+        _deity.OnPuzzleToggled += TogglePuzzle;
+        TogglePuzzle(false);
         foreach (FlameController torch in _puzzleTorches)
         {
             torch.FlameToggled += OnTorchToggled;
@@ -100,7 +101,6 @@ public class MatchingPuzzle : PuzzleManager
     /// </summary>
     protected override void OnDisable()
     {
-        resetSwitch.Reset -= ResetPuzzle; 
     }
 
     /// <summary>
@@ -191,8 +191,8 @@ public class MatchingPuzzle : PuzzleManager
         {
             StartCoroutine(symbol.ToggleCoroutine(false, false, 0f));
         }
-        deity.isLastEncounter = true;
-        deity.ToggleDeityReadyForDialogue();
+        _deity.isLastEncounter = true;
+        _deity.ToggleDeityReadyForDialogue();
     }
 
     /// <summary>
@@ -205,7 +205,7 @@ public class MatchingPuzzle : PuzzleManager
             _symbolGlowOrder[_glowIndex].SetAlternateEmissionColor();
         }
 
-        StartCoroutine(_symbolGlowOrder[_glowIndex].ToggleCoroutine(true, false, 0f));
+        //StartCoroutine(_symbolGlowOrder[_glowIndex].ToggleCoroutine(true, false, 0f));
         StartCoroutine(_outlineGlows[_glowIndex].ToggleCoroutine(true, false, 0f));
 
         _glowIndex++;
@@ -239,6 +239,11 @@ public class MatchingPuzzle : PuzzleManager
 
     public override void TogglePuzzle(bool state)
     {
-        throw new System.NotImplementedException();
+        foreach (FlameController torch in _puzzleTorches)
+        {
+            torch.ForceToggleFlame(state);
+            torch.GetComponent<InteractiveObject>().SetInteractivity(state);
+        }
+        Debug.LogError(state);
     }
 }

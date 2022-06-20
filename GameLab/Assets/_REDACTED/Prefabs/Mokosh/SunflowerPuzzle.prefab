@@ -83,8 +83,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c868924323b4c84bb20a1362b262255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetSwitch: {fileID: 0}
-  deity: {fileID: 4509314741570343821}
+  _resetSwitch: {fileID: 0}
+  _deity: {fileID: 4509314741570343821}
   _sunflowerSegments:
   - {fileID: 2876247135567356864}
   - {fileID: 841283970512000268}

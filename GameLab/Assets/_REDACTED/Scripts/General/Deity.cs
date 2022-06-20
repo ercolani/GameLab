@@ -138,6 +138,7 @@ public class Deity : MonoBehaviour
                         GetComponent<GrowVines>().ToggleGrowingVines(true);
                     }
                     ToggleDeityReadyForDialogue();
+                    ActivatePuzzle();
                 }
                 else if (isLastEncounter)
                 {
@@ -153,7 +154,7 @@ public class Deity : MonoBehaviour
         }
     }
 
-    private void ActivatePuzzle()
+    public void ActivatePuzzle()
     {
         OnPuzzleToggled?.Invoke(true);
     }
