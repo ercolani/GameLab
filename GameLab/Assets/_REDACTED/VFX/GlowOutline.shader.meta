@@ -4,8 +4,6 @@ ShaderImporter:
   externalObjects: {}
   defaultTextures:
   - _BaseColor: {fileID: 2800000, guid: 0a2eea15b004b384f97e07494647431f, type: 3}
-  - _NormalMap: {fileID: 2800000, guid: 0b95ced50a1f7cb49919db45d90166bd, type: 3}
-  - _MetallicMap: {fileID: 2800000, guid: dfd79ac790475c84dbe012c335cd9204, type: 3}
   nonModifiableTextures: []
   preprocessorOverride: 0
   userData: 
