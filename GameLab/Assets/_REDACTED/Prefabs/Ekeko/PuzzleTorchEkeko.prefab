@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1890048716047507250
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7281557089017911442}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7281557089017911442
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1890048716047507250}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2639777612477233372}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5379247354670526644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5393886452995361169, guid: 81b9fffb92b1c6f41a64576274be40f9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee7b9a678f8d0834f91f81d88617afec, type: 2}
     - target: {fileID: 7927658294689351783, guid: 81b9fffb92b1c6f41a64576274be40f9, type: 3}
       propertyPath: m_Name
-      value: PuzzleTorch
+      value: PuzzleTorchEkeko
       objectReference: {fileID: 0}
     - target: {fileID: 7927658294689351784, guid: 81b9fffb92b1c6f41a64576274be40f9, type: 3}
       propertyPath: m_RootOrder
@@ -86,10 +59,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8548046163407230169, guid: 81b9fffb92b1c6f41a64576274be40f9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c7d8510e6e8973a4f97af5150a5d0f56, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81b9fffb92b1c6f41a64576274be40f9, type: 3}
---- !u!4 &2639777612477233372 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7927658294689351784, guid: 81b9fffb92b1c6f41a64576274be40f9, type: 3}
-  m_PrefabInstance: {fileID: 5379247354670526644}
-  m_PrefabAsset: {fileID: 0}

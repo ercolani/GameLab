@@ -27,8 +27,9 @@ public class FishPuzzle : PuzzleManager
 
     private void Start()
     {
-        _puzzleFish.UpdateWaypoints(_torches[0].GetComponent<TorchWaypoints>().Waypoints);
+        _puzzleFish.UpdateWaypoints(_torches[0].GetComponent<TorchWaypoints>().Waypoints, 0);
         _puzzleFish.FollowWaypoints = true;
+        //TogglePuzzle(false);
     }
 
     protected override void OnDisable()
@@ -45,25 +46,27 @@ public class FishPuzzle : PuzzleManager
 
    private void OnBlownOutTorch(FlameController blownOut)
    {
-        if (_puzzleFish.TargetIndex == _torches[_torchIndex].GetComponent<TorchWaypoints>().CorrectIndex)
+        if (_puzzleFish.CurrentTorchIndex == _torchIndex)
         {
-            _torchIndex++;
-            if (_torchIndex >= _torches.Length)
+            if (_puzzleFish.TargetIndex == _torches[_torchIndex].GetComponent<TorchWaypoints>().CorrectIndex)
             {
-                PuzzleCompleted();
-                _puzzleFish.UpdateWaypoints(_finalWaypoints.Waypoints);
+                _torchIndex++;
+                if (_torchIndex >= _torches.Length)
+                {
+                    PuzzleCompleted();
+                    _puzzleFish.UpdateWaypoints(_finalWaypoints.Waypoints, _torchIndex);
+                }
+                else
+                {
+                    _puzzleFish.MovementSpeed = _puzzleFish.MovementSpeed + 1f;
+                    _puzzleFish.UpdateWaypoints(_torches[_torchIndex].GetComponent<TorchWaypoints>().Waypoints, _torchIndex);
+                }
             }
             else
             {
-                _puzzleFish.MovementSpeed = _puzzleFish.MovementSpeed + 1f;
-                _puzzleFish.UpdateWaypoints(_torches[_torchIndex].GetComponent<TorchWaypoints>().Waypoints);
+                StartCoroutine(FailedAttemmpt());
             }
         }
-        else
-        {
-            StartCoroutine(FailedAttemmpt());
-        }
-        TorchWaypoints blownOutWaypoints = blownOut.GetComponent<TorchWaypoints>();
    }
 
     private IEnumerator FailedAttemmpt()

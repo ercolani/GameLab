@@ -19030,10 +19030,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7927658294689351784}
-  - component: {fileID: 7927658294689351786}
   - component: {fileID: 7927658294689351785}
   - component: {fileID: 1564283787856731923}
   - component: {fileID: 7984459082288725115}
+  - component: {fileID: 3334257428553131944}
   m_Layer: 0
   m_Name: PuzzleTorch
   m_TagString: PickUp
@@ -19050,26 +19050,13 @@ Transform:
   m_GameObject: {fileID: 7927658294689351783}
   m_LocalRotation: {x: 0, y: 0.34988037, z: 0, w: 0.9367944}
   m_LocalPosition: {x: -0.345, y: -0.336, z: 0.027}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalScale: {x: 15.892211, y: 15.892214, z: 15.892214}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1011114956668699693}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 40.96, z: 0}
---- !u!65 &7927658294689351786
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7927658294689351783}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.039185982, y: 0.061645877, z: 0.04842247}
-  m_Center: {x: -0.00065921975, y: 0.029283222, z: 0.00163843}
 --- !u!54 &7927658294689351785
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19099,7 +19086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particleEffect: {fileID: 0}
-  _IsInteractive: 1
+  _IsInteractive: 0
   _canBePickedUp: 1
 --- !u!114 &7984459082288725115
 MonoBehaviour:
@@ -19116,6 +19103,19 @@ MonoBehaviour:
   _flame: {fileID: 7126092969701503381}
   _flameActive: 1
   _canBeBlownOut: 1
+--- !u!65 &3334257428553131944
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927658294689351783}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013203979, y: 0.045549344, z: 0.012608361}
+  m_Center: {x: 0.00030604316, y: 0.02508895, z: 0.00022600245}
 --- !u!1001 &347491873581360663
 PrefabInstance:
   m_ObjectHideFlags: 0
