@@ -24,7 +24,8 @@ public class MatrixPuzzle : PuzzleManager
 
     protected override void OnEnable()
     {
-       
+        _deity.OnPuzzleToggled += TogglePuzzle;
+        TogglePuzzle(false);
     }
 
     protected override void OnDisable()
@@ -66,7 +67,7 @@ public class MatrixPuzzle : PuzzleManager
 
     public override void TogglePuzzle(bool state)
     {
-        throw new System.NotImplementedException();
+        // For each torch in each matrix disable their interactability and toggle their flame off.
     }
 }
 

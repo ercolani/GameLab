@@ -420,7 +420,7 @@ MonoBehaviour:
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 28.395073
+    m_Value: 51.956596
   aperture:
     m_OverrideState: 1
     m_Value: 15.4
@@ -494,7 +494,7 @@ MonoBehaviour:
     m_Value: {r: 0.254717, g: 0.06873316, b: 0, a: 0}
   center:
     m_OverrideState: 1
-    m_Value: {x: 0.5, y: 0.5}
+    m_Value: {x: 0.45, y: 0.5}
   intensity:
     m_OverrideState: 1
     m_Value: 0.2
