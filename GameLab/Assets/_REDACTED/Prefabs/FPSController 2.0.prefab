@@ -5189,6 +5189,7 @@ GameObject:
   - component: {fileID: 3981293114543799082}
   - component: {fileID: 3981293114543799081}
   - component: {fileID: 3981293114543799083}
+  - component: {fileID: 1941917202}
   m_Layer: 12
   m_Name: FPSController 2.0
   m_TagString: Player
@@ -5377,7 +5378,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 256
+  Priority: 1
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -5514,6 +5515,14 @@ MonoBehaviour:
   deityName: {fileID: 0}
   currentDeityInDialogue: {fileID: 0}
   dialogueInteraction: 101
+--- !u!81 &1941917202
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981293114543799263}
+  m_Enabled: 1
 --- !u!1001 &1230970942658181734
 PrefabInstance:
   m_ObjectHideFlags: 0
