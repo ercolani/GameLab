@@ -5257,6 +5257,7 @@ Transform:
   - {fileID: 6684480296951740500}
   - {fileID: 961248783660062462}
   - {fileID: 1054062901051641051}
+  - {fileID: 8497610620829299205}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5940,6 +5941,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6164482994493867245, guid: e7a7184ef5fcfe747b7a841415489539, type: 3}
   m_PrefabInstance: {fileID: 1750609469668499410}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2250854963084996774
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6563303038656774467}
+    m_Modifications:
+    - target: {fileID: 7696994259127681692, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_Name
+      value: DeityCandlePilar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.130924
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.887909
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.920044
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9983172
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.057989627
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -6.649
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+--- !u!95 &8497610620829299204 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7696994259127681698, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+  m_PrefabInstance: {fileID: 2250854963084996774}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8497610620829299205 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+  m_PrefabInstance: {fileID: 2250854963084996774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5269166795757211715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6011,6 +6079,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1578645406534796187, guid: 8f0fd07efff145145aa473542c838146, type: 3}
+      propertyPath: _candlePillar
+      value: 
+      objectReference: {fileID: 8497610620829299204}
     - target: {fileID: 1578645406534796187, guid: 8f0fd07efff145145aa473542c838146, type: 3}
       propertyPath: isFirstEncounter
       value: 1

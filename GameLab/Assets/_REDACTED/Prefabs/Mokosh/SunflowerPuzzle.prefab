@@ -68,6 +68,7 @@ Transform:
   - {fileID: 4722401868909799690}
   - {fileID: 5132837589803529153}
   - {fileID: 2695500332984400764}
+  - {fileID: 4883749311928129463}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -696,6 +697,73 @@ Transform:
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1638162815409588543, guid: 7498dd7165d2ac14ebf6c1e99c54fb74, type: 3}
   m_PrefabInstance: {fileID: 2703340522859740232}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2961019311584318740
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3171557733660556966}
+    m_Modifications:
+    - target: {fileID: 7696994259127681692, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_Name
+      value: DeityCandlePilar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 89.45903
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -122.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -63.519997
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9913599
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.13117044
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 15.074
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+--- !u!95 &4883749311928129462 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7696994259127681698, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+  m_PrefabInstance: {fileID: 2961019311584318740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4883749311928129463 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+  m_PrefabInstance: {fileID: 2961019311584318740}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2971226734773286412
 PrefabInstance:
@@ -1461,6 +1529,10 @@ PrefabInstance:
       propertyPath: vineMeshes.Array.data[21]
       value: 
       objectReference: {fileID: 5214134677512454400}
+    - target: {fileID: 8603881116302381247, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
+      propertyPath: _candlePillar
+      value: 
+      objectReference: {fileID: 4883749311928129462}
     - target: {fileID: 8603881116302381247, guid: d9d61584ae17fe241b0de6148b4cd124, type: 3}
       propertyPath: isFirstEncounter
       value: 1

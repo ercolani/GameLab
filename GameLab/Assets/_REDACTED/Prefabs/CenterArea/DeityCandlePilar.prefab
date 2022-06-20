@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7696994259127681692
+--- !u!1 &6910041980344932789
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7696994259127681699}
-  - component: {fileID: 7696994259127681703}
-  - component: {fileID: 7696994259127681696}
-  - component: {fileID: 7696994259127681697}
-  - component: {fileID: 7696994259127681698}
+  - component: {fileID: 4983920648125220912}
+  - component: {fileID: 1736202289529957071}
+  - component: {fileID: 220825941225008348}
+  - component: {fileID: 6809399291541614785}
   m_Layer: 10
-  m_Name: DeityCandlePilar
+  m_Name: Pilar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7696994259127681699
+--- !u!4 &4983920648125220912
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7696994259127681692}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.38, y: -4.93, z: 22.76}
-  m_LocalScale: {x: 1, y: 8, z: 1}
+  m_GameObject: {fileID: 6910041980344932789}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7696994260386230254}
-  m_Father: {fileID: 0}
+  - {fileID: 6241540700259833166}
+  m_Father: {fileID: 7696994259127681699}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7696994259127681703
+--- !u!33 &1736202289529957071
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7696994259127681692}
+  m_GameObject: {fileID: 6910041980344932789}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7696994259127681696
+--- !u!23 &220825941225008348
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7696994259127681692}
+  m_GameObject: {fileID: 6910041980344932789}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,19 +85,52 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7696994259127681697
+--- !u!65 &6809399291541614785
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7696994259127681692}
+  m_GameObject: {fileID: 6910041980344932789}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &7696994259127681692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7696994259127681699}
+  - component: {fileID: 7696994259127681698}
+  m_Layer: 10
+  m_Name: DeityCandlePilar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7696994259127681699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696994259127681692}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.38, y: -4.93, z: 22.76}
+  m_LocalScale: {x: 1, y: 8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4983920648125220912}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7696994259127681698
 Animator:
   serializedVersion: 4
@@ -119,12 +151,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &6446309853138257174
+--- !u!1001 &7294349139620659126
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 7696994259127681699}
+    m_TransformParent: {fileID: 4983920648125220912}
     m_Modifications:
     - target: {fileID: 3721332114984184568, guid: faeadaa6450077e4584741c07a0e8a61, type: 3}
       propertyPath: m_RootOrder
@@ -176,8 +208,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faeadaa6450077e4584741c07a0e8a61, type: 3}
---- !u!4 &7696994260386230254 stripped
+--- !u!4 &6241540700259833166 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3721332114984184568, guid: faeadaa6450077e4584741c07a0e8a61, type: 3}
-  m_PrefabInstance: {fileID: 6446309853138257174}
+  m_PrefabInstance: {fileID: 7294349139620659126}
   m_PrefabAsset: {fileID: 0}
