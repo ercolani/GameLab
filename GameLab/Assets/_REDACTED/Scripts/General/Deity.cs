@@ -127,12 +127,20 @@ public class Deity : MonoBehaviour
                 {
                     dialogueController.InitializeDialogue(firstEncounterIndex, new string[0]);
                     isFirstEncounter = false;
+                    if (deity.gameObject.name == "Mokosh")
+                    {
+                        GetComponent<GrowVines>().ToggleGrowingVines(true);
+                    }
                     ToggleDeityReadyForDialogue();
                 }
                 else if (isLastEncounter)
                 {
                     dialogueController.InitializeDialogue(lastEnconterIndex, new string[0]);
                     isLastEncounter = false;
+                    if (deity.gameObject.name == "Mokosh")
+                    {
+                        GetComponent<GrowVines>().ToggleGrowingVines(false);
+                    }
                     ToggleDeityReadyForDialogue();
                 }
             }
