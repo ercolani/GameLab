@@ -84,7 +84,7 @@ MonoBehaviour:
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 0.2
   clamp:
     m_OverrideState: 0
     m_Value: 0.05
@@ -420,7 +420,7 @@ MonoBehaviour:
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
-    m_Value: 57.280098
+    m_Value: 28.395073
   aperture:
     m_OverrideState: 1
     m_Value: 15.4
@@ -579,9 +579,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdfbdbb87d3286943a057f7791b43141, type: 3}
   m_Name: ChannelMixer
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   redOutRedIn:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 100
   redOutGreenIn:
     m_OverrideState: 0
