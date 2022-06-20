@@ -92,21 +92,18 @@ public class DialogueController : MonoBehaviour
         {
             yield return new WaitForSeconds(AudioController.InstanceLength - _subtitleDelay);
 
-           // if (currentNode.tags.Contains("TorchThought"))
-           // {
-                if (currentNode.tags.Contains("END"))
-                {
-                    _autoMode = false;
-                    ToggleDialogueState();
-                    OnActivatePuzzle?.Invoke();
-                }
-                else
-                {
-                    ToggleDialogueState();
-                    yield return new WaitForSeconds(_subtitleDelay);
-                    StartAutoVoiceLines();
-                }
-            //}
+            if (currentNode.tags.Contains("END"))
+            {
+                _autoMode = false;
+                ToggleDialogueState();
+                //OnActivatePuzzle?.Invoke();
+            }
+            else
+            {
+                ToggleDialogueState();
+                yield return new WaitForSeconds(_subtitleDelay);
+                StartAutoVoiceLines();
+            }
         }
     }
 

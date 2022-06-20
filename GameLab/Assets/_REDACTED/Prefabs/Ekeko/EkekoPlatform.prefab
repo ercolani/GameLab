@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5794137044555774983}
   - component: {fileID: 7478002214194295714}
   - component: {fileID: 4621753340914714472}
+  - component: {fileID: 5637802818004817308}
   m_Layer: 0
   m_Name: EkekoPlatform
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5637802818004817308
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6567154654157596349}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.782206, y: 3.1645694, z: 13.782206}
+  m_Center: {x: 0, y: 0.5822847, z: 0}

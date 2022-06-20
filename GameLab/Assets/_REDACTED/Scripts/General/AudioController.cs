@@ -49,8 +49,8 @@ public class AudioController : MonoBehaviour
 
     private void Start()
     {
-        PlaySound("Main Theme");
-        PlaySound("Forest Ambience");
+        //PlaySound("Main Theme");
+        //PlaySound("Forest Ambience");
     }
 
     /// <summary>
@@ -142,6 +142,17 @@ public class AudioController : MonoBehaviour
         instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{sound}");
         instance.start();
         instance.release();
+    }
+
+    public static void PlaySoundLooping(string sound)
+    {
+        instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{sound}");
+        instance.start();
+    }
+
+    public void PauseEvent()
+    {
+
     }
 }
 
