@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 0f83b31d94821a1478502d0d98bc3731
 ShaderImporter:
   externalObjects: {}
-  defaultTextures: []
+  defaultTextures:
+  - _VineAlbedo: {fileID: 8900000, guid: 7892b1b809c58e44197dbc0d9dbdd73d, type: 3}
+  - _VineNormal: {fileID: 8900000, guid: 9c0b4dde1e1ea534b82b83b07a0e7a86, type: 3}
+  - _VineMetallic: {fileID: 8900000, guid: d7ecd76984ab96f4f955eefd6f008efc, type: 3}
   nonModifiableTextures: []
   preprocessorOverride: 0
   userData: 

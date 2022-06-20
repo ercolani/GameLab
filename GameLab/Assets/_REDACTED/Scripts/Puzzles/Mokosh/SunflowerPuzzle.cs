@@ -11,6 +11,7 @@ public class SunflowerPuzzle : PuzzleManager
     [SerializeField]
     private int _currentSegment;
 
+
     private void Start()
     {
         TogglePuzzle(true);
@@ -49,7 +50,7 @@ public class SunflowerPuzzle : PuzzleManager
 
     public override void PuzzleCompleted()
     {
-        throw new System.NotImplementedException();
+        print("meow");
     }
 
     private void OnTorchToggled(FlameController torch)

@@ -20,15 +20,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _VineAlbedo:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8900000, guid: 7892b1b809c58e44197dbc0d9dbdd73d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _VineMetallic:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8900000, guid: d7ecd76984ab96f4f955eefd6f008efc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _VineNormal:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8900000, guid: 9c0b4dde1e1ea534b82b83b07a0e7a86, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -51,7 +51,7 @@ Material:
     m_Floats:
     - _AlphaCutoff: 0.5
     - _ClipThreshold: 1
-    - _Grow: 0
+    - _Grow: 0.495
     - _MeshScale: 0
     - _QueueControl: 0
     - _QueueOffset: 0

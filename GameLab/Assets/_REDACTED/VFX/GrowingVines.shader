@@ -10,9 +10,9 @@ Shader "REDACTED/GrowingVines"
 		_Grow("Grow", Range( 0 , 1)) = 0
 		_MeshScale("MeshScale", Float) = 0
 		_ClipThreshold("Clip Threshold", Float) = 1
-		_VineAlbedo("Vine Albedo", 2D) = "white" {}
-		_VineNormal("Vine Normal", 2D) = "white" {}
-		[ASEEnd]_VineMetallic("Vine Metallic", 2D) = "white" {}
+		_VineAlbedo("Vine Albedo", CUBE) = "white" {}
+		_VineNormal("Vine Normal", CUBE) = "white" {}
+		[ASEEnd]_VineMetallic("Vine Metallic", CUBE) = "white" {}
 		[HideInInspector] _texcoord( "", 2D ) = "white" {}
 
 		[HideInInspector]_QueueOffset("_QueueOffset", Float) = 0
@@ -288,9 +288,9 @@ Shader "REDACTED/GrowingVines"
 				float _TessMaxDisp;
 			#endif
 			CBUFFER_END
-			sampler2D _VineAlbedo;
-			sampler2D _VineNormal;
-			sampler2D _VineMetallic;
+			samplerCUBE _VineAlbedo;
+			samplerCUBE _VineNormal;
+			samplerCUBE _VineMetallic;
 
 
 			
@@ -304,10 +304,10 @@ Shader "REDACTED/GrowingVines"
 				float2 texCoord18 = v.texcoord.xy * float2( 1,1 ) + float2( 0,0 );
 				float temp_output_29_0 = saturate( ( texCoord18.y - (0.0 + (_Grow - 0.2) * (1.0 - 0.0) / (1.0 - 0.2)) ) );
 				
-				o.ase_texcoord8.xy = v.texcoord.xy;
+				o.ase_texcoord8.xyz = v.texcoord.xyz;
 				
 				//setting value to unused interpolator channels and avoid initialization warnings
-				o.ase_texcoord8.zw = 0;
+				o.ase_texcoord8.w = 0;
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					float3 defaultVertexValue = v.vertex.xyz;
 				#else
@@ -505,20 +505,23 @@ Shader "REDACTED/GrowingVines"
 	
 				WorldViewDirection = SafeNormalize( WorldViewDirection );
 
-				float2 uv_VineAlbedo = IN.ase_texcoord8.xy * _VineAlbedo_ST.xy + _VineAlbedo_ST.zw;
+				float3 uv_VineAlbedo3 = IN.ase_texcoord8.xyz;
+				uv_VineAlbedo3.xy = IN.ase_texcoord8.xyz.xy * _VineAlbedo_ST.xy + _VineAlbedo_ST.zw;
 				
-				float2 uv_VineNormal = IN.ase_texcoord8.xy * _VineNormal_ST.xy + _VineNormal_ST.zw;
+				float3 uv_VineNormal3 = IN.ase_texcoord8.xyz;
+				uv_VineNormal3.xy = IN.ase_texcoord8.xyz.xy * _VineNormal_ST.xy + _VineNormal_ST.zw;
 				
-				float2 uv_VineMetallic = IN.ase_texcoord8.xy * _VineMetallic_ST.xy + _VineMetallic_ST.zw;
+				float3 uv_VineMetallic3 = IN.ase_texcoord8.xyz;
+				uv_VineMetallic3.xy = IN.ase_texcoord8.xyz.xy * _VineMetallic_ST.xy + _VineMetallic_ST.zw;
 				
-				float2 texCoord18 = IN.ase_texcoord8.xy * float2( 1,1 ) + float2( 0,0 );
+				float2 texCoord18 = IN.ase_texcoord8.xyz.xy * float2( 1,1 ) + float2( 0,0 );
 				float temp_output_29_0 = saturate( ( texCoord18.y - (0.0 + (_Grow - 0.2) * (1.0 - 0.0) / (1.0 - 0.2)) ) );
 				
-				float3 Albedo = tex2D( _VineAlbedo, uv_VineAlbedo ).rgb;
-				float3 Normal = tex2D( _VineNormal, uv_VineNormal ).rgb;
+				float3 Albedo = texCUBE( _VineAlbedo, uv_VineAlbedo3 ).rgb;
+				float3 Normal = UnpackNormalScale( texCUBE( _VineNormal, uv_VineNormal3 ), 1.0f );
 				float3 Emission = 0;
 				float3 Specular = 0.5;
-				float Metallic = tex2D( _VineMetallic, uv_VineMetallic ).r;
+				float Metallic = texCUBE( _VineMetallic, uv_VineMetallic3 ).r;
 				float Smoothness = _Smoothness;
 				float Occlusion = 1;
 				float Alpha = ( 1.0 - temp_output_29_0 );
@@ -1386,7 +1389,7 @@ Shader "REDACTED/GrowingVines"
 				float _TessMaxDisp;
 			#endif
 			CBUFFER_END
-			sampler2D _VineAlbedo;
+			samplerCUBE _VineAlbedo;
 
 
 			
@@ -1400,10 +1403,10 @@ Shader "REDACTED/GrowingVines"
 				float2 texCoord18 = v.texcoord0.xy * float2( 1,1 ) + float2( 0,0 );
 				float temp_output_29_0 = saturate( ( texCoord18.y - (0.0 + (_Grow - 0.2) * (1.0 - 0.0) / (1.0 - 0.2)) ) );
 				
-				o.ase_texcoord4.xy = v.texcoord0.xy;
+				o.ase_texcoord4.xyz = v.texcoord0.xyz;
 				
 				//setting value to unused interpolator channels and avoid initialization warnings
-				o.ase_texcoord4.zw = 0;
+				o.ase_texcoord4.w = 0;
 				
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					float3 defaultVertexValue = v.vertex.xyz;
@@ -1549,13 +1552,14 @@ Shader "REDACTED/GrowingVines"
 					#endif
 				#endif
 
-				float2 uv_VineAlbedo = IN.ase_texcoord4.xy * _VineAlbedo_ST.xy + _VineAlbedo_ST.zw;
+				float3 uv_VineAlbedo3 = IN.ase_texcoord4.xyz;
+				uv_VineAlbedo3.xy = IN.ase_texcoord4.xyz.xy * _VineAlbedo_ST.xy + _VineAlbedo_ST.zw;
 				
-				float2 texCoord18 = IN.ase_texcoord4.xy * float2( 1,1 ) + float2( 0,0 );
+				float2 texCoord18 = IN.ase_texcoord4.xyz.xy * float2( 1,1 ) + float2( 0,0 );
 				float temp_output_29_0 = saturate( ( texCoord18.y - (0.0 + (_Grow - 0.2) * (1.0 - 0.0) / (1.0 - 0.2)) ) );
 				
 				
-				float3 Albedo = tex2D( _VineAlbedo, uv_VineAlbedo ).rgb;
+				float3 Albedo = texCUBE( _VineAlbedo, uv_VineAlbedo3 ).rgb;
 				float3 Emission = 0;
 				float Alpha = ( 1.0 - temp_output_29_0 );
 				float AlphaClipThreshold = _ClipThreshold;
@@ -1666,7 +1670,7 @@ Shader "REDACTED/GrowingVines"
 				float _TessMaxDisp;
 			#endif
 			CBUFFER_END
-			sampler2D _VineAlbedo;
+			samplerCUBE _VineAlbedo;
 
 
 			
@@ -1677,13 +1681,13 @@ Shader "REDACTED/GrowingVines"
 				UNITY_TRANSFER_INSTANCE_ID( v, o );
 				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO( o );
 
-				float2 texCoord18 = v.ase_texcoord.xy * float2( 1,1 ) + float2( 0,0 );
+				float2 texCoord18 = v.ase_texcoord.xyz * float2( 1,1 ) + float2( 0,0 );
 				float temp_output_29_0 = saturate( ( texCoord18.y - (0.0 + (_Grow - 0.2) * (1.0 - 0.0) / (1.0 - 0.2)) ) );
 				
-				o.ase_texcoord2.xy = v.ase_texcoord.xy;
+				o.ase_texcoord2.xyz = v.ase_texcoord.xyz;
 				
 				//setting value to unused interpolator channels and avoid initialization warnings
-				o.ase_texcoord2.zw = 0;
+				o.ase_texcoord2.w = 0;
 				
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					float3 defaultVertexValue = v.vertex.xyz;
@@ -1815,13 +1819,14 @@ Shader "REDACTED/GrowingVines"
 					#endif
 				#endif
 
-				float2 uv_VineAlbedo = IN.ase_texcoord2.xy * _VineAlbedo_ST.xy + _VineAlbedo_ST.zw;
+				float3 uv_VineAlbedo3 = IN.ase_texcoord2.xyz;
+				uv_VineAlbedo3.xy = IN.ase_texcoord2.xyz.xy * _VineAlbedo_ST.xy + _VineAlbedo_ST.zw;
 				
-				float2 texCoord18 = IN.ase_texcoord2.xy * float2( 1,1 ) + float2( 0,0 );
+				float2 texCoord18 = IN.ase_texcoord2.xyz.xy * float2( 1,1 ) + float2( 0,0 );
 				float temp_output_29_0 = saturate( ( texCoord18.y - (0.0 + (_Grow - 0.2) * (1.0 - 0.0) / (1.0 - 0.2)) ) );
 				
 				
-				float3 Albedo = tex2D( _VineAlbedo, uv_VineAlbedo ).rgb;
+				float3 Albedo = texCUBE( _VineAlbedo, uv_VineAlbedo3 ).rgb;
 				float Alpha = ( 1.0 - temp_output_29_0 );
 				float AlphaClipThreshold = _ClipThreshold;
 
@@ -1927,7 +1932,7 @@ Shader "REDACTED/GrowingVines"
 				float _TessMaxDisp;
 			#endif
 			CBUFFER_END
-			sampler2D _VineNormal;
+			samplerCUBE _VineNormal;
 
 
 			
@@ -1938,13 +1943,13 @@ Shader "REDACTED/GrowingVines"
 				UNITY_TRANSFER_INSTANCE_ID(v, o);
 				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-				float2 texCoord18 = v.ase_texcoord.xy * float2( 1,1 ) + float2( 0,0 );
+				float2 texCoord18 = v.ase_texcoord.xyz * float2( 1,1 ) + float2( 0,0 );
 				float temp_output_29_0 = saturate( ( texCoord18.y - (0.0 + (_Grow - 0.2) * (1.0 - 0.0) / (1.0 - 0.2)) ) );
 				
-				o.ase_texcoord4.xy = v.ase_texcoord.xy;
+				o.ase_texcoord4.xyz = v.ase_texcoord.xyz;
 				
 				//setting value to unused interpolator channels and avoid initialization warnings
-				o.ase_texcoord4.zw = 0;
+				o.ase_texcoord4.w = 0;
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					float3 defaultVertexValue = v.vertex.xyz;
 				#else
@@ -2093,12 +2098,13 @@ Shader "REDACTED/GrowingVines"
 					#endif
 				#endif
 
-				float2 uv_VineNormal = IN.ase_texcoord4.xy * _VineNormal_ST.xy + _VineNormal_ST.zw;
+				float3 uv_VineNormal3 = IN.ase_texcoord4.xyz;
+				uv_VineNormal3.xy = IN.ase_texcoord4.xyz.xy * _VineNormal_ST.xy + _VineNormal_ST.zw;
 				
-				float2 texCoord18 = IN.ase_texcoord4.xy * float2( 1,1 ) + float2( 0,0 );
+				float2 texCoord18 = IN.ase_texcoord4.xyz.xy * float2( 1,1 ) + float2( 0,0 );
 				float temp_output_29_0 = saturate( ( texCoord18.y - (0.0 + (_Grow - 0.2) * (1.0 - 0.0) / (1.0 - 0.2)) ) );
 				
-				float3 Normal = tex2D( _VineNormal, uv_VineNormal ).rgb;
+				float3 Normal = UnpackNormalScale( texCUBE( _VineNormal, uv_VineNormal3 ), 1.0f );
 				float Alpha = ( 1.0 - temp_output_29_0 );
 				float AlphaClipThreshold = _ClipThreshold;
 				#ifdef ASE_DEPTH_WRITE_ON
@@ -2266,9 +2272,9 @@ Shader "REDACTED/GrowingVines"
 				float _TessMaxDisp;
 			#endif
 			CBUFFER_END
-			sampler2D _VineAlbedo;
-			sampler2D _VineNormal;
-			sampler2D _VineMetallic;
+			samplerCUBE _VineAlbedo;
+			samplerCUBE _VineNormal;
+			samplerCUBE _VineMetallic;
 
 
 			
@@ -2282,10 +2288,10 @@ Shader "REDACTED/GrowingVines"
 				float2 texCoord18 = v.texcoord.xy * float2( 1,1 ) + float2( 0,0 );
 				float temp_output_29_0 = saturate( ( texCoord18.y - (0.0 + (_Grow - 0.2) * (1.0 - 0.0) / (1.0 - 0.2)) ) );
 				
-				o.ase_texcoord8.xy = v.texcoord.xy;
+				o.ase_texcoord8.xyz = v.texcoord.xyz;
 				
 				//setting value to unused interpolator channels and avoid initialization warnings
-				o.ase_texcoord8.zw = 0;
+				o.ase_texcoord8.w = 0;
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					float3 defaultVertexValue = v.vertex.xyz;
 				#else
@@ -2481,20 +2487,23 @@ Shader "REDACTED/GrowingVines"
 	
 				WorldViewDirection = SafeNormalize( WorldViewDirection );
 
-				float2 uv_VineAlbedo = IN.ase_texcoord8.xy * _VineAlbedo_ST.xy + _VineAlbedo_ST.zw;
+				float3 uv_VineAlbedo3 = IN.ase_texcoord8.xyz;
+				uv_VineAlbedo3.xy = IN.ase_texcoord8.xyz.xy * _VineAlbedo_ST.xy + _VineAlbedo_ST.zw;
 				
-				float2 uv_VineNormal = IN.ase_texcoord8.xy * _VineNormal_ST.xy + _VineNormal_ST.zw;
+				float3 uv_VineNormal3 = IN.ase_texcoord8.xyz;
+				uv_VineNormal3.xy = IN.ase_texcoord8.xyz.xy * _VineNormal_ST.xy + _VineNormal_ST.zw;
 				
-				float2 uv_VineMetallic = IN.ase_texcoord8.xy * _VineMetallic_ST.xy + _VineMetallic_ST.zw;
+				float3 uv_VineMetallic3 = IN.ase_texcoord8.xyz;
+				uv_VineMetallic3.xy = IN.ase_texcoord8.xyz.xy * _VineMetallic_ST.xy + _VineMetallic_ST.zw;
 				
-				float2 texCoord18 = IN.ase_texcoord8.xy * float2( 1,1 ) + float2( 0,0 );
+				float2 texCoord18 = IN.ase_texcoord8.xyz.xy * float2( 1,1 ) + float2( 0,0 );
 				float temp_output_29_0 = saturate( ( texCoord18.y - (0.0 + (_Grow - 0.2) * (1.0 - 0.0) / (1.0 - 0.2)) ) );
 				
-				float3 Albedo = tex2D( _VineAlbedo, uv_VineAlbedo ).rgb;
-				float3 Normal = tex2D( _VineNormal, uv_VineNormal ).rgb;
+				float3 Albedo = texCUBE( _VineAlbedo, uv_VineAlbedo3 ).rgb;
+				float3 Normal = UnpackNormalScale( texCUBE( _VineNormal, uv_VineNormal3 ), 1.0f );
 				float3 Emission = 0;
 				float3 Specular = 0.5;
-				float Metallic = tex2D( _VineMetallic, uv_VineMetallic ).r;
+				float Metallic = texCUBE( _VineMetallic, uv_VineMetallic3 ).r;
 				float Smoothness = _Smoothness;
 				float Occlusion = 1;
 				float Alpha = ( 1.0 - temp_output_29_0 );
@@ -3082,7 +3091,7 @@ Shader "REDACTED/GrowingVines"
 }
 /*ASEBEGIN
 Version=18935
-0;0;1920;1019;2196.755;-328.732;1.100188;True;False
+7;46;1920;973;1336.924;606.4741;1;True;False
 Node;AmplifyShaderEditor.TextureCoordinatesNode;18;-1764.824,526.4529;Inherit;True;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;27;-1608.858,814.5029;Inherit;False;Property;_Grow;Grow;1;0;Create;True;0;0;0;False;0;False;0;1;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.BreakToComponentsNode;22;-1431.829,555.9399;Inherit;False;FLOAT2;1;0;FLOAT2;0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15
@@ -3094,15 +3103,16 @@ Node;AmplifyShaderEditor.NormalVertexDataNode;16;-1195.705,147.7377;Inherit;Fals
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;30;-717.4431,495.5043;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;17;-881.7048,189.7377;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.PosVertexDataNode;13;-1183.814,-82.55;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;37;-429.5389,-363.4669;Inherit;True;Property;_VineNormal;Vine Normal;5;0;Create;True;0;0;0;False;0;False;-1;9c0b4dde1e1ea534b82b83b07a0e7a86;None;True;0;False;white;Auto;True;Object;-1;Auto;Cube;8;0;SAMPLER2D;;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;36;-428.5392,-572.9667;Inherit;True;Property;_VineAlbedo;Vine Albedo;4;0;Create;True;0;0;0;False;0;False;-1;7892b1b809c58e44197dbc0d9dbdd73d;None;True;0;False;white;Auto;False;Object;-1;Auto;Cube;8;0;SAMPLER2D;;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.OneMinusNode;32;-522.0971,588.7246;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.BreakToComponentsNode;24;-2.829346,-134.0601;Inherit;False;FLOAT;1;0;FLOAT;0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15
-Node;AmplifyShaderEditor.SamplerNode;36;-428.5392,-572.9667;Inherit;True;Property;_VineAlbedo;Vine Albedo;4;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;12;-329.0136,64.15021;Inherit;False;Property;_Smoothness;Smoothness;0;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.BreakToComponentsNode;23;-546.8293,342.9399;Inherit;False;FLOAT;1;0;FLOAT;0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15
-Node;AmplifyShaderEditor.SamplerNode;37;-429.5389,-363.4669;Inherit;True;Property;_VineNormal;Vine Normal;5;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;38;-432.894,-154.1217;Inherit;True;Property;_VineMetallic;Vine Metallic;6;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;38;-432.894,-154.1217;Inherit;True;Property;_VineMetallic;Vine Metallic;6;0;Create;True;0;0;0;False;0;False;-1;d7ecd76984ab96f4f955eefd6f008efc;None;True;0;False;white;Auto;False;Object;-1;Auto;Cube;8;0;SAMPLER2D;;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SimpleAddOpNode;15;-634.2139,72.4501;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.RangedFloatNode;33;-325.1538,232.2097;Inherit;False;Property;_ClipThreshold;Clip Threshold;3;0;Create;True;0;0;0;False;0;False;1;1;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;12;-329.0136,64.15021;Inherit;False;Property;_Smoothness;Smoothness;0;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;1;0,0;Float;False;True;-1;2;UnityEditor.ShaderGraphLitGUI;0;2;REDACTED/GrowingVines;94348b07e5e8bab40bd6c8a1e3df54cd;True;Forward;0;1;Forward;19;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;2;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;2;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;True;1;1;False;-1;0;False;-1;1;1;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;True;True;True;True;0;False;-1;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;1;LightMode=UniversalForward;False;False;0;Hidden/InternalErrorShader;0;0;Standard;40;Workflow;1;0;Surface;0;0;  Refraction Model;0;0;  Blend;0;0;Two Sided;0;637893395710629288;Fragment Normal Space,InvertActionOnDeselection;0;0;Transmission;0;0;  Transmission Shadow;0.5,False,-1;0;Translucency;0;0;  Translucency Strength;1,False,-1;0;  Normal Distortion;0.5,False,-1;0;  Scattering;2,False,-1;0;  Direct;0.9,False,-1;0;  Ambient;0.1,False,-1;0;  Shadow;0.5,False,-1;0;Cast Shadows;1;0;  Use Shadow Threshold;0;0;Receive Shadows;1;0;GPU Instancing;1;0;LOD CrossFade;1;0;Built-in Fog;1;0;_FinalColorxAlpha;0;0;Meta Pass;1;0;Override Baked GI;0;0;Extra Pre Pass;0;0;DOTS Instancing;0;0;Tessellation;0;0;  Phong;0;0;  Strength;0.5,False,-1;0;  Type;0;0;  Tess;16,False,-1;0;  Min;10,False,-1;0;  Max;25,False,-1;0;  Edge Length;16,False,-1;0;  Max Displacement;25,False,-1;0;Write Depth;0;0;  Early Z;0;0;Vertex Position,InvertActionOnDeselection;1;0;Debug Display;0;0;Clear Coat;0;0;0;10;False;True;True;True;True;True;True;True;True;True;False;;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;2;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraphLitGUI;0;2;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;ShadowCaster;0;2;ShadowCaster;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;2;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;False;False;True;False;False;False;False;0;False;-1;False;False;False;False;False;False;False;False;False;True;1;False;-1;True;3;False;-1;False;True;1;LightMode=ShadowCaster;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;4;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraphLitGUI;0;2;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;Meta;0;4;Meta;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;2;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=Meta;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;5;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraphLitGUI;0;2;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;Universal2D;0;5;Universal2D;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;2;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;True;1;1;False;-1;0;False;-1;1;1;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;True;True;True;True;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=Universal2D;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
@@ -3111,7 +3121,6 @@ Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;3;0,0;Float;False;False;-1;
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;8;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraphLitGUI;0;2;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;SceneSelectionPass;0;8;SceneSelectionPass;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;2;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;2;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=SceneSelectionPass;False;True;4;d3d11;glcore;gles;gles3;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraphLitGUI;0;2;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;ExtraPrePass;0;0;ExtraPrePass;5;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;2;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;True;1;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;True;True;True;True;0;False;-1;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;0;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;7;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraphLitGUI;0;2;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;GBuffer;0;7;GBuffer;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;2;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;True;1;1;False;-1;0;False;-1;1;1;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;True;True;True;True;0;False;-1;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;1;LightMode=UniversalGBuffer;False;False;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;1;0,0;Float;False;True;-1;2;UnityEditor.ShaderGraphLitGUI;0;2;REDACTED/GrowingVines;94348b07e5e8bab40bd6c8a1e3df54cd;True;Forward;0;1;Forward;19;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;2;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;2;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;True;1;1;False;-1;0;False;-1;1;1;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;True;True;True;True;0;False;-1;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;False;False;False;True;1;LightMode=UniversalForward;False;False;0;Hidden/InternalErrorShader;0;0;Standard;40;Workflow;1;0;Surface;0;0;  Refraction Model;0;0;  Blend;0;0;Two Sided;0;637893395710629288;Fragment Normal Space,InvertActionOnDeselection;0;0;Transmission;0;0;  Transmission Shadow;0.5,False,-1;0;Translucency;0;0;  Translucency Strength;1,False,-1;0;  Normal Distortion;0.5,False,-1;0;  Scattering;2,False,-1;0;  Direct;0.9,False,-1;0;  Ambient;0.1,False,-1;0;  Shadow;0.5,False,-1;0;Cast Shadows;1;0;  Use Shadow Threshold;0;0;Receive Shadows;1;0;GPU Instancing;1;0;LOD CrossFade;1;0;Built-in Fog;1;0;_FinalColorxAlpha;0;0;Meta Pass;1;0;Override Baked GI;0;0;Extra Pre Pass;0;0;DOTS Instancing;0;0;Tessellation;0;0;  Phong;0;0;  Strength;0.5,False,-1;0;  Type;0;0;  Tess;16,False,-1;0;  Min;10,False,-1;0;  Max;25,False,-1;0;  Edge Length;16,False,-1;0;  Max Displacement;25,False,-1;0;Write Depth;0;0;  Early Z;0;0;Vertex Position,InvertActionOnDeselection;1;0;Debug Display;0;0;Clear Coat;0;0;0;10;False;True;True;True;True;True;True;True;True;True;False;;False;0
 Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;9;0,0;Float;False;False;-1;2;UnityEditor.ShaderGraphLitGUI;0;2;New Amplify Shader;94348b07e5e8bab40bd6c8a1e3df54cd;True;ScenePickingPass;0;9;ScenePickingPass;0;False;False;False;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;False;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;3;RenderPipeline=UniversalPipeline;RenderType=Opaque=RenderType;Queue=Geometry=Queue=0;True;2;True;17;d3d9;d3d11;glcore;gles;gles3;metal;vulkan;xbox360;xboxone;xboxseries;ps4;playstation;psp2;n3ds;wiiu;switch;nomrt;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=Picking;False;True;4;d3d11;glcore;gles;gles3;0;Hidden/InternalErrorShader;0;0;Standard;0;False;0
 WireConnection;22;0;18;0
 WireConnection;35;0;27;0
@@ -3133,4 +3142,4 @@ WireConnection;1;6;32;0
 WireConnection;1;7;33;0
 WireConnection;1;8;15;0
 ASEEND*/
-//CHKSM=FD270A60E724EF438D08DCEC4A5CA3435764285E
+//CHKSM=53EFC786E65FF6EC385C132038BC902FDC72120C

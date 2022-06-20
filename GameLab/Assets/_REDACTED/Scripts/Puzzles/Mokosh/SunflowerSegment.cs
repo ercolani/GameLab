@@ -27,7 +27,9 @@ public class SunflowerSegment : MonoBehaviour
     private bool rotating;
 
     private bool _finalCorrectTorch;
-    
+
+    private bool _lastTorch;
+
     [SerializeField]
     private int _blownOutCount;
 
@@ -37,23 +39,36 @@ public class SunflowerSegment : MonoBehaviour
     private void Start()
     {
         _sunflowerPreviousRotationY = _sunflowerRotationOrigin;
+        Vector3 originalRotation = new Vector3(_sunflower.transform.eulerAngles.x, _sunflowerRotationOrigin, _sunflower.transform.eulerAngles.z);
+        _sunflower.transform.eulerAngles = originalRotation;
     }
 
-    public void ResetSegment()
+    private IEnumerator ResetSegment()
     {
+        yield return new WaitForSeconds(1f);
         for (int i = 0; i < _segmentTorches.Count; i++)
         {
             _segmentTorches[i].ToggleFlame(true);
         }
         Vector3 originalRotation = new Vector3(_sunflower.transform.eulerAngles.x, _sunflowerRotationOrigin, _sunflower.transform.eulerAngles.z);
         _sunflower.transform.eulerAngles = originalRotation;
+        _blownOutCount = 0;
+        _lastTorch = false;
+        _sunflowerPreviousRotationY = _sunflowerRotationOrigin;
     }
 
     public void RotateSunflower(FlameController torch)
     {
         if (_finalCorrectTorch)
         {
+            _blownOutCount = 0;
             OnSegmentCompleted?.Invoke();
+            return;
+        }
+
+        if (_lastTorch)
+        {
+            StartCoroutine(ResetSegment());
             return;
         }
 
@@ -95,17 +110,10 @@ public class SunflowerSegment : MonoBehaviour
 
         FixSunflowerRotation(eulerAngles.y);
         rotating = false;
-        CheckSunflowerState();
     }
 
     private void CheckSunflowerState()
     {
-        if (_blownOutCount == _segmentTorches.Count)
-        {
-            ResetSegment();
-            return;
-        }
-
         int torchesLeft = 0;
 
         foreach (FlameController segmentTorch in _segmentTorches)
@@ -118,6 +126,7 @@ public class SunflowerSegment : MonoBehaviour
 
         if (torchesLeft == 1)
         {
+            _lastTorch = true;
             Vector3 targetRotation = new Vector3(_sunflower.transform.eulerAngles.x, _sunflowerRotationDestination, _sunflower.transform.eulerAngles.z);
             if (_sunflower.transform.eulerAngles == targetRotation)
             {
@@ -131,5 +140,6 @@ public class SunflowerSegment : MonoBehaviour
         float realTargetRotation = value + _sunflowerPreviousRotationY;
         _sunflowerPreviousRotationY = realTargetRotation;
         _sunflower.transform.eulerAngles = new Vector3(_sunflower.transform.eulerAngles.x, realTargetRotation, _sunflower.transform.eulerAngles.x);
+        CheckSunflowerState();
     }
 }
