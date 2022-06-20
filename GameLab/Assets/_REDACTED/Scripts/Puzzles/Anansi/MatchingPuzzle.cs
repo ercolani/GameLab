@@ -213,6 +213,7 @@ public class MatchingPuzzle : PuzzleManager
         if (_glowIndex == _symbolGlowOrder.Count)
         {
             _glowIndex = 0;
+            RestartLoop();
         }
     }
 
@@ -245,5 +246,11 @@ public class MatchingPuzzle : PuzzleManager
             torch.GetComponent<InteractiveObject>().SetInteractivity(state);
         }
         Debug.LogError(state);
+    }
+
+    private void RestartLoop()
+    {
+        CancelInvoke("StartSymbolGlows");
+        InvokeRepeating("StartSymbolGlows", 3f, _symbolInvokeTime);
     }
 }

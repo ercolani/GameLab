@@ -727,7 +727,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: -0.014
+      scalar: -0.2
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -5272,7 +5272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8abae5b23ecbef47818020e3a0c6178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _resetSwitch: {fileID: 0}
   _deity: {fileID: 6699015293092189144}
   _torches:
   - {fileID: 2669153995186330815}

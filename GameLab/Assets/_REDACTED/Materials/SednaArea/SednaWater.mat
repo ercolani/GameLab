@@ -255,7 +255,7 @@ Material:
     - _LinkDetailsWithBase: 1
     - _MainCat: 1
     - _MainMetallicValue: 0
-    - _MainNormalValue: 0
+    - _MainNormalValue: -0.99
     - _MainOcclusionValue: 1
     - _MainSmoothnessValue: 1
     - _MaterialID: 1
