@@ -676,7 +676,7 @@ Why are you wasting your time on this?!
 [[]]
 
 :: ma_fe_01 [START] {"position":"5288,104","size":"100,100"}
-Aw, what a sweet dear soul that has stumbled into my arms.
+Aw, what a sweet dear soul that has s   tumbled into my arms.
 [[ma_fe_02]] 
 
 :: ma_fe_02 {"position":"5288,254","size":"100,100"}
@@ -713,12 +713,12 @@ Now then, go ahead and get acquainted with my precious flowers.
 
 :: ma_fe_10 [END] {"position":"5285,1502","size":"100,100"}
 I'm certain you will get along.
-
+  
 :: ma_le_01 [START] {"position":"5489,103","size":"100,100"}
 I killed them... I killed them. I killed them. I killed them. 
 [[ma_le_02]] 
-
-:: ma_le_02 {"position":"5488,253","size":"100,100"}
+  
+:: ma_le_02 {"position":"5488,253","size":"100,100"}  
 I killed my beloved children!
 [[ma_le_03]]
 
@@ -735,13 +735,13 @@ The precious the little children.
 [[ma_le_06]]
 
 :: ma_le_06 {"position":"5488,853","size":"100,100"}
-It's all my fault.
+It's all my fault. 
 [[ma_le_07]]
 
 :: ma_le_07 {"position":"5488,1003","size":"100,100"}
 Child killer.
 [[ma_le_08]]
-
+ 
 :: ma_le_08 {"position":"5488,1153","size":"100,100"}
 Murderer murderer murderer murderer murderer murderer murderer
 [[ma_le_09]]
