@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3721332114984184548}
   m_Layer: 10
   m_Name: DeityCandleHolder
-  m_TagString: Untagged
+  m_TagString: Holder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,9 +28,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3721332114984184569}
-  m_LocalRotation: {x: 4.3655743e-10, y: -0.34413585, z: 3.469447e-18, w: 0.9389199}
+  m_LocalRotation: {x: 0, y: -0.344135, z: 0, w: 0.9389202}
   m_LocalPosition: {x: 15.094, y: -5.263, z: 49.565}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3721332115570616190}
