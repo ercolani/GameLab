@@ -6,23 +6,10 @@ using UnityEngine;
 public class ItemGlow : MonoBehaviour
 {
     /// <summary>
-    /// Holds the renderer component. 
-    /// </summary>
-    [SerializeField]
-    private Renderer _renderer; 
-
-    /// <summary>
-    /// Holds the material of the object.
-    /// </summary>
-    [SerializeField]
-    private Material _material;
-
-    /// <summary>
     /// Holds the emission color.
     /// </summary>
     [SerializeField]
     private Color _emissionColor;
-
 
     /// <summary>
     /// <summary>
@@ -64,6 +51,16 @@ public class ItemGlow : MonoBehaviour
     /// A getter for _alreadyGlowing.
     /// </summary>
     public bool AlreadyGlowing => _alreadyGlowing;
+
+    /// <summary>
+    /// Holds the renderer component. 
+    /// </summary>
+    private Renderer _renderer;
+
+    /// <summary>
+    /// Holds the material of the object.
+    /// </summary>
+    private Material _material;
 
     private void Awake()
     {

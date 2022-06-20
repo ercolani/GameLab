@@ -27,6 +27,12 @@ public class MatchingPuzzle : PuzzleManager
     private List<ItemGlow> _symbolGlowOrder = new List<ItemGlow>();
 
     /// <summary>
+    /// The order in which the symbols glow up.
+    /// </summary>
+    [SerializeField]
+    private List<ItemGlow> _outlineGlows = new List<ItemGlow>();
+
+    /// <summary>
     /// The list of symbols on the stools.
     /// </summary>
     [SerializeField]
@@ -189,15 +195,18 @@ public class MatchingPuzzle : PuzzleManager
         deity.ToggleDeityReadyForDialogue();
     }
 
+    /// <summary>
+    /// Glows the symbols in order.
+    /// </summary>
     private void StartSymbolGlows()
-    {
-       
+    {  
         if (_glowIndex == 0)
         {
             _symbolGlowOrder[_glowIndex].SetAlternateEmissionColor();
         }
 
         StartCoroutine(_symbolGlowOrder[_glowIndex].ToggleCoroutine(true, false, 0f));
+        StartCoroutine(_outlineGlows[_glowIndex].ToggleCoroutine(true, false, 0f));
 
         _glowIndex++;
 

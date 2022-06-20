@@ -72,6 +72,12 @@ public class Deity : MonoBehaviour
     private bool isReadyForDialogue;
 
     /// <summary>
+    /// The pillar where the candle for the deity is placed.
+    /// </summary>
+    [SerializeField]
+    private Animator _candlePillar;
+
+    /// <summary>
     /// A getter isReadyForDialogue.
     /// </summary>
     public bool IsReadyForDialogue => isReadyForDialogue;
@@ -166,5 +172,10 @@ public class Deity : MonoBehaviour
     public void ToggleDeityReadyForDialogue() 
     {
         isReadyForDialogue = !isReadyForDialogue;
+    }
+
+    private void LowerCandle()
+    {
+        _candlePillar.Play("LowerCandle");
     }
 }
