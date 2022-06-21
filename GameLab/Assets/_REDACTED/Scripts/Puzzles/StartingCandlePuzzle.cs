@@ -51,7 +51,7 @@ public class StartingCandlePuzzle : MonoBehaviour
     private IEnumerator OpenSeaAnimation()
     {
         _waterObject.Play("LowerWater");
-        yield return new WaitForEndOfFrame();
-        //_waterObject.Play("RiseWater");
+        yield return new WaitForSeconds(60);
+        _waterObject.Play("RiseWater");
     }
 }
