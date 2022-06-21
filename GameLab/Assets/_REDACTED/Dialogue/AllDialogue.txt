@@ -517,7 +517,7 @@ I hope you will discover that for yourself, too.
 Take this. I will not be needing it anymore.
 [[sa_le_14]]
 
-:: sa_le_14 [END] {"position":"3792,2056","size":"100,100"}
+:: sa_le_14 [END] {"position":"3792,2056", "size":"100,100"}
 We will see you when you're ready.
 
 :: sa_tt_01 [TorchThought] {"position":"4000,98","size":"100,100"}
