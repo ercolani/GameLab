@@ -47,7 +47,10 @@ public class PlayerBlowOut : MonoBehaviour
     {
         AudioController.PlaySound("Blow");
         StartCoroutine(BlowOnCooldown());
-
+        if (_blowCollider._currentTorch == null)
+        {
+            return;
+        }
         if (_blowCollider._currentTorch.FlameActive)
         {
             yield return new WaitForSeconds(_blowDelay);
