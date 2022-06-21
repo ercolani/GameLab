@@ -249,7 +249,6 @@ public class MatchingPuzzle : PuzzleManager
             torch.ForceToggleFlame(state);
             torch.GetComponent<InteractiveObject>().SetInteractivity(state);
         }
-        Debug.LogError(state);
     }
 
     private void RestartLoop()

@@ -47,26 +47,34 @@ public class FishPuzzle : PuzzleManager
 
    private void OnBlownOutTorch(FlameController blownOut)
    {
-        if (_puzzleFish.CurrentTorchIndex == _torchIndex)
-        {
-            if (_puzzleFish.TargetIndex == _torches[_torchIndex].GetComponent<TorchWaypoints>().CorrectIndex)
+        if (blownOut.gameObject == _torches[_torchIndex].gameObject) {
+            if (_puzzleFish.CurrentTorchIndex == _torchIndex)
             {
-                _torchIndex++;
-                if (_torchIndex >= _torches.Length)
+                Debug.LogError("Blown Out torch equal torch index");
+                if (_puzzleFish.TargetIndex == _torches[_torchIndex].GetComponent<TorchWaypoints>().CorrectIndex)
                 {
-                    PuzzleCompleted();
-                    _puzzleFish.UpdateWaypoints(_finalWaypoints.Waypoints, _torchIndex);
+                    Debug.LogError("Blown Out torch equal correct index");
+                    _torchIndex++;
+                    if (_torchIndex >= _torches.Length)
+                    {
+                        PuzzleCompleted();
+                        _puzzleFish.UpdateWaypoints(_finalWaypoints.Waypoints, _torchIndex);
+                    }
+                    else
+                    {
+                        _puzzleFish.UpdateWaypoints(_torches[_torchIndex].GetComponent<TorchWaypoints>().Waypoints, _torchIndex);
+                        _puzzleFish.MovementSpeed = _puzzleFish.MovementSpeed + 1f;
+                    }
                 }
                 else
                 {
-                    _puzzleFish.UpdateWaypoints(_torches[_torchIndex].GetComponent<TorchWaypoints>().Waypoints, _torchIndex);
-                    _puzzleFish.MovementSpeed = _puzzleFish.MovementSpeed + 1f;
+                    StartCoroutine(FailedAttemmpt());
                 }
             }
-            else
-            {
-                StartCoroutine(FailedAttemmpt());
-            }
+        }
+        else
+        {
+            blownOut.ForceToggleFlame(true);
         }
    }
 
@@ -74,7 +82,7 @@ public class FishPuzzle : PuzzleManager
     {
         _puzzleFish.FollowWaypoints = false;
         yield return new WaitForSeconds(5f);
-        _torches[_torchIndex].ToggleFlame(true);
+        _torches[_torchIndex].ForceToggleFlame(true);
         _puzzleFish.FollowWaypoints = true;
     }
 
@@ -83,7 +91,7 @@ public class FishPuzzle : PuzzleManager
         _puzzleFish.gameObject.SetActive(state);
         foreach (FlameController torch in _torches)
         {
-            torch.ToggleFlame(state);
+            torch.ForceToggleFlame(state);
         }
     }
 }
