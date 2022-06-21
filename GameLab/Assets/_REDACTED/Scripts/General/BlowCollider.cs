@@ -6,15 +6,26 @@ public class BlowCollider : MonoBehaviour
 {
     public FlameController _currentTorch;
 
-    public void OnCollisionStay(Collision collisionInfo)
+    public void OnTriggerStay(Collider collision)
     {
-        if (collisionInfo.gameObject.GetComponent<FlameController>() != null)
+        if (collision.gameObject.tag == "Torch" || collision.gameObject.tag == "PickUp")
         {
-            _currentTorch = collisionInfo.gameObject.GetComponent<FlameController>();
+            if (collision.gameObject.GetComponent<FlameController>() != null)
+            {
+                Debug.LogError("Flame");
+                _currentTorch = collision.gameObject.GetComponent<FlameController>();
+            }
         }
-        else
+    }
+
+    public void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.tag == "Torch" || collision.gameObject.tag == "PickUp")
         {
-            _currentTorch = null;
+            if (collision.gameObject.GetComponent<FlameController>() != null)
+            {
+                _currentTorch = null;
+            }
         }
     }
 }
