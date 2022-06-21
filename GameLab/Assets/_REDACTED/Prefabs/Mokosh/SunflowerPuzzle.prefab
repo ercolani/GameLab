@@ -715,7 +715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 89.45903
+      value: 100.45
       objectReference: {fileID: 0}
     - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -723,7 +723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -63.519997
+      value: -72.53
       objectReference: {fileID: 0}
     - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1882,6 +1882,22 @@ PrefabInstance:
     - target: {fileID: 164178983551713114, guid: 0446fa768c830da4e9254e9a20e6ba1d, type: 3}
       propertyPath: m_Name
       value: SunflowerSegment 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304015822389218868, guid: 0446fa768c830da4e9254e9a20e6ba1d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304015822389218868, guid: 0446fa768c830da4e9254e9a20e6ba1d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304015822389218868, guid: 0446fa768c830da4e9254e9a20e6ba1d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4304015822389218868, guid: 0446fa768c830da4e9254e9a20e6ba1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5829490697102154456, guid: 0446fa768c830da4e9254e9a20e6ba1d, type: 3}
       propertyPath: m_RootOrder

@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using static AudioController;
 
 public class Matrix : MonoBehaviour
 {
     [SerializeField]
-    private List<FlameController> _matrixTorches;
+    public List<FlameController> _matrixTorches;
 
     [SerializeField]
     private List<bool> _solution;
@@ -51,7 +52,7 @@ public class Matrix : MonoBehaviour
         OpenFigurineBox();
     }
 
-    private void ResetMatrix()
+    public void ResetMatrix()
     {
         StartCoroutine(RelightTorchesCoroutine());
     }
@@ -84,6 +85,7 @@ public class Matrix : MonoBehaviour
     private void OpenFigurineBox()
     {
         _figurineSegment.box.PlayAnimation("WoodenBox");
+        PlaySound("Chest");
         _figurineSegment._figurine.SetInteractivity(true);
     }
 

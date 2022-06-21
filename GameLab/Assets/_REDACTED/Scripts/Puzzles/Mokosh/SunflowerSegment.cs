@@ -43,7 +43,7 @@ public class SunflowerSegment : MonoBehaviour
         _sunflower.transform.eulerAngles = originalRotation;
     }
 
-    private IEnumerator ResetSegment()
+    public IEnumerator ResetSegment()
     {
         yield return new WaitForSeconds(1f);
         for (int i = 0; i < _segmentTorches.Count; i++)

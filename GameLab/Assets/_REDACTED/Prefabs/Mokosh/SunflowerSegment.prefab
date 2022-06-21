@@ -79,6 +79,7 @@ MonoBehaviour:
   maxGrowth: 0.97
   vineGrowMaterials: []
   isFullyGrown: 0
+  _vineObject: {fileID: 0}
 --- !u!1 &5967371214477264070
 GameObject:
   m_ObjectHideFlags: 0

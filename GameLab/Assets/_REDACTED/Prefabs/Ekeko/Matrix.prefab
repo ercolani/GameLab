@@ -111,6 +111,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1051705944363939100}
     m_Modifications:
+    - target: {fileID: 2623509290235546831, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
+      propertyPath: _flameActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2639777612477233363, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
       propertyPath: m_Name
       value: PuzzleTorchEkeko
@@ -184,6 +188,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1051705944363939100}
     m_Modifications:
+    - target: {fileID: 2623509290235546831, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
+      propertyPath: _flameActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2639777612477233363, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
       propertyPath: m_Name
       value: PuzzleTorchEkeko (2)
@@ -257,6 +265,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1051705944363939100}
     m_Modifications:
+    - target: {fileID: 2623509290235546831, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
+      propertyPath: _flameActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2639777612477233363, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
       propertyPath: m_Name
       value: PuzzleTorchEkeko (7)
@@ -330,6 +342,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1051705944363939100}
     m_Modifications:
+    - target: {fileID: 2623509290235546831, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
+      propertyPath: _flameActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2639777612477233363, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
       propertyPath: m_Name
       value: PuzzleTorchEkeko (6)
@@ -403,6 +419,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1051705944363939100}
     m_Modifications:
+    - target: {fileID: 2623509290235546831, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
+      propertyPath: _flameActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2639777612477233363, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
       propertyPath: m_Name
       value: PuzzleTorchEkeko (5)
@@ -476,6 +496,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1051705944363939100}
     m_Modifications:
+    - target: {fileID: 2623509290235546831, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
+      propertyPath: _flameActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2639777612477233363, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
       propertyPath: m_Name
       value: PuzzleTorchEkeko (8)
@@ -549,6 +573,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1051705944363939100}
     m_Modifications:
+    - target: {fileID: 2623509290235546831, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
+      propertyPath: _flameActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2639777612477233363, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
       propertyPath: m_Name
       value: PuzzleTorchEkeko (3)
@@ -728,6 +756,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1051705944363939100}
     m_Modifications:
+    - target: {fileID: 2623509290235546831, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
+      propertyPath: _flameActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2639777612477233363, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
       propertyPath: m_Name
       value: PuzzleTorchEkeko (4)
@@ -801,6 +833,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1051705944363939100}
     m_Modifications:
+    - target: {fileID: 2623509290235546831, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
+      propertyPath: _flameActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2639777612477233363, guid: 50317b53ce4865d438d32c21609e230d, type: 3}
       propertyPath: m_Name
       value: PuzzleTorchEkeko (1)

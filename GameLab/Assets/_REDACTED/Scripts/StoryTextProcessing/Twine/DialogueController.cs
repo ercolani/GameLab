@@ -79,6 +79,11 @@ public class DialogueController : MonoBehaviour
             }
             else
             {
+                if (currentNode.tags.Contains("Pillar"))
+                {
+                    playerDialogueInteraction.PlayPillarAnimation();
+                }
+
                 if (!currentNode.tags.Contains("END"))
                 {
                     yield return new WaitForSeconds(_subtitleDelay);
@@ -86,8 +91,7 @@ public class DialogueController : MonoBehaviour
                 }
                 else
                 {
-                    playerDialogueInteraction.PlayPillarAnimation();
-                    ToggleDialogueState();
+                    //ToggleDialogueState();
                 }
             }
         }

@@ -195,6 +195,7 @@ public class MatchingPuzzle : PuzzleManager
         }
         _deity.isLastEncounter = true;
         _deity.ToggleDeityReadyForDialogue();
+        PlaySound("Gong");
     }
 
     /// <summary>

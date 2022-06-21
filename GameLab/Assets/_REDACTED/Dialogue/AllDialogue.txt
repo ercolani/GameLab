@@ -120,7 +120,7 @@ You have helped me... see a little clearer.
 I express my gratitude for your perserverance despite my treatment of you.
 [[aa_le_09]] 
 
-:: aa_le_09 {"position":"300,1301","size":"100,100"}
+:: aa_le_09 [Pillar] {"position":"300,1301","size":"100,100"}
 Now... Take this and get it far away from me. I do not wish to stray the way I did before.
 [[aa_le_10]] 
 
@@ -208,7 +208,7 @@ Oh myyyyyyy... Darling, do you believe in love at first sight or should I appear
 [[ea_fe_02]]
 
 :: ea_fe_02 {"position":"1903,251","size":"100,100"}
-Ah, pardon my rudeness! I am Ekeko, but you can just call me handsome.
+Ah, pardon my rudeness! My name is Ekeko, but you can just call me handsome.
 [[ea_fe_03]]
 
 :: ea_fe_03 {"position":"1903,401","size":"100,100"}
@@ -231,7 +231,7 @@ Whatever should I do now without my beloved harem?!
 You can help me, right?? RIGHT? 
 [[ea_fe_08]]
 
-:: ea_fe_08 [Auto] {"position":"1901,1150","size":"100,100"}
+:: ea_fe_08 {"position":"1901,1150","size":"100,100"}
 You do have a soul, don't you? Doesn't your heart cry for me?
 [[ea_fe_09]]
 
@@ -243,9 +243,9 @@ Oh, I beg you, my beauty, do be a little lamb and help out this fine gentleman.
 Find them and bring them back to me. 
 [[ea_fe_11]]
 
-:: ea_fe_11 {"position":"1901,1597","size":"100,100"}
+:: ea_fe_11 [Auto] {"position":"1901,1597","size":"100,100"}
 I'm certain the poor, powerless things long for me dearly.
-[ea_tt_01]
+[[ea_tt_01]]
 
 :: ea_le_01 [START] {"position":"2103,99","size":"100,100"}
 Wait. This- this isn't what I asked!
@@ -287,7 +287,7 @@ All I have left of you is this faded memory.
 I cannot let you devour me any longer... This is goodbye.
 [[ea_le_11]] 
 
-:: ea_le_11 {"position":"2099,1609","size":"100,100"}
+:: ea_le_11 [Pillar] {"position":"2099,1609","size":"100,100"}
 Young soul... Take this. And don't let me set eyes on it ever again. 
 [[ea_le_12]] 
 
@@ -316,11 +316,11 @@ She lives in my broken mind rent-free and I don't have the heart to make Her lea
 
 :: ea_tt_05 [TorchThought] {"position":"2297,689","size":"100,100"}
 Why can I only remember the pure excellence? What otherwordly storm took Her away? How could She could be gone...
-[[ea_tt_05]]
+[[ea_tt_06]]
 
 :: ea_tt_06 [TorchThought] {"position":"2298,841","size":"100,100"}
 I try everything to numb the pain. I seek these distractions over, and over, and over, and over, and over, and over again. To what end? 
-[[ea_tt_06]]
+[[ea_tt_07]]
 
 :: ea_tt_07 [TorchThought] {"position":"2298,988","size":"100,100"}
 Why can't tobacco replace love? Instead it just collapses my lungs into charcoal.
@@ -487,10 +487,6 @@ I will forever cherish you, my little ones, and I won't let anyone get in the wa
 
 :: sa_le_05 {"position":"3786,699","size":"100,100"}
 And no, I'm never going to forgive him.
-[[sa_le_06]]
-
-:: sa_le_06 {"position":"3786,850","size":"100,100"}
-The pain will always be a part of me.
 [[sa_le_07]]
 
 :: sa_le_07 {"position":"3788,998","size":"100,100"}
@@ -517,7 +513,7 @@ I know what to focus my energy on now.
 I hope you will discover that for yourself, too.
 [[sa_le_13]]
 
-:: sa_le_13 {"position":"3792,1906","size":"100,100"}
+:: sa_le_13 [Pillar] {"position":"3792,1906","size":"100,100"}
 Take this. I will not be needing it anymore.
 [[sa_le_14]]
 
@@ -735,7 +731,7 @@ Child killer.
 Murderer murderer murderer murderer murderer murderer murderer
 [[ma_le_09]]
 
-:: ma_le_09 {"position":"5488,1302","size":"100,100"}
+:: ma_le_09 [Pillar] {"position":"5488,1302","size":"100,100"}
 Just GO!
 [[ma_le_10]]
 
