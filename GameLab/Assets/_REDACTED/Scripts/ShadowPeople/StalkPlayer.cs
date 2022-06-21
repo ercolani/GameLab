@@ -17,6 +17,12 @@ public class StalkPlayer : MonoBehaviour
     /// The speed of the movement.
     /// </summary>
     [SerializeField]
+    private float _originalSpeed;
+
+    /// <summary>
+    /// The speed of the movement.
+    /// </summary>
+    [SerializeField]
     private float _speed;
 
     /// <summary>
@@ -51,22 +57,79 @@ public class StalkPlayer : MonoBehaviour
     private float _newDestinationTimer;
 
     /// <summary>
+    /// The time range for stalking.
+    /// </summary>
+    [SerializeField]
+    private Vector2 _stalkingFrequency;
+
+    /// <summary>
+    /// The time range for stalking.
+    /// </summary>
+    [SerializeField]
+    private Vector2 _stalkingTimeRange;
+
+    private float _currentStalkingTime;
+
+    private float _currentStalkingFrequency;
+
+    /// <summary>
+    /// The timer for the changing of the destination.
+    /// </summary>
+    private float _stalkingTimer;
+
+    /// <summary>
     /// Whether the stalker should follow the player.
     /// </summary>
-    private bool _followPlayer = true;
+    private bool _stalkingPlayer = true;
+
+    private void Start()
+    {
+        _speed = _originalSpeed;
+    }
 
     // Update is called once per frame
     void Update()
     {
+
         _newDestinationTimer += Time.deltaTime;
-        if(_newDestinationTimer >= 5 && _followPlayer)
+
+        if (_stalkingPlayer == true)
         {
-            _newDestination = new Vector3(_player.position.x + Random.Range(-5f, 5f), _player.position.y , _player.position.z + Random.Range(-5f, 5f));
-            _newDestinationTimer = 0;
+            _stalkingTimer += Time.deltaTime;
+
+            if (_newDestinationTimer >= 5)
+            {
+                if (_stalkingPlayer)
+                {
+                    _newDestination = new Vector3(_player.position.x + Random.Range(-5f, 5f), _player.position.y, _player.position.z + Random.Range(-5f, 5f));
+                }
+                _newDestinationTimer = 0;
+            }
         }
+
         MoveToDestination();
         RotateTowardsTarget();
         CheckCandleRange();
+
+        float distance = Vector3.Distance(this.transform.position, _player.position);
+        if (distance >= 20)
+        {
+            _speed = _originalSpeed * 10;
+        }
+        else
+        {
+            _speed = _originalSpeed;
+        }
+
+        if(_stalkingTimer >= _currentStalkingTime)
+        {
+            Debug.LogError("Stops stalking");
+            _stalkingPlayer = false;
+            _currentStalkingTime = Random.Range(_stalkingTimeRange.x, _stalkingTimeRange.y);
+            _currentStalkingFrequency = Random.Range(_stalkingFrequency.x, _stalkingFrequency.y);
+            StartCoroutine(StopStalking(_currentStalkingFrequency));
+            _stalkingTimer = 0;
+        }
     }
 
     /// <summary>
@@ -95,16 +158,24 @@ public class StalkPlayer : MonoBehaviour
 
     private void CheckCandleRange()
     {
-        float distance = Vector3.Distance(transform.position, _candles.transform.position);
-        Debug.LogError(distance);
-        if(distance <= _candleRange)
-        {
-            _newDestination = this.transform.position;
-            //foreach (ParticleSystem particles in _particleSystems)
-            //{
-            //    particles.Stop();
-            //}
-        }
+        //float distance = Vector3.Distance(transform.position, _candles.transform.position);
+        //Debug.LogError(distance);
+        //if(distance <= _candleRange)
+        //{
+        //    _newDestination = this.transform.position;
+        //    foreach (ParticleSystem particles in _particleSystems)
+        //    {
+        //        particles.Stop();
+        //    }
+        //}
+    }
+
+    private IEnumerator StopStalking(float time)
+    {
+        _newDestination = new Vector3(this.transform.position.x, this.transform.position.y - 15, this.transform.position.z);
+        yield return new WaitForSeconds(time);
+        _stalkingPlayer = true;
+        Debug.LogError("Stalk player");
     }
 
     private IEnumerator Test()

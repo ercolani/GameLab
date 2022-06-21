@@ -185,6 +185,7 @@ public class Deity : MonoBehaviour
 
     public void LowerCandle()
     {
-        _candlePillar.Play("LowerCandle");
+        Debug.LogError("2");
+        _candlePillar.Play("LowerPillar");
     }
 }

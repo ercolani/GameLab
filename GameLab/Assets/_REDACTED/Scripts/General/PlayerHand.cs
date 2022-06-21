@@ -80,7 +80,7 @@ public class PlayerHand : MonoBehaviour
             //if the player is holding an object
             if (_objectInHand == null)
             {
-                if (obj.gameObject.CompareTag("PickUp"))
+                if (obj.gameObject.CompareTag("PickUp") || obj.gameObject.CompareTag("DeityCandle"))
                 {
                     InteractiveObject interactiveComponent = obj.GetComponent<InteractiveObject>();
                     if (interactiveComponent.IsInteractive)

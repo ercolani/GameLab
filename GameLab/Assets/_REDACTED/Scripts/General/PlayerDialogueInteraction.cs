@@ -113,6 +113,7 @@ public class PlayerDialogueInteraction : MonoBehaviour
 
     public void PlayPillarAnimation()
     {
+        Debug.LogError("1");
         currentDeityInDialogue.LowerCandle();     
     }
 }

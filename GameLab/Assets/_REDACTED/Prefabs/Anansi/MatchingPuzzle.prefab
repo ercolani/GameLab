@@ -1372,6 +1372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flame: {fileID: 7583416884568884377}
+  _flameAudio: {fileID: 0}
   _flameActive: 1
   _canBeBlownOut: 1
 --- !u!1 &2901328781571882983
@@ -9536,28 +9537,16 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.49999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.49999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.1634789
+      value: 14.71
       objectReference: {fileID: 0}
     - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.4463453
+      value: -8.83
       objectReference: {fileID: 0}
     - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -51.310547
+      value: -52.82
       objectReference: {fileID: 0}
     - target: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9592,6 +9581,11 @@ PrefabInstance:
 --- !u!4 &7696994260628885106 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7696994259127681699, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
+  m_PrefabInstance: {fileID: 1787268305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7696994260628885107 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7696994259127681698, guid: b28ba1eeb865a524896fdbca7b64863d, type: 3}
   m_PrefabInstance: {fileID: 1787268305}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &680232152931722483
@@ -9665,6 +9659,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5144173791013878610, guid: 6ce4d5dc791b787468d9d3bb26eb5015, type: 3}
+      propertyPath: _candlePillar
+      value: 
+      objectReference: {fileID: 7696994260628885107}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ce4d5dc791b787468d9d3bb26eb5015, type: 3}
 --- !u!4 &340070041575613083 stripped

@@ -12,7 +12,6 @@ public class BlowCollider : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<FlameController>() != null)
             {
-                Debug.LogError("Flame");
                 _currentTorch = collision.gameObject.GetComponent<FlameController>();
             }
         }
