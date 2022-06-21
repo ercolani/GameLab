@@ -48,7 +48,7 @@ public class SunflowerSegment : MonoBehaviour
         yield return new WaitForSeconds(1f);
         for (int i = 0; i < _segmentTorches.Count; i++)
         {
-            _segmentTorches[i].ToggleFlame(true);
+            _segmentTorches[i].ToggleFlame(true, false);
         }
         Vector3 originalRotation = new Vector3(_sunflower.transform.eulerAngles.x, _sunflowerRotationOrigin, _sunflower.transform.eulerAngles.z);
         _sunflower.transform.eulerAngles = originalRotation;
@@ -63,7 +63,6 @@ public class SunflowerSegment : MonoBehaviour
         {
             _blownOutCount = 0;
             OnSegmentCompleted?.Invoke();
-            //_sunflower.GetComponent<MeshRenderer>().materials[1].
             return;
         }
 

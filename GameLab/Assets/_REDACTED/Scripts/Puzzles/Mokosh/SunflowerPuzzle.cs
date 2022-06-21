@@ -46,6 +46,8 @@ public class SunflowerPuzzle : PuzzleManager
     public override void PuzzleCompleted()
     {
         PlaySound("Gong");
+        _deity.isLastEncounter = true;
+        _deity.ToggleDeityReadyForDialogue();
     }
 
     private void OnTorchToggled(FlameController torch)
@@ -70,7 +72,7 @@ public class SunflowerPuzzle : PuzzleManager
 
         foreach (PuzzleTorch torch in _sunflowerSegments[_currentSegment]._segmentTorches)
         {
-            torch.ToggleFlame(true);
+            torch.ToggleFlame(true, false);
         }
     }
 }
