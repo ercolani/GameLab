@@ -73,7 +73,7 @@ public class MatrixPuzzle : PuzzleManager
         {
             foreach (Matrix matrix in _matrices)
             {
-                foreach (FlameController torch in matrix._matrixTorches)
+                foreach (FlameController torch in matrix._matrixTorches) 
                 {
                     torch.ForceToggleFlame(true);
                 }
