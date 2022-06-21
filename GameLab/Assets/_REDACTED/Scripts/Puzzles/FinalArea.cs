@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -10,7 +8,13 @@ public class FinalArea : MonoBehaviour
     /// <summary>
     /// The holders for the candle deities.
     /// </summary>
+    [SerializeField]
     private ObjectHolder[] _objectHolders;
+
+    /// <summary>
+    /// Whether the player candle is allowed in the altar or not.
+    /// </summary>
+    private bool _playerCandleAllowed;
 
     private void OnEnable()
     {
@@ -20,23 +24,20 @@ public class FinalArea : MonoBehaviour
         }
     }
 
-    private void OnDisable()
-    {
-        
-    }
-
     private void CheckPuzzleCompletion()
     {
         foreach(ObjectHolder objectHolder in _objectHolders)
         {
+            if(objectHolder.HeldObject == null)
+            {
+                return;
+            }
+            else if (objectHolder.HeldObject.tag != "DeityCandle" || objectHolder.HeldObject.tag != "DeityCandle")
+            {
+                return;
+            }
         }
-    }
-
-    /// <summary>
-    /// Allows the player to drop the candleand place it on the altar.
-    /// </summary>
-    private void AllowCandleDrop()
-    {
-
+        _playerCandleAllowed = true;
+        Debug.LogError("The Player Has Won The Game");
     }
 }
