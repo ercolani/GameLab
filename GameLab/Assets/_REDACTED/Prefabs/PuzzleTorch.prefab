@@ -14304,7 +14304,7 @@ GameObject:
   - component: {fileID: 7075594157813918777}
   - component: {fileID: 1584025633900878182}
   m_Layer: 0
-  m_Name: Audio
+  m_Name: FlameAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14502,6 +14502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flame: {fileID: 7126092969701503381}
+  _flameAudio: {fileID: 1584025633900878182}
   _flameActive: 1
   _canBeBlownOut: 1
 --- !u!65 &3334257428553131944

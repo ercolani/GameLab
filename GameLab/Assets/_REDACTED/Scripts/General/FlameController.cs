@@ -13,6 +13,12 @@ public class FlameController : MonoBehaviour
     private GameObject _flame;
 
     /// <summary>
+    /// Caches the flame game object.
+    /// </summary>
+    [SerializeField]
+    private AudioSource _flameAudio;
+
+    /// <summary>
     /// Whether the flame is active or not.
     /// </summary>
     [SerializeField]
@@ -66,6 +72,7 @@ public class FlameController : MonoBehaviour
         {
             _flameActive = state;
             _flame.SetActive(state);
+            _flameAudio.enabled = state;
             FlameToggled?.Invoke(this);
         }
     }
@@ -76,6 +83,7 @@ public class FlameController : MonoBehaviour
         {
             _flameActive = state;
             _flame.SetActive(state);
+            _flameAudio.enabled = state;
 
             if (invokeEvent)
             {
@@ -91,6 +99,7 @@ public class FlameController : MonoBehaviour
     {
         _flameActive = state;
         _flame.SetActive(state);
+        _flameAudio.enabled = state;
     }
 
     public void ToggleCanBeBlownOut(bool state)
