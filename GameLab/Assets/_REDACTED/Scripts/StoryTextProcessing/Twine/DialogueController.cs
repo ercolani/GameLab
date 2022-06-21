@@ -44,12 +44,11 @@ public class DialogueController : MonoBehaviour
 
     public event Action OnActivatePuzzle;
 
+    public event Action OnFinalDialogueEnded;
+
     private bool dialogueActive;
 
     private bool _autoMode;
-
-    [SerializeField]
-    private Animator _pillarAnimator;
 
     [SerializeField]
     private PlayerDialogueInteraction playerDialogueInteraction;
@@ -87,7 +86,7 @@ public class DialogueController : MonoBehaviour
                 }
                 else
                 {
-                    _pillarAnimator.Play("LowerPillar");
+                    playerDialogueInteraction.PlayPillarAnimation();
                     ToggleDialogueState();
                 }
             }

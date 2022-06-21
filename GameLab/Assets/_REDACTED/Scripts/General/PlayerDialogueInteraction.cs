@@ -110,5 +110,10 @@ public class PlayerDialogueInteraction : MonoBehaviour
             deityName.gameObject.SetActive(false);
         }
     }
+
+    public void PlayPillarAnimation()
+    {
+        currentDeityInDialogue.LowerCandle();     
+    }
 }
 

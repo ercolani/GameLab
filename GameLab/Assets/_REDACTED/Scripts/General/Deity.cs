@@ -183,7 +183,7 @@ public class Deity : MonoBehaviour
         isReadyForDialogue = !isReadyForDialogue;
     }
 
-    private void LowerCandle()
+    public void LowerCandle()
     {
         _candlePillar.Play("LowerCandle");
     }
