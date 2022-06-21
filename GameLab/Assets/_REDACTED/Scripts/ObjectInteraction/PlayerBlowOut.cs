@@ -49,7 +49,7 @@ public class PlayerBlowOut : MonoBehaviour
         StartCoroutine(BlowOnCooldown());
         if (_blowCollider._currentTorch == null)
         {
-            return;
+            yield break;
         }
         if (_blowCollider._currentTorch.FlameActive)
         {
