@@ -5171,7 +5171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactInput: 101
-  pickUpRange: 8
+  pickUpRange: 7.5
   holdParent: {fileID: 3981293113179010247}
 --- !u!1 &3981293114543799263
 GameObject:

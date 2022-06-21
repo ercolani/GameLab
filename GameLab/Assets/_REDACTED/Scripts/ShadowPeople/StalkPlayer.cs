@@ -176,7 +176,6 @@ public class StalkPlayer : MonoBehaviour
         yield return new WaitForSeconds(time);
         _stalkingPlayer = true;
         this.gameObject.GetComponent<Animator>().Play("ShadowPerson");
-        Debug.LogError("Stalk player");
     }
 
     private IEnumerator Test()
