@@ -16,6 +16,7 @@ TagManager:
   - PickUp
   - Water
   - Terrain
+  - DeityCandle
   layers:
   - Default
   - TransparentFX
