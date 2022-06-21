@@ -1245,50 +1245,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2803946479772070893, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
-      propertyPath: _sunflowerRotationOrigin
-      value: 166
-      objectReference: {fileID: 0}
-    - target: {fileID: 2803946479772070893, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
-      propertyPath: _sunflowerRotationDestination
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 2803946479772070893, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[0]
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2803946479772070893, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[1]
-      value: -85
-      objectReference: {fileID: 0}
-    - target: {fileID: 2803946479772070893, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[2]
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 2803946479772070893, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[3]
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 3941352175384201481, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.63105655
-      objectReference: {fileID: 0}
-    - target: {fileID: 3941352175384201481, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3941352175384201481, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7757368
-      objectReference: {fileID: 0}
-    - target: {fileID: 3941352175384201481, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3941352175384201481, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 101.744
-      objectReference: {fileID: 0}
     - target: {fileID: 6535306204160038991, guid: 4eaa0dc3dce92c84ea3f65ac65aae701, type: 3}
       propertyPath: m_Name
       value: SunflowerSegment 3
@@ -1641,46 +1597,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SunflowerSegment 2
       objectReference: {fileID: 0}
-    - target: {fileID: 5158711097459135044, guid: f9574315179ea854388f26dafe5d3c16, type: 3}
-      propertyPath: _sunflowerRotationOrigin
-      value: 198
-      objectReference: {fileID: 0}
-    - target: {fileID: 5158711097459135044, guid: f9574315179ea854388f26dafe5d3c16, type: 3}
-      propertyPath: _sunflowerRotationDestination
-      value: 108
-      objectReference: {fileID: 0}
-    - target: {fileID: 5158711097459135044, guid: f9574315179ea854388f26dafe5d3c16, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[0]
-      value: -60
-      objectReference: {fileID: 0}
-    - target: {fileID: 5158711097459135044, guid: f9574315179ea854388f26dafe5d3c16, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[1]
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 5158711097459135044, guid: f9574315179ea854388f26dafe5d3c16, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[2]
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6326586561694705824, guid: f9574315179ea854388f26dafe5d3c16, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.15643433
-      objectReference: {fileID: 0}
-    - target: {fileID: 6326586561694705824, guid: f9574315179ea854388f26dafe5d3c16, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6326586561694705824, guid: f9574315179ea854388f26dafe5d3c16, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.98768836
-      objectReference: {fileID: 0}
-    - target: {fileID: 6326586561694705824, guid: f9574315179ea854388f26dafe5d3c16, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6326586561694705824, guid: f9574315179ea854388f26dafe5d3c16, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 198
-      objectReference: {fileID: 0}
     - target: {fileID: 7596769164181298276, guid: f9574315179ea854388f26dafe5d3c16, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2011,14 +1927,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9087362174685795576, guid: 0446fa768c830da4e9254e9a20e6ba1d, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[0]
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 9087362174685795576, guid: 0446fa768c830da4e9254e9a20e6ba1d, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[1]
-      value: -146
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0446fa768c830da4e9254e9a20e6ba1d, type: 3}
 --- !u!4 &653077612787805664 stripped
@@ -2304,54 +2212,6 @@ PrefabInstance:
     - target: {fileID: 5545536740415981112, guid: 82420123a0569974b9afa221ed116c84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066144996706961432, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: _sunflowerRotationOrigin
-      value: 133
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066144996706961432, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: _sunflowerRotationDestination
-      value: 93
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066144996706961432, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[0]
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066144996706961432, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[1]
-      value: -80
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066144996706961432, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[2]
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066144996706961432, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[3]
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066144996706961432, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: _torchRotationAngles.Array.data[4]
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 8238242551243944700, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.68953794
-      objectReference: {fileID: 0}
-    - target: {fileID: 8238242551243944700, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8238242551243944700, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.72424966
-      objectReference: {fileID: 0}
-    - target: {fileID: 8238242551243944700, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8238242551243944700, guid: 82420123a0569974b9afa221ed116c84, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 92.813
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82420123a0569974b9afa221ed116c84, type: 3}

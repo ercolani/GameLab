@@ -31,6 +31,9 @@ public class PlayerBlowOut : MonoBehaviour
     [SerializeField]
     private float _cooldown = 2f;
 
+    [SerializeField]
+    private BlowCollider _blowCollider;
+
 
     private void Update()
     {
@@ -44,22 +47,11 @@ public class PlayerBlowOut : MonoBehaviour
     {
         AudioController.PlaySound("Blow");
         StartCoroutine(BlowOnCooldown());
-        //makes the overlap sphere in front of the player so that items that are not in the field of view are not picked up
-        Collider[] objects = Physics.OverlapSphere(transform.position + (transform.forward), _blowOutRange / 2);
-        objects.OrderBy(obj => (transform.position - obj.transform.position).sqrMagnitude).ToArray(); //sort by proximity
-        foreach (Collider obj in objects)
+
+        if (_blowCollider._currentTorch.FlameActive)
         {
-            //if the object is a torch
-            FlameController flameComponent = obj.GetComponent<FlameController>();
-            if (flameComponent != null)
-            {
-                if (flameComponent.FlameActive)
-                {
-                    yield return new WaitForSeconds(_blowDelay);
-                    flameComponent.ToggleFlame(false);
-                    break;
-                }
-            }
+            yield return new WaitForSeconds(_blowDelay);
+            _blowCollider._currentTorch.ToggleFlame(false);
         }
     }
 
@@ -71,7 +63,4 @@ public class PlayerBlowOut : MonoBehaviour
         _particles.SetActive(false);
         _onCooldown = false;
     }
-
-
-
 }

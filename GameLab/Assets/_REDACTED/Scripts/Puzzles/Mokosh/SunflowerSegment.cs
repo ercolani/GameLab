@@ -63,6 +63,7 @@ public class SunflowerSegment : MonoBehaviour
         {
             _blownOutCount = 0;
             OnSegmentCompleted?.Invoke();
+            //_sunflower.GetComponent<MeshRenderer>().materials[1].
             return;
         }
 
