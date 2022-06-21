@@ -49,6 +49,9 @@ public class DialogueController : MonoBehaviour
     private bool _autoMode;
 
     [SerializeField]
+    private Animator _pillarAnimator;
+
+    [SerializeField]
     private PlayerDialogueInteraction playerDialogueInteraction;
 
     private void Awake()
@@ -84,6 +87,7 @@ public class DialogueController : MonoBehaviour
                 }
                 else
                 {
+                    _pillarAnimator.Play("LowerPillar");
                     ToggleDialogueState();
                 }
             }

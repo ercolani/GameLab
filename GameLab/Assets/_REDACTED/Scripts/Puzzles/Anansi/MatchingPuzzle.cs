@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static AudioController;
 
 /// <summary>
 /// Class that manages the matching puzzle for Anansi's area.
@@ -190,6 +191,7 @@ public class MatchingPuzzle : PuzzleManager
         foreach (ItemGlow symbol in _stoolSymbols)
         {
             StartCoroutine(symbol.ToggleCoroutine(false, false, 0f));
+
         }
         _deity.isLastEncounter = true;
         _deity.ToggleDeityReadyForDialogue();
@@ -207,6 +209,7 @@ public class MatchingPuzzle : PuzzleManager
 
         //StartCoroutine(_symbolGlowOrder[_glowIndex].ToggleCoroutine(true, false, 0f));
         StartCoroutine(_outlineGlows[_glowIndex].ToggleCoroutine(true, false, 0f));
+        PlaySound("Symbol Glow");
 
         _glowIndex++;
 
