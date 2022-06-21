@@ -14512,8 +14512,8 @@ MonoBehaviour:
   _candleRange: 5
   _particleSystems: []
   _candles: {fileID: 0}
-  _stalkingFrequency: {x: 10, y: 20}
-  _stalkingTimeRange: {x: 10, y: 15}
+  _stalkingFrequency: {x: 10, y: 30}
+  _stalkingTimeRange: {x: 15, y: 20}
 --- !u!95 &739238900949162797
 Animator:
   serializedVersion: 4
