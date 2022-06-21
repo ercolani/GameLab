@@ -231,7 +231,7 @@ Whatever should I do now without my beloved harem?!
 You can help me, right?? RIGHT? 
 [[ea_fe_08]]
 
-:: ea_fe_08 {"position":"1901,1150","size":"100,100"}
+:: ea_fe_08 [Auto] {"position":"1901,1150","size":"100,100"}
 You do have a soul, don't you? Doesn't your heart cry for me?
 [[ea_fe_09]]
 
@@ -243,8 +243,9 @@ Oh, I beg you, my beauty, do be a little lamb and help out this fine gentleman.
 Find them and bring them back to me. 
 [[ea_fe_11]]
 
-:: ea_fe_11 [END] {"position":"1901,1597","size":"100,100"}
+:: ea_fe_11 {"position":"1901,1597","size":"100,100"}
 I'm certain the poor, powerless things long for me dearly.
+[ea_tt_01]
 
 :: ea_le_01 [START] {"position":"2103,99","size":"100,100"}
 Wait. This- this isn't what I asked!
@@ -303,47 +304,42 @@ I guess, sometimes... The emotion that can break your heart... Is the very one t
 
 :: ea_tt_01 [TorchThought] {"position":"2299,100","size":"100,100"}
 No matter how many beautiful ladies walk by, I can only think of Her.
-[[]]
+[[ea_tt_02]]
 
 :: ea_tt_02 [TorchThought] {"position":"2299,249","size":"100,100"}
 I see Her everywhere. In every little crinkle of the leaves around and in every creature that struts about. 
-[[]]
+[[ea_tt_03]]
 
 :: ea_tt_03 [TorchThought] {"position":"2300,402","size":"100,100"}
 She lives in my broken mind rent-free and I don't have the heart to make Her leave.
-[[]]
-
-:: ea_tt_04 [TorchThought] {"position":"2298,541","size":"100,100"}
-I cannot escape Her; She's like a ghost holding my heart captive and choking the air out of my weak lungs.
-[[]]
+[[ea_tt_05]]
 
 :: ea_tt_05 [TorchThought] {"position":"2297,689","size":"100,100"}
 Why can I only remember the pure excellence? What otherwordly storm took Her away? How could She could be gone...
-[[]]
+[[ea_tt_05]]
 
 :: ea_tt_06 [TorchThought] {"position":"2298,841","size":"100,100"}
 I try everything to numb the pain. I seek these distractions over, and over, and over, and over, and over, and over again. To what end? 
-[[]]
+[[ea_tt_06]]
 
 :: ea_tt_07 [TorchThought] {"position":"2298,988","size":"100,100"}
 Why can't tobacco replace love? Instead it just collapses my lungs into charcoal.
-[[]]
+[[ea_tt_08]]
 
 :: ea_tt_08 [TorchThought] {"position":"2298,1137","size":"100,100"}
 The shattering of a heart when being broken is the loudest quiet ever.
-[[]]
+[[ea_tt_09]]
 
 :: ea_tt_09 [TorchThought] {"position":"2295,1288","size":"100,100"}
 I wish I didn't have a heart. It's the source of all my grief.
-[[]]
+[[ea_tt_10]]
 
 :: ea_tt_10 [TorchThought] {"position":"2295,1439","size":"100,100"}
 I don't know why they call it heartbreak. It feels like every other part of my body is broken too.
-[[]]
+[[ea_tt_11]]
 
-:: ea_tt_11 [TorchThought] {"position":"2294,1589","size":"100,100"}
+:: ea_tt_11 [TorchThought END] {"position":"2294,1589","size":"100,100"}
 I am hopelessly in love with a memory. An echo from another time, another place.
-[[]]
 
 :: ea_pc_dn_01 [PuzzleComment] {"position":"2502,99","size":"100,100"}
 I’m sorry, something’s off with my eyes. I can’t seem to take them off you.
@@ -455,10 +451,6 @@ Dumb fishies all scattered away.
 
 :: sa_fe_05 {"position":"3577,695","size":"100,100"}
 If fish don't need Sedna, then FINE. Sedna does not need them.
-[[sa_fe_06]]
-
-:: sa_fe_06 {"position":"3577,845","size":"100,100"}
-Yes, everyone always abandons Sedna.
 [[sa_fe_07]]
 
 :: sa_fe_07 {"position":"3577,996","size":"100,100"}
@@ -469,12 +461,13 @@ They betrayed Sedna, just like him.
 They will all pay for what they did.
 [[sa_fe_09]]
 
-:: sa_fe_09 [Loud] {"position":"3577,1296","size":"100,100"}
+:: sa_fe_09 {"position":"3577,1296","size":"100,100"}
 WHY ARE YOU STILL LINGERING HERE, PEST?!
 [[sa_fe_10]]
 
-:: sa_fe_10 [END] {"position":"3577,1446","size":"100,100"}
+:: sa_fe_10 [Auto] {"position":"3577,1446","size":"100,100"}
 Sedna will snap those fragile little bones into teeny tiny bits in a matter of seconds.
+[[sa_tt_01]]
 
 :: sa_le_01 [START] {"position":"3782,92","size":"100,100"}
 My dears... Thank you for taking a chance on me, time and time again. 
@@ -533,87 +526,82 @@ We will see you when you're ready.
 
 :: sa_tt_01 [TorchThought] {"position":"4000,98","size":"100,100"}
 Fish would rather swim around the lights without Sedna. 
-[[]]
+[[sa_tt_02]]
 
 :: sa_tt_02 [TorchThought] {"position":"4001,230","size":"100,100"}
 hate hate hate hate hate hate hate hate HATE HIM
-[[]]
+[[sa_tt_03]]
 
 :: sa_tt_03 [TorchThought] {"position":"4001,370","size":"100,100"}
 Daddy decided he doesn't need Sedna anymore.
-[[]]
+[[sa_tt_04]]
 
 :: sa_tt_04 [TorchThought] {"position":"4000,509","size":"100,100"}
 Daddy thinks Sedna should perish.
-[[]]
+[[sa_tt_05]]
 
 :: sa_tt_05 [TorchThought] {"position":"3998,659","size":"100,100"}
 Well, his gift of severing Sedna's fingers are nothing compared to what she will do to him.
-[[]]
-
-:: sa_tt_06 [TorchThought] {"position":"4001,800","size":"100,100"}
-Sedna must exact the ultimate revenge on Father. 
-[[]]
+[[sa_tt_07]]
 
 :: sa_tt_07 [TorchThought] {"position":"4000,935","size":"100,100"}
 Torture him in every single way, make him beg for mercy. 
-[[]]
+[[sa_tt_08]]
 
 :: sa_tt_08 [TorchThought] {"position":"3999,1074","size":"100,100"}
 Yes, Sedna will eviscerate him and scatter his wretched carcass bits all across this stupid world.
-[[]]
+[[sa_tt_09]]
 
 :: sa_tt_09 [TorchThought] {"position":"3997,1218","size":"100,100"}
 Was Father ever there for Sedna? Even before he... cast her away?
-[[]]
+[[sa_tt_10]]
 
 :: sa_tt_10 [TorchThought] {"position":"3995,1363","size":"100,100"}
 Was there ever a life devoid of misery?
-[[]]
+[[sa_tt_11]]
 
 :: sa_tt_11 [TorchThought] {"position":"3998,1501","size":"100,100"}
 But Sedna... has felt the absence of misery. The little ones have always been there for her.
-[[]]
+[[sa_tt_12]]
 
 :: sa_tt_12 [TorchThought] {"position":"3997,1641","size":"100,100"}
 Alas, at the end of the day she's all alone again...
-[[]]
+[[sa_tt_13]]
 
 :: sa_tt_13 [TorchThought] {"position":"3996,1782","size":"100,100"}
 But why did the fish scatter away? It felt so sudden.
-[[]]
+[[sa_tt_14]]
 
 :: sa_tt_14 [TorchThought] {"position":"3998,1916","size":"100,100"}
 They've never left Sedna's side no matter what. Whenever she'd get angry they would... Oh.
-[[]]
+[[sa_tt_15]]
 
 :: sa_tt_15 [TorchThought] {"position":"4002,2060","size":"100,100"}
 Their attempts to soothe me... Always ended badly.
-[[]]
+[[sa_tt_16]]
 
 :: sa_tt_16 [TorchThought] {"position":"4000,2198","size":"100,100"}
 Whenever I'd get upset... They'd get in the way.
-[[]]
+[[sa_tt_17]]
 
 :: sa_tt_17 [TorchThought] {"position":"3999,2351","size":"100,100"}
 I nearly killed the only creatures that have ever cared for me.
-[[]]
+[[sa_tt_18]]
 
-:: sa_tt_18 [TorchThought Loud] {"position":"3999,2491","size":"100,100"}
+:: sa_tt_18 [TorchThought] {"position":"3999,2491","size":"100,100"}
 BUT IT'S ALL HIS FAULT! Daddy cursed Sedna's mind with revenge!
-[[]]
+[[sa_tt_19]]
 
 :: sa_tt_19 [TorchThought] {"position":"4000,2632","size":"100,100"}
 I just need to face the fears in my heart and reach out to my little fish.
-[[]]
+[[sa_tt_20]]
 
 :: sa_tt_20 [TorchThought] {"position":"4000,2766","size":"100,100"}
 They'll come back to Sedna. They always do, so why worry?
-[[]] 
+[[sa_tt_21]]
 
-:: sa_tt_21 [TorchThought] {"position":"3997,2900","size":"100,100"}
+:: sa_tt_21 [TorchThought END] {"position":"3997,2900","size":"100,100"}
 What if... This time... I need to take the first step?
-[[]]
 
 :: sa_pc_dn_01 [PuzzleComment] {"position":"4200,100","size":"100,100"}
 This place is missing some good old chaos.
@@ -676,7 +664,7 @@ Why are you wasting your time on this?!
 [[]]
 
 :: ma_fe_01 [START] {"position":"5288,104","size":"100,100"}
-Aw, what a sweet dear soul that has s   tumbled into my arms.
+Aw, what a sweet dear soul that has stumbled into my arms.
 [[ma_fe_02]] 
 
 :: ma_fe_02 {"position":"5288,254","size":"100,100"}
@@ -711,8 +699,9 @@ You don't ever have to leave this place.
 Now then, go ahead and get acquainted with my precious flowers.
 [[ma_fe_10]] 
 
-:: ma_fe_10 [END] {"position":"5285,1502","size":"100,100"}
+:: ma_fe_10 [Auto] {"position":"5285,1502","size":"100,100"}
 I'm certain you will get along.
+[[ma_tt_01]]
   
 :: ma_le_01 [START] {"position":"5489,103","size":"100,100"}
 I killed them... I killed them. I killed them. I killed them. 
@@ -767,75 +756,73 @@ I will make sure of it.
 
 :: ma_tt_01 [TorchThought] {"position":"5690,106","size":"100,100"}
 I am so lucky to have such a lovely innocent young soul stumble right into my warm embrace. I will take care of this wonderful child forever.
-[[]]
+[[ma_tt_02]]
 
 :: ma_tt_02 [TorchThought] {"position":"5690,229","size":"100,100"}
 How curious; the precious flowers that the young soul is playing with are so similar to my little children.
-[[]]
+[[ma_tt_03]]
 
 :: ma_tt_03 [TorchThought] {"position":"5692,348","size":"100,100"}
 Oh, my children. My dear children. What horrible fate befell upon you... To leave the realm of the living at such a young age.
-[[]]
+[[ma_tt_04]]
 
 :: ma_tt_04 [TorchThought] {"position":"5687,468","size":"100,100"}
 I can never let that happen to anyone again. This young soul will be safe with me under my diligent protection.
-[[]]
+[[ma_tt_05]]
 
 :: ma_tt_05 [TorchThought] {"position":"5690,584","size":"100,100"}
 My flower children seem so... different.
-[[]]
+[[ma_tt_06]]
 
 :: ma_tt_06 [TorchThought] {"position":"5687,704","size":"100,100"}
 What is it that they're looking at so intently that they must turn away from me, their one and only?
-[[]]
+[[ma_tt_07]]
 
 :: ma_tt_07 [TorchThought] {"position":"5691,831","size":"100,100"}
 The children are glowing with such purity, such innocent joy... I have never seen them like this.
-[[]]
+[[ma_tt_08]]
 
 :: ma_tt_08 [TorchThought] {"position":"5693,950","size":"100,100"}
 They're in their healthiest state ever... All while facing away from me?
-[[]]
+[[ma_tt_09]]
 
 :: ma_tt_09 [TorchThought] {"position":"5690,1081","size":"100,100"}
 But I'm always protecting them, I never let them out of my sight. Why don't they appreciate me? Do they not love me?
-[[]]
+[[ma_tt_10]]
 
 :: ma_tt_10 [TorchThought] {"position":"5687,1201","size":"100,100"}
 How did they... How could they have been killed... I kept such close watch, nobody could have laid a hand on them.
-[[]]
+[[ma_tt_11]]
 
 :: ma_tt_11 [TorchThought] {"position":"5687,1315","size":"100,100"}
 Could it be... They... They did it to themselves?
-[[]]
+[[ma_tt_12]]
 
 :: ma_tt_12 [TorchThought] {"position":"5687,1435","size":"100,100"}
 Were the flowers always rotting... Only because they were facing me?
-[[]]
+[[ma_tt_13]]
 
 :: ma_tt_13 [TorchThought] {"position":"5686,1556","size":"100,100"}
 Was I... The cause?
-[[]]
+[[ma_tt_14]]
 
 :: ma_tt_14 [TorchThought] {"position":"5688,1675","size":"100,100"}
 All I ever wanted was to protect them. I just wanted what's best. But I never listened to what they wanted.
-[[]]
+[[ma_tt_15]]
 
 :: ma_tt_15 [TorchThought] {"position":"5686,1795","size":"100,100"}
 If I had just listened, they would've had such a bright, beautiful future! I just had to listen...
-[[]]
+[[ma_tt_16]]
 
 :: ma_tt_16 [TorchThought] {"position":"5691,1914","size":"100,100"}
 I- I just controlled them until all that remained were the puppets of their bodies. Their souls have broken free from my tight grasp.
-[[]]
+[[ma_tt_17]]
 
-:: ma_tt_17 [TorchThought] {"position":"5689,2030","size":"100,100"}
+:: ma_tt_17 [TorchThought END] {"position":"5689,2030","size":"100,100"}
 The only way my children could truly live was by dying! Who would dare call herself a mother after that?!
-[[]]
 
 :: ma_pc_dn_01 [PuzzleComment] {"position":"5888,104","size":"100,100"}
 Child, are you hungry? Have you eaten today?
-[[]]
 
 :: ma_pc_dn_02 [PuzzleComment] {"position":"5888.39990234375,226.29999923706055","size":"100,100"}
 Are you sleeping well?

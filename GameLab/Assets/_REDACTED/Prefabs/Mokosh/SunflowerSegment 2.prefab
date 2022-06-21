@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4309065523660995046}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 47.08, y: -125.45, z: -57.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -47,14 +47,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c8eb1138989a9f44a7fe9fdeb08c8b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _torchRotationAngles: 320000001e00000014000000
+  _torchRotationAngles: c4ffffffe2ffffff32000000
   _segmentTorches:
   - {fileID: 4937211213914277690}
   - {fileID: 8486033203521998894}
   - {fileID: 5938252186731607403}
   _sunflower: {fileID: 4754527396231556131}
-  _sunflowerRotationOrigin: 0
-  _sunflowerRotationDestination: 180
+  _sunflowerRotationOrigin: 198
+  _sunflowerRotationDestination: 108
   timeToRotate: 1
   _blownOutCount: 0
   _sunflowerPreviousRotationY: 0
@@ -77,6 +77,7 @@ MonoBehaviour:
   maxGrowth: 0.97
   vineGrowMaterials: []
   isFullyGrown: 0
+  _vineObject: {fileID: 0}
 --- !u!1 &6013344735974486538
 GameObject:
   m_ObjectHideFlags: 0
