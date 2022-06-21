@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
 
@@ -74,6 +72,11 @@ public class FlameController : MonoBehaviour
             _flame.SetActive(state);
             _flameAudio.enabled = state;
             FlameToggled?.Invoke(this);
+
+            if (this.gameObject.TryGetComponent(out InteractiveObject interactiveComponent))
+            {
+                interactiveComponent.SetInteractivity(state);
+            }
         }
     }
     
@@ -89,6 +92,10 @@ public class FlameController : MonoBehaviour
             {
                 FlameToggled?.Invoke(this);
             }
+            if (this.gameObject.TryGetComponent(out InteractiveObject interactiveComponent))
+            {
+                interactiveComponent.SetInteractivity(state);
+            }
         }
     }
 
@@ -100,6 +107,10 @@ public class FlameController : MonoBehaviour
         _flameActive = state;
         _flame.SetActive(state);
         _flameAudio.enabled = state;
+        if (this.gameObject.TryGetComponent(out InteractiveObject interactiveComponent))
+        {
+            interactiveComponent.SetInteractivity(state);
+        }
     }
 
     public void ToggleCanBeBlownOut(bool state)
