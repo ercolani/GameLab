@@ -31,7 +31,7 @@ public class MatrixPuzzle : PuzzleManager
 
     protected override void OnDisable()
     {
-       
+        _deity.OnPuzzleToggled -= TogglePuzzle;
     }
 
     private void Start()
@@ -50,7 +50,6 @@ public class MatrixPuzzle : PuzzleManager
         _deity.isLastEncounter = true;
         _deity.ToggleDeityReadyForDialogue();
         PlaySound("Gong");
-
     }
 
     public override void ResetPuzzle()
@@ -74,7 +73,10 @@ public class MatrixPuzzle : PuzzleManager
         {
             foreach (Matrix matrix in _matrices)
             {
-                matrix.ResetMatrix();
+                foreach (FlameController torch in matrix._matrixTorches) 
+                {
+                    torch.ForceToggleFlame(true);
+                }
             }
         }
         else

@@ -657,6 +657,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1468845253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 991005500441979755, guid: 64fd6be710cf21f46b4b805b86a0a6d5, type: 3}
+  m_PrefabInstance: {fileID: 925310661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1468845255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468845253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46744e2211998e04d88f030a276bf0f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1527716288 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 64ee93fdde6a9fe41bc5ef02e38ffdc2, type: 3}
@@ -1263,6 +1280,7 @@ MonoBehaviour:
   isFirstEncounter: 1
   isLastEncounter: 0
   isReadyForDialogue: 1
+  _candlePillar: {fileID: 0}
 --- !u!64 &8333668158226562662
 MeshCollider:
   m_ObjectHideFlags: 0
