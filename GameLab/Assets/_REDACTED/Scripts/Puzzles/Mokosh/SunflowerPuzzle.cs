@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using static AudioController;
 
 public class SunflowerPuzzle : PuzzleManager
 {
@@ -10,12 +11,6 @@ public class SunflowerPuzzle : PuzzleManager
 
     [SerializeField]
     private int _currentSegment;
-
-
-    private void Start()
-    {
-        TogglePuzzle(true);
-    }
 
     protected override void OnEnable()
     {
@@ -50,7 +45,7 @@ public class SunflowerPuzzle : PuzzleManager
 
     public override void PuzzleCompleted()
     {
-        
+        PlaySound("Gong");
     }
 
     private void OnTorchToggled(FlameController torch)
@@ -60,7 +55,7 @@ public class SunflowerPuzzle : PuzzleManager
 
     public override void TogglePuzzle(bool state)
     {
-
+        StartCoroutine(_sunflowerSegments[0].ResetSegment());
     }
 
     private void SegmentComplete()

@@ -90,8 +90,11 @@
 	<object class="MixerBusPanner" id="{a006ebb2-029e-408a-9717-b40e89876e31}" />
 	<object class="SingleSound" id="{744dc0a9-6d3a-425c-98cf-616c18f4cdf2}">
 		<property name="length">
-			<value>7.4971428571428573</value>
+			<value>7.1000000000000005</value>
 		</property>
+		<relationship name="fadeOutCurve">
+			<destination>{8a40e559-c4d6-4940-a0e2-9138a5745ea2}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{4f9e7d71-aa07-4b2d-9ee8-185ccdba236d}</destination>
 		</relationship>
@@ -117,6 +120,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{bce1bb06-8584-4e69-a6b7-b92febee1edd}" />
 	<object class="MixerBusFader" id="{fce3162a-00cb-405a-bda3-70e494cb97ba}" />
+	<object class="FadeCurve" id="{8a40e559-c4d6-4940-a0e2-9138a5745ea2}">
+		<relationship name="startPoint">
+			<destination>{8443712a-9b3d-4e6d-a46f-4a3a9fec6296}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{e0d44b28-ae28-4694-a9a2-e5644893cce4}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{9eb067a5-6703-4e55-86fa-0f8191242c8f}">
 		<relationship name="effects">
 			<destination>{e7ef412e-cac2-4d10-b96f-59f828376131}</destination>
@@ -124,5 +135,24 @@
 	</object>
 	<object class="MixerBusPanner" id="{0c33b56c-d532-44ea-b0e5-f952d4d911b9}" />
 	<object class="MixerBusFader" id="{537aefdf-a9aa-4477-848c-7bfedbf0dc18}" />
+	<object class="AutomationPoint" id="{8443712a-9b3d-4e6d-a46f-4a3a9fec6296}">
+		<property name="position">
+			<value>6.8000000000000007</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>0.25471893</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{e0d44b28-ae28-4694-a9a2-e5644893cce4}">
+		<property name="position">
+			<value>7.1000000000000005</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{e7ef412e-cac2-4d10-b96f-59f828376131}" />
 </objects>

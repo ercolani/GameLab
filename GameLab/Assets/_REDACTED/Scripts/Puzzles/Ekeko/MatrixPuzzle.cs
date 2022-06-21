@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static AudioController;
 
 [System.Serializable]
 public class FigurineSegment
@@ -48,6 +49,8 @@ public class MatrixPuzzle : PuzzleManager
         _mainFigurine.SetActive(true);
         _deity.isLastEncounter = true;
         _deity.ToggleDeityReadyForDialogue();
+        PlaySound("Gong");
+
     }
 
     public override void ResetPuzzle()
@@ -67,7 +70,25 @@ public class MatrixPuzzle : PuzzleManager
 
     public override void TogglePuzzle(bool state)
     {
-        // For each torch in each matrix disable their interactability and toggle their flame off.
+        if (state)
+        {
+            foreach (Matrix matrix in _matrices)
+            {
+                matrix.ResetMatrix();
+            }
+        }
+        else
+        {
+            foreach (Matrix matrix in _matrices)
+            {
+                foreach (FlameController torch in matrix._matrixTorches)
+                {
+                    torch.ForceToggleFlame(false);
+                }
+
+            }
+        }
+     
     }
 }
 

@@ -101,13 +101,14 @@ public class PlayerDialogueInteraction : MonoBehaviour
     private void ChangeDialogueButtonState(bool deityFound)
     {
         inRange = deityFound;
-        dialogueButton.SetActive(deityFound);
-        deityName.gameObject.SetActive(deityFound);
+        dialogueButton.SetActive(inRange);
 
-        if (inRange && !currentDeityInDialogue.IsReadyForDialogue)
+        if (inRange)
         {
-            deityName.text = currentDeityInDialogue.gameObject.name;
-            deityName.gameObject.SetActive(false);
+            if (!currentDeityInDialogue.IsReadyForDialogue)
+            {
+                dialogueButton.SetActive(false);
+            }
         }
     }
 
