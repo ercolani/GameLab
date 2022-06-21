@@ -69,28 +69,13 @@ public class MatrixPuzzle : PuzzleManager
 
     public override void TogglePuzzle(bool state)
     {
-        if (state)
+        foreach (Matrix matrix in _matrices)
         {
-            foreach (Matrix matrix in _matrices)
+            foreach (FlameController torch in matrix._matrixTorches) 
             {
-                foreach (FlameController torch in matrix._matrixTorches) 
-                {
-                    torch.ForceToggleFlame(true);
-                }
+                torch.ForceToggleFlame(state);
             }
         }
-        else
-        {
-            foreach (Matrix matrix in _matrices)
-            {
-                foreach (FlameController torch in matrix._matrixTorches)
-                {
-                    torch.ForceToggleFlame(false);
-                }
-
-            }
-        }
-     
     }
 }
 
