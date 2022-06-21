@@ -22,7 +22,6 @@ public class StalkPlayer : MonoBehaviour
     /// <summary>
     /// The speed of the movement.
     /// </summary>
-    [SerializeField]
     private float _speed;
 
     /// <summary>
@@ -105,29 +104,29 @@ public class StalkPlayer : MonoBehaviour
                 }
                 _newDestinationTimer = 0;
             }
+
+            float distance = Vector3.Distance(this.transform.position, _player.position);
+            if (distance >= 35)
+            {
+                _speed = _originalSpeed * 10;
+            }
+            else
+            {
+                _speed = _originalSpeed;
+            }
         }
 
         MoveToDestination();
         RotateTowardsTarget();
         CheckCandleRange();
 
-        float distance = Vector3.Distance(this.transform.position, _player.position);
-        if (distance >= 20)
-        {
-            _speed = _originalSpeed * 10;
-        }
-        else
-        {
-            _speed = _originalSpeed;
-        }
-
         if(_stalkingTimer >= _currentStalkingTime)
         {
-            Debug.LogError("Stops stalking");
             _stalkingPlayer = false;
+            _speed = 0.2f;
+            StartCoroutine(StopStalking(_currentStalkingFrequency));
             _currentStalkingTime = Random.Range(_stalkingTimeRange.x, _stalkingTimeRange.y);
             _currentStalkingFrequency = Random.Range(_stalkingFrequency.x, _stalkingFrequency.y);
-            StartCoroutine(StopStalking(_currentStalkingFrequency));
             _stalkingTimer = 0;
         }
     }
@@ -172,9 +171,11 @@ public class StalkPlayer : MonoBehaviour
 
     private IEnumerator StopStalking(float time)
     {
-        _newDestination = new Vector3(this.transform.position.x, this.transform.position.y - 15, this.transform.position.z);
+        this.gameObject.GetComponent<Animator>().Play("HideShadow");
+        _newDestination = new Vector3(this.transform.position.x, this.transform.position.y - 18, this.transform.position.z);
         yield return new WaitForSeconds(time);
         _stalkingPlayer = true;
+        this.gameObject.GetComponent<Animator>().Play("ShadowPerson");
         Debug.LogError("Stalk player");
     }
 
