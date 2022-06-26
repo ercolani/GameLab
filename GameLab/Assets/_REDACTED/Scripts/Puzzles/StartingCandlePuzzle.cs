@@ -29,6 +29,11 @@ public class StartingCandlePuzzle : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        Invoke("SayShadowPersonLine", 5f);
+    }
+
     /// <summary>
     /// Checks if every candle has been lit up.
     /// </summary>
@@ -51,7 +56,13 @@ public class StartingCandlePuzzle : MonoBehaviour
     private IEnumerator OpenSeaAnimation()
     {
         _waterObject.Play("LowerWater");
+        PlaySound("Gong");
         yield return new WaitForSeconds(60);
         _waterObject.Play("RiseWater");
+    }
+
+    private void SayShadowPersonLine()
+    {
+        PlaySound("Shadow Person Beginning");
     }
 }
