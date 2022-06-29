@@ -7,7 +7,7 @@ public class CameraAnim : MonoBehaviour
     // Start is called before the first frame update
     private float timer = 0;
     public float duration = 5;
-    public float increase = 0.1f;
+    public Vector3 increase;
     private float tik = 0;
     void Start()
     {
@@ -21,7 +21,7 @@ public class CameraAnim : MonoBehaviour
         tik += Time.deltaTime;
         if (tik > 0.01f && timer < duration)
         {
-            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + increase, this.transform.position.z);
+            this.transform.position = new Vector3(this.transform.position.x + increase.x, this.transform.position.y + increase.y, this.transform.position.z + increase.z);
             tik = 0;
         }
     }

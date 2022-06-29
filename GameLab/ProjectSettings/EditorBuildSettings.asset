@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_REDACTED/Scenes/Igor Main.unity
     guid: a2dd197244dbe4c4796a892c1705e355
+  - enabled: 1
+    path: Assets/_REDACTED/Scenes/VideoTitle.unity
+    guid: 7a9bb2bb19c4fec41a5783d6c14422e9
   m_configObjects: {}
