@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static AudioController;
 
 public class FishPuzzle : PuzzleManager
 {
@@ -18,7 +19,7 @@ public class FishPuzzle : PuzzleManager
     public override void PuzzleCompleted()
     {
         _deity.isLastEncounter = true;
-        _deity.ToggleDeityReadyForDialogue();
+        PlaySound("Gong");
     }
 
     public override void ResetPuzzle()

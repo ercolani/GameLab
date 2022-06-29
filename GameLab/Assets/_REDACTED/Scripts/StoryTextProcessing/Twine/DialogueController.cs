@@ -42,6 +42,8 @@ public class DialogueController : MonoBehaviour
 
     public event Action<bool> ToggleDialogue;
 
+    public event Action<bool> OnToggleDeityInteraction;
+
     public event Action OnActivatePuzzle;
 
     public event Action OnFinalDialogueEnded;
@@ -67,6 +69,7 @@ public class DialogueController : MonoBehaviour
 
     private IEnumerator NextDialogue()
     {
+
         if (!_autoMode)
         {
             yield return new WaitForSeconds(AudioController.InstanceLength - _subtitleDelay);
@@ -89,10 +92,6 @@ public class DialogueController : MonoBehaviour
                     yield return new WaitForSeconds(_subtitleDelay);
                     NextNode(0);
                 }
-                else
-                {
-                    //ToggleDialogueState();
-                }
             }
         }
         else
@@ -103,7 +102,6 @@ public class DialogueController : MonoBehaviour
             {
                 _autoMode = false;
                 ToggleDialogueState();
-                //OnActivatePuzzle?.Invoke();
             }
             else
             {
