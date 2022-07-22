@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 /// <summary>
 /// Class that handles the movement of stalking the player.
@@ -67,10 +68,15 @@ public class StalkPlayer : MonoBehaviour
     [SerializeField]
     private Vector2 _stalkingTimeRange;
 
+    /// <summary>
+    /// Invoked when the shadow person starts or stops stalking the player.
+    /// </summary>
+    public event Action<bool> OnShadowPersonStalk;
+
     private float _currentStalkingTime;
 
     private float _currentStalkingFrequency;
-
+    
     /// <summary>
     /// The timer for the changing of the destination.
     /// </summary>

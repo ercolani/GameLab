@@ -250,10 +250,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7942237271824479045}
     m_Modifications:
-    - target: {fileID: 1429139242124891512, guid: adc8e9e4043382248b0cabf2724dca9a, type: 3}
-      propertyPath: playerDialogueInteraction
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1429139242692994408, guid: adc8e9e4043382248b0cabf2724dca9a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -302,8 +298,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueAndAudio
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1429139242124891463, guid: adc8e9e4043382248b0cabf2724dca9a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adc8e9e4043382248b0cabf2724dca9a, type: 3}
 --- !u!4 &2063498866566675522 stripped
 Transform:

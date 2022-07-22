@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static AudioController;
 
 /// <summary>
 /// A singleton class controlling all in-game audio using FMOD.
 /// </summary>
 public class AudioController : MonoBehaviour
 {
+    private FadeVolume fadeVolume;
+
     private static AudioController _instance;
 
     public static AudioController Instance => _instance;
@@ -27,13 +30,17 @@ public class AudioController : MonoBehaviour
     private static bool _isPuzzleThought;
 
     [SerializeField]
-    private static FMOD.Studio.EventInstance instance;
+    private static List<FMOD.Studio.EventInstance> instances = new List<FMOD.Studio.EventInstance>();
 
     [SerializeField]
     private static int _instanceLength;
 
     public static int InstanceLength => _instanceLength;
 
+    public static float currentVolume;
+
+    public static FMOD.Studio.EventInstance currentVolumeInstance;
+    
     private void Awake()
     {
         //singleton destroy pattern
@@ -45,12 +52,8 @@ public class AudioController : MonoBehaviour
         {
             _instance = this;
         }
-    }
 
-    private void Start()
-    {
-        //PlaySound("Main Theme");
-        //PlaySound("Forest Ambience");
+        fadeVolume = GameObject.FindWithTag("FadeVolume").GetComponent<FadeVolume>();
     }
 
     /// <summary>
@@ -71,16 +74,18 @@ public class AudioController : MonoBehaviour
 
         if (!_isPuzzleThought)
         {
-            instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + currentLineNumberFormatted);
+            FMOD.Studio.EventInstance instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + currentLineNumberFormatted);
+            instances.Add(instance);
             instance.start();
-            GetInstanceLength();
+            GetInstanceLength(instance);
             instance.release();
         }
         else
         {
-            instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentPuzzleThoughtType}" + "" + currentLineNumberFormatted);
+            FMOD.Studio.EventInstance instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{_currentAreaCode}" + "_" + $"{_currentEncounterType}" + "_" + $"{_currentPuzzleThoughtType}" + "" + currentLineNumberFormatted);
+            instances.Add(instance);
             instance.start();
-            GetInstanceLength();
+            GetInstanceLength(instance);
             instance.release();
         }
     }
@@ -128,7 +133,7 @@ public class AudioController : MonoBehaviour
         }
     }
 
-    public static void GetInstanceLength()
+    public static void GetInstanceLength(FMOD.Studio.EventInstance instance)
     {
         FMOD.Studio.EventDescription eventDescription;
         instance.getDescription(out eventDescription);
@@ -139,20 +144,44 @@ public class AudioController : MonoBehaviour
 
     public static void PlaySound(string sound)
     {
-        instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{sound}");
+        FMOD.Studio.EventInstance instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{sound}");
+        instances.Add(instance);
         instance.start();
         instance.release();
     }
 
     public static void PlaySoundLooping(string sound)
     {
-        instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{sound}");
+        FMOD.Studio.EventInstance instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{sound}");
+        instances.Add(instance);
         instance.start();
     }
 
-    public void PauseEvent()
+    public static FMOD.Studio.EventInstance RetrieveNameFromEventInstance(string sound)
     {
+        FMOD.Studio.EventInstance eventInstance = new FMOD.Studio.EventInstance();
+        string result = "";
+        FMOD.Studio.EventDescription eventDescription;
+        foreach (FMOD.Studio.EventInstance instance in instances)
+        {
+            instance.getDescription(out eventDescription);
+            eventDescription.getPath(out result);
+            if (result.Contains(sound))
+            {
+                eventInstance = instance;
+                return eventInstance;
+            }
+        }
+        Debug.LogError("No event instance of such name found.");
+        return eventInstance;
+    }
 
+    public static void ToggleSoundMute(string sound, bool turningOn)
+    {
+        fadeVolume.ToggleSoundMute(sound, turningOn);
     }
 }
+
+
+
 

@@ -113,7 +113,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1429139242124891462}
   - component: {fileID: 1429139242124891512}
-  - component: {fileID: 1429139242124891463}
   m_Layer: 0
   m_Name: DialogueController
   m_TagString: Untagged
@@ -157,18 +156,6 @@ MonoBehaviour:
   _subtitleDelay: 0.5
   _deityAutoDelay: 0
   playerDialogueInteraction: {fileID: 0}
---- !u!114 &1429139242124891463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429139242124891515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: beaf01f4ff4e6b746bccf8dc49780179, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1429139242692994411
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +188,7 @@ Transform:
   - {fileID: 1429139242070964341}
   - {fileID: 1429139242124891462}
   - {fileID: 1429139243001507830}
+  - {fileID: 8927660613147236296}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -271,3 +259,34 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!1 &3169750354960269604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8927660613147236296}
+  m_Layer: 0
+  m_Name: FadeVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8927660613147236296
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3169750354960269604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1429139242692994408}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

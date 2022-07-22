@@ -6,50 +6,72 @@ using static AudioController;
 public class WorshipController : MonoBehaviour
 {
     [SerializeField]
-    private CandleWickController _wickController;
+    private CandleWickController wickController;
+
+    [SerializeField]
+    private StalkPlayer stalkPlayer;
     
     [SerializeField]
-    private KeyCode _worshipInput;
+    private KeyCode worshipInput;
 
     [SerializeField]
-    private bool _canWorship;
+    private bool canWorship;
 
     [SerializeField]
-    private float _worshipCheckDelay;
+    private float worshipCheckDelay;
 
     [SerializeField]
-    private bool _isWorshipping;
+    private bool isWorshipping;
+
+    private float timeOfWorship = 0f;
+
+    private void OnEnable()
+    {
+        stalkPlayer.OnShadowPersonStalk += ToggleWorship;
+    }
+
+    private void OnDisable()
+    {
+        stalkPlayer.OnShadowPersonStalk -= ToggleWorship;
+    }
+
 
     private void Update()
     {
-        if (_canWorship)
+        if (canWorship)
         {
-            if (Input.GetKeyDown(_worshipInput))
+            if (Input.GetKeyDown(worshipInput))
             {
-                _isWorshipping = true;
-                StartCoroutine(BeginWorship());
+                ToggleWorshipSound(true);
+                isWorshipping = true;
+                timeOfWorship = Time.time;
             }
-        }
-
-        if (_isWorshipping)
-        {
-
         }
     }
 
     public void EnableWorship()
     {
-        _canWorship = true;
+        canWorship = true;
     }
 
-    private IEnumerator BeginWorship()
-    { 
-        if (!_isWorshipping)
-        {
-            PlaySound("Candle Worship");
-        }
+    private void ToggleWorship(bool state)
+    {
+        canWorship = state;
+    }
 
-        yield return new WaitForSeconds(_worshipCheckDelay);
+    private void ToggleWorshipSound(bool state)
+    {
+        if (state)
+        {
+            //if (AudioController.RetrieveNameFromEventInstance("Candle Worship").getVolume )
+            StartCoroutine(AudioController.ToggleSoundMute("Candle Worship", true, false));
+        }
+        float timeAfterLastWorship = Time.time - timeOfWorship;
+        if (timeAfterLastWorship > worshipCheckDelay)
+        {
+            //stop sound
+        }
+       
     }
 
 }
