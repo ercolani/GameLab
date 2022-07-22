@@ -64,6 +64,9 @@ public class MatchingPuzzle : PuzzleManager
     /// </summary>
     private float _symbolInvokeTime = 2.5f;
 
+    [SerializeField]
+    private AudioController audioController;
+
     private void Start()
     {
         int index = 0;
@@ -194,7 +197,7 @@ public class MatchingPuzzle : PuzzleManager
 
         }
         _deity.isLastEncounter = true;
-        PlaySound("Gong");
+        audioController.PlaySound("Gong");
     }
 
     /// <summary>
@@ -209,7 +212,7 @@ public class MatchingPuzzle : PuzzleManager
 
         //StartCoroutine(_symbolGlowOrder[_glowIndex].ToggleCoroutine(true, false, 0f));
         StartCoroutine(_outlineGlows[_glowIndex].ToggleCoroutine(true, false, 0f));
-        PlaySound("Symbol Glow");
+        audioController.PlaySound("Symbol Glow");
 
         _glowIndex++;
 

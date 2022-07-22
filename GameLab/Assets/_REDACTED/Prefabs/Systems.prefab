@@ -221,6 +221,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5667960452710880375, guid: 9516bbee6cec0c743be077db455e8600, type: 3}
+      propertyPath: audioController
+      value: 
+      objectReference: {fileID: 2063498867191325016}
+    - target: {fileID: 5667960452710880375, guid: 9516bbee6cec0c743be077db455e8600, type: 3}
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 2063498867135286354}
@@ -250,6 +254,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7942237271824479045}
     m_Modifications:
+    - target: {fileID: 1429139242070964343, guid: adc8e9e4043382248b0cabf2724dca9a, type: 3}
+      propertyPath: m_TagString
+      value: AudioController
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429139242124891512, guid: adc8e9e4043382248b0cabf2724dca9a, type: 3}
+      propertyPath: audioController
+      value: 
+      objectReference: {fileID: 2063498867191325016}
     - target: {fileID: 1429139242692994408, guid: adc8e9e4043382248b0cabf2724dca9a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -314,5 +326,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea9f415e785e51942aaa4cedefed31ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2063498867191325016 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1429139242070964338, guid: adc8e9e4043382248b0cabf2724dca9a, type: 3}
+  m_PrefabInstance: {fileID: 1114174547196238122}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4667839ab52300f45a33f33ef2f1b66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

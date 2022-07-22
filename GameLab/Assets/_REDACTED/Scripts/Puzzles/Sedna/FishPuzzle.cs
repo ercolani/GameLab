@@ -14,12 +14,15 @@ public class FishPuzzle : PuzzleManager
     [SerializeField]
     private TorchWaypoints _finalWaypoints;
 
+    [SerializeField]
+    private AudioController audioController;
+
     private int _torchIndex = 0;
 
     public override void PuzzleCompleted()
     {
         _deity.isLastEncounter = true;
-        PlaySound("Gong");
+        audioController.PlaySound("Gong");
     }
 
     public override void ResetPuzzle()

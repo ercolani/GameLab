@@ -34,6 +34,8 @@ public class PlayerBlowOut : MonoBehaviour
     [SerializeField]
     private BlowCollider _blowCollider;
 
+    [SerializeField]
+    private AudioController audioController;
 
     private void Update()
     {
@@ -45,7 +47,7 @@ public class PlayerBlowOut : MonoBehaviour
 
     private IEnumerator Blow()
     {
-        AudioController.PlaySound("Blow");
+        audioController.PlaySound("Blow");
         StartCoroutine(BlowOnCooldown());
         if (_blowCollider._currentTorch == null)
         {

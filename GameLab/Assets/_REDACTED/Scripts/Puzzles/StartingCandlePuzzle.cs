@@ -18,6 +18,9 @@ public class StartingCandlePuzzle : MonoBehaviour
     [SerializeField]
     private Animator _waterObject;
 
+    [SerializeField]
+    private AudioController audioController;
+
     /// <summary>
     /// Subscribing to event
     /// </summary>
@@ -56,13 +59,13 @@ public class StartingCandlePuzzle : MonoBehaviour
     private IEnumerator OpenSeaAnimation()
     {
         _waterObject.Play("LowerWater");
-        PlaySound("Gong");
+        audioController.PlaySound("Gong");
         yield return new WaitForSeconds(60);
         _waterObject.Play("RiseWater");
     }
 
     private void SayShadowPersonLine()
     {
-        PlaySound("Shadow Person Beginning");
+        audioController.PlaySound("Shadow Person Beginning");
     }
 }

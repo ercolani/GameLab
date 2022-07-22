@@ -106,7 +106,7 @@ public class StalkPlayer : MonoBehaviour
             {
                 if (_stalkingPlayer)
                 {
-                    _newDestination = new Vector3(_player.position.x + Random.Range(-5f, 5f), _player.position.y, _player.position.z + Random.Range(-5f, 5f));
+                    _newDestination = new Vector3(_player.position.x + UnityEngine.Random.Range(-5f, 5f), _player.position.y, _player.position.z + UnityEngine.Random.Range(-5f, 5f));
                 }
                 _newDestinationTimer = 0;
             }
@@ -135,8 +135,8 @@ public class StalkPlayer : MonoBehaviour
             _stalkingPlayer = false;
             _speed = 0.2f;
             StartCoroutine(StopStalking(_currentStalkingFrequency));
-            _currentStalkingTime = Random.Range(_stalkingTimeRange.x, _stalkingTimeRange.y);
-            _currentStalkingFrequency = Random.Range(_stalkingFrequency.x, _stalkingFrequency.y);
+            _currentStalkingTime = UnityEngine.Random.Range(_stalkingTimeRange.x, _stalkingTimeRange.y);
+            _currentStalkingFrequency = UnityEngine.Random.Range(_stalkingFrequency.x, _stalkingFrequency.y);
             _stalkingTimer = 0;
         }
     }

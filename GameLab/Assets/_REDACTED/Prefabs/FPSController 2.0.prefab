@@ -5470,6 +5470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 1f1310eca8d9b264d964a55fcba85ba7, type: 2}
+  lightSource: {fileID: 7856990696216051479}
+  lensFlare: {fileID: 1230970941831390888}
   defaultCandleOffset: {x: 0.2, y: 0}
   candleOffset: {x: 0, y: 0}
   maxCandleOffset: {x: 0.6, y: 0.2}
@@ -5477,9 +5479,14 @@ MonoBehaviour:
   noiseScale: 0.1
   lerpValue: 0.9
   rotationLerp: 2
+  candleYOffset: 0
+  minCandleY: -4
+  defaultLightIntensity: 4
+  defaultLensFlareIntensity: 0.08
+  defaultCandleBrightness: 1.41
+  candleBrightnessIncrement: 0.0001
   randomLerpRange: {x: -0.3, y: 0.3}
   randomNoiseScaleRange: {x: 0.1, y: 0.3}
-  randomCandleYOffsetRange: {x: -0.01, y: 0.01}
 --- !u!114 &3981293114543799081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5498,6 +5505,7 @@ MonoBehaviour:
   _blowDelay: 0.5
   _cooldown: 2
   _blowCollider: {fileID: 9423423}
+  audioController: {fileID: 0}
 --- !u!114 &3981293114543799083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5841,8 +5849,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 111fb11374d02744a8b800913d7bd115, type: 3}
+--- !u!114 &1230970941831390888 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1363664078, guid: 111fb11374d02744a8b800913d7bd115, type: 3}
+  m_PrefabInstance: {fileID: 1230970942658181734}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4d76f733087744991913c9d19d5274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7856990696115201902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8943281225301826824, guid: 111fb11374d02744a8b800913d7bd115, type: 3}
+  m_PrefabInstance: {fileID: 1230970942658181734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!108 &7856990696216051479 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 8943281225535473009, guid: 111fb11374d02744a8b800913d7bd115, type: 3}
   m_PrefabInstance: {fileID: 1230970942658181734}
   m_PrefabAsset: {fileID: 0}

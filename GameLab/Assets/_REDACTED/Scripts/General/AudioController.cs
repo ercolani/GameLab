@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static AudioController;
 
 /// <summary>
 /// A singleton class controlling all in-game audio using FMOD.
@@ -10,56 +9,54 @@ public class AudioController : MonoBehaviour
 {
     private FadeVolume fadeVolume;
 
-    private static AudioController _instance;
+    //private static AudioController _instance;
 
-    public static AudioController Instance => _instance;
-
-    [SerializeField]
-    private static string _currentAreaCode;
+    //public static AudioController Instance => _instance;
 
     [SerializeField]
-    private static string _currentEncounterType;
+    private string _currentAreaCode;
 
     [SerializeField]
-    private static string _currentPuzzleThoughtType;
+    private string _currentEncounterType;
 
     [SerializeField]
-    private static int _currentLineNumber;
+    private string _currentPuzzleThoughtType;
 
     [SerializeField]
-    private static bool _isPuzzleThought;
+    private int _currentLineNumber;
 
     [SerializeField]
-    private static List<FMOD.Studio.EventInstance> instances = new List<FMOD.Studio.EventInstance>();
+    private bool _isPuzzleThought;
 
     [SerializeField]
-    private static int _instanceLength;
+    private List<FMOD.Studio.EventInstance> instances = new List<FMOD.Studio.EventInstance>();
 
-    public static int InstanceLength => _instanceLength;
+    [SerializeField]
+    private int _instanceLength;
 
-    public static float currentVolume;
+    public int InstanceLength => _instanceLength;
 
-    public static FMOD.Studio.EventInstance currentVolumeInstance;
+    public float currentVolume;
+
+    public FMOD.Studio.EventInstance currentVolumeInstance;
     
     private void Awake()
     {
-        //singleton destroy pattern
-        if (_instance != null && _instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            _instance = this;
-        }
-
-        fadeVolume = GameObject.FindWithTag("FadeVolume").GetComponent<FadeVolume>();
+        ////singleton destroy pattern
+        //if (_instance != null && _instance != this)
+        //{
+        //    Destroy(this.gameObject);
+        //}
+        //else
+        //{
+        //    _instance = this;
+        //}
     }
 
     /// <summary>
     /// Plays a voice line using a code from FMOD depending on if it is a puzzle thought or not.
     /// </summary>
-    private static void PlayVoiceLine()
+    private void PlayVoiceLine()
     {
         string currentLineNumberFormatted = "";
 
@@ -93,7 +90,7 @@ public class AudioController : MonoBehaviour
     /// <summary>
     /// Sets the parameters for playing the correct voice line if it is not a puzzle thought.
     /// </summary>
-    private static void SetVoiceLineParameters(string areaCode, string encounterType, int currentLineNumber)
+    private void SetVoiceLineParameters(string areaCode, string encounterType, int currentLineNumber)
     {
         _currentAreaCode = areaCode;
         _currentEncounterType = encounterType;
@@ -104,7 +101,7 @@ public class AudioController : MonoBehaviour
     /// <summary>
     /// Sets the parameters for playing the correct voice line if it is a puzzle thought.
     /// </summary>
-    private static void SetVoiceLineParameters(string areaCode, string encounterType, string currentPuzzleThoughtType, int currentLineNumber)
+    private void SetVoiceLineParameters(string areaCode, string encounterType, string currentPuzzleThoughtType, int currentLineNumber)
     {
         _currentAreaCode = areaCode;
         _currentEncounterType = encounterType;
@@ -116,7 +113,7 @@ public class AudioController : MonoBehaviour
     /// <summary>
     /// Parses the input voice line code from the dialogue node's title and sets the parameters for the correct voice line.
     /// </summary>
-    public static void ParseVoiceLineCode(string input)
+    public void ParseVoiceLineCode(string input)
     {
         string[] parameterCodes = input.Split("_"); 
         if (parameterCodes.Length == 3)
@@ -133,7 +130,7 @@ public class AudioController : MonoBehaviour
         }
     }
 
-    public static void GetInstanceLength(FMOD.Studio.EventInstance instance)
+    public void GetInstanceLength(FMOD.Studio.EventInstance instance)
     {
         FMOD.Studio.EventDescription eventDescription;
         instance.getDescription(out eventDescription);
@@ -142,7 +139,7 @@ public class AudioController : MonoBehaviour
         _instanceLength = Mathf.CeilToInt(ceil);
     }
 
-    public static void PlaySound(string sound)
+    public void PlaySound(string sound)
     {
         FMOD.Studio.EventInstance instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{sound}");
         instances.Add(instance);
@@ -150,14 +147,14 @@ public class AudioController : MonoBehaviour
         instance.release();
     }
 
-    public static void PlaySoundLooping(string sound)
+    public void PlaySoundLooping(string sound)
     {
         FMOD.Studio.EventInstance instance = FMODUnity.RuntimeManager.CreateInstance($"event:/{sound}");
         instances.Add(instance);
         instance.start();
     }
 
-    public static FMOD.Studio.EventInstance RetrieveNameFromEventInstance(string sound)
+    public FMOD.Studio.EventInstance RetrieveNameFromEventInstance(string sound)
     {
         FMOD.Studio.EventInstance eventInstance = new FMOD.Studio.EventInstance();
         string result = "";
@@ -176,9 +173,39 @@ public class AudioController : MonoBehaviour
         return eventInstance;
     }
 
-    public static void ToggleSoundMute(string sound, bool turningOn)
+    private IEnumerator ToggleSoundMuteCoroutine(string sound, bool turningOn, bool isLooping)
     {
-        fadeVolume.ToggleSoundMute(sound, turningOn);
+        if (!isLooping)
+        {
+            currentVolumeInstance = RetrieveNameFromEventInstance(sound);
+            currentVolumeInstance.getVolume(out currentVolume);
+        }
+
+        if (turningOn)
+        {
+            if (currentVolume < 1f)
+            {
+                currentVolume += 0.1f;
+                currentVolumeInstance.setVolume(currentVolume);
+                yield return new WaitForSeconds(0.1f);
+                StartCoroutine(ToggleSoundMuteCoroutine(sound, true, true));
+            }
+        }
+        else
+        {
+            if (currentVolume > 0f)
+            {
+                currentVolume -= 0.1f;
+                currentVolumeInstance.setVolume(currentVolume);
+                yield return new WaitForSeconds(0.1f);
+                StartCoroutine(ToggleSoundMuteCoroutine(sound, true, true));
+            }
+        }
+    }
+
+    public void ToggleSoundMute(string sound, bool turningOn)
+    {
+        StartCoroutine(ToggleSoundMuteCoroutine(sound, turningOn, false));
     }
 }
 

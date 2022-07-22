@@ -36,6 +36,9 @@ public class DialogueController : MonoBehaviour
     [SerializeField]
     private float _deityAutoDelay = 15f;
 
+    [SerializeField]
+    private AudioController audioController;
+
     public delegate void NodeEnteredHandler(Node node);
 
     public event NodeEnteredHandler onEnteredNode;
@@ -72,7 +75,7 @@ public class DialogueController : MonoBehaviour
 
         if (!_autoMode)
         {
-            yield return new WaitForSeconds(AudioController.InstanceLength - _subtitleDelay);
+            yield return new WaitForSeconds(audioController.InstanceLength - _subtitleDelay);
             ToggleDialogueState();
 
             if (currentNode.tags.Contains("Auto"))
@@ -96,7 +99,7 @@ public class DialogueController : MonoBehaviour
         }
         else
         {
-            yield return new WaitForSeconds(AudioController.InstanceLength - _subtitleDelay);
+            yield return new WaitForSeconds(audioController.InstanceLength - _subtitleDelay);
 
             if (currentNode.tags.Contains("END"))
             {
@@ -187,7 +190,7 @@ public class DialogueController : MonoBehaviour
 
     public IEnumerator PlayAndRemoveTemporaryDialogueCoroutine(Node node)
     {
-        float voiceLineLength = AudioController.InstanceLength;
+        float voiceLineLength = audioController.InstanceLength;
         yield return new WaitForSeconds(voiceLineLength);
         ToggleDialogueState();
     }

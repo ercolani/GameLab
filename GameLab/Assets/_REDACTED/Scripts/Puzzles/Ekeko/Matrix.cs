@@ -19,9 +19,17 @@ public class Matrix : MonoBehaviour
     private MatrixPuzzle matrixPuzzle;
 
     [SerializeField]
+    private AudioController audioController;
+
+    [SerializeField]
     private bool _solved;
 
     public event Action OnObtainedFigurine;
+
+    private void Awake()
+    {
+        audioController = GameObject.FindGameObjectWithTag("AudioController").GetComponent<AudioController>();
+    }
 
     private void OnEnable()
     {
@@ -85,7 +93,7 @@ public class Matrix : MonoBehaviour
     private void OpenFigurineBox()
     {
         _figurineSegment.box.PlayAnimation("WoodenBox");
-        PlaySound("Chest");
+        audioController.PlaySound("Chest");
         _figurineSegment._figurine.SetInteractivity(true);
     }
 

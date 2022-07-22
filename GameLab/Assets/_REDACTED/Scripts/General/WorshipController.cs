@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static AudioController;
 
 public class WorshipController : MonoBehaviour
 {
     [SerializeField]
     private CandleWickController wickController;
+
+    [SerializeField]
+    private AudioController audioController;
 
     [SerializeField]
     private StalkPlayer stalkPlayer;
@@ -64,7 +66,7 @@ public class WorshipController : MonoBehaviour
         if (state)
         {
             //if (AudioController.RetrieveNameFromEventInstance("Candle Worship").getVolume )
-            StartCoroutine(AudioController.ToggleSoundMute("Candle Worship", true, false));
+            audioController.ToggleSoundMute("Candle Worship", true);
         }
         float timeAfterLastWorship = Time.time - timeOfWorship;
         if (timeAfterLastWorship > worshipCheckDelay)

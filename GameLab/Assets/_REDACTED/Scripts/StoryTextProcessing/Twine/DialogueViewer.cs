@@ -10,10 +10,20 @@ using System;
 
 public class DialogueViewer : MonoBehaviour
 {
-    [SerializeField] private Transform dialogueParent;
-    [SerializeField] private GameObject dialogueBoxPrefab;
-    [SerializeField] private TMP_Text nodeText;
-    [SerializeField] private DialogueController dialogueController;
+    [SerializeField] 
+    private Transform dialogueParent;
+
+    [SerializeField] 
+    private GameObject dialogueBoxPrefab;
+
+    [SerializeField] 
+    private TMP_Text nodeText;
+
+    [SerializeField] 
+    private DialogueController dialogueController;
+
+    [SerializeField]
+    private AudioController audioController;
 
     private void OnEnable()
     {
@@ -34,7 +44,7 @@ public class DialogueViewer : MonoBehaviour
     private void OnNodeEntered(Node newNode)
     {
         nodeText.text = newNode.text;
-        AudioController.ParseVoiceLineCode(newNode.title);
+        audioController.ParseVoiceLineCode(newNode.title);
         if (newNode.tags.Contains("PuzzleComment"))
         {
             StartCoroutine(dialogueController.PlayAndRemoveTemporaryDialogueCoroutine(newNode));

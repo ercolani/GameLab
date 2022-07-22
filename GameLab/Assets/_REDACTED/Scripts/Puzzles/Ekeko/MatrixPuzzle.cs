@@ -23,6 +23,9 @@ public class MatrixPuzzle : PuzzleManager
 
     private int _totalFigurines;
 
+    [SerializeField]
+    private AudioController audioController;
+
     protected override void OnEnable()
     {
         _deity.OnPuzzleToggled += TogglePuzzle;
@@ -48,7 +51,7 @@ public class MatrixPuzzle : PuzzleManager
     {
         _mainFigurine.SetActive(true);
         _deity.isLastEncounter = true;
-        PlaySound("Gong");
+        audioController.PlaySound("Gong");
     }
 
     public override void ResetPuzzle()

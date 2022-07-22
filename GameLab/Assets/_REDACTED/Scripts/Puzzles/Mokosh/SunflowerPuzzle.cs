@@ -10,6 +10,9 @@ public class SunflowerPuzzle : PuzzleManager
     private List<SunflowerSegment> _sunflowerSegments;
 
     [SerializeField]
+    private AudioController audioController;
+
+    [SerializeField]
     private int _currentSegment;
 
     protected override void OnEnable()
@@ -45,7 +48,7 @@ public class SunflowerPuzzle : PuzzleManager
 
     public override void PuzzleCompleted()
     {
-        PlaySound("Gong");
+        audioController.PlaySound("Gong");
         _deity.isLastEncounter = true;
     }
 
