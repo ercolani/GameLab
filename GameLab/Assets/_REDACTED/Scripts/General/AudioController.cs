@@ -163,7 +163,7 @@ public class AudioController : MonoBehaviour
         {
             instance.getDescription(out eventDescription);
             eventDescription.getPath(out result);
-            if (result.Contains(sound))
+            if (result != null && result.Contains(sound))
             {
                 eventInstance = instance;
                 return eventInstance;
@@ -195,10 +195,10 @@ public class AudioController : MonoBehaviour
         {
             if (currentVolume > 0f)
             {
-                currentVolume -= 0.1f;
+                currentVolume -= 0.01f;
                 currentVolumeInstance.setVolume(currentVolume);
-                yield return new WaitForSeconds(0.1f);
-                StartCoroutine(ToggleSoundMuteCoroutine(sound, true, true));
+                yield return new WaitForSeconds(0.05f);
+                StartCoroutine(ToggleSoundMuteCoroutine(sound, false, true));
             }
         }
     }

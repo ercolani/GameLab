@@ -27,6 +27,11 @@ public class WorshipController : MonoBehaviour
 
     private float timeOfWorship = 0f;
 
+    private void Start()
+    {
+        audioController.PlaySoundLooping("Candle Worship");
+    }
+
     private void OnEnable()
     {
         stalkPlayer.OnShadowPersonStalk += ToggleWorship;
@@ -48,6 +53,7 @@ public class WorshipController : MonoBehaviour
                 isWorshipping = true;
                 timeOfWorship = Time.time;
             }
+            CheckWorshipSound();
         }
     }
 
@@ -65,15 +71,22 @@ public class WorshipController : MonoBehaviour
     {
         if (state)
         {
-            //if (AudioController.RetrieveNameFromEventInstance("Candle Worship").getVolume )
             audioController.ToggleSoundMute("Candle Worship", true);
         }
+        else
+        {
+            audioController.ToggleSoundMute("Candle Worship", false);
+        }
+    }
+
+    private void CheckWorshipSound()
+    {
         float timeAfterLastWorship = Time.time - timeOfWorship;
         if (timeAfterLastWorship > worshipCheckDelay)
         {
-            //stop sound
+            isWorshipping = false;
+            ToggleWorshipSound(false);
         }
-       
     }
 
 }

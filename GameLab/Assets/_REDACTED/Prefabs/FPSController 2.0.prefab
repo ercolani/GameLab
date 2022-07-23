@@ -5191,6 +5191,7 @@ GameObject:
   - component: {fileID: 3981293114543799081}
   - component: {fileID: 3981293114543799083}
   - component: {fileID: 1941917202}
+  - component: {fileID: 1941917196}
   m_Layer: 12
   m_Name: FPSController 2.0
   m_TagString: Player
@@ -5503,7 +5504,7 @@ MonoBehaviour:
   _blowOutRange: 3
   _particles: {fileID: 3981293113065246892}
   _blowDelay: 0.5
-  _cooldown: 2
+  _cooldown: 1
   _blowCollider: {fileID: 9423423}
   audioController: {fileID: 0}
 --- !u!114 &3981293114543799083
@@ -5533,6 +5534,25 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3981293114543799263}
   m_Enabled: 1
+--- !u!114 &1941917196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981293114543799263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d652958b9841f934595c7613b5a09e8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wickController: {fileID: 3981293114543799082}
+  audioController: {fileID: 0}
+  stalkPlayer: {fileID: 0}
+  worshipInput: 32
+  canWorship: 1
+  worshipCheckDelay: 5
+  isWorshipping: 0
 --- !u!1 &4494457569071778596
 GameObject:
   m_ObjectHideFlags: 0

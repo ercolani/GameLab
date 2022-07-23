@@ -12,6 +12,9 @@ public class StartingCandlePuzzle : MonoBehaviour
     [SerializeField]
     private List<FlameController> _torches;
 
+    [SerializeField]
+    private List<GameObject> lightsToTurnOff = new List<GameObject>();
+
     /// <summary>
     /// The water system for Gaia.
     /// </summary>
@@ -60,12 +63,22 @@ public class StartingCandlePuzzle : MonoBehaviour
     {
         _waterObject.Play("LowerWater");
         audioController.PlaySound("Gong");
+        TurnOffLights();
         yield return new WaitForSeconds(60);
         _waterObject.Play("RiseWater");
+
     }
 
     private void SayShadowPersonLine()
     {
         audioController.PlaySound("Shadow Person Beginning");
+    }
+
+    private void TurnOffLights()
+    {
+        foreach (GameObject light in lightsToTurnOff)
+        {
+            light.SetActive(false);
+        }
     }
 }

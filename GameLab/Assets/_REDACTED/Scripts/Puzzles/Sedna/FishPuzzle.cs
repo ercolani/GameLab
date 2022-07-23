@@ -26,7 +26,8 @@ public class FishPuzzle : PuzzleManager
     }
 
     public override void ResetPuzzle()
-    {
+    { 
+
     }
 
     private void Start()
