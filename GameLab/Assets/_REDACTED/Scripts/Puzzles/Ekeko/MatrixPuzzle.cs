@@ -48,7 +48,6 @@ public class MatrixPuzzle : PuzzleManager
     {
         _mainFigurine.SetActive(true);
         _deity.isLastEncounter = true;
-        _deity.ToggleDeityReadyForDialogue();
         PlaySound("Gong");
     }
 

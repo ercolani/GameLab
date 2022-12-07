@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class CandleWickController : MonoBehaviour
 {
-    [Header("Material")]
+    [Header("Material and Light")]
     [SerializeField]
     private Material material;
+
+    [SerializeField]
+    private Light lightSource;
+
+    [SerializeField]
+    private LensFlareComponentSRP lensFlare;
 
     [Header("Vector Values")]
     [SerializeField]
@@ -31,15 +38,30 @@ public class CandleWickController : MonoBehaviour
     [SerializeField]
     private float rotationLerp;
 
+    [SerializeField]
+    private float candleYOffset;
+
+    [SerializeField]
+    private float minCandleY;
+
+    [SerializeField]
+    private float defaultLightIntensity;
+
+    [SerializeField]
+    private float defaultLensFlareIntensity;
+
+    [SerializeField]
+    private float defaultCandleBrightness;
+
+    [SerializeField]
+    private float candleBrightnessIncrement;
+
     [Header("Random Ranges")]
     [SerializeField]
     private Vector2 randomLerpRange;
 
     [SerializeField]
     private Vector2 randomNoiseScaleRange;
-
-    [SerializeField]
-    private Vector2 randomCandleYOffsetRange;
 
     private Vector3 previousPosition;
 
@@ -50,15 +72,19 @@ public class CandleWickController : MonoBehaviour
     private Vector3 currentRotation;
 
     private float outVelocity = 0.0f;
-   
+
+    private bool candleOff = false;
+
     void FixedUpdate()
     {
+        candleYOffset -= 0.01f;
+
         //generating random changes based on a range
         float randomLerpValue = lerpValue + Random.Range(randomLerpRange.x, randomLerpRange.y);
         float randomNoiseScale = noiseScale + Random.Range(randomNoiseScaleRange.x, randomNoiseScaleRange.y);
-        float randomCandleYOffset = Random.Range(randomCandleYOffsetRange.x, randomCandleYOffsetRange.y);
-        float randomMaxCandleXOffset = maxCandleOffset.x + Random.Range(-0.2f, 0.2f);
-        float randomMinCandleXOffset = minCandleOffset.x + Random.Range(-0.2f, 0.2f);
+
+        //setting the y value 
+        float randomCandleYOffset = candleYOffset;
 
         //change in velocity
         currentMove = transform.localPosition - previousPosition; 
@@ -75,6 +101,9 @@ public class CandleWickController : MonoBehaviour
 
         material.SetVector("_Offset", new Vector2(candleOffset.x + defaultCandleOffset.x, randomCandleYOffset));
         material.SetFloat("_NoiseScale", noiseScale);
+        
+        SetNewLightAndLensFlareIntensity();
+        CheckCandleY();
     }
 
     private void CalculateRotation(float rotation)
@@ -107,5 +136,45 @@ public class CandleWickController : MonoBehaviour
         {
             candleOffset.x = minCandleOffset.x;
         }
+    }
+
+    private void SetNewLightAndLensFlareIntensity()
+    {
+        float candleYandMinDifference = candleYOffset / minCandleY;
+
+        lightSource.intensity = defaultLightIntensity * (1f - candleYandMinDifference);
+        lensFlare.intensity = defaultLensFlareIntensity * (1f - candleYandMinDifference);
+    }
+
+    private void CheckCandleY()
+    {
+        if (candleYOffset < minCandleY)
+        {
+            if (!candleOff)
+            {
+                StartCoroutine(RemoveCandleBrightnessCoroutine());
+            }
+        } 
+        else
+        {
+            material.SetFloat("_Brightness", defaultCandleBrightness);
+            candleOff = false;
+        }
+    }
+
+    private IEnumerator RemoveCandleBrightnessCoroutine()
+    {
+        float currentCandleBrightness = defaultCandleBrightness;
+
+        material.SetFloat("_Brightness", currentCandleBrightness);
+        currentCandleBrightness -= 0.1f;
+        yield return new WaitForSeconds(0.1f);
+
+        if (currentCandleBrightness < 0f)
+        {
+            StartCoroutine(RemoveCandleBrightnessCoroutine());
+        }
+
+        candleOff = true;
     }
 }

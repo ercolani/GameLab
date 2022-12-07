@@ -108,7 +108,11 @@ public class StalkPlayer : MonoBehaviour
             float distance = Vector3.Distance(this.transform.position, _player.position);
             if (distance >= 35)
             {
-                _speed = 0.0f;
+                _speed = 0.2f;
+            }
+            else if (distance >= 100)
+            {
+                _speed = 0.00f;
             }
             else
             {

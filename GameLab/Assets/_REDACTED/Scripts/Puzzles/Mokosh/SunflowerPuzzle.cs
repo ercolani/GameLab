@@ -47,7 +47,6 @@ public class SunflowerPuzzle : PuzzleManager
     {
         PlaySound("Gong");
         _deity.isLastEncounter = true;
-        _deity.ToggleDeityReadyForDialogue();
     }
 
     private void OnTorchToggled(FlameController torch)

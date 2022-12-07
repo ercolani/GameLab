@@ -52,7 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _particleEffect: {fileID: 7793235743351787809}
   _IsInteractive: 1
-  _canBePickedUp: 1
+  _canBePickedUp: 0
 --- !u!65 &1902940904780908035
 BoxCollider:
   m_ObjectHideFlags: 0
